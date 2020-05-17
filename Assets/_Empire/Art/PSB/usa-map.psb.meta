@@ -1,0 +1,1523 @@
+fileFormatVersion: 2
+guid: bea1884f18251044b8874219bae53960
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Maine
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 6482
+      width: 506
+      height: 777
+    spriteID: e7980e5c669b659479368e618ba283ca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -5544, y: 3106}
+  - name: Vermont
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1634
+      y: 4943
+      width: 236
+      height: 422
+    spriteID: ff5a720cde646cb4b947cd99aa247ae3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4767, y: 1667}
+  - name: New Hampshire
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1624
+      y: 6482
+      width: 225
+      height: 448
+    spriteID: baf9c333b66b9ae49a00df69be7e7bd0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4967, y: 3183}
+  - name: Rhode Island
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7868
+      y: 652
+      width: 120
+      height: 136
+    spriteID: 4572fb8700ed5774ab71d5475a2b5a5f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1144, y: -2424}
+  - name: Massachussets
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7202
+      y: 652
+      width: 482
+      height: 237
+    spriteID: 6ed536abe257a034f814e3f0469e57ef
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 706, y: -2480}
+  - name: Connecticut
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1624
+      y: 6938
+      width: 251
+      height: 234
+    spriteID: 5d7ccb65995c2564b8d0be353e8e5b5e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4881, y: 3971}
+  - name: New York
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 7354
+      width: 1014
+      height: 744
+    spriteID: f4516e88ceb68ea4cb02419dbecccc29
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -5739, y: 4462}
+  - name: New Jersey
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1634
+      y: 5373
+      width: 153
+      height: 355
+    spriteID: eb010458b9771d34c81d99b6ed32cc71
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4733, y: 2732}
+  - name: Delaware
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7692
+      y: 652
+      width: 168
+      height: 251
+    spriteID: f3d1abdeb792466478d374b2e0616030
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1332, y: -1820}
+  - name: Maryland
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6311
+      y: 1829
+      width: 674
+      height: 340
+    spriteID: 7435f6118a913a84a9d66b22199a085d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 459, y: -535}
+  - name: Pennsylvania
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4266
+      y: 1829
+      width: 776
+      height: 492
+    spriteID: 8d8c0c96a241e3b4d8044337b09e6295
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1397, y: -768}
+  - name: West Virginia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5733
+      y: 1829
+      width: 570
+      height: 447
+    spriteID: a38fdcaf58fb0b545824fd511e03f572
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 216, y: -355}
+  - name: Virginia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2843
+      y: 2916
+      width: 1058
+      height: 557
+    spriteID: a70cbf9f87d16274e9eff06584bd2334
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2538, y: 885}
+  - name: Ohio
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7589
+      y: 2916
+      width: 578
+      height: 613
+    spriteID: ebb6177c615cbe245b25fb7bbfceb270
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2452, y: 567}
+  - name: Michigan
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4371
+      y: 4
+      width: 1022
+      height: 952
+    spriteID: e9f732a956cf06b4fb54ea16b5a73e7c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -36, y: -2842}
+  - name: Wisconsin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 3532
+      width: 697
+      height: 732
+    spriteID: 9a4cac51381a234458dfdb48415b8699
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -3015, y: 593}
+  - name: Illinois
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 4943
+      width: 516
+      height: 924
+    spriteID: 21f19ab98eea7ed45a2d3bde47f4ade9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -3215, y: 2916}
+  - name: Indiana
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1893
+      y: 3563
+      width: 407
+      height: 699
+    spriteID: a632f43a2eb918d4e96a40859dc9d2b4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2891, y: 1393}
+  - name: Kentucky
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5799
+      y: 2916
+      width: 963
+      height: 492
+    spriteID: e5ef6dc14774cb6468da5c45feb511e2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1200, y: 965}
+  - name: Tennessee
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3115
+      y: 1829
+      width: 1143
+      height: 348
+    spriteID: 746526b43a49fed41845641e8310420f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1417, y: 117}
+  - name: North Carolina
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1893
+      y: 1829
+      width: 1214
+      height: 520
+    spriteID: c5dc7979cafb71a43b42a4592f68648b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -3386, y: 166}
+  - name: South Carolina
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5050
+      y: 1829
+      width: 675
+      height: 493
+    spriteID: 7a29b4e786e9a9047b9f68f4d2969fa0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -424, y: 492}
+  - name: Georgia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 2775
+      width: 701
+      height: 749
+    spriteID: dbfbc5541feef484db3cdd660edb1e30
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4050, y: 1752}
+  - name: Florida
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3200
+      y: 4
+      width: 1163
+      height: 941
+    spriteID: 21bf23755b85c244f99fbbb7d2023e84
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1716, y: -146}
+  - name: Alabama
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7492
+      y: 935
+      width: 502
+      height: 831
+    spriteID: db8f27abd219447468f65059e974380d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2707, y: 29}
+  - name: Mississippi
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 7267
+      width: 460
+      height: 818
+    spriteID: 083d66f43ef952841b2342dee89a3b1e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -3235, y: 6365}
+  - name: Louisiana
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 4272
+      width: 733
+      height: 663
+    spriteID: 5d105c646cd8f64488c161a7ee53e2c6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2872, y: 3571}
+  - name: Arkansas
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 5875
+      width: 684
+      height: 599
+    spriteID: 3ea9af96aed85314282bb1c531397547
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2802, y: 4519}
+  - name: Missouri
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5401
+      y: 964
+      width: 861
+      height: 730
+    spriteID: 1b10c4df2f47866469c365e669fe7326
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1602, y: -923}
+  - name: Iowa
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6770
+      y: 2916
+      width: 811
+      height: 541
+    spriteID: ccaa0858b9192fa4a8338d3d818c6f47
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3101, y: 359}
+  - name: Minnesota
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6326
+      y: 4
+      width: 868
+      height: 923
+    spriteID: 665beebc1e8ea5842bc23609cdff2ebd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2706, y: -3086}
+  - name: Texas
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1840
+      height: 1817
+    spriteID: 9d593406349125849a828a167ed698e8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2229, y: -174}
+  - name: Oklahoma
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6326
+      y: 935
+      width: 1158
+      height: 629
+    spriteID: dbb26f2935789e14aad818b5723bb1d3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3543, y: -511}
+  - name: Kansas
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3909
+      y: 2916
+      width: 996
+      height: 543
+    spriteID: 17871ad832f0cec4a8e5052368965401
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 988, y: 895}
+  - name: Nebraska
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1893
+      y: 2357
+      width: 1101
+      height: 551
+    spriteID: eb6f1031113af734fb3cde65dd5ee3f6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -833, y: -166}
+  - name: South Dakota
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1893
+      y: 2916
+      width: 942
+      height: 639
+    spriteID: a46f1523a9e180b4fbb0e9499cdddb37
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -868, y: -10}
+  - name: North Dakota
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4913
+      y: 2916
+      width: 878
+      height: 552
+    spriteID: 3ff9802827e690644b65db0c2514ed88
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2092, y: -593}
+  - name: New Mexico
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5401
+      y: 4
+      width: 917
+      height: 952
+    spriteID: 23649ba3bdf42ba498ffbfd71436951f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3525, y: -1220}
+  - name: Arizona
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6292
+      width: 941
+      height: 1054
+    spriteID: a7ada37d491bcba47986e9cd2a1b87af
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1072, y: 5049}
+  - name: Nevada
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3677
+      width: 881
+      height: 1315
+    spriteID: 471af2a33f8d2264387832d957768ab7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -643, y: 1694}
+  - name: California
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1829
+      width: 1098
+      height: 1840
+    spriteID: 8683a08e6c7573d45909900ec8df0716
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -129, y: 214}
+  - name: Utah
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 1829
+      width: 775
+      height: 938
+    spriteID: d1c4a5ced176e6b4cb1c509831d14ee5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -230, y: -342}
+  - name: Colorado
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4371
+      y: 964
+      width: 978
+      height: 773
+    spriteID: 4fc8e3bea3d7a6b488c3771b8ba23d5a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2359, y: -1093}
+  - name: Wyoming
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3200
+      y: 953
+      width: 944
+      height: 777
+    spriteID: dc4c2ab51083a8545ba155d62a24106d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1338, y: -1792}
+  - name: Montana
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1852
+      y: 4
+      width: 1340
+      height: 893
+    spriteID: 18e18f8e3f7b067488d6e80aa5439492
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 302, y: -3392}
+  - name: Idaho
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5000
+      width: 807
+      height: 1284
+    spriteID: 1bd568ec21cc30240969093fcc475e55
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1175, y: 1970}
+  - name: Oregon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1852
+      y: 905
+      width: 1138
+      height: 913
+    spriteID: 54b301ad9ce7f954d9bd536c40bb81f5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1596, y: -2284}
+  - name: Washington
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7202
+      y: 4
+      width: 951
+      height: 640
+    spriteID: 76024d47024ca8d40a29d415846bfe2f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6660, y: -3828}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 4096
+  importedTextureHeight: 4096
+  documentSize: {x: 7186, y: 4500}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 8192
+  textureActualHeight: 8192
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Maine
+    spriteName: Maine
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e7980e5c669b659479368e618ba283ca
+    layerID: 52
+    mosaicPosition: {x: 1110, y: 6482}
+  - name: Vermont
+    spriteName: Vermont
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ff5a720cde646cb4b947cd99aa247ae3
+    layerID: 51
+    mosaicPosition: {x: 1634, y: 4943}
+  - name: New Hampshire
+    spriteName: New Hampshire
+    isGroup: 0
+    parentIndex: -1
+    spriteID: baf9c333b66b9ae49a00df69be7e7bd0
+    layerID: 50
+    mosaicPosition: {x: 1624, y: 6482}
+  - name: Rhode Island
+    spriteName: Rhode Island
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4572fb8700ed5774ab71d5475a2b5a5f
+    layerID: 49
+    mosaicPosition: {x: 7868, y: 652}
+  - name: Massachussets
+    spriteName: Massachussets
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6ed536abe257a034f814e3f0469e57ef
+    layerID: 48
+    mosaicPosition: {x: 7202, y: 652}
+  - name: Connecticut
+    spriteName: Connecticut
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5d7ccb65995c2564b8d0be353e8e5b5e
+    layerID: 47
+    mosaicPosition: {x: 1624, y: 6938}
+  - name: New York
+    spriteName: New York
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f4516e88ceb68ea4cb02419dbecccc29
+    layerID: 46
+    mosaicPosition: {x: 4, y: 7354}
+  - name: New Jersey
+    spriteName: New Jersey
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eb010458b9771d34c81d99b6ed32cc71
+    layerID: 45
+    mosaicPosition: {x: 1634, y: 5373}
+  - name: Delaware
+    spriteName: Delaware
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f3d1abdeb792466478d374b2e0616030
+    layerID: 44
+    mosaicPosition: {x: 7692, y: 652}
+  - name: Maryland
+    spriteName: Maryland
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7435f6118a913a84a9d66b22199a085d
+    layerID: 43
+    mosaicPosition: {x: 6311, y: 1829}
+  - name: Pennsylvania
+    spriteName: Pennsylvania
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8d8c0c96a241e3b4d8044337b09e6295
+    layerID: 42
+    mosaicPosition: {x: 4266, y: 1829}
+  - name: West Virginia
+    spriteName: West Virginia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a38fdcaf58fb0b545824fd511e03f572
+    layerID: 41
+    mosaicPosition: {x: 5733, y: 1829}
+  - name: Virginia
+    spriteName: Virginia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a70cbf9f87d16274e9eff06584bd2334
+    layerID: 40
+    mosaicPosition: {x: 2843, y: 2916}
+  - name: Ohio
+    spriteName: Ohio
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ebb6177c615cbe245b25fb7bbfceb270
+    layerID: 39
+    mosaicPosition: {x: 7589, y: 2916}
+  - name: Michigan
+    spriteName: Michigan
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e9f732a956cf06b4fb54ea16b5a73e7c
+    layerID: 38
+    mosaicPosition: {x: 4371, y: 4}
+  - name: Wisconsin
+    spriteName: Wisconsin
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9a4cac51381a234458dfdb48415b8699
+    layerID: 37
+    mosaicPosition: {x: 1110, y: 3532}
+  - name: Illinois
+    spriteName: Illinois
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 21f19ab98eea7ed45a2d3bde47f4ade9
+    layerID: 36
+    mosaicPosition: {x: 1110, y: 4943}
+  - name: Indiana
+    spriteName: Indiana
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a632f43a2eb918d4e96a40859dc9d2b4
+    layerID: 35
+    mosaicPosition: {x: 1893, y: 3563}
+  - name: Kentucky
+    spriteName: Kentucky
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e5ef6dc14774cb6468da5c45feb511e2
+    layerID: 34
+    mosaicPosition: {x: 5799, y: 2916}
+  - name: Tennessee
+    spriteName: Tennessee
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 746526b43a49fed41845641e8310420f
+    layerID: 33
+    mosaicPosition: {x: 3115, y: 1829}
+  - name: North Carolina
+    spriteName: North Carolina
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c5dc7979cafb71a43b42a4592f68648b
+    layerID: 32
+    mosaicPosition: {x: 1893, y: 1829}
+  - name: South Carolina
+    spriteName: South Carolina
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7a29b4e786e9a9047b9f68f4d2969fa0
+    layerID: 31
+    mosaicPosition: {x: 5050, y: 1829}
+  - name: Georgia
+    spriteName: Georgia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dbfbc5541feef484db3cdd660edb1e30
+    layerID: 30
+    mosaicPosition: {x: 1110, y: 2775}
+  - name: Florida
+    spriteName: Florida
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 21bf23755b85c244f99fbbb7d2023e84
+    layerID: 29
+    mosaicPosition: {x: 3200, y: 4}
+  - name: Alabama
+    spriteName: Alabama
+    isGroup: 0
+    parentIndex: -1
+    spriteID: db8f27abd219447468f65059e974380d
+    layerID: 28
+    mosaicPosition: {x: 7492, y: 935}
+  - name: Mississippi
+    spriteName: Mississippi
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 083d66f43ef952841b2342dee89a3b1e
+    layerID: 27
+    mosaicPosition: {x: 1110, y: 7267}
+  - name: Louisiana
+    spriteName: Louisiana
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5d105c646cd8f64488c161a7ee53e2c6
+    layerID: 26
+    mosaicPosition: {x: 1110, y: 4272}
+  - name: Arkansas
+    spriteName: Arkansas
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3ea9af96aed85314282bb1c531397547
+    layerID: 25
+    mosaicPosition: {x: 1110, y: 5875}
+  - name: Missouri
+    spriteName: Missouri
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1b10c4df2f47866469c365e669fe7326
+    layerID: 24
+    mosaicPosition: {x: 5401, y: 964}
+  - name: Iowa
+    spriteName: Iowa
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ccaa0858b9192fa4a8338d3d818c6f47
+    layerID: 23
+    mosaicPosition: {x: 6770, y: 2916}
+  - name: Minnesota
+    spriteName: Minnesota
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 665beebc1e8ea5842bc23609cdff2ebd
+    layerID: 22
+    mosaicPosition: {x: 6326, y: 4}
+  - name: Texas
+    spriteName: Texas
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9d593406349125849a828a167ed698e8
+    layerID: 21
+    mosaicPosition: {x: 4, y: 4}
+  - name: Oklahoma
+    spriteName: Oklahoma
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dbb26f2935789e14aad818b5723bb1d3
+    layerID: 20
+    mosaicPosition: {x: 6326, y: 935}
+  - name: Kansas
+    spriteName: Kansas
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 17871ad832f0cec4a8e5052368965401
+    layerID: 19
+    mosaicPosition: {x: 3909, y: 2916}
+  - name: Nebraska
+    spriteName: Nebraska
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eb6f1031113af734fb3cde65dd5ee3f6
+    layerID: 18
+    mosaicPosition: {x: 1893, y: 2357}
+  - name: South Dakota
+    spriteName: South Dakota
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a46f1523a9e180b4fbb0e9499cdddb37
+    layerID: 17
+    mosaicPosition: {x: 1893, y: 2916}
+  - name: North Dakota
+    spriteName: North Dakota
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3ff9802827e690644b65db0c2514ed88
+    layerID: 16
+    mosaicPosition: {x: 4913, y: 2916}
+  - name: New Mexico
+    spriteName: New Mexico
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23649ba3bdf42ba498ffbfd71436951f
+    layerID: 15
+    mosaicPosition: {x: 5401, y: 4}
+  - name: Arizona
+    spriteName: Arizona
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a7ada37d491bcba47986e9cd2a1b87af
+    layerID: 14
+    mosaicPosition: {x: 4, y: 6292}
+  - name: Nevada
+    spriteName: Nevada
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 471af2a33f8d2264387832d957768ab7
+    layerID: 13
+    mosaicPosition: {x: 4, y: 3677}
+  - name: California
+    spriteName: California
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8683a08e6c7573d45909900ec8df0716
+    layerID: 12
+    mosaicPosition: {x: 4, y: 1829}
+  - name: Utah
+    spriteName: Utah
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d1c4a5ced176e6b4cb1c509831d14ee5
+    layerID: 11
+    mosaicPosition: {x: 1110, y: 1829}
+  - name: Colorado
+    spriteName: Colorado
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4fc8e3bea3d7a6b488c3771b8ba23d5a
+    layerID: 10
+    mosaicPosition: {x: 4371, y: 964}
+  - name: Wyoming
+    spriteName: Wyoming
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dc4c2ab51083a8545ba155d62a24106d
+    layerID: 9
+    mosaicPosition: {x: 3200, y: 953}
+  - name: Montana
+    spriteName: Montana
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 18e18f8e3f7b067488d6e80aa5439492
+    layerID: 8
+    mosaicPosition: {x: 1852, y: 4}
+  - name: Idaho
+    spriteName: Idaho
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1bd568ec21cc30240969093fcc475e55
+    layerID: 7
+    mosaicPosition: {x: 4, y: 5000}
+  - name: Oregon
+    spriteName: Oregon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 54b301ad9ce7f954d9bd536c40bb81f5
+    layerID: 6
+    mosaicPosition: {x: 1852, y: 905}
+  - name: Washington
+    spriteName: Washington
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 76024d47024ca8d40a29d415846bfe2f
+    layerID: 5
+    mosaicPosition: {x: 7202, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: USA-map Texture
+  prefabAssetName: USA-map Prefab
+  spriteLibAssetName: USA-map Sprite Lib
+  secondarySpriteTextures: []
