@@ -6,9 +6,6 @@ namespace Empire
     public class CameraRigController : MonoBehaviour
     {
         [SerializeField]
-        private Camera _mainCamera = null;
-
-        [SerializeField]
         private CinemachineVirtualCamera _virtualCamera = null;
 
         [SerializeField]

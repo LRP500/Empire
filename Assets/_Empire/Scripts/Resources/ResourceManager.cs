@@ -1,18 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Tools;
 using UnityEngine;
 
-public class ResourceManager : MonoBehaviour
+namespace Empire
 {
-    // Start is called before the first frame update
-    void Start()
+    [CreateAssetMenu(menuName = "Empire/Managers/Resource Manager")]
+    public class ResourceManager : SingletonScriptableObject<ResourceManager>
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
