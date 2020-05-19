@@ -293,6 +293,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &90495319
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +369,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 509736636}
     m_Modifications:
     - target: {fileID: -3762854545272348, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_Name
@@ -373,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalPosition.y
@@ -385,15 +389,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalRotation.w
@@ -401,7 +405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -521,6 +525,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &129334180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 774756529675514048, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -635,6 +643,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &177838545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7963137206343047862, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -742,6 +754,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &229338182 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1505592476140034617, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -851,6 +867,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &268935622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1868442341924301018, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -929,6 +949,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &275779294
 GameObject:
   m_ObjectHideFlags: 3
@@ -1087,6 +1111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &351525142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8190904044324461227, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -1288,6 +1316,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &376352377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1891241984714115989, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -1434,6 +1466,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &464679954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -978910310162026883, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -1614,6 +1650,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &475152639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4920610578930042461, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -1690,6 +1730,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &497782574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1545925728527118855, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -1829,6 +1873,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &507063736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -439845314408814727, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -1919,6 +1967,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
+--- !u!1 &509736634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509736636}
+  - component: {fileID: 509736635}
+  m_Layer: 0
+  m_Name: World Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &509736635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509736634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051291fb1a1d4ba4ab3f00bcbaa52415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
+--- !u!4 &509736636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509736634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1237993903}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544301452 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1087566785542261288, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2027,6 +2124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &555249563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7584007378632260177, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2131,6 +2232,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &692462515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -728224764380392688, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2206,6 +2311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &950982129 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7345887104782502051, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2437,6 +2546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2768,6 +2881,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1048308273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,7 +2918,7 @@ Transform:
   - {fileID: 1373142747}
   - {fileID: 1590316291}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1048308275
 MonoBehaviour:
@@ -2972,6 +3089,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1072793358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6424082864814103733, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3080,6 +3201,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1087340032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3416380072191314326, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3170,6 +3295,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1090035222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9175899804729888760, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3239,6 +3368,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1125584775 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3037548992574031892, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3334,6 +3467,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1203144471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1407116321132555804, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3490,6 +3627,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1219998348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5220418715636904402, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3594,6 +3735,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
+--- !u!4 &1237993903 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
+  m_PrefabInstance: {fileID: 103335674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1265614206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7580431688408242638, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3671,6 +3821,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1270754865 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8397001434552270023, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3745,6 +3899,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1339767669 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8814405933225889295, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3896,6 +4054,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1373142743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,6 +4242,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1382317403 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3403542644449091079, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4193,6 +4359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1384202113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2786847157827623932, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4252,6 +4422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1443407011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4462944528882414975, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4436,6 +4610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1449653322 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8744969836717723277, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4523,6 +4701,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1590316290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4571,7 +4753,7 @@ MonoBehaviour:
   _hitLayers:
     serializedVersion: 2
     m_Bits: 65536
-  _sensitivity: 8
+  _sensitivity: 15
 --- !u!212 &1590316293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4753,6 +4935,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1612018932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3051975125043269769, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4841,6 +5027,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1662247412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2821350721489731166, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4956,6 +5146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1723379420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1179017353600216412, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5044,6 +5238,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1740073577
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,13 +5335,57 @@ RectTransform:
   - {fileID: 1959755886}
   - {fileID: 2142119944}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1759920915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759920917}
+  - component: {fileID: 1759920916}
+  m_Layer: 0
+  m_Name: GameplayManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1759920916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759920915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62069963cb45a5d4c9d7b7f76b1abc20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldMap: {fileID: 509736635}
+--- !u!4 &1759920917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759920915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1761448970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 144804392567206798, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5240,6 +5482,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1771520321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2662423924333369394, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5430,6 +5676,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1777280334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5966653818598695440, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5527,6 +5777,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1794841282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5097658270517532719, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5652,6 +5906,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1859085931 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8372191794244225577, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5804,6 +6062,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1941502711 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6754051867242956204, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5889,6 +6151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1942101720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5256748488896624488, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -6026,6 +6292,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1957490949
 GameObject:
   m_ObjectHideFlags: 0
@@ -6252,6 +6522,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2037250925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1870004024522732937, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -6502,6 +6776,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2066982942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6823859671010499032, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -6602,6 +6880,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2069006884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7410077041424062430, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -6673,6 +6955,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
+  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
+  _territoryStateInDeal: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2142119943
 GameObject:
   m_ObjectHideFlags: 0
