@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e21beb69380b757419bfa2ad1d286088, type: 3}
-  m_Name: GameplayTurn
+  m_Script: {fileID: 11500000, guid: 6440fbf9695ac694c9e943303264983a, type: 3}
+  m_Name: TerritoryStateRival
   m_EditorClassIdentifier: 
-  _nextState: {fileID: 0}
+  _color: {fileID: 11400000, guid: de040c2e64347ce4e9b7953dda38932f, type: 2}

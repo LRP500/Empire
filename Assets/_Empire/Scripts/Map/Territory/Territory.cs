@@ -16,6 +16,9 @@ namespace Empire
         [SerializeField]
         private TerritoryState _territoryStateInDeal = null;
 
+        [SerializeField]
+        private TerritoryState _territoryStateRival = null;
+
         [Space]
         [SerializeField]
         private TerritoryListVariable _runtimeTerritories = null;
@@ -60,6 +63,11 @@ namespace Empire
         public void SetInDeal()
         {
             TransitionTo(_territoryStateInDeal);
+        }
+
+        public void SetRival()
+        {
+            TransitionTo(_territoryStateRival);
         }
 
         #region UI Events

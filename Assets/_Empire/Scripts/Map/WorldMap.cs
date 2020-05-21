@@ -11,7 +11,7 @@ namespace Empire
         {
             foreach (Territory territory in _runtimeTerritories.Items)
             {
-                territory.SetUndisputed();
+                territory.SetRival();
             }
         }
 

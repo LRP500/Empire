@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62c0016c4874f8f40b1e234ca50a1153, type: 3}
-  m_Name: GameplaySetup
+  m_Script: {fileID: 11500000, guid: 4a7832d8d08206b4993f53ca6f93b81f, type: 3}
+  m_Name: TerritoryRivalColor
   m_EditorClassIdentifier: 
-  _nextState: {fileID: 11400000, guid: bdf828e516d156647b45f4861c797bc2, type: 2}
+  _value: {r: 1, g: 0, b: 0, a: 1}

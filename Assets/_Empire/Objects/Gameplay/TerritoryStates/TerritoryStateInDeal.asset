@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8700da9541e47234780c7baf4890c736, type: 3}
   m_Name: TerritoryStateInDeal
   m_EditorClassIdentifier: 
-  _color: {fileID: 0}
+  _color: {fileID: 11400000, guid: 007ce4bd3ccd3454885e3af0d15bf25b, type: 2}

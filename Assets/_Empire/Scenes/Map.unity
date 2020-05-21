@@ -295,7 +295,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &90495319
 GameObject:
@@ -381,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.5
+      value: -23.15
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalPosition.z
@@ -527,7 +528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &129334180 stripped
 GameObject:
@@ -645,7 +647,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &177838545 stripped
 GameObject:
@@ -756,7 +759,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &187825183
 GameObject:
@@ -944,7 +948,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &268935622 stripped
 GameObject:
@@ -1026,7 +1031,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &275779294
 GameObject:
@@ -1322,7 +1328,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &351525142 stripped
 GameObject:
@@ -1527,7 +1534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!224 &357098107 stripped
 RectTransform:
@@ -1682,7 +1690,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &464679954 stripped
 GameObject:
@@ -1866,7 +1875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &475152639 stripped
 GameObject:
@@ -1946,7 +1956,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &497782574 stripped
 GameObject:
@@ -2089,7 +2100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &507063736 stripped
 GameObject:
@@ -2183,7 +2195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &509736634
 GameObject:
@@ -2340,7 +2353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &555249563 stripped
 GameObject:
@@ -2448,7 +2462,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &692462515 stripped
 GameObject:
@@ -2527,7 +2542,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &950982129 stripped
 GameObject:
@@ -2762,7 +2778,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &963194225
 GameObject:
@@ -3097,7 +3114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1048308273
 GameObject:
@@ -3305,7 +3323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1072793358 stripped
 GameObject:
@@ -3417,7 +3436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1087340032 stripped
 GameObject:
@@ -3511,7 +3531,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1088346757
 GameObject:
@@ -3650,7 +3671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1125584775 stripped
 GameObject:
@@ -3749,7 +3771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1203144471 stripped
 GameObject:
@@ -3909,7 +3932,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1219998348 stripped
 GameObject:
@@ -4017,7 +4041,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!4 &1237993903 stripped
 Transform:
@@ -4103,7 +4128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1270754865 stripped
 GameObject:
@@ -4181,7 +4207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1339767669 stripped
 GameObject:
@@ -4336,7 +4363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1373142743
 GameObject:
@@ -4524,7 +4552,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1382317403 stripped
 GameObject:
@@ -4641,7 +4670,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1384202113 stripped
 GameObject:
@@ -4704,7 +4734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1443407011 stripped
 GameObject:
@@ -4892,7 +4923,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1449653322 stripped
 GameObject:
@@ -4983,7 +5015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1590316290
 GameObject:
@@ -5024,7 +5057,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590316290}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa1f2e630804df949b0b1533684203bd, type: 3}
   m_Name: 
@@ -5217,7 +5250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1612018932 stripped
 GameObject:
@@ -5309,7 +5343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1634979357
 GameObject:
@@ -5464,7 +5499,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1001 &1691746376
 PrefabInstance:
@@ -5690,7 +5726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1740073577
 GameObject:
@@ -5933,7 +5970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1771520321 stripped
 GameObject:
@@ -6127,7 +6165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1777280334 stripped
 GameObject:
@@ -6228,7 +6267,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1794841282 stripped
 GameObject:
@@ -6357,7 +6397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1859085931 stripped
 GameObject:
@@ -6513,7 +6554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1001 &1881281620
 PrefabInstance:
@@ -6736,7 +6778,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1942101720 stripped
 GameObject:
@@ -6877,7 +6920,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1944904504
 GameObject:
@@ -7207,7 +7251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2037250925 stripped
 GameObject:
@@ -7461,7 +7506,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2066982942 stripped
 GameObject:
@@ -7565,7 +7611,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2069006884 stripped
 GameObject:
@@ -7640,7 +7687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 0}
+  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
+  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2142119943
 GameObject:
