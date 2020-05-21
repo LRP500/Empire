@@ -74,7 +74,12 @@ namespace Empire
 
         private void OnTerritorySelected(object arg)
         {
-            Open(arg as Territory);
+            Territory target = arg as Territory;
+
+            if (target.State.Actions.Count > 0)
+            {
+                Open(arg as Territory);
+            }
         }
 
         private void Clear()

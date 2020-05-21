@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using Tools;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,6 +9,9 @@ namespace Empire
     public class Territory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
     {
         [Header("States")]
+
+        [SerializeField]
+        private TerritoryState _territoryStateUnreachable = null;
 
         [SerializeField]
         private TerritoryState _territoryStateUndisputed = null;
@@ -21,6 +25,10 @@ namespace Empire
         [SerializeField]
         private TerritoryState _territoryStateRival = null;
 
+        [SerializeField, ReadOnly]
+        private TerritoryState _state = null; 
+        public TerritoryState State => _state;
+
         [Space]
 
         [SerializeField]
@@ -28,8 +36,6 @@ namespace Empire
 
         [SerializeField]
         private TerritoryListVariable _runtimeTerritories = null;
-
-        public TerritoryState State { get; private set; } = null;
 
         public SpriteRenderer Renderer { get; private set; } = null;
 
@@ -46,7 +52,7 @@ namespace Empire
 
         public void TransitionTo(TerritoryState state)
         {
-            State = Instantiate(state);
+            _state = Instantiate(state);
             State.SetContext(this);
             Debug.Log($"[{name}] Transition to {State.GetType().Name}");
         }
@@ -59,6 +65,14 @@ namespace Empire
         public void SetControlled()
         {
             TransitionTo(_territoryStateControlled);
+
+            foreach (Territory neighbor in _neighbors)
+            {
+                if (neighbor.State is TerritoryStateUnreachable)
+                {
+                    neighbor.SetRival();
+                }
+            }
         }
 
         public void SetUndisputed()
@@ -76,6 +90,11 @@ namespace Empire
             TransitionTo(_territoryStateRival);
         }
 
+        public void SetUnreachable()
+        {
+            TransitionTo(_territoryStateUnreachable);
+        }
+
         #region UI Events
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -88,8 +107,14 @@ namespace Empire
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            State?.Select();
-            EventManager.Instance.Trigger(GameplayEvent.TerritorySelected, this);
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                EventManager.Instance.Trigger(GameplayEvent.TerritorySelected, this);
+            }
+            else if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                State?.Select();
+            }
         }
 
         #endregion UI Events
