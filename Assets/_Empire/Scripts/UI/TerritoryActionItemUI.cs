@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Empire
@@ -14,10 +15,11 @@ namespace Empire
 
         private TerritoryAction _action = null;
 
-        public void Initialize(Territory territory, TerritoryAction action)
+        public void Initialize(Territory territory, TerritoryAction action, UnityAction callback)
         {
             _action = action;
             _titleText.text = _action.Title;
+            _actionButton.onClick.AddListener(callback);
             _actionButton.onClick.AddListener(() => { action.Execute(territory); });
         }
     }

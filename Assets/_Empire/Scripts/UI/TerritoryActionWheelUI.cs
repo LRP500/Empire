@@ -52,7 +52,7 @@ namespace Empire
                 foreach (TerritoryAction action in _currentTarget.State.Actions)
                 {
                     TerritoryActionItemUI instance = Instantiate(_actionItemPrefab, _actionContainer.transform);
-                    instance.Initialize(_currentTarget, action);
+                    instance.Initialize(_currentTarget, action, Close);
                     _currentActions.Add(instance);
                 }
             }
