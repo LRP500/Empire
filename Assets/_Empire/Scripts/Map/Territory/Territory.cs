@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Tools;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Empire
@@ -23,8 +24,8 @@ namespace Empire
         [SerializeField]
         private TerritoryListVariable _runtimeTerritories = null;
 
-        private TerritoryState _state = null;
-        
+        public TerritoryState State { get; private set; } = null;
+
         public SpriteRenderer Renderer { get; private set; } = null;
 
         private void Awake()
@@ -40,14 +41,14 @@ namespace Empire
 
         public void TransitionTo(TerritoryState state)
         {
-            _state = Instantiate(state);
-            _state.SetContext(this);
-            Debug.Log($"Territory: transition to {_state.GetType().Name}");
+            State = Instantiate(state);
+            State.SetContext(this);
+            Debug.Log($"[{name}] Transition to {State.GetType().Name}");
         }
 
         private void Update()
         {
-            _state?.UpdateVisualState();
+            State?.UpdateVisualState();
         }
 
         public void SetControlled()
@@ -82,7 +83,8 @@ namespace Empire
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            _state?.Select();
+            State?.Select();
+            EventManager.Instance.Trigger(GameplayEvent.TerritorySelected, this);
         }
 
         #endregion UI Events

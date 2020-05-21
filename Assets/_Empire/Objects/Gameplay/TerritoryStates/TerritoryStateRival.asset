@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6440fbf9695ac694c9e943303264983a, type: 3}
   m_Name: TerritoryStateRival
   m_EditorClassIdentifier: 
+  _actions:
+  - {fileID: 11400000, guid: 550d41a93d89f424f944a5cd6be7ca12, type: 2}
+  - {fileID: 11400000, guid: 456f05c4c22f94443b933f2b7bf4a1d6, type: 2}
   _color: {fileID: 11400000, guid: de040c2e64347ce4e9b7953dda38932f, type: 2}

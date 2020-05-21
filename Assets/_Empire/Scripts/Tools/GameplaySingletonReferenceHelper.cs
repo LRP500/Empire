@@ -2,7 +2,7 @@
 
 namespace Empire
 {
-    public class GameplaySingletonHelper : MonoBehaviour
+    public class GameplaySingletonReferenceHelper : MonoBehaviour
     {
         [SerializeField]
         private ResourceManager _resourceManager = null;
