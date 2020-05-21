@@ -66,12 +66,10 @@ namespace Empire
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            //Renderer.color = Color.blue;
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            //Renderer.color = Color.white;
         }
 
         public void OnPointerDown(PointerEventData eventData)
