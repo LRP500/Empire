@@ -138,7 +138,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -297,6 +297,13 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1203144475}
+  - {fileID: 1771520325}
+  - {fileID: 1859085935}
+  - {fileID: 1610360986}
+  - {fileID: 1443407015}
+  - {fileID: 1794841286}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &90495319
 GameObject:
@@ -358,7 +365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90495319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000019073486, y: 0.0000019073486, z: -40}
+  m_LocalPosition: {x: 0, y: 0.0000009536743, z: -26.56179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275779295}
@@ -372,9 +379,129 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 509736636}
     m_Modifications:
+    - target: {fileID: -9175899804729888760, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8885960298523856523, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8744969836717723277, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8462559584334393834, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8190904044324461227, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -7410077041424062430, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6424082864814103733, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -5703529543554757452, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -5256748488896624488, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -5097658270517532719, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -4920610578930042461, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -4462944528882414975, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -3633237893304318648, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -3416380072191314326, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -3403542644449091079, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -2821350721489731166, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1891241984714115989, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1870004024522732937, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1868442341924301018, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1505592476140034617, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1407116321132555804, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -978910310162026883, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -728224764380392688, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -439845314408814727, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -3762854545272348, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_Name
       value: USA Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 144804392567206798, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 774756529675514048, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087566785542261288, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179017353600216412, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1545925728527118855, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412900292614750899, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
       propertyPath: m_LocalPosition.x
@@ -420,6 +547,78 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2662423924333369394, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786847157827623932, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037548992574031892, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051975125043269769, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761939396827487797, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220418715636904402, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966653818598695440, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6037668391274493067, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754051867242956204, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823859671010499032, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345887104782502051, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580431688408242638, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584007378632260177, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963137206343047862, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372191794244225577, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8397001434552270023, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548249316360202954, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814405933225889295, guid: bea1884f18251044b8874219bae53960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 2474196041328150524, guid: bea1884f18251044b8874219bae53960, type: 3}
 --- !u!1 &118863035 stripped
@@ -437,7 +636,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -530,6 +729,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1377503351}
+  - {fileID: 1265614210}
+  - {fileID: 1967212402}
+  - {fileID: 1449653326}
+  - {fileID: 129334184}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &129334180 stripped
 GameObject:
@@ -546,7 +751,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -649,6 +854,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 118863039}
+  - {fileID: 1265614210}
+  - {fileID: 351525146}
+  - {fileID: 177838549}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &177838545 stripped
 GameObject:
@@ -665,7 +875,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -761,6 +971,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1265614210}
+  - {fileID: 1087340036}
+  - {fileID: 1777280338}
+  - {fileID: 129334184}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &187825183
 GameObject:
@@ -852,7 +1067,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -950,6 +1165,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 376352381}
+  - {fileID: 1662247416}
+  - {fileID: 555249567}
+  - {fileID: 950982132}
+  - {fileID: 1610360986}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &268935622 stripped
 GameObject:
@@ -966,7 +1187,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1033,6 +1254,10 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 507063740}
+  - {fileID: 1270754869}
+  - {fileID: 1339767673}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &275779294
 GameObject:
@@ -1086,7 +1311,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 40
+  m_CameraDistance: 26.56179
   m_DeadZoneWidth: 0.7
   m_DeadZoneHeight: 0.7
   m_DeadZoneDepth: 0
@@ -1268,7 +1493,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1330,6 +1555,10 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1090035226}
+  - {fileID: 1339767673}
+  - {fileID: 1382317407}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &351525142 stripped
 GameObject:
@@ -1346,7 +1575,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1536,6 +1765,10 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1377503351}
+  - {fileID: 1219998352}
+  - {fileID: 129334184}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!224 &357098107 stripped
 RectTransform:
@@ -1557,7 +1790,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1692,6 +1925,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 2037250929}
+  - {fileID: 1662247416}
+  - {fileID: 1771520325}
+  - {fileID: 229338185}
+  - {fileID: 1610360986}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &464679954 stripped
 GameObject:
@@ -1708,7 +1947,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1877,6 +2116,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 544301456}
+  - {fileID: 1723379424}
+  - {fileID: 1612018936}
+  - {fileID: 497782578}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &475152639 stripped
 GameObject:
@@ -1893,7 +2137,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1958,6 +2202,14 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 692462519}
+  - {fileID: 1059755503}
+  - {fileID: 1941502715}
+  - {fileID: 1449653326}
+  - {fileID: 555249567}
+  - {fileID: 1612018936}
+  - {fileID: 950982132}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &497782574 stripped
 GameObject:
@@ -1974,7 +2226,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2102,6 +2354,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1967212402}
+  - {fileID: 1942101724}
+  - {fileID: 464679958}
+  - {fileID: 1612018936}
+  - {fileID: 2066982946}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &507063736 stripped
 GameObject:
@@ -2118,7 +2376,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2197,6 +2455,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 2069006888}
+  - {fileID: 1270754869}
+  - {fileID: 1339767673}
+  - {fileID: 1384202117}
+  - {fileID: 268935626}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &509736634
 GameObject:
@@ -2258,7 +2522,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2355,6 +2619,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1761448974}
+  - {fileID: 1022554094}
+  - {fileID: 464679958}
+  - {fileID: 1723379424}
+  - {fileID: 1612018936}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &555249563 stripped
 GameObject:
@@ -2371,7 +2641,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2464,6 +2734,13 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 475152643}
+  - {fileID: 1662247416}
+  - {fileID: 692462519}
+  - {fileID: 1449653326}
+  - {fileID: 229338185}
+  - {fileID: 950982132}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &692462515 stripped
 GameObject:
@@ -2480,7 +2757,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2544,6 +2821,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1662247416}
+  - {fileID: 1449653326}
+  - {fileID: 1125584779}
+  - {fileID: 555249567}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &950982129 stripped
 GameObject:
@@ -2560,7 +2842,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2780,6 +3062,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 475152643}
+  - {fileID: 1059755503}
+  - {fileID: 229338185}
+  - {fileID: 555249567}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &963194225
 GameObject:
@@ -2860,7 +3147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000019073486, y: 0.0000019073486, z: -40}
+  m_LocalPosition: {x: 0, y: 0.0000009536743, z: -26.56179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1048308274}
@@ -2931,7 +3218,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3116,6 +3403,9 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1761448974}
+  - {fileID: 544301456}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1048308273
 GameObject:
@@ -3182,7 +3472,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3325,6 +3615,10 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 475152643}
+  - {fileID: 1941502715}
+  - {fileID: 950982132}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1072793358 stripped
 GameObject:
@@ -3341,7 +3635,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3438,6 +3732,8 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1270754869}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1087340032 stripped
 GameObject:
@@ -3454,7 +3750,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3533,6 +3829,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 177838549}
+  - {fileID: 1203144475}
+  - {fileID: 1777280338}
+  - {fileID: 1794841286}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1088346757
 GameObject:
@@ -3615,7 +3916,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3673,6 +3974,10 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1942101724}
+  - {fileID: 340386094}
+  - {fileID: 1382317407}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1125584775 stripped
 GameObject:
@@ -3689,7 +3994,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3773,6 +4078,13 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1662247416}
+  - {fileID: 692462519}
+  - {fileID: 1449653326}
+  - {fileID: 1777280338}
+  - {fileID: 1794841286}
+  - {fileID: 1265614210}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1203144471 stripped
 GameObject:
@@ -3789,7 +4101,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3934,6 +4246,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1793462}
+  - {fileID: 1087340036}
+  - {fileID: 1777280338}
+  - {fileID: 1794841286}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1219998348 stripped
 GameObject:
@@ -3950,7 +4267,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4043,6 +4360,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1377503351}
+  - {fileID: 1967212402}
+  - {fileID: 351525146}
+  - {fileID: 1382317407}
+  - {fileID: 2066982946}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!4 &1237993903 stripped
 Transform:
@@ -4064,7 +4387,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4130,6 +4453,13 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 118863039}
+  - {fileID: 177838549}
+  - {fileID: 1449653326}
+  - {fileID: 1125584779}
+  - {fileID: 1777280338}
+  - {fileID: 129334184}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1270754865 stripped
 GameObject:
@@ -4146,7 +4476,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4209,6 +4539,10 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1072793362}
+  - {fileID: 507063740}
+  - {fileID: 268935626}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1339767669 stripped
 GameObject:
@@ -4225,7 +4559,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4365,6 +4699,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 2069006888}
+  - {fileID: 507063740}
+  - {fileID: 340386094}
+  - {fileID: 1382317407}
+  - {fileID: 268935626}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1373142743
 GameObject:
@@ -4477,7 +4817,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4554,6 +4894,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 118863039}
+  - {fileID: 1967212402}
+  - {fileID: 351525146}
+  - {fileID: 1219998352}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1382317403 stripped
 GameObject:
@@ -4570,7 +4915,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4672,6 +5017,13 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1090035226}
+  - {fileID: 1942101724}
+  - {fileID: 340386094}
+  - {fileID: 1339767673}
+  - {fileID: 1219998352}
+  - {fileID: 2066982946}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1384202113 stripped
 GameObject:
@@ -4688,7 +5040,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4736,6 +5088,9 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 2069006888}
+  - {fileID: 507063740}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1443407011 stripped
 GameObject:
@@ -4752,7 +5107,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4925,6 +5280,9 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1859085935}
+  - {fileID: 1793462}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1449653322 stripped
 GameObject:
@@ -4941,7 +5299,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5017,6 +5375,15 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 475152643}
+  - {fileID: 118863039}
+  - {fileID: 1265614210}
+  - {fileID: 692462519}
+  - {fileID: 1967212402}
+  - {fileID: 1125584779}
+  - {fileID: 555249567}
+  - {fileID: 1612018936}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1590316290
 GameObject:
@@ -5133,7 +5500,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5252,6 +5619,13 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 376352381}
+  - {fileID: 1662247416}
+  - {fileID: 1793462}
+  - {fileID: 1771520325}
+  - {fileID: 229338185}
+  - {fileID: 1794841286}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1612018932 stripped
 GameObject:
@@ -5268,7 +5642,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5345,6 +5719,15 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1761448974}
+  - {fileID: 475152643}
+  - {fileID: 544301456}
+  - {fileID: 1967212402}
+  - {fileID: 1941502715}
+  - {fileID: 1449653326}
+  - {fileID: 464679958}
+  - {fileID: 497782578}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1634979357
 GameObject:
@@ -5397,7 +5780,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5501,6 +5884,14 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 376352381}
+  - {fileID: 692462519}
+  - {fileID: 1125584779}
+  - {fileID: 229338185}
+  - {fileID: 555249567}
+  - {fileID: 1610360986}
+  - {fileID: 1794841286}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1684481122
 GameObject:
@@ -5555,6 +5946,7 @@ MonoBehaviour:
   _group: {fileID: 1684481125}
   _actionContainer: {fileID: 1883368085}
   _actionItemPrefab: {fileID: 442410333783690286, guid: a1d457b477621d4458a938bb985588cb, type: 3}
+  _mainCamera: {fileID: 963194227}
 --- !u!225 &1684481125
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5716,7 +6108,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5793,6 +6185,9 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 544301456}
+  - {fileID: 464679958}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1740073577
 GameObject:
@@ -5952,7 +6347,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6037,6 +6432,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1022554094}
+  - {fileID: 1941502715}
+  - {fileID: 544301456}
+  - {fileID: 1612018936}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1771520321 stripped
 GameObject:
@@ -6053,7 +6453,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6232,6 +6632,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 376352381}
+  - {fileID: 2037250929}
+  - {fileID: 1793462}
+  - {fileID: 1859085935}
+  - {fileID: 1610360986}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1777280334 stripped
 GameObject:
@@ -6248,7 +6654,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6334,6 +6740,13 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1265614210}
+  - {fileID: 177838549}
+  - {fileID: 1203144475}
+  - {fileID: 1125584779}
+  - {fileID: 1087340036}
+  - {fileID: 1794841286}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1794841282 stripped
 GameObject:
@@ -6350,7 +6763,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6464,6 +6877,13 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1662247416}
+  - {fileID: 1793462}
+  - {fileID: 1203144475}
+  - {fileID: 1125584779}
+  - {fileID: 1777280338}
+  - {fileID: 1610360986}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1859085931 stripped
 GameObject:
@@ -6480,7 +6900,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6621,6 +7041,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 2037250929}
+  - {fileID: 1793462}
+  - {fileID: 1771520325}
+  - {fileID: 1443407015}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1001 &1881281620
 PrefabInstance:
@@ -6790,11 +7215,11 @@ RectTransform:
   m_Father: {fileID: 1684481123}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883368087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6887,7 +7312,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6961,6 +7386,11 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1761448974}
+  - {fileID: 475152643}
+  - {fileID: 1059755503}
+  - {fileID: 1612018936}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1942101720 stripped
 GameObject:
@@ -6977,7 +7407,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7103,6 +7533,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 340386094}
+  - {fileID: 1382317407}
+  - {fileID: 497782578}
+  - {fileID: 2066982946}
+  - {fileID: 1090035226}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1944904504
 GameObject:
@@ -7346,7 +7782,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7450,6 +7886,14 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 118863039}
+  - {fileID: 1377503351}
+  - {fileID: 1449653326}
+  - {fileID: 1219998352}
+  - {fileID: 1612018936}
+  - {fileID: 497782578}
+  - {fileID: 2066982946}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2037250925 stripped
 GameObject:
@@ -7466,7 +7910,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7705,6 +8149,10 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 376352381}
+  - {fileID: 1771520325}
+  - {fileID: 1859085935}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2066982942 stripped
 GameObject:
@@ -7721,7 +8169,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7810,6 +8258,12 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 1967212402}
+  - {fileID: 1942101724}
+  - {fileID: 1219998352}
+  - {fileID: 1382317407}
+  - {fileID: 497782578}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2069006884 stripped
 GameObject:
@@ -7826,7 +8280,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7886,6 +8340,10 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
+  _neighbors:
+  - {fileID: 507063740}
+  - {fileID: 1339767673}
+  - {fileID: 1384202117}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2142119943
 GameObject:

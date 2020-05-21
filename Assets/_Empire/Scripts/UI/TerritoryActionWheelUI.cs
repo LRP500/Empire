@@ -12,6 +12,9 @@ namespace Empire
         [SerializeField]
         private TerritoryActionItemUI _actionItemPrefab = null;
 
+        [SerializeField]
+        private Camera _mainCamera = null;
+
         private Territory _currentTarget = null;
 
         private List<TerritoryActionItemUI> _currentActions = null;
@@ -45,17 +48,28 @@ namespace Empire
         {
             if (territory != _currentTarget)
             {
-                Clear();
-
                 _currentTarget = territory;
 
-                foreach (TerritoryAction action in _currentTarget.State.Actions)
-                {
-                    TerritoryActionItemUI instance = Instantiate(_actionItemPrefab, _actionContainer.transform);
-                    instance.Initialize(_currentTarget, action, Close);
-                    _currentActions.Add(instance);
-                }
+                SetActions();
+                SetPosition();
             }
+        }
+
+        private void SetActions()
+        {
+            Clear();
+
+            foreach (TerritoryAction action in _currentTarget.State.Actions)
+            {
+                TerritoryActionItemUI instance = Instantiate(_actionItemPrefab, _actionContainer.transform);
+                instance.Initialize(_currentTarget, action, Close);
+                _currentActions.Add(instance);
+            }
+        }
+
+        private void SetPosition()
+        {
+            transform.position = _mainCamera.WorldToScreenPoint(_currentTarget.transform.position);
         }
 
         private void OnTerritorySelected(object arg)

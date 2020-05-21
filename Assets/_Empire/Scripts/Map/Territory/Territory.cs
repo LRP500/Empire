@@ -1,4 +1,5 @@
-﻿using Tools;
+﻿using System.Collections.Generic;
+using Tools;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -21,6 +22,10 @@ namespace Empire
         private TerritoryState _territoryStateRival = null;
 
         [Space]
+
+        [SerializeField]
+        private List<Territory> _neighbors = null;
+
         [SerializeField]
         private TerritoryListVariable _runtimeTerritories = null;
 
