@@ -46,7 +46,7 @@ namespace Empire
 
         private void Initialize(Territory territory)
         {
-            if (territory != _currentTarget)
+            //if (territory != _currentTarget)
             {
                 _currentTarget = territory;
 
