@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c25d4f933dbac349a5c84b4cd2b4e98, type: 3}
   m_Name: TerritoryStateUndisputed
   m_EditorClassIdentifier: 
-  _color: {fileID: 11400000, guid: 454cae39c504c4f4e93b731b51fbc1ff, type: 2}
+  _actions: []
+  _color: {fileID: 11400000, guid: 8897dc38f1bc0b94e9818158c4e7141e, type: 2}

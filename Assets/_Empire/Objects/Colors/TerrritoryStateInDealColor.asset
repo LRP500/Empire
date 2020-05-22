@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a7832d8d08206b4993f53ca6f93b81f, type: 3}
-  m_Name: TerritoryInDealColor
+  m_Script: {fileID: 11500000, guid: a96a71c25a782d5458baf6f345813e6b, type: 3}
+  m_Name: TerrritoryStateInDealColor
   m_EditorClassIdentifier: 
   _value: {r: 1, g: 0.5, b: 0, a: 1}
