@@ -69,9 +69,9 @@ namespace Empire
             _controlledTerritories = _territories.Items.Where(x => x.State is TerritoryStateControlled).ToList();
 
             ProcessMethProduction();
+            ProcessDeals();
             ProcessDistribution();
             //ProcessMoneyLaundering();
-            ProcessDeals();
 
             return profitable;
         }
