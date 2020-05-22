@@ -25,7 +25,7 @@ namespace Empire
 
         [SerializeField]
         [SuffixLabel("(lbs/controlled)", Overlay = true)]
-        private int _initialMethProduction = 50;
+        private int _initialMethProduction = 20;
 
         [Header("Laundering")]
 
@@ -37,7 +37,7 @@ namespace Empire
 
         [SerializeField]
         [SuffixLabel("(lbs/controlled)", Overlay = true)]
-        private int _initialDistributionRate = 50;
+        private int _initialDistributionRate = 10;
 
         [SerializeField]
         [SuffixLabel("($k/lbs)", Overlay = true)]
@@ -69,6 +69,7 @@ namespace Empire
             _controlledTerritories = _territories.Items.Where(x => x.State is TerritoryStateControlled).ToList();
 
             ProcessMethProduction();
+            ProcessDistribution();
             //ProcessMoneyLaundering();
             ProcessDeals();
 
@@ -87,7 +88,8 @@ namespace Empire
 
         private void ProcessDistribution()
         {
-
+            int sold = _meth.Decrement(_initialDistributionRate * _controlledTerritories.Count);
+            _cash.Increment(sold * _methSellingPrice);
         }
 
         private void ProcessDeals()

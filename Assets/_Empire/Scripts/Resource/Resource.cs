@@ -28,7 +28,7 @@ namespace Empire
 
         public int Decrement(int value)
         {
-            return SetCurrent(_current - value);
+            return SetCurrent(_current - value) * -1;
         }
 
         public void Initialize()
