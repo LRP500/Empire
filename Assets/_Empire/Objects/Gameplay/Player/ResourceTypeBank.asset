@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: ResourceTypeBank
   m_EditorClassIdentifier: 
   _name: Bank
+  _description: 
   _icon: {fileID: 21300000, guid: abeddbebb96ffb74c9e94b0fcd707017, type: 3}
+  _initialValue: 0

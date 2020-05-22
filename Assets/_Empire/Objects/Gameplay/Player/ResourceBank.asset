@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44babad069b8ee44adae821dfd017fa, type: 3}
   m_Name: ResourceBank
   m_EditorClassIdentifier: 
-  type: {fileID: 11400000, guid: 456dfff250179834f9b194e9011d4c0e, type: 2}
-  initial: 2000
-  current: 0
+  _type: {fileID: 11400000, guid: 456dfff250179834f9b194e9011d4c0e, type: 2}
+  _current: 0

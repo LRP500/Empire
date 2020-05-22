@@ -31,11 +31,13 @@ namespace Empire
 
         [Space]
 
-        [SerializeField]
-        private List<Territory> _neighbors = null;
+        [Header("Context")]
 
         [SerializeField]
         private TerritoryListVariable _runtimeTerritories = null;
+
+        [SerializeField]
+        private List<Territory> _neighbors = null;
 
         public SpriteRenderer Renderer { get; private set; } = null;
 

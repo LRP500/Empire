@@ -17,8 +17,18 @@ namespace Empire
 
         private void Awake()
         {
-            _logo.sprite = _resource.type.Icon;
-            _amount.text = _resource.current.ToString();
+            _logo.sprite = _resource.Type.Icon;
+            _amount.text = _resource.Current.ToString();
+        }
+
+        private void Update()
+        {
+            Refresh();   
+        }
+
+        private void Refresh()
+        {
+            _amount.text = _resource.Current.ToString();
         }
     }
 }

@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44babad069b8ee44adae821dfd017fa, type: 3}
   m_Name: ResourceCash
   m_EditorClassIdentifier: 
-  type: {fileID: 11400000, guid: 48b87fa897af11a44b0d6eb78219cd35, type: 2}
-  initial: 500
-  current: 0
+  _type: {fileID: 11400000, guid: 48b87fa897af11a44b0d6eb78219cd35, type: 2}
+  _current: 0

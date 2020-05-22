@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44babad069b8ee44adae821dfd017fa, type: 3}
   m_Name: ResourceCrew
   m_EditorClassIdentifier: 
-  type: {fileID: 11400000, guid: db7023f8f15a43041980d3d3aeaea6c3, type: 2}
-  initial: 2
-  current: 0
+  _type: {fileID: 11400000, guid: db7023f8f15a43041980d3d3aeaea6c3, type: 2}
+  _current: 0

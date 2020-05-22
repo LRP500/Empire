@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b44babad069b8ee44adae821dfd017fa, type: 3}
-  m_Name: ResourceMeth
+  m_Script: {fileID: 11500000, guid: 862f3b146b36d3845a9905028db94978, type: 3}
+  m_Name: GamePaused
   m_EditorClassIdentifier: 
-  _type: {fileID: 11400000, guid: 15b480cd0478c8e4b8c5b6136be0cca2, type: 2}
-  _current: 0
+  _value: 0

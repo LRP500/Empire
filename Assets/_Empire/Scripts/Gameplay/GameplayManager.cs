@@ -1,11 +1,23 @@
-﻿using UnityEngine;
+﻿using Tools.Time;
+using UnityEngine;
 
 namespace Empire
 {
     public class GameplayManager : MonoBehaviour
     {
         [SerializeField]
+        private TimeController _timeController = null;
+
+        [SerializeField]
         private WorldMap _worldMap = null;
+
+        [SerializeField]
+        private ResourceManager _resourceManager = null;
+
+        private void Awake()
+        {
+            _timeController.RegisterOnTick(Refresh);
+        }
 
         private void Start()
         {
@@ -16,6 +28,11 @@ namespace Empire
         {
             _worldMap.Initialize();
             _worldMap.SetStartingTerritory();
+        }
+
+        private void Refresh()
+        {
+            _resourceManager.Refresh();
         }
     }
 }

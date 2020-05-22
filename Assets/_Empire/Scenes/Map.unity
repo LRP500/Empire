@@ -367,7 +367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90495319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000038146973, y: 0.0000019073486, z: -42.5347}
+  m_LocalPosition: {x: -0.0000019073486, y: 0.0000019073486, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275779295}
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 42.5347
+  m_CameraDistance: 40
   m_DeadZoneWidth: 0.7
   m_DeadZoneHeight: 0.7
   m_DeadZoneDepth: 0
@@ -2531,8 +2531,53 @@ Transform:
   m_Children:
   - {fileID: 1237993903}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &523805126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 523805127}
+  - component: {fileID: 523805128}
+  m_Layer: 0
+  m_Name: TimeController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523805127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523805126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &523805128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523805126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f3733fff298674a9e54741bdb5946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tickInterval: 2
+  _gamePaused: {fileID: 11400000, guid: 427108fb5f8b0ca4e988e2cf6bb31efa, type: 2}
 --- !u!1 &544301452 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1087566785542261288, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3181,7 +3226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000038146973, y: 0.0000019073486, z: -42.5347}
+  m_LocalPosition: {x: -0.0000019073486, y: 0.0000019073486, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1048308274}
@@ -3476,7 +3521,7 @@ Transform:
   - {fileID: 1373142747}
   - {fileID: 1590316291}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1048308275
 MonoBehaviour:
@@ -6355,7 +6400,7 @@ RectTransform:
   m_Children:
   - {fileID: 2142119944}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6391,7 +6436,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62069963cb45a5d4c9d7b7f76b1abc20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timeController: {fileID: 523805128}
   _worldMap: {fileID: 509736635}
+  _resourceManager: {fileID: 11400000, guid: 54f6d9cf492cfcb41ad2cdbcf68ad493, type: 2}
 --- !u!4 &1759920917
 Transform:
   m_ObjectHideFlags: 0
@@ -6404,7 +6451,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1761448970 stripped
 GameObject:
@@ -7722,7 +7769,7 @@ RectTransform:
   - {fileID: 187825184}
   - {fileID: 1684481123}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
