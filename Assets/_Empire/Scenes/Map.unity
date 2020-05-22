@@ -299,6 +299,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1203144475}
   - {fileID: 1771520325}
@@ -306,7 +307,6 @@ MonoBehaviour:
   - {fileID: 1610360986}
   - {fileID: 1443407015}
   - {fileID: 1794841286}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &90495319
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,13 +733,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1377503351}
   - {fileID: 1265614210}
   - {fileID: 1967212402}
   - {fileID: 1449653326}
   - {fileID: 129334184}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &129334180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 774756529675514048, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -860,12 +860,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 118863039}
   - {fileID: 1265614210}
   - {fileID: 351525146}
   - {fileID: 177838549}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &177838545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7963137206343047862, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -979,12 +979,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1265614210}
   - {fileID: 1087340036}
   - {fileID: 1777280338}
   - {fileID: 129334184}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &187825183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1015,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1634979358}
+  - {fileID: 1413555801}
   m_Father: {fileID: 1944904508}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1175,13 +1176,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 376352381}
   - {fileID: 1662247416}
   - {fileID: 555249567}
   - {fileID: 950982132}
   - {fileID: 1610360986}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &268935622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1868442341924301018, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -1266,11 +1267,11 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 507063740}
   - {fileID: 1270754869}
   - {fileID: 1339767673}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &275779294
 GameObject:
   m_ObjectHideFlags: 3
@@ -1569,11 +1570,11 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1090035226}
   - {fileID: 1339767673}
   - {fileID: 1382317407}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &351525142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8190904044324461227, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -1781,11 +1782,11 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1377503351}
   - {fileID: 1219998352}
   - {fileID: 129334184}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!224 &357098107 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6141961733892791789, guid: 0b84c1ad3f9da1e4d9540aecb0aa9584, type: 3}
@@ -1943,13 +1944,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 2037250929}
   - {fileID: 1662247416}
   - {fileID: 1771520325}
   - {fileID: 229338185}
   - {fileID: 1610360986}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &464679954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -978910310162026883, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2136,12 +2137,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 544301456}
   - {fileID: 1723379424}
   - {fileID: 1612018936}
   - {fileID: 497782578}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &475152639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4920610578930042461, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2224,6 +2225,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 692462519}
   - {fileID: 1059755503}
@@ -2232,7 +2234,6 @@ MonoBehaviour:
   - {fileID: 555249567}
   - {fileID: 1612018936}
   - {fileID: 950982132}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &497782574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1545925728527118855, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2378,13 +2379,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1967212402}
   - {fileID: 1942101724}
   - {fileID: 464679958}
   - {fileID: 1612018936}
   - {fileID: 2066982946}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &507063736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -439845314408814727, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2481,13 +2482,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 2069006888}
   - {fileID: 1270754869}
   - {fileID: 1339767673}
   - {fileID: 1384202117}
   - {fileID: 268935626}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &509736634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,13 +2693,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1761448974}
   - {fileID: 1022554094}
   - {fileID: 464679958}
   - {fileID: 1723379424}
   - {fileID: 1612018936}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &555249563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7584007378632260177, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2809,6 +2810,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 475152643}
   - {fileID: 1662247416}
@@ -2816,7 +2818,6 @@ MonoBehaviour:
   - {fileID: 1449653326}
   - {fileID: 229338185}
   - {fileID: 950982132}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &692462515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -728224764380392688, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -2898,12 +2899,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1662247416}
   - {fileID: 1449653326}
   - {fileID: 1125584779}
   - {fileID: 555249567}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &950982129 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7345887104782502051, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3141,12 +3142,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 475152643}
   - {fileID: 1059755503}
   - {fileID: 229338185}
   - {fileID: 555249567}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,10 +3485,10 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1761448974}
   - {fileID: 544301456}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1048308273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3698,11 +3699,11 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 475152643}
   - {fileID: 1941502715}
   - {fileID: 950982132}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1072793358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6424082864814103733, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3817,9 +3818,9 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1270754869}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1087340032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3416380072191314326, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -3916,12 +3917,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 177838549}
   - {fileID: 1203144475}
   - {fileID: 1777280338}
   - {fileID: 1794841286}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1088346757
 GameObject:
   m_ObjectHideFlags: 0
@@ -4063,11 +4064,11 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1942101724}
   - {fileID: 340386094}
   - {fileID: 1382317407}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1125584775 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3037548992574031892, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4169,6 +4170,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1662247416}
   - {fileID: 692462519}
@@ -4176,7 +4178,6 @@ MonoBehaviour:
   - {fileID: 1777280338}
   - {fileID: 1794841286}
   - {fileID: 1265614210}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1203144471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1407116321132555804, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4339,12 +4340,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1793462}
   - {fileID: 1087340036}
   - {fileID: 1777280338}
   - {fileID: 1794841286}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1219998348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5220418715636904402, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4455,13 +4456,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1377503351}
   - {fileID: 1967212402}
   - {fileID: 351525146}
   - {fileID: 1382317407}
   - {fileID: 2066982946}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!4 &1237993903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2414939133548295540, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4550,6 +4551,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 118863039}
   - {fileID: 177838549}
@@ -4557,7 +4559,6 @@ MonoBehaviour:
   - {fileID: 1125584779}
   - {fileID: 1777280338}
   - {fileID: 129334184}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1270754865 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8397001434552270023, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4638,11 +4639,11 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1072793362}
   - {fileID: 507063740}
   - {fileID: 268935626}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1339767669 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8814405933225889295, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4800,13 +4801,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 2069006888}
   - {fileID: 507063740}
   - {fileID: 340386094}
   - {fileID: 1382317407}
   - {fileID: 268935626}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1373142743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4997,12 +4998,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 118863039}
   - {fileID: 1967212402}
   - {fileID: 351525146}
   - {fileID: 1219998352}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1382317403 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3403542644449091079, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5122,6 +5123,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1090035226}
   - {fileID: 1942101724}
@@ -5129,7 +5131,6 @@ MonoBehaviour:
   - {fileID: 1339767673}
   - {fileID: 1219998352}
   - {fileID: 2066982946}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1384202113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2786847157827623932, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5195,10 +5196,46 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 2069006888}
   - {fileID: 507063740}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
+--- !u!1 &1413555800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413555801}
+  m_Layer: 5
+  m_Name: Distribution
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1413555801
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413555800}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5628137747264782273}
+  m_Father: {fileID: 187825184}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.76, y: 0}
+  m_AnchorMax: {x: 0.975, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1443407011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4462944528882414975, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5389,10 +5426,10 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1859085935}
   - {fileID: 1793462}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1449653322 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8744969836717723277, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5486,6 +5523,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 475152643}
   - {fileID: 118863039}
@@ -5495,7 +5533,6 @@ MonoBehaviour:
   - {fileID: 1125584779}
   - {fileID: 555249567}
   - {fileID: 1612018936}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1590316290
 GameObject:
   m_ObjectHideFlags: 0
@@ -5732,6 +5769,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 376352381}
   - {fileID: 1662247416}
@@ -5739,7 +5777,6 @@ MonoBehaviour:
   - {fileID: 1771520325}
   - {fileID: 229338185}
   - {fileID: 1794841286}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1612018932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3051975125043269769, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -5834,6 +5871,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1761448974}
   - {fileID: 475152643}
@@ -5843,7 +5881,6 @@ MonoBehaviour:
   - {fileID: 1449653326}
   - {fileID: 464679958}
   - {fileID: 497782578}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1634979357
 GameObject:
   m_ObjectHideFlags: 0
@@ -6001,6 +6038,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 376352381}
   - {fileID: 692462519}
@@ -6009,7 +6047,6 @@ MonoBehaviour:
   - {fileID: 555249567}
   - {fileID: 1610360986}
   - {fileID: 1794841286}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1684481122
 GameObject:
   m_ObjectHideFlags: 0
@@ -6304,10 +6341,10 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 544301456}
   - {fileID: 464679958}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1740073577
 GameObject:
   m_ObjectHideFlags: 0
@@ -6555,12 +6592,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1022554094}
   - {fileID: 1941502715}
   - {fileID: 544301456}
   - {fileID: 1612018936}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1771520321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2662423924333369394, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -6757,13 +6794,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 376352381}
   - {fileID: 2037250929}
   - {fileID: 1793462}
   - {fileID: 1859085935}
   - {fileID: 1610360986}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1777280334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5966653818598695440, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -6867,6 +6904,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1265614210}
   - {fileID: 177838549}
@@ -6874,7 +6912,6 @@ MonoBehaviour:
   - {fileID: 1125584779}
   - {fileID: 1087340036}
   - {fileID: 1794841286}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1794841282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5097658270517532719, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -7006,6 +7043,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1662247416}
   - {fileID: 1793462}
@@ -7013,7 +7051,6 @@ MonoBehaviour:
   - {fileID: 1125584779}
   - {fileID: 1777280338}
   - {fileID: 1610360986}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1859085931 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8372191794244225577, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -7172,12 +7209,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 2037250929}
   - {fileID: 1793462}
   - {fileID: 1771520325}
   - {fileID: 1443407015}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1001 &1881281620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7519,12 +7556,12 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1761448974}
   - {fileID: 475152643}
   - {fileID: 1059755503}
   - {fileID: 1612018936}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1942101720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5256748488896624488, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -7668,13 +7705,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 340386094}
   - {fileID: 1382317407}
   - {fileID: 497782578}
   - {fileID: 2066982946}
   - {fileID: 1090035226}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &1944904504
 GameObject:
   m_ObjectHideFlags: 0
@@ -8023,6 +8060,7 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 118863039}
   - {fileID: 1377503351}
@@ -8031,7 +8069,6 @@ MonoBehaviour:
   - {fileID: 1612018936}
   - {fileID: 497782578}
   - {fileID: 2066982946}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2037250925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1870004024522732937, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -8288,11 +8325,11 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 376352381}
   - {fileID: 1771520325}
   - {fileID: 1859085935}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2066982942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6823859671010499032, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -8399,13 +8436,13 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 1967212402}
   - {fileID: 1942101724}
   - {fileID: 1219998352}
   - {fileID: 1382317407}
   - {fileID: 497782578}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2069006884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7410077041424062430, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -8483,11 +8520,11 @@ MonoBehaviour:
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
+  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
   - {fileID: 507063740}
   - {fileID: 1339767673}
   - {fileID: 1384202117}
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!1 &2142119943
 GameObject:
   m_ObjectHideFlags: 0
@@ -8562,6 +8599,180 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142119943}
   m_CullTransparentMesh: 0
+--- !u!1001 &5628137747264782272
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1413555801}
+    m_Modifications:
+    - target: {fileID: 1482925111606082104, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_Name
+      value: MethSellingPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064943014348230470, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064943014348230470, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064943014348230470, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064943014348230470, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064943014348230470, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064943014348230470, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559539513405304892, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559539513405304892, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559539513405304892, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559539513405304892, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559539513405304892, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559539513405304892, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660016959518031251, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660016959518031251, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660016959518031251, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660016959518031251, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660016959518031251, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660016959518031251, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+--- !u!224 &5628137747264782273 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7203320234387436845, guid: 3f728422a872b1646b1e18fae8f82f42, type: 3}
+  m_PrefabInstance: {fileID: 5628137747264782272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6141961734114525078
 PrefabInstance:
   m_ObjectHideFlags: 0

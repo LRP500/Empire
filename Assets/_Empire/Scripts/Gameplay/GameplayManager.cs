@@ -28,6 +28,7 @@ namespace Empire
         {
             _worldMap.Initialize();
             _worldMap.SetStartingTerritory();
+            _resourceManager.Initialize();
         }
 
         private void Refresh()

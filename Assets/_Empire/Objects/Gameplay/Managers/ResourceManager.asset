@@ -17,6 +17,7 @@ MonoBehaviour:
   _meth: {fileID: 11400000, guid: ba5f07e786942c240a50bc0f642e2762, type: 2}
   _initialMethProduction: 50
   _initialLaunderingRate: 500
-  _methSellingPriceMin: 18
-  _methSellingPriceMax: 50
+  _initialDistributionRate: 50
+  _initialMethSellingPrice: 25
+  _methSellingPrice: {fileID: 11400000, guid: 96d52dad70dbfeb4c8744d0e4081e3e1, type: 2}
   _territories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}

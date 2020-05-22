@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Tools;
+using Tools.Variables;
 using UnityEngine;
 
 namespace Empire
@@ -26,17 +27,24 @@ namespace Empire
         [SuffixLabel("(lbs/controlled)", Overlay = true)]
         private int _initialMethProduction = 50;
 
+        [Header("Laundering")]
+
         [SerializeField]
         [SuffixLabel("(cash/controlled)", Overlay = true)]
         private int _initialLaunderingRate = 500;
 
-        [SerializeField]
-        [SuffixLabel("($/lbs)", Overlay = true)]
-        private int _methSellingPriceMin = 18;
+        [Header("Distribution")]
 
         [SerializeField]
-        [SuffixLabel("($/lbs)", Overlay = true)]
-        private int _methSellingPriceMax = 50;
+        [SuffixLabel("(lbs/controlled)", Overlay = true)]
+        private int _initialDistributionRate = 50;
+
+        [SerializeField]
+        [SuffixLabel("($k/lbs)", Overlay = true)]
+        private int _initialMethSellingPrice = 25;
+
+        [SerializeField]
+        private IntVariable _methSellingPrice = null;
 
         [Header("Context")]
 
@@ -50,6 +58,8 @@ namespace Empire
             _bank.Initialize();
             _cash.Initialize();
             _meth.Initialize();
+
+            _methSellingPrice.SetValue(_initialMethSellingPrice);
         }
 
         public bool Refresh()
@@ -73,6 +83,11 @@ namespace Empire
         private void ProcessMoneyLaundering()
         {
             _bank.Increment(_cash.Decrement(_initialMethProduction * _controlledTerritories.Count));
+        }
+
+        private void ProcessDistribution()
+        {
+
         }
 
         private void ProcessDeals()
