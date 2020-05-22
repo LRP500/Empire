@@ -165,7 +165,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 35
+  m_text: 00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2aed8596ed3f8e459918c8ab03f09e1, type: 2}
   m_sharedMaterial: {fileID: -4136284466932281496, guid: a2aed8596ed3f8e459918c8ab03f09e1, type: 2}
@@ -195,13 +195,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
   m_textAlignment: 65535
@@ -423,8 +423,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Selling Price ($/lbs)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d98614b99e38bd4089a57d8137b0f8e, type: 2}
-  m_sharedMaterial: {fileID: 816092709524546228, guid: 4d98614b99e38bd4089a57d8137b0f8e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a2aed8596ed3f8e459918c8ab03f09e1, type: 2}
+  m_sharedMaterial: {fileID: -4136284466932281496, guid: a2aed8596ed3f8e459918c8ab03f09e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -457,12 +457,12 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 8192
   m_textAlignment: 65535
   m_isAlignmentEnumConverted: 1
-  m_characterSpacing: 0
+  m_characterSpacing: -2
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
