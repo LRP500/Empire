@@ -51,6 +51,9 @@ namespace Empire
         [SerializeField]
         public TerritoryListVariable _territories = null;
 
+        [SerializeField]
+        private DealListVariable _deals = null;
+
         private List<Territory> _controlledTerritories = null;
 
         public void Initialize()
@@ -68,8 +71,8 @@ namespace Empire
 
             _controlledTerritories = _territories.Items.Where(x => x.State is TerritoryStateControlled).ToList();
 
-            ProcessMethProduction();
-            ProcessDeals();
+            ProcessMethProduction(); // Production is processed first
+            ProcessDeals(); // Deals are processed before own distribution
             ProcessDistribution();
             //ProcessMoneyLaundering();
 
@@ -94,6 +97,11 @@ namespace Empire
 
         private void ProcessDeals()
         {
+            foreach (Deal deal in _deals.Items)
+            {
+                int quantitySold = _meth.Decrement(deal.MethQuantity);
+                _cash.Increment(quantitySold * deal.MethSellingPrice);
+            }
         }
     }
 }

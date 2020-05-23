@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: TerritoryActionMakeDeal
   m_EditorClassIdentifier: 
   _title: Make a Deal
+  _defaultDealSettings: {fileID: 11400000, guid: 4fc82f0004d0724448d79c252943c66b, type: 2}
+  _dealsInProgress: {fileID: 11400000, guid: 1828e63bbe79d214aaa47cfb34acc3cf, type: 2}
