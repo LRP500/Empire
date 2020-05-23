@@ -10,12 +10,12 @@ namespace Empire
         [SerializeField]
         private KeyValueItemUI _sellingPriceKeyValue = null;
 
-        public override void Initialize(TerritoryAction action)
+        public override void Initialize(TerritoryAction action, Territory territory)
         {
             TerritoryActionMakeDeal deal = action as TerritoryActionMakeDeal;
 
-            _quantityKeyValue.SetValue(deal.CurrentDealOffer.Quantity.ToString());
-            _sellingPriceKeyValue.SetValue(deal.CurrentDealOffer.SellingPrice.ToString());
+            _quantityKeyValue.SetValue(territory.CurrentDealOffer.Quantity.ToString());
+            _sellingPriceKeyValue.SetValue(territory.CurrentDealOffer.SellingPrice.ToString());
         }
     }
 }

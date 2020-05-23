@@ -41,6 +41,9 @@ namespace Empire
 
         public SpriteRenderer Renderer { get; private set; } = null;
 
+        public DealOffer CurrentDealOffer { get; private set; } = null;
+        public Deal CurrentDeal { get; private set; } = null;
+
         private void Awake()
         {
             Renderer = GetComponent<SpriteRenderer>();
@@ -56,6 +59,7 @@ namespace Empire
         {
             _state = Instantiate(state);
             State.SetContext(this);
+            State.OnEnterState();
             Debug.Log($"[{name}] Transition to {State.GetType().Name}");
         }
 
@@ -96,6 +100,21 @@ namespace Empire
         public void SetUnreachable()
         {
             TransitionTo(_territoryStateUnreachable);
+        }
+
+        public void AcceptDealOffer(DealListVariable deals)
+        {
+            CurrentDeal = CurrentDealOffer;
+            CurrentDealOffer = null;
+
+            deals.Add(CurrentDeal);
+
+            SetInDeal();
+        }
+
+        public void SetDealOffer(DealOffer offer)
+        {
+            CurrentDealOffer = offer;
         }
 
         #region UI Events

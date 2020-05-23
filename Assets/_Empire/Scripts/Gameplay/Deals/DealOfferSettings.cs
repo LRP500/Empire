@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Empire
 {
     [CreateAssetMenu(menuName = "Empire/Gameplay/Deals/Deal Offer Settings")]
-    public class DealSettings : ScriptableObject
+    public class DealOfferSettings : ScriptableObject
     {
         [SerializeField]
         private IntVariable _sellingPriceMin = null;
@@ -21,5 +21,13 @@ namespace Empire
         [SerializeField]
         private int _quantityMax = 200;
         public int QuantityMax => _quantityMax;
+
+        [SerializeField]
+        private int _offerDurationMin = 30;
+        public int OfferDurationMin => _offerDurationMin;
+
+        [SerializeField]
+        private int _offerDurationMax = 500;
+        public int OfferDurationMax => _offerDurationMax;
     }
 }

@@ -14,5 +14,8 @@ namespace Empire
         {
             _territory.SetControlled();
         }
+
+        public override void OnEnterState() { }
+        public override void Refresh() { }
     }
 }

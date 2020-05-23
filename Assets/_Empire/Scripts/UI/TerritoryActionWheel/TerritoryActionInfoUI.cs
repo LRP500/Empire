@@ -2,7 +2,7 @@
 {
     public class TerritoryActionInfoUI : PanelUI
     {
-        public virtual void Initialize(TerritoryAction action)
+        public virtual void Initialize(TerritoryAction action, Territory territory)
         {
         }
     }

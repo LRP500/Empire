@@ -8,21 +8,16 @@ namespace Empire
         [Space]
 
         [SerializeField]
-        private DealSettings _defaultDealSettings = null;
+        private DealOfferSettings _defaultDealSettings = null;
 
         [SerializeField]
         private DealListVariable _dealsInProgress = null;
-
-        public Deal CurrentDealOffer { get; private set; } = null;
 
         public override void Execute(Territory territory)
         {
             base.Execute(territory);
 
-            CurrentDealOffer = new Deal(_defaultDealSettings);
-            _dealsInProgress.Add(CurrentDealOffer);
-
-            territory.SetInDeal();
+            territory.AcceptDealOffer(_dealsInProgress);
         }
     }
 }

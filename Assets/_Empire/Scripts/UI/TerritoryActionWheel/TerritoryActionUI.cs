@@ -1,6 +1,5 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -26,7 +25,7 @@ namespace Empire
             _titleText.text = _action.Title;
 
             _infoPanel = infoPanel;
-            _infoPanel.Initialize(_action);
+            _infoPanel.Initialize(_action, territory);
 
             _actionButton.onClick.AddListener(() =>
             {

@@ -13,5 +13,8 @@ namespace Empire
         public override void Select()
         {
         }
+
+        public override void OnEnterState() { }
+        public override void Refresh() { }
     }
 }
