@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using Tools.Time;
+using UnityEngine;
 
 namespace Empire
 {
@@ -10,12 +12,24 @@ namespace Empire
         [SerializeField]
         private KeyValueItemUI _sellingPriceKeyValue = null;
 
+        [SerializeField]
+        private TextMeshProUGUI _timer = null;
+
+        private Territory _territory = null;
+
         public override void Initialize(TerritoryAction action, Territory territory)
         {
-            TerritoryActionMakeDeal deal = action as TerritoryActionMakeDeal;
+            _territory = territory;
+        }
 
-            _quantityKeyValue.SetValue(territory.CurrentDealOffer.Quantity.ToString());
-            _sellingPriceKeyValue.SetValue(territory.CurrentDealOffer.SellingPrice.ToString());
+        private void Update()
+        {
+            if (_territory.CurrentDealOffer != null)
+            {
+                _quantityKeyValue.SetValue(_territory.CurrentDealOffer.Quantity.ToString());
+                _sellingPriceKeyValue.SetValue(_territory.CurrentDealOffer.SellingPrice.ToString());
+                _timer.text = TimeUtility.Format(_territory.CurrentDealOffer.RemainingTime);
+            }
         }
     }
 }

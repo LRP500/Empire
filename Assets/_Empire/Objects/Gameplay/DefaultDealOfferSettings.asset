@@ -17,4 +17,4 @@ MonoBehaviour:
   _quantityMin: 10
   _quantityMax: 200
   _offerDurationMin: 30
-  _offerDurationMax: 500
+  _offerDurationMax: 180

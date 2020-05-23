@@ -10,11 +10,7 @@ namespace Empire
             _territory.Renderer.color = Color;
         }
 
-        public override void Refresh()
-        {
-            _territory.CurrentDealOffer?.Refresh();
-        }
-
+        public override void Refresh() { }
         public override void Select() { }
         public override void OnEnterState() { }
     }

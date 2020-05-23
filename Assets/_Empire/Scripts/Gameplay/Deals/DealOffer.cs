@@ -33,5 +33,10 @@ namespace Empire
         {
             _remainingTime -= Time.deltaTime;
         }
+
+        public bool HasTimedOut()
+        {
+            return _remainingTime <= 1;
+        }
     }
 }

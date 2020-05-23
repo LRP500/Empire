@@ -8,9 +8,6 @@ namespace Empire
         [Space]
 
         [SerializeField]
-        private DealOfferSettings _defaultDealSettings = null;
-
-        [SerializeField]
         private DealListVariable _dealsInProgress = null;
 
         public override void Execute(Territory territory)

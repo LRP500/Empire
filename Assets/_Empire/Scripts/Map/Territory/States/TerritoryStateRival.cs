@@ -10,11 +10,17 @@ namespace Empire
 
         public override void OnEnterState()
         {
-            _territory.SetDealOffer(new DealOffer(_dealSettings, _territory));
+            RenewDealOffer();
         }
 
         public override void Refresh()
         {
+            _territory.CurrentDealOffer?.Refresh();
+
+            if (_territory.CurrentDealOffer.HasTimedOut())
+            {
+                RenewDealOffer();
+            }
         }
 
         public override void RefreshVisualState()
@@ -24,6 +30,11 @@ namespace Empire
 
         public override void Select()
         {
+        }
+
+        public void RenewDealOffer()
+        {
+            _territory.SetDealOffer(new DealOffer(_dealSettings, _territory));
         }
     }
 }
