@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: TerritoryActionTakeOver
   m_EditorClassIdentifier: 
   _title: Take Over
+  _description: 
+  _infoPanelPrefab: {fileID: -9121269683144389290, guid: f17fe6e5d4cfc5843b0670d031a8f728, type: 3}

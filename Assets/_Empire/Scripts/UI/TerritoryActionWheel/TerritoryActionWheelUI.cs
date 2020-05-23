@@ -7,17 +7,20 @@ namespace Empire
     public class TerritoryActionWheelUI : PanelUI
     {
         [SerializeField]
-        private GameObject _actionContainer = null;
-
-        [SerializeField]
-        private TerritoryActionItemUI _actionItemPrefab = null;
-
-        [SerializeField]
         private Camera _mainCamera = null;
+
+        [SerializeField]
+        private TerritoryActionUI _actionItemPrefab = null;
+
+        [SerializeField]
+        private Transform _actionContainer = null;
+
+        [SerializeField]
+        private Transform _infoContainer = null;
 
         private Territory _currentTarget = null;
 
-        private List<TerritoryActionItemUI> _currentActions = null;
+        private List<TerritoryActionUI> _currentActions = null;
 
         private void Awake()
         {
@@ -61,9 +64,14 @@ namespace Empire
 
             foreach (TerritoryAction action in _currentTarget.State.Actions)
             {
-                TerritoryActionItemUI instance = Instantiate(_actionItemPrefab, _actionContainer.transform);
-                instance.Initialize(_currentTarget, action, Close);
-                _currentActions.Add(instance);
+                TerritoryActionInfoUI infoPanel = Instantiate(action.InfoPanelPrefab, _infoContainer);
+                infoPanel.Close();
+
+                TerritoryActionUI actionItem = Instantiate(_actionItemPrefab, _actionContainer);
+                actionItem.Initialize(_currentTarget, action, infoPanel);
+                actionItem.RegisterOnActionExecuted(Close);
+
+                _currentActions.Add(actionItem);
             }
         }
 
@@ -84,7 +92,7 @@ namespace Empire
 
         private void Clear()
         {
-            _currentActions = _currentActions ?? new List<TerritoryActionItemUI>();
+            _currentActions = _currentActions ?? new List<TerritoryActionUI>();
 
             foreach (var item in _currentActions)
             {

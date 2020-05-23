@@ -49,7 +49,7 @@ namespace Empire
         [Header("Context")]
 
         [SerializeField]
-        public TerritoryListVariable _territories = null;
+        private TerritoryListVariable _territories = null;
 
         [SerializeField]
         private DealListVariable _deals = null;
@@ -58,6 +58,8 @@ namespace Empire
 
         public void Initialize()
         {
+            _deals.Clear();
+
             _bank.Initialize();
             _cash.Initialize();
             _meth.Initialize();
@@ -99,8 +101,8 @@ namespace Empire
         {
             foreach (Deal deal in _deals.Items)
             {
-                int quantitySold = _meth.Decrement(deal.MethQuantity);
-                _cash.Increment(quantitySold * deal.MethSellingPrice);
+                int quantitySold = _meth.Decrement(deal.Quantity);
+                _cash.Increment(quantitySold * deal.SellingPrice);
             }
         }
     }

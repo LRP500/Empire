@@ -3,23 +3,23 @@ using UnityEngine;
 
 namespace Empire
 {
-    [CreateAssetMenu(menuName = "Empire/Gameplay/Deals/Deal Settings")]
+    [CreateAssetMenu(menuName = "Empire/Gameplay/Deals/Deal Offer Settings")]
     public class DealSettings : ScriptableObject
     {
         [SerializeField]
-        private IntVariable _methSellingPriceMin = null;
-        public int MethSellingPriceMin => _methSellingPriceMin.Value;
+        private IntVariable _sellingPriceMin = null;
+        public int SellingPriceMin => _sellingPriceMin.Value;
 
         [SerializeField]
-        private IntVariable _methSellingPriceMax = null;
-        public int MethSellingPriceMax => _methSellingPriceMax.Value;
+        private IntVariable _sellingPriceMax = null;
+        public int SellingPriceMax => _sellingPriceMax.Value;
 
         [SerializeField]
-        private int _methQuantityMin = 10;
-        public int MethQuantityMin => _methQuantityMin;
+        private int _quantityMin = 10;
+        public int QuantityMin => _quantityMin;
 
         [SerializeField]
-        private int _methQuantityMax = 200;
-        public int MethQuantityMax => _methQuantityMax;
+        private int _quantityMax = 200;
+        public int QuantityMax => _quantityMax;
     }
 }

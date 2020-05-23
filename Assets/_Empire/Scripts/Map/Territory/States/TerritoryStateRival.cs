@@ -5,7 +5,7 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Map/Territory States/Rival")]
     public class TerritoryStateRival : TerritoryState
     {
-        public override void UpdateVisualState()
+        public override void RefreshVisualState()
         {
             _territory.Renderer.color = Color;
         }

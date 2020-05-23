@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d1031280bd597458d447ec23a99cfe, type: 3}
   m_Name: DealsInProgress
   m_EditorClassIdentifier: 
+  _items: []

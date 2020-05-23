@@ -61,7 +61,8 @@ namespace Empire
 
         private void Update()
         {
-            State?.UpdateVisualState();
+            State?.Refresh();
+            State?.RefreshVisualState();
         }
 
         public void SetControlled()

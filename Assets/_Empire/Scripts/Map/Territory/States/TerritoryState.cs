@@ -21,7 +21,9 @@ namespace Empire
             _territory = territory;
         }
 
-        public abstract void UpdateVisualState();
+        public virtual void Refresh() { }
+
+        public abstract void RefreshVisualState();
         public abstract void Select();
     }
 }
