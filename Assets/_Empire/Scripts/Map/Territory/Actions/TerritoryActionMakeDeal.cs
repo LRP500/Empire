@@ -8,13 +8,13 @@ namespace Empire
         [Space]
 
         [SerializeField]
-        private DealListVariable _dealsInProgress = null;
+        private GameplayContext _context = null;
 
         public override void Execute(Territory territory)
         {
             base.Execute(territory);
 
-            territory.AcceptDealOffer(_dealsInProgress);
+            territory.AcceptDealOffer(_context.deals);
         }
     }
 }

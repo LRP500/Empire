@@ -15,17 +15,17 @@ namespace Empire
 
         private TerritoryAction _action = null;
 
-        private TerritoryActionInfoUI _infoPanel = null;
-
         private System.Action OnActionExecuted = null;
+
+        public TerritoryActionInfoUI InfoPanel { get; private set; } = null;
 
         public void Initialize(Territory territory, TerritoryAction action, TerritoryActionInfoUI infoPanel)
         {
             _action = action;
             _titleText.text = _action.Title;
 
-            _infoPanel = infoPanel;
-            _infoPanel.Initialize(_action, territory);
+            InfoPanel = infoPanel;
+            InfoPanel.Initialize(_action, territory);
 
             _actionButton.onClick.AddListener(() =>
             {
@@ -43,12 +43,12 @@ namespace Empire
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            _infoPanel.Close();
+            InfoPanel.Close();
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            _infoPanel.Open();
+            InfoPanel.Open();
         }
 
         #endregion UI Events

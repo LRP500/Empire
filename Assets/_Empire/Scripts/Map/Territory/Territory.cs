@@ -39,6 +39,7 @@ namespace Empire
 
         [SerializeField]
         private List<Territory> _neighbors = null;
+        public List<Territory> Neighbors => _neighbors;
 
         public SpriteRenderer Renderer { get; private set; } = null;
 
@@ -111,6 +112,15 @@ namespace Empire
             deals.Add(CurrentDeal);
 
             SetInDeal();
+        }
+
+        public void CancelCurrentDeal(DealListVariable deals)
+        {
+            if (CurrentDeal != null)
+            {
+                deals.Remove(CurrentDeal);
+                CurrentDeal = null;
+            }
         }
 
         public void SetDealOffer(DealOffer offer)

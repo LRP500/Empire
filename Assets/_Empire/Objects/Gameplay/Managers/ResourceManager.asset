@@ -16,7 +16,7 @@ MonoBehaviour:
   _cash: {fileID: 11400000, guid: c1864735ea239d241b231d3afdc77ba0, type: 2}
   _meth: {fileID: 11400000, guid: ba5f07e786942c240a50bc0f642e2762, type: 2}
   _initialMethProduction: 20
-  _initialLaunderingRate: 500
+  _initialLaunderingRate: 200
   _initialDistributionRate: 10
   _initialMethSellingPrice: 25
   _methSellingPrice: {fileID: 11400000, guid: 96d52dad70dbfeb4c8744d0e4081e3e1, type: 2}

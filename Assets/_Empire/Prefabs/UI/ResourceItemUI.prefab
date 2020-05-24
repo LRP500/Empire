@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6141961733892791786}
   - component: {fileID: 8406864744742314127}
   m_Layer: 5
-  m_Name: ResourceDisplay
+  m_Name: ResourceItemUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,8 +262,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 34
-  m_fontSizeBase: 34
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

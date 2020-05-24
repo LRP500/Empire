@@ -94,8 +94,9 @@ namespace Empire
         {
             _currentActions = _currentActions ?? new List<TerritoryActionUI>();
 
-            foreach (var item in _currentActions)
+            foreach (TerritoryActionUI item in _currentActions)
             {
+                Destroy(item.InfoPanel.gameObject);
                 Destroy(item.gameObject);
             }
 

@@ -12,6 +12,7 @@ namespace Empire
         [ReadOnly]
         [SerializeField]
         protected Territory _territory = null;
+        public Territory Territory => _territory;
 
         [ReadOnly]
         [SerializeField]

@@ -15,3 +15,5 @@ MonoBehaviour:
   _title: Take Over
   _description: 
   _infoPanelPrefab: {fileID: -9121269683144389290, guid: f17fe6e5d4cfc5843b0670d031a8f728, type: 3}
+  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
+  _takeOverSettings: {fileID: 11400000, guid: 8b0233edf4c106048b39439e88b3e61c, type: 2}

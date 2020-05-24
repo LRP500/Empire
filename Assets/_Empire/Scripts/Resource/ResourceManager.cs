@@ -14,12 +14,15 @@ namespace Empire
 
         [SerializeField]
         private Resource _bank = null;
+        public Resource Bank => _bank;
 
         [SerializeField]
         private Resource _cash = null;
+        public Resource Cash => _cash;
 
         [SerializeField]
         private Resource _meth = null;
+        public Resource Meth => _meth;
 
         [Header("Production")]
 
@@ -76,7 +79,7 @@ namespace Empire
             ProcessMethProduction(); // Production is processed first
             ProcessDeals(); // Deals are processed before own distribution
             ProcessDistribution();
-            //ProcessMoneyLaundering();
+            ProcessMoneyLaundering();
 
             return profitable;
         }
@@ -88,7 +91,7 @@ namespace Empire
 
         private void ProcessMoneyLaundering()
         {
-            _bank.Increment(_cash.Decrement(_initialMethProduction * _controlledTerritories.Count));
+            _bank.Increment(_cash.Decrement(_initialLaunderingRate * _controlledTerritories.Count));
         }
 
         private void ProcessDistribution()
@@ -99,10 +102,26 @@ namespace Empire
 
         private void ProcessDeals()
         {
+            List<Deal> unfulfilledDeals = new List<Deal>();
+
             foreach (Deal deal in _deals.Items)
             {
                 int quantitySold = _meth.Decrement(deal.Quantity);
-                _cash.Increment(quantitySold * deal.SellingPrice);
+
+                if (quantitySold == deal.Quantity)
+                {
+                    _cash.Increment(quantitySold * deal.SellingPrice);
+                }
+                else
+                {
+                    unfulfilledDeals.Add(deal);
+                }
+            }
+
+            foreach (Deal unfulfilled in unfulfilledDeals)
+            {
+                unfulfilled.Territory.CancelCurrentDeal(_deals);
+                unfulfilled.Territory.SetRival();
             }
         }
     }

@@ -8,5 +8,8 @@ namespace Empire
     {
         public PlayerManager playerManager = null;
         public ResourceManager resourceManager = null;
+
+        public DealListVariable deals = null;
+        public TerritoryListVariable territories = null;
     }
 }

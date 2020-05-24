@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01f4ba1b7bab274caf5fcbcfa676fd9, type: 3}
   m_Name: TerritoryStateControlled
   m_EditorClassIdentifier: 
-  _actions: []
   _color: {fileID: 11400000, guid: 4f0e2188dc2c13e4ba58f720bdfec831, type: 2}
+  _takeOverSuccessChance: 0
+  _takeOverNeighborModifier: 10
+  _actions: []

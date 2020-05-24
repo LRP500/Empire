@@ -6,8 +6,6 @@ namespace Empire
 {
     public class DealOffer : Deal
     {
-        private int _negociationAttempts = 0;
-
         [ReadOnly]
         [SerializeField]
         private float _remainingTime = 0;

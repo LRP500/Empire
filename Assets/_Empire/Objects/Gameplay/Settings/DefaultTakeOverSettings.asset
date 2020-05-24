@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1b4b7d185f81a40bdbca591637452c, type: 3}
-  m_Name: TerritoryStateUnreachable
+  m_Script: {fileID: 11500000, guid: dd6038f2182f6e54a82abba85f166aec, type: 3}
+  m_Name: DefaultTakeOverSettings
   m_EditorClassIdentifier: 
-  _color: {fileID: 11400000, guid: bb3e972442e14434fa95f0c805d86d7f, type: 2}
-  _takeOverSuccessChance: 0
-  _takeOverNeighborModifier: 0
-  _actions: []
+  _successChance: 50
+  _cashQuantityMin: 10000
+  _cashQuantityMax: 1000000
+  _methQuantityMin: 100
+  _methQuantityMax: 1000

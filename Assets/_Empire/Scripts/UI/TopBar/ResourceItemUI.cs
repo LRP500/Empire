@@ -1,4 +1,5 @@
 ﻿using TMPro;
+using Tools.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,7 +19,6 @@ namespace Empire
         private void Awake()
         {
             _logo.sprite = _resource.Type.Icon;
-            _amount.text = _resource.Current.ToString();
         }
 
         private void Update()
@@ -28,7 +28,7 @@ namespace Empire
 
         private void Refresh()
         {
-            _amount.text = _resource.Current.ToString();
+            _amount.text = AbbreviationUtility.Format(_resource.Current, "0.0");
         }
     }
 }

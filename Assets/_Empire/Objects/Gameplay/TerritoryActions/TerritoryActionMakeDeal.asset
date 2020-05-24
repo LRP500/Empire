@@ -15,5 +15,4 @@ MonoBehaviour:
   _title: Make a Deal
   _description: 
   _infoPanelPrefab: {fileID: -11009660578388650, guid: 0a59c1630e55b9841b0fdad49578ed73, type: 3}
-  _defaultDealSettings: {fileID: 11400000, guid: ab450f1cfe1c2d141a57ab9e658df0d8, type: 2}
-  _dealsInProgress: {fileID: 11400000, guid: 1828e63bbe79d214aaa47cfb34acc3cf, type: 2}
+  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
