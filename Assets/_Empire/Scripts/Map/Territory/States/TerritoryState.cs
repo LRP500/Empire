@@ -31,6 +31,5 @@ namespace Empire
         public abstract void OnEnterState();
         public abstract void RefreshVisualState();
         public abstract void Refresh();
-        public abstract void Select();
     }
 }

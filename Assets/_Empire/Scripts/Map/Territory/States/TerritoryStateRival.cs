@@ -28,10 +28,6 @@ namespace Empire
             _territory.Renderer.color = Color;
         }
 
-        public override void Select()
-        {
-        }
-
         public void RenewDealOffer()
         {
             _territory.SetDealOffer(new DealOffer(_dealSettings, _territory));

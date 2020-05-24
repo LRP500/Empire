@@ -10,11 +10,6 @@ namespace Empire
             _territory.Renderer.color = Color;
         }
 
-        public override void Select()
-        {
-            _territory.SetControlled();
-        }
-
         public override void OnEnterState() { }
         public override void Refresh() { }
     }

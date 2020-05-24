@@ -24,12 +24,12 @@ namespace Empire
 
         private void Awake()
         {
-            EventManager.Instance.Subscribe(GameplayEvent.TerritorySelected, OnTerritorySelected);
+            EventManager.Instance.Subscribe(GameplayEvent.TerritorySecondarySelect, OnTerritorySelected);
         }
 
         private void OnDestroy()
         {
-            EventManager.Instance.Unsubscribe(GameplayEvent.TerritorySelected, OnTerritorySelected);
+            EventManager.Instance.Unsubscribe(GameplayEvent.TerritorySecondarySelect, OnTerritorySelected);
         }
 
         private void Update()

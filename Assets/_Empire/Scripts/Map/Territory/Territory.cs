@@ -1,5 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using System;
 using System.Collections.Generic;
 using Tools;
 using UnityEngine;
@@ -46,6 +45,8 @@ namespace Empire
         public DealOffer CurrentDealOffer { get; private set; } = null;
         public Deal CurrentDeal { get; private set; } = null;
 
+        #region MonoBehaviour
+
         private void Awake()
         {
             Renderer = GetComponent<SpriteRenderer>();
@@ -57,19 +58,47 @@ namespace Empire
             _runtimeTerritories.Remove(this);
         }
 
-        public void TransitionTo(TerritoryState state)
-        {
-            _state = Instantiate(state);
-            State.SetContext(this);
-            State.OnEnterState();
-            Debug.Log($"[{name}] Transition to {State.GetType().Name}");
-        }
-
         private void Update()
         {
             State?.Refresh();
             State?.RefreshVisualState();
         }
+
+        #endregion MonoBehaviour
+
+        public void Focus()
+        {
+        }
+
+        #region Deal
+
+        public void AcceptDealOffer(DealListVariable deals)
+        {
+            CurrentDeal = CurrentDealOffer;
+            CurrentDealOffer = null;
+
+            deals.Add(CurrentDeal);
+
+            SetInDeal();
+        }
+
+        public void CancelCurrentDeal(DealListVariable deals)
+        {
+            if (CurrentDeal != null)
+            {
+                deals.Remove(CurrentDeal);
+                CurrentDeal = null;
+            }
+        }
+
+        public void SetDealOffer(DealOffer offer)
+        {
+            CurrentDealOffer = offer;
+        }
+
+        #endregion Deal
+
+        #region State
 
         public void SetControlled()
         {
@@ -104,29 +133,15 @@ namespace Empire
             TransitionTo(_territoryStateUnreachable);
         }
 
-        public void AcceptDealOffer(DealListVariable deals)
+        public void TransitionTo(TerritoryState state)
         {
-            CurrentDeal = CurrentDealOffer;
-            CurrentDealOffer = null;
-
-            deals.Add(CurrentDeal);
-
-            SetInDeal();
+            _state = Instantiate(state);
+            State.SetContext(this);
+            State.OnEnterState();
+            Debug.Log($"[{name}] Transition to {State.GetType().Name}");
         }
 
-        public void CancelCurrentDeal(DealListVariable deals)
-        {
-            if (CurrentDeal != null)
-            {
-                deals.Remove(CurrentDeal);
-                CurrentDeal = null;
-            }
-        }
-
-        public void SetDealOffer(DealOffer offer)
-        {
-            CurrentDealOffer = offer;
-        }
+        #endregion State
 
         #region UI Events
 
@@ -140,13 +155,13 @@ namespace Empire
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse1))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                EventManager.Instance.Trigger(GameplayEvent.TerritorySelected, this);
+                EventManager.Instance.Trigger(GameplayEvent.TerritoryPrimarySelect, this);
             }
-            else if (Input.GetKeyDown(KeyCode.Mouse0))
+            else if (Input.GetKeyDown(KeyCode.Mouse1))
             {
-                State?.Select();
+                EventManager.Instance.Trigger(GameplayEvent.TerritorySecondarySelect, this);
             }
         }
 
