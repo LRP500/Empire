@@ -1,5 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using System;
 using System.Collections.Generic;
 using Tools;
 using UnityEngine;
@@ -9,6 +8,8 @@ namespace Empire
 {
     public class Territory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
     {
+        #region Serialized Fields
+
         [Header("States")]
 
         [SerializeField]
@@ -41,10 +42,22 @@ namespace Empire
         private List<Territory> _neighbors = null;
         public List<Territory> Neighbors => _neighbors;
 
+        #endregion Serialized Fields
+
+        #region Properties
+
         public SpriteRenderer Renderer { get; private set; } = null;
 
         public DealOffer CurrentDealOffer { get; private set; } = null;
         public Deal CurrentDeal { get; private set; } = null;
+
+        public List<LaunderingOperation> LaunderingOperations = null;
+        public List<Laboratory> Laboratories = null;
+
+        //public int LaunderingRate { get; private set; } = 0;
+        //public int ProductionRate { get; private set; } = 0;
+
+        #endregion Properties
 
         private void Awake()
         {
