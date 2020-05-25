@@ -33,8 +33,6 @@ namespace Empire
 
         public override void Execute(Territory territory)
         {
-            base.Execute(territory);
-
             territory.CancelCurrentDeal(_context.deals);
 
             if ((Random.value * 100) <= _takeOverSettings.SuccessChance)

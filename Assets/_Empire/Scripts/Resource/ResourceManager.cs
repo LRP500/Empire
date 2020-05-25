@@ -10,6 +10,8 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Managers/Resource Manager")]
     public class ResourceManager : SingletonScriptableObject<ResourceManager>
     {
+        #region Serialized Fields
+
         [Header("Resources")]
 
         [SerializeField]
@@ -57,7 +59,13 @@ namespace Empire
         [SerializeField]
         private DealListVariable _deals = null;
 
+        #endregion Serialized Fields
+
+        #region Private Fields
+
         private List<Territory> _controlledTerritories = null;
+
+        #endregion Private Fields
 
         public void Initialize()
         {
