@@ -22,9 +22,6 @@ namespace Empire
         private TerritoryActionInfoUI _infoPanelPrefab = null;
         public TerritoryActionInfoUI InfoPanelPrefab => _infoPanelPrefab;
 
-        public virtual void Execute(Territory target)
-        {
-            Debug.Log($"[{target.name}] Execute {GetType().Name}");
-        }
+        public abstract void Execute(Territory target);
     }
 }

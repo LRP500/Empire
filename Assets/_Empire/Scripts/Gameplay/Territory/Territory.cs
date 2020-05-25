@@ -8,6 +8,8 @@ namespace Empire
 {
     public class Territory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
     {
+        #region Serialized Fields
+
         [Header("States")]
 
         [SerializeField]
@@ -40,10 +42,19 @@ namespace Empire
         private List<Territory> _neighbors = null;
         public List<Territory> Neighbors => _neighbors;
 
+        #endregion Serialized Fields
+
+        #region Properties
+
         public SpriteRenderer Renderer { get; private set; } = null;
 
         public DealOffer CurrentDealOffer { get; private set; } = null;
         public Deal CurrentDeal { get; private set; } = null;
+
+        public List<LaunderingOperation> LaunderingOperations { get; private set; } = null;
+        public List<Laboratory> Laboratories { get; private set; } = null;
+
+        #endregion Properties
 
         #region MonoBehaviour
 
@@ -65,10 +76,6 @@ namespace Empire
         }
 
         #endregion MonoBehaviour
-
-        public void Focus()
-        {
-        }
 
         #region Deal
 
