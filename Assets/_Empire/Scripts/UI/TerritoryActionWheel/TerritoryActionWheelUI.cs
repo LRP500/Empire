@@ -35,6 +35,11 @@ namespace Empire
 
         private void Update()
         {
+            if (_currentTerritory)
+            {
+                SetPosition();
+            }
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 Close();
@@ -50,13 +55,10 @@ namespace Empire
 
         private void Initialize(Territory territory)
         {
-            //if (territory != _currentTarget)
-            {
-                _currentTerritory = territory;
+            _currentTerritory = territory;
 
-                SetActions();
-                SetPosition();
-            }
+            SetActions();
+            SetPosition();
         }
 
         private void SetActions()
@@ -82,7 +84,6 @@ namespace Empire
 
                 _currentActions.Add(actionItem);
             }
-
         }
 
         private void SetPosition()
@@ -111,6 +112,15 @@ namespace Empire
             }
 
             _currentActions.Clear();
+        }
+
+        public override void Close()
+        {
+            base.Close();
+
+            _currentTerritory = null;
+
+            Clear();
         }
     }
 }

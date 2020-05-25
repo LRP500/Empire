@@ -30,7 +30,9 @@ namespace Empire
             {
                 _quantityKeyValue.SetValue(_territory.CurrentDealOffer.Quantity.ToString());
                 _sellingPriceKeyValue.SetValue(_territory.CurrentDealOffer.SellingPrice.ToString());
-                _timer.text = TimeUtility.Format(_territory.CurrentDealOffer.RemainingTime);
+
+                string time = TimeUtility.Format(_territory.CurrentDealOffer.RemainingTime);
+                _timer.text = _territory.CurrentDealOffer.RemainingTime <= 31 ? $"<color=red>{time}" : time;
             }
         }
     }
