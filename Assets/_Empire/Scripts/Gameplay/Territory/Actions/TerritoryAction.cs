@@ -22,6 +22,6 @@ namespace Empire
         private TerritoryActionInfoUI _infoPanelPrefab = null;
         public TerritoryActionInfoUI InfoPanelPrefab => _infoPanelPrefab;
 
-        public abstract void Execute(Territory target);
+        public abstract void Execute(Territory territory);
     }
 }

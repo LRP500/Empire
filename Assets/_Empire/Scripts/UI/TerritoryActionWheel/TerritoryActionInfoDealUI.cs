@@ -19,6 +19,8 @@ namespace Empire
 
         public override void Initialize(TerritoryAction action, Territory territory)
         {
+            base.Initialize(action, territory);
+
             _territory = territory;
         }
 

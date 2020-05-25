@@ -10,7 +10,11 @@ namespace Empire
             _territory.Renderer.color = Color;
         }
 
-        public override void OnEnterState() { }
         public override void Refresh() { }
+
+        public override void OnExitState()
+        {
+            _territory.DestroyAllStructures();
+        }
     }
 }

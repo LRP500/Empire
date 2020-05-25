@@ -77,6 +77,28 @@ namespace Empire
 
         #endregion MonoBehaviour
 
+        #region Structures
+
+        public void AddLaboratory(Laboratory laboratory)
+        {
+            Laboratories = Laboratories ?? new List<Laboratory>();
+            Laboratories.Add(laboratory);
+        }
+
+        public void AddLaunderingOperation(LaunderingOperation operation)
+        {
+            LaunderingOperations = LaunderingOperations ?? new List<LaunderingOperation>();
+            LaunderingOperations.Add(operation);
+        }
+
+        public void DestroyAllStructures()
+        {
+            Laboratories.Clear();
+            LaunderingOperations.Clear();
+        }
+
+        #endregion Structures
+
         #region Deal
 
         public void AcceptDealOffer(DealListVariable deals)

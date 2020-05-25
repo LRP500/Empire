@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Tools;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Empire
 {
@@ -18,7 +19,7 @@ namespace Empire
         [SerializeField]
         private Transform _infoContainer = null;
 
-        private Territory _currentTarget = null;
+        private Territory _currentTerritory = null;
 
         private List<TerritoryActionUI> _currentActions = null;
 
@@ -51,7 +52,7 @@ namespace Empire
         {
             //if (territory != _currentTarget)
             {
-                _currentTarget = territory;
+                _currentTerritory = territory;
 
                 SetActions();
                 SetPosition();
@@ -62,22 +63,31 @@ namespace Empire
         {
             Clear();
 
-            foreach (TerritoryAction action in _currentTarget.State.Actions)
+            foreach (TerritoryAction action in _currentTerritory.State.Actions)
             {
-                TerritoryActionInfoUI infoPanel = Instantiate(action.InfoPanelPrefab, _infoContainer);
-                infoPanel.Close();
-
                 TerritoryActionUI actionItem = Instantiate(_actionItemPrefab, _actionContainer);
-                actionItem.Initialize(_currentTarget, action, infoPanel);
+                actionItem.Initialize(_currentTerritory, action);
                 actionItem.RegisterOnActionExecuted(Close);
+
+                Canvas.ForceUpdateCanvases();
+                actionItem.GetComponent<ContentSizeFitter>().enabled = false;
+                actionItem.GetComponent<ContentSizeFitter>().enabled = true;
+
+                if (action.InfoPanelPrefab)
+                {
+                    TerritoryActionInfoUI infoPanel = Instantiate(action.InfoPanelPrefab, _infoContainer);
+                    infoPanel.Initialize(action, _currentTerritory);
+                    actionItem.SetInfoPanel(infoPanel);
+                }
 
                 _currentActions.Add(actionItem);
             }
+
         }
 
         private void SetPosition()
         {
-            transform.position = _mainCamera.WorldToScreenPoint(_currentTarget.transform.position);
+            transform.position = _mainCamera.WorldToScreenPoint(_currentTerritory.transform.position);
         }
 
         private void OnTerritorySelected(object arg)
@@ -96,7 +106,7 @@ namespace Empire
 
             foreach (TerritoryActionUI item in _currentActions)
             {
-                Destroy(item.InfoPanel.gameObject);
+                Destroy(item.InfoPanel?.gameObject);
                 Destroy(item.gameObject);
             }
 

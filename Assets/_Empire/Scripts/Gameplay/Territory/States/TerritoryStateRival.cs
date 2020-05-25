@@ -15,11 +15,14 @@ namespace Empire
 
         public override void Refresh()
         {
-            _territory.CurrentDealOffer?.Refresh();
-
-            if (_territory.CurrentDealOffer.HasTimedOut())
+            if (_territory.CurrentDealOffer != null)
             {
-                RenewDealOffer();
+                _territory.CurrentDealOffer.Refresh();
+
+                if (_territory.CurrentDealOffer.HasTimedOut())
+                {
+                    RenewDealOffer();
+                }
             }
         }
 

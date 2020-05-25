@@ -12,7 +12,7 @@ namespace Empire
 
             public Odds(int success)
             {
-                this.success = success;
+                this.success = Mathf.Clamp(success, 0, 100);
                 failure = 100 - this.success;
             }
 

@@ -4,6 +4,7 @@
     {
         public virtual void Initialize(TerritoryAction action, Territory territory)
         {
+            Close();
         }
     }
 }

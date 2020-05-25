@@ -28,8 +28,10 @@ namespace Empire
             _territory = territory;
         }
 
-        public abstract void OnEnterState();
-        public abstract void RefreshVisualState();
+        public virtual void OnEnterState() { }
+        public virtual void OnExitState() { }
+
         public abstract void Refresh();
+        public abstract void RefreshVisualState();
     }
 }
