@@ -2,7 +2,7 @@
 
 namespace Empire
 {
-    [CreateAssetMenu(menuName = "Empire/Resources/Resource")]
+    [CreateAssetMenu(menuName = "Empire/Managers/Resource Manager")]
     public class Resource : ScriptableObject
     {
         [SerializeField]

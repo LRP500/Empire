@@ -19,11 +19,15 @@ namespace Empire
         public int TakeOverNeighborModifier => _takeOverNeighborModifier;
 
         [SerializeField]
+        protected GameplayContext _context = null;
+
+        [SerializeField]
         private List<TerritoryAction> _actions = null;
         public List<TerritoryAction> Actions => _actions;
+
         protected Territory _territory = null;
 
-        public void SetContext(Territory territory)
+        public void SetTerritory(Territory territory)
         {
             _territory = territory;
         }

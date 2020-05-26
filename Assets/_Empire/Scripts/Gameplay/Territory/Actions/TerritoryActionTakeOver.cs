@@ -26,9 +26,6 @@ namespace Empire
         [Space]
 
         [SerializeField]
-        private GameplayContext _context = null;
-
-        [SerializeField]
         private TakeOverSettings _takeOverSettings = null;
 
         public override void Execute(Territory territory)

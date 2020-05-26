@@ -15,6 +15,7 @@ MonoBehaviour:
   _color: {fileID: 11400000, guid: 4f0e2188dc2c13e4ba58f720bdfec831, type: 2}
   _takeOverSuccessChance: 0
   _takeOverNeighborModifier: 10
+  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
   _actions:
   - {fileID: 11400000, guid: 02423cba732c63546836e078f08ce8f1, type: 2}
   - {fileID: 11400000, guid: f76f7973a4c3810469f8b741b8ef918f, type: 2}

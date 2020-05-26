@@ -7,7 +7,6 @@ namespace Empire
     public class GameplaySingletonReferenceHelper : MonoBehaviour
     {
         public ResourceManager resourceManager = null;
-        public PlayerManager playerManager = null;
-        public GameplaySettings gameplaySettings = null;
+        public StructureManager structureManager = null;
     }
 }

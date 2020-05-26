@@ -144,14 +144,6 @@ namespace Empire
         public void SetControlled()
         {
             TransitionTo(_territoryStateControlled);
-
-            foreach (Territory neighbor in _neighbors)
-            {
-                if (neighbor.State is TerritoryStateUnreachable)
-                {
-                    neighbor.SetRival();
-                }
-            }
         }
 
         public void SetUndisputed()
@@ -177,7 +169,7 @@ namespace Empire
         public void TransitionTo(TerritoryState state)
         {
             _state = Instantiate(state);
-            State.SetContext(this);
+            State.SetTerritory(this);
             State.OnEnterState();
             Debug.Log($"[{name}] Transition to {State.GetType().Name}");
         }

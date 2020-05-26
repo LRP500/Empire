@@ -15,4 +15,4 @@ MonoBehaviour:
   _title: Build Laboratory
   _description: 
   _infoPanelPrefab: {fileID: 0}
-  _laboratorySettings: {fileID: 11400000, guid: cbeccc9ddf2f37f43a0513cd2849cdc8, type: 2}
+  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}

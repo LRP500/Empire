@@ -100,6 +100,7 @@ namespace Empire
             }
         }
 
+        // HAS TO GO BEFORE LAUNDERING
         private void ProcessDistribution()
         {
             int sold = _meth.Decrement(_initialDistributionRate * _controlledTerritories.Count);
