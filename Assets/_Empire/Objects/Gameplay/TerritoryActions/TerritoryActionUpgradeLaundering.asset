@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abded4780d27db44592c065aab6b5787, type: 3}
   m_Name: TerritoryActionUpgradeLaundering
   m_EditorClassIdentifier: 
-  _title: Finance Laundering Operation
+  _title: Upgrade Laundering Operation
   _description: 
   _infoPanelPrefab: {fileID: 352526226266191265, guid: 00ca34fc6c50b36459b52e3179d461d4, type: 3}
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}

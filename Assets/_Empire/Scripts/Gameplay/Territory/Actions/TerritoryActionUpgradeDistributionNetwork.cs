@@ -2,8 +2,8 @@
 
 namespace Empire
 {
-    [CreateAssetMenu(menuName = "Empire/Map/Territory Actions/Finance Laundering Operation")]
-    public class TerritoryActionFinanceLaunderingOperation : TerritoryAction
+    [CreateAssetMenu(menuName = "Empire/Map/Territory Actions/Upgrade Distribution Network")]
+    public class TerritoryActionUpgradeDistributionNetwork : TerritoryAction
     {
         public override bool CanExecute(Territory territory)
         {
@@ -12,7 +12,7 @@ namespace Empire
 
         public override void Execute(Territory territory)
         {
-            _context.structureManager.UpgradeLaunderingOperation(territory);
+            _context.structureManager.UpgradeDistributionNetwork(territory);
         }
     }
 }

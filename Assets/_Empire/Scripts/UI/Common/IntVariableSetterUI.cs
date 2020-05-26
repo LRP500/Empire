@@ -30,6 +30,8 @@ namespace Empire
             _current.Subscribe(Refresh);
             _incrementButton.onClick.AddListener(OnClickIncrement);
             _decrementButton.onClick.AddListener(OnClickDecrement);
+
+            Refresh();
         }
 
         private void Refresh()

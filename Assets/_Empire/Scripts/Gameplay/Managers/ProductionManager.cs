@@ -25,25 +25,37 @@ namespace Empire
 
         public void RefreshOnTick()
         {
-            ProcessStructures(); // Structures are processed first
-            ProcessDeals(); // Deals are processed before own distribution
+            // Distribution is processed first
+            ProcessDistribution();
+
+            // Deals are to be honored before own distribution
+            ProcessDeals();
+
+            // Distribution on controlled territories
+            ProcessDistribution();
+
+            // Laundering money comes last
+            ProcessLaundering();
         }
 
-        private void ProcessStructures()
+        private void ProcessLaundering()
         {
-            // Production goes first
-            int totalProduction = _context.structureManager.GetTotalProduction();
-            _context.resourceManager.Meth.Increment(totalProduction);
-
-            // Then distribution
-            int totalDistribution = _context.structureManager.GetTotalDistribution();
-            int sold = _context.resourceManager.Meth.Decrement(totalDistribution);
-            _context.resourceManager.Cash.Increment(sold * _methSellingPrice);
-
-            // Laundering goes last
             int totalLaundering = _context.structureManager.GetTotalLaundering();
             int laundered = _context.resourceManager.Cash.Decrement(totalLaundering);
             _context.resourceManager.Bank.Increment(laundered);
+        }
+
+        private void ProcessDistribution()
+        {
+            int totalDistribution = _context.structureManager.GetTotalDistribution();
+            int sold = _context.resourceManager.Meth.Decrement(totalDistribution);
+            _context.resourceManager.Cash.Increment(sold * _methSellingPrice);
+        }
+
+        private void ProcessProduction()
+        {
+            int totalProduction = _context.structureManager.GetTotalProduction();
+            _context.resourceManager.Meth.Increment(totalProduction);
         }
 
         private void ProcessDeals()
