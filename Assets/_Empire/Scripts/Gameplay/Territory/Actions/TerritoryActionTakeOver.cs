@@ -76,5 +76,10 @@ namespace Empire
 
             return odds;
         }
+
+        public override bool CanExecute(Territory territory)
+        {
+            return true;
+        }
     }
 }

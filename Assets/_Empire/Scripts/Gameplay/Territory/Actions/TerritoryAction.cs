@@ -29,5 +29,6 @@ namespace Empire
         public GameplayContext Context => _context;
 
         public abstract void Execute(Territory territory);
+        public abstract bool CanExecute(Territory territory);
     }
 }

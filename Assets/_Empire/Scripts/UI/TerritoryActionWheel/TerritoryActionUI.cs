@@ -24,6 +24,7 @@ namespace Empire
             _action = action;
             _titleText.text = _action.Title;
 
+            _actionButton.interactable = action.CanExecute(territory);
             _actionButton.onClick.AddListener(() =>
             {
                 action.Execute(territory);

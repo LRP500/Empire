@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Empire
 {
@@ -23,21 +24,25 @@ namespace Empire
             if (!IsMaxLevel())
             {
                 Level += 1;
-
-                if (_settings.PercentageIncrement)
-                {
-                    Efficiency += Efficiency * (_settings.EfficiencyLevelIncrement / 100);
-                }
-                else
-                {
-                    Efficiency += _settings.EfficiencyLevelIncrement;
-                }
+                Efficiency = GetNextLevelEfficiency();
             }
         }
 
         public bool IsMaxLevel()
         {
             return Level == _settings.MaxLevel;
+        }
+
+        public int GetNextLevelEfficiency()
+        {
+            if (_settings.PercentageIncrement)
+            {
+                return Efficiency + (Efficiency * (_settings.EfficiencyLevelIncrement / 100));
+            }
+            else
+            {
+                return Efficiency + _settings.EfficiencyLevelIncrement;
+            }
         }
     }
 }

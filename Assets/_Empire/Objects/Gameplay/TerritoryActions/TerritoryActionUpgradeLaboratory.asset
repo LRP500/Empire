@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abded4780d27db44592c065aab6b5787, type: 3}
-  m_Name: TerritoryActionFinanceLaunderingOperation
+  m_Script: {fileID: 11500000, guid: 9d4dbf92b96bee64ab91bab40881e8fe, type: 3}
+  m_Name: TerritoryActionUpgradeLaboratory
   m_EditorClassIdentifier: 
-  _title: Finance Laundering Operation
+  _title: Build Laboratory
   _description: 
-  _infoPanelPrefab: {fileID: 0}
+  _infoPanelPrefab: {fileID: 7131123968038087694, guid: b8a9066701f64b844bc9ea9f7b711299, type: 3}
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
