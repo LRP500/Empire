@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d4dbf92b96bee64ab91bab40881e8fe, type: 3}
-  m_Name: TerritoryActionBuildLaboratory
+  m_Script: {fileID: 11500000, guid: 76b5f9db8a85c4444b168592df63b84f, type: 3}
+  m_Name: DefaultLaunderingOperationSettings
   m_EditorClassIdentifier: 
-  _title: Build Laboratory
-  _description: 
-  _infoPanelPrefab: {fileID: 0}
-  _laboratorySettings: {fileID: 11400000, guid: cbeccc9ddf2f37f43a0513cd2849cdc8, type: 2}
+  _initialLaunderingRate: 200

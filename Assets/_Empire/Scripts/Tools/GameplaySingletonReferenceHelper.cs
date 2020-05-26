@@ -6,10 +6,8 @@ namespace Empire
 {
     public class GameplaySingletonReferenceHelper : MonoBehaviour
     {
-        [SerializeField]
-        private ResourceManager _resourceManager = null;
-
-        [SerializeField]
-        private PlayerManager _playerManager = null;
+        public ResourceManager resourceManager = null;
+        public PlayerManager playerManager = null;
+        public GameplaySettings gameplaySettings = null;
     }
 }

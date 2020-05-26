@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Empire
 {
-    [CreateAssetMenu(menuName = "Empire/Gameplay/Take Over Settings")]
+    [CreateAssetMenu(menuName = "Empire/Gameplay/Settings/Take Over")]
     public class TakeOverSettings : ScriptableObject
     {
         [SerializeField]

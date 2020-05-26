@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Empire
 {
-    [CreateAssetMenu(menuName = "Empire/Gameplay/Deals/Deal Offer Settings")]
+    [CreateAssetMenu(menuName = "Empire/Gameplay/Settings/Deal Offer")]
     public class DealOfferSettings : ScriptableObject
     {
         [SerializeField]

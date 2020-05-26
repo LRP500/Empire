@@ -1,5 +1,6 @@
 ﻿using Sirenix.OdinInspector;
 using System.Collections.Generic;
+using System.Linq;
 using Tools;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -61,6 +62,9 @@ namespace Empire
         private void Awake()
         {
             Renderer = GetComponent<SpriteRenderer>();
+            LaunderingOperations = new List<LaunderingOperation>();
+            Laboratories = new List<Laboratory>();
+
             _runtimeTerritories.Add(this);
         }
 
@@ -81,13 +85,11 @@ namespace Empire
 
         public void AddLaboratory(Laboratory laboratory)
         {
-            Laboratories = Laboratories ?? new List<Laboratory>();
             Laboratories.Add(laboratory);
         }
 
         public void AddLaunderingOperation(LaunderingOperation operation)
         {
-            LaunderingOperations = LaunderingOperations ?? new List<LaunderingOperation>();
             LaunderingOperations.Add(operation);
         }
 
@@ -95,6 +97,16 @@ namespace Empire
         {
             Laboratories.Clear();
             LaunderingOperations.Clear();
+        }
+
+        public int GetProductionRate()
+        {
+            return Laboratories.Sum(x => x.ProductionRate);
+        }
+
+        public int GetLaunderingRate()
+        {
+            return LaunderingOperations.Sum(x => x.LaunderingRate);
         }
 
         #endregion Structures

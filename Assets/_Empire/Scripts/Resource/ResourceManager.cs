@@ -28,15 +28,15 @@ namespace Empire
 
         [Header("Production")]
 
-        [SerializeField]
-        [SuffixLabel("(lbs/controlled)", Overlay = true)]
-        private int _initialMethProduction = 20;
+        //[SerializeField]
+        //[SuffixLabel("(lbs/controlled)", Overlay = true)]
+        //private int _initialMethProduction = 20;
 
         [Header("Laundering")]
 
-        [SerializeField]
-        [SuffixLabel("(cash/controlled)", Overlay = true)]
-        private int _initialLaunderingRate = 500;
+        //[SerializeField]
+        //[SuffixLabel("(cash/controlled)", Overlay = true)]
+        //private int _initialLaunderingRate = 500;
 
         [Header("Distribution")]
 
@@ -84,22 +84,20 @@ namespace Empire
 
             _controlledTerritories = _territories.Items.Where(x => x.State is TerritoryStateControlled).ToList();
 
-            ProcessMethProduction(); // Production is processed first
+            ProcessStructures(); // Structures are processed first
             ProcessDeals(); // Deals are processed before own distribution
             ProcessDistribution();
-            ProcessMoneyLaundering();
 
             return profitable;
         }
 
-        private void ProcessMethProduction()
+        private void ProcessStructures()
         {
-            _meth.Increment(_initialMethProduction * _controlledTerritories.Count);
-        }
-
-        private void ProcessMoneyLaundering()
-        {
-            _bank.Increment(_cash.Decrement(_initialLaunderingRate * _controlledTerritories.Count));
+            foreach (Territory state in _controlledTerritories)
+            {
+                _meth.Increment(state.GetProductionRate());
+                _bank.Increment(_cash.Decrement(state.GetLaunderingRate()));
+            }
         }
 
         private void ProcessDistribution()
