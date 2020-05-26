@@ -12,7 +12,7 @@ namespace Empire
 
         public float RemainingTime => _remainingTime;
 
-        public DealOffer(DealOfferSettings settings, Territory territory)
+        public DealOffer(Territory territory, DealOfferSettings settings)
         {
             _settings = settings;
             _territory = territory;

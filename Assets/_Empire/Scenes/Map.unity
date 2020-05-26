@@ -293,11 +293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -441,7 +436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90495319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000038146973, y: 0, z: -47.75405}
+  m_LocalPosition: {x: -0.0000019073486, y: 0.0000019073486, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275779295}
@@ -801,11 +796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -993,11 +983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -1112,11 +1097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -1308,11 +1288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -1399,11 +1374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -1462,7 +1432,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 47.75405
+  m_CameraDistance: 40
   m_DeadZoneWidth: 0.7
   m_DeadZoneHeight: 0.7
   m_DeadZoneDepth: 0
@@ -1702,11 +1672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -1914,11 +1879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -2076,11 +2036,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -2269,11 +2224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -2357,11 +2307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -2511,11 +2456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -2614,11 +2554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -2656,7 +2591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051291fb1a1d4ba4ab3f00bcbaa52415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
 --- !u!4 &509736636
 Transform:
   m_ObjectHideFlags: 0
@@ -2899,11 +2833,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -3016,11 +2945,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -3105,11 +3029,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -3348,11 +3267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -3439,7 +3353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000038146973, y: 0, z: -47.75405}
+  m_LocalPosition: {x: -0.0000019073486, y: 0.0000019073486, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1048308274}
@@ -3691,11 +3605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -3905,11 +3814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -4024,11 +3928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -4123,11 +4022,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -4270,11 +4164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -4376,11 +4265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -4546,11 +4430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -4662,11 +4541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -4757,11 +4631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -4845,11 +4714,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -5007,11 +4871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -5204,11 +5063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -5329,11 +5183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -5402,11 +5251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -5671,11 +5515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -5768,11 +5607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -6309,11 +6143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -6411,11 +6240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -6578,11 +6402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -6973,11 +6792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -7051,7 +6865,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -7112,8 +6926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeController: {fileID: 523805128}
-  _worldMap: {fileID: 509736635}
-  _resourceManager: {fileID: 11400000, guid: 54f6d9cf492cfcb41ad2cdbcf68ad493, type: 2}
+  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
 --- !u!4 &1759920917
 Transform:
   m_ObjectHideFlags: 0
@@ -7224,11 +7037,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -7426,11 +7234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -7536,11 +7339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -7675,11 +7473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -7841,11 +7634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -8143,11 +7931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -8292,11 +8075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -8453,7 +8231,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceManager: {fileID: 11400000, guid: 54f6d9cf492cfcb41ad2cdbcf68ad493, type: 2}
-  structureManager: {fileID: 0}
+  structureManager: {fileID: 11400000, guid: 0d47ef222a2224e4aa58b5c084218762, type: 2}
+  dealManager: {fileID: 11400000, guid: 3c7a1f03679881c4097cb35d3823cd65, type: 2}
+  productionManager: {fileID: 11400000, guid: 8abf2c177e1bf264db89c40701b71648, type: 2}
 --- !u!114 &1957490952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8649,11 +8429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -8914,11 +8689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -9025,11 +8795,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
@@ -9109,11 +8874,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32264304485cb7849a96c04586933692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
-  _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}
-  _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
-  _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
-  _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:

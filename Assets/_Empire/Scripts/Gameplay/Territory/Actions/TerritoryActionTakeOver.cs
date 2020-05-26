@@ -23,14 +23,12 @@ namespace Empire
             }
         }
 
-        [Space]
-
         [SerializeField]
         private TakeOverSettings _takeOverSettings = null;
 
         public override void Execute(Territory territory)
         {
-            territory.CancelCurrentDeal(_context.deals);
+            _context.dealManager.CancelActiveDeal(territory);
 
             if ((Random.value * 100) <= _takeOverSettings.SuccessChance)
             {
@@ -55,14 +53,14 @@ namespace Empire
                 _context.resourceManager.Meth.Decrement(_takeOverSettings.RandomMethAmount());
             }
 
-            territory.SetControlled();
+            _context.worldMapManager.SetControlled(territory);
         }
 
         private void HandleDefeat(Territory territory)
         {
             _context.resourceManager.Cash.Decrement(_takeOverSettings.RandomCashAmount());
             _context.resourceManager.Meth.Decrement(_takeOverSettings.RandomMethAmount());
-            territory.SetRival();
+            _context.worldMapManager.SetRival(territory);
         }
 
         public Odds CalculateOdds(Territory target)

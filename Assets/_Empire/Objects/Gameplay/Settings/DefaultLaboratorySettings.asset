@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 863039c338d101143b47817cfd3472e0, type: 3}
+  m_Script: {fileID: 11500000, guid: b15b292f3f8bfd5478950864342455e1, type: 3}
   m_Name: DefaultLaboratorySettings
   m_EditorClassIdentifier: 
-  _initialProductionRate: 20
+  _maxLevel: 3
+  _startingLevel: 1
+  _initialEfficiency: 20
+  _efficiencyLevelIncrement: 100
+  _percentageIncrement: 1

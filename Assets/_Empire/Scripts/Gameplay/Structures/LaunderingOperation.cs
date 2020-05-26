@@ -1,12 +1,9 @@
 ﻿namespace Empire
 {
-    public class LaunderingOperation
+    public class LaunderingOperation : Structure
     {
-        public int LaunderingRate { get; private set; } = 0;
-
-        public LaunderingOperation(LaunderingOperationSettings settings)
+        public LaunderingOperation(StructureSettings settings) : base(settings)
         {
-            LaunderingRate = settings.InitialLaunderingRate;
         }
     }
 }

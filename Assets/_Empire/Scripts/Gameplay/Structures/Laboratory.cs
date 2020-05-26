@@ -1,12 +1,9 @@
 ﻿namespace Empire
 {
-    public class Laboratory
+    public class Laboratory : Structure
     {
-        public int ProductionRate { get; private set; } = 0;
-
-        public Laboratory(LaboratorySettings settings)
+        public Laboratory(StructureSettings settings) : base(settings)
         {
-            ProductionRate = settings.InitialProductionRate;
         }
     }
 }

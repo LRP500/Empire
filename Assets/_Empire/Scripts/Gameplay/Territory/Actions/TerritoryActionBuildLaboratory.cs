@@ -7,7 +7,7 @@ namespace Empire
     {
         public override void Execute(Territory territory)
         {
-            _context.structureManager.AddLaboratory(territory);
+            _context.structureManager.UpgradeLaboratories(territory);
         }
     }
 }

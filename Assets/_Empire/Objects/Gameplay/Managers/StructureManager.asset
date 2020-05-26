@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d8cfa04d697214880dfc5fa030e7d5, type: 3}
   m_Name: StructureManager
   m_EditorClassIdentifier: 
-  _laboratorySettings: {fileID: 11400000, guid: cbeccc9ddf2f37f43a0513cd2849cdc8, type: 2}
-  _launderingOperationSettings: {fileID: 11400000, guid: d2335169379e0cc4981df5433f8c55d1, type: 2}
+  _laboratorySettings: {fileID: 11400000, guid: a6a5495c972753c4f9e99270d36aa962, type: 2}
+  _distributionNetworkSettings: {fileID: 11400000, guid: e03e6ee5bfdcf87419752dfff1600404, type: 2}
+  _launderingOperationSettings: {fileID: 11400000, guid: 535cc896d7c7fad43b74ae2852453cf3, type: 2}

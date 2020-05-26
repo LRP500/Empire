@@ -5,35 +5,16 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Map/Territory States/Rival")]
     public class TerritoryStateRival : TerritoryState
     {
-        [SerializeField]
-        private DealOfferSettings _dealSettings = null;
-
         public override void OnEnterState()
         {
-            RenewDealOffer();
+            _context.dealManager.RenewDealOffer(_territory);
         }
 
-        public override void Refresh()
-        {
-            if (_territory.CurrentDealOffer != null)
-            {
-                _territory.CurrentDealOffer.Refresh();
-
-                if (_territory.CurrentDealOffer.HasTimedOut())
-                {
-                    RenewDealOffer();
-                }
-            }
-        }
+        public override void Refresh() { }
 
         public override void RefreshVisualState()
         {
             _territory.Renderer.color = Color;
-        }
-
-        public void RenewDealOffer()
-        {
-            _territory.SetDealOffer(new DealOffer(_dealSettings, _territory));
         }
     }
 }

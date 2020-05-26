@@ -15,6 +15,9 @@ namespace Empire
         [SerializeField]
         private TextMeshProUGUI _timer = null;
 
+        [SerializeField]
+        private DealManager _dealManager = null;
+
         private Territory _territory = null;
 
         public override void Initialize(TerritoryAction action, Territory territory)
@@ -26,13 +29,15 @@ namespace Empire
 
         private void Update()
         {
-            if (_territory.CurrentDealOffer != null)
-            {
-                _quantityKeyValue.SetValue(_territory.CurrentDealOffer.Quantity.ToString());
-                _sellingPriceKeyValue.SetValue(_territory.CurrentDealOffer.SellingPrice.ToString());
+            DealManager.TerritoryDealInfo info = _dealManager.GetInfo(_territory);
 
-                string time = TimeUtility.Format(_territory.CurrentDealOffer.RemainingTime);
-                _timer.text = _territory.CurrentDealOffer.RemainingTime <= 31 ? $"<color=red>{time}" : time;
+            if (info.currentOffer != null)
+            {
+                _quantityKeyValue.SetValue(info.currentOffer.Quantity.ToString());
+                _sellingPriceKeyValue.SetValue(info.currentOffer.SellingPrice.ToString());
+
+                string time = TimeUtility.Format(info.currentOffer.RemainingTime);
+                _timer.text = info.currentOffer.RemainingTime <= 31 ? $"<color=red>{time}" : time;
             }
         }
     }

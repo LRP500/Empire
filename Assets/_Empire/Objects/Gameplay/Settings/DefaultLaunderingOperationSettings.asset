@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76b5f9db8a85c4444b168592df63b84f, type: 3}
+  m_Script: {fileID: 11500000, guid: b15b292f3f8bfd5478950864342455e1, type: 3}
   m_Name: DefaultLaunderingOperationSettings
   m_EditorClassIdentifier: 
-  _initialLaunderingRate: 200
+  _maxLevel: 3
+  _startingLevel: 1
+  _initialEfficiency: 100
+  _efficiencyLevelIncrement: 100
+  _percentageIncrement: 1

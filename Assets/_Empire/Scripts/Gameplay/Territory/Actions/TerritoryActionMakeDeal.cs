@@ -7,7 +7,8 @@ namespace Empire
     {
         public override void Execute(Territory territory)
         {
-            territory.AcceptDealOffer(_context.deals);
+            _context.dealManager.AcceptDealOffer(territory);
+            _context.worldMapManager.SetInDeal(territory);
         }
     }
 }

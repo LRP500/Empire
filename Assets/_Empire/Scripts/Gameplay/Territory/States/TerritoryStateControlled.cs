@@ -25,12 +25,11 @@ namespace Empire
             {
                 if (neighbor.State is TerritoryStateUnreachable)
                 {
-                    neighbor.SetRival();
+                    _context.worldMapManager.SetRival(neighbor);
                 }
             }
 
-            _context.structureManager.AddLaboratory(_territory);
-            _context.structureManager.AddLaunderingOperation(_territory);
+            _context.structureManager.SetupStructures(_territory);
         }
     }
 }

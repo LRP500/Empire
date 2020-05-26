@@ -7,7 +7,7 @@ namespace Empire
     {
         public override void Execute(Territory territory)
         {
-            _context.structureManager.AddLaunderingOperation(territory);
+            _context.structureManager.UpgradeLaunderingOperation(territory);
         }
     }
 }
