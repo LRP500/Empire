@@ -7,12 +7,14 @@ namespace Empire
     {
         public override bool CanExecute(Territory territory)
         {
-            return !_context.structureManager.GetInfo(territory).launderingOperation.IsMaxLevel();
+            Structure structure = _context.structureManager.GetInfo(territory).launderingOperation;
+            return !structure.IsMaxLevel() && structure.Price <= _context.resourceManager.Bank;
         }
 
         public override void Execute(Territory territory)
         {
-            _context.structureManager.UpgradeLaunderingOperation(territory);
+            int price = _context.structureManager.UpgradeLaunderingOperation(territory);
+            _context.resourceManager.Bank.Decrement(price);
         }
     }
 }

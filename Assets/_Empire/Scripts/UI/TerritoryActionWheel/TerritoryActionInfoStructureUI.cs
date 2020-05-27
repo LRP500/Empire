@@ -24,6 +24,9 @@ namespace Empire
         private KeyValueItemUI _efficiency = null;
 
         [SerializeField]
+        private KeyValueItemUI _price = null;
+
+        [SerializeField]
         private StructureManager _structureManager = null;
 
         private Structure _structure = null;
@@ -48,15 +51,20 @@ namespace Empire
             if (_structure.IsMaxLevel())
             {
                 _level.text = "<color=red>MAX";
-                _efficiency.SetValue(AbbreviationUtility.Format(_structure.Efficiency));
+                _price.gameObject.SetActive(false);
+                _efficiency.SetValue(AbbreviationUtility.Format(_structure.Rate));
             }
             else
             {
                 _level.text = string.Format("{0}/{1}", _structure.Level, _structure.MaxLevel);
+
                 _efficiency.SetValue(
                     string.Format("{0} > <color=green>{1}",
-                    AbbreviationUtility.Format(_structure.Efficiency),
-                    AbbreviationUtility.Format(_structure.GetNextLevelEfficiency())));
+                    AbbreviationUtility.Format(_structure.Rate),
+                    AbbreviationUtility.Format(_structure.GetNextLevelRate())));
+
+                _price.gameObject.SetActive(true);
+                _price.SetValue(AbbreviationUtility.Format(_structure.Price));
             }
         }
 

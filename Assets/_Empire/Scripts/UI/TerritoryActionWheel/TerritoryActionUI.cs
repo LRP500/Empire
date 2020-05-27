@@ -13,6 +13,7 @@ namespace Empire
         [SerializeField]
         private Button _actionButton = null;
 
+        private Territory _territory = null;
         private TerritoryAction _action = null;
 
         private System.Action OnActionExecuted = null;
@@ -22,14 +23,19 @@ namespace Empire
         public void Initialize(Territory territory, TerritoryAction action)
         {
             _action = action;
+            _territory = territory;
             _titleText.text = _action.Title;
 
-            _actionButton.interactable = action.CanExecute(territory);
             _actionButton.onClick.AddListener(() =>
             {
                 action.Execute(territory);
                 OnActionExecuted?.Invoke();
             });
+        }
+
+        private void Update()
+        {
+            _actionButton.interactable = _action.CanExecute(_territory);
         }
 
         public void SetInfoPanel(TerritoryActionInfoUI infoPanel)

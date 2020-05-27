@@ -11,6 +11,10 @@ namespace Empire
         [SerializeField]
         private int _current = 0;
 
+        [SerializeField]
+        private int _initial = 0;
+
+
         public ResourceType Type => _type;
         public int Current => _current;
 
@@ -33,7 +37,12 @@ namespace Empire
 
         public void Initialize()
         {
-            SetCurrent(_type.Initial);
+            SetCurrent(_initial);
+        }
+
+        public static implicit operator int(Resource lhs)
+        {
+            return lhs.Current;
         }
     }
 }

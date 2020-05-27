@@ -1,30 +1,42 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Empire
 {
     public abstract class Structure
     {
+        private StructureSettings _settings = null;
+
         public int Level { get; private set; } = 0;
-        public int Efficiency { get; protected set; } = 0;
+        public int Rate { get; protected set; } = 0;
+        public int Price { get; protected set; } = 0;
 
         public int MaxLevel => _settings.MaxLevel;
-
-        private StructureSettings _settings = null;
 
         public Structure(StructureSettings settings)
         {
             _settings = settings;
-            Level = Mathf.Clamp(_settings.StartingLevel, 0, _settings.MaxLevel);
-            Efficiency = _settings.InitialEfficiency;
+
+            Initialize();
+        }
+
+        private void Initialize()
+        {
+            Price = _settings.InitialPrice;
+
+            int startingLevel = Mathf.Min(_settings.StartingLevel, _settings.MaxLevel);
+            for (int i = 0; i < startingLevel; i++)
+            {
+                Upgrade();
+            }
         }
 
         public void Upgrade()
         {
             if (!IsMaxLevel())
             {
+                Rate = GetNextLevelRate();
+                Price = GetNextLevelPrice();
                 Level += 1;
-                Efficiency = GetNextLevelEfficiency();
             }
         }
 
@@ -33,15 +45,33 @@ namespace Empire
             return Level == _settings.MaxLevel;
         }
 
-        public int GetNextLevelEfficiency()
+        private int GetNextLevelPrice()
         {
-            if (_settings.PercentageIncrement)
+            if (_settings.IsPriceIncrementPercentage)
             {
-                return Efficiency + (Efficiency * (_settings.EfficiencyLevelIncrement / 100));
+                return Price * (_settings.PriceIncrement * (Level + 1)) / 100;
             }
             else
             {
-                return Efficiency + _settings.EfficiencyLevelIncrement;
+                return Price + _settings.PriceIncrement;
+            }
+        }
+
+        public int GetNextLevelRate()
+        {
+            // Rate is null at level 0 
+            if (Level == 0)
+            {
+                return _settings.InitialRate;
+            }
+
+            if (_settings.IsRateIncrementPercentage)
+            {
+                return Rate * (_settings.RateIncrement * (Level + 1)) / 100;
+            }
+            else
+            {
+                return Rate + _settings.RateIncrement;
             }
         }
     }

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: ResourceBank
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: 456dfff250179834f9b194e9011d4c0e, type: 2}
-  _current: 0
+  _current: 11200
+  _initial: 200000000

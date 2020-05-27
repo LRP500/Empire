@@ -28,7 +28,7 @@ namespace Empire
 
         private void Refresh()
         {
-            _amount.text = AbbreviationUtility.Format(_resource.Current, "0.0");
+            _amount.text = AbbreviationUtility.Format(_resource.Current, "0.00");
         }
     }
 }

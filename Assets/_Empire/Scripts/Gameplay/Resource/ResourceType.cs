@@ -20,13 +20,12 @@ namespace Empire
         [HorizontalGroup("Resource Data", 75)]
         private Sprite _icon = null;
 
-        [SerializeField]
-        [LabelWidth(100)]
-        [VerticalGroup("Resource Data/Stats")]
-        private int _initial = 0;
+        //[SerializeField]
+        //[LabelWidth(100)]
+        //[VerticalGroup("Resource Data/Stats")]
+        //private int _initial = 0;
 
         public string Name => _name;
         public Sprite Icon => _icon;
-        public int Initial => _initial;
     }
 }

@@ -26,7 +26,7 @@ namespace Empire
         public void RefreshOnTick()
         {
             // Distribution is processed first
-            ProcessDistribution();
+            ProcessProduction();
 
             // Deals are to be honored before own distribution
             ProcessDeals();

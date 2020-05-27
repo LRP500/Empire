@@ -46,21 +46,32 @@ namespace Empire
         {
             Structures.Remove(territory);
         }
+        
+        #region Upgrade
 
-        public void UpgradeLaboratories(Territory territory)
+        private int UpgradeStructure(Structure structure)
         {
-            GetInfo(territory).laboratory.Upgrade();
+            int price = structure.Price;
+            structure.Upgrade();
+            return price;
         }
 
-        public void UpgradeLaunderingOperation(Territory territory)
+        public int UpgradeLaboratories(Territory territory)
         {
-            GetInfo(territory).launderingOperation.Upgrade();
+            return UpgradeStructure(GetInfo(territory).laboratory);
         }
 
-        public void UpgradeDistributionNetwork(Territory territory)
+        public int UpgradeLaunderingOperation(Territory territory)
         {
-            GetInfo(territory).distributionNetwork.Upgrade();
+            return UpgradeStructure(GetInfo(territory).launderingOperation);
         }
+
+        public int UpgradeDistributionNetwork(Territory territory)
+        {
+            return UpgradeStructure(GetInfo(territory).distributionNetwork);
+        }
+
+        #endregion Upgrade
 
         #region Efficiency
 
@@ -72,7 +83,7 @@ namespace Empire
             {
                 if (info.laboratory != null)
                 {
-                    production += info.laboratory.Efficiency;
+                    production += info.laboratory.Rate;
                 }
             }
 
@@ -87,7 +98,7 @@ namespace Empire
             {
                 if (info.distributionNetwork != null)
                 {
-                    distribution += info.distributionNetwork.Efficiency;
+                    distribution += info.distributionNetwork.Rate;
                 }
             }
 
@@ -102,7 +113,7 @@ namespace Empire
             {
                 if (info.launderingOperation != null)
                 {
-                    laundering += info.launderingOperation.Efficiency;
+                    laundering += info.launderingOperation.Rate;
                 }
             }
 

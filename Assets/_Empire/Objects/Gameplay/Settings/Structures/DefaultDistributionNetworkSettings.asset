@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b15b292f3f8bfd5478950864342455e1, type: 3}
-  m_Name: DefaultLaunderingOperationSettings
+  m_Name: DefaultDistributionNetworkSettings
   m_EditorClassIdentifier: 
-  _maxLevel: 3
+  _maxLevel: 4
   _startingLevel: 1
-  _initialEfficiency: 100
-  _efficiencyLevelIncrement: 100
-  _percentageIncrement: 1
+  _initialRate: 10
+  _rateIncrement: 100
+  _isRateIncrementPercentage: 1
+  _initialPrice: 1000
+  _priceIncrement: 1000
+  _isPriceIncrementPercentage: 1
