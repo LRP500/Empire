@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: DefaultLaunderingOperationSettings
   m_EditorClassIdentifier: 
   _maxLevel: 4
-  _startingLevel: 1
-  _initialRate: 100
+  _startingLevel: 0
+  _initialRate: 500
   _rateIncrement: 100
   _isRateIncrementPercentage: 1
-  _initialPrice: 1500
+  _initialPrice: 4000
   _priceIncrement: 1000
   _isPriceIncrementPercentage: 1

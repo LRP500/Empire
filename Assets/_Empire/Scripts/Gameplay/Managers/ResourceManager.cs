@@ -24,5 +24,22 @@ namespace Empire
             _cash.Initialize();
             _meth.Initialize();
         }
+
+        public bool Spend(int amount)
+        {
+            if (CanSpend(amount))
+            {
+                // Spend what is available in the bank, then cash
+                Cash.Decrement(amount - Bank.Decrement(amount));
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool CanSpend(int amount)
+        {
+            return amount <= Bank + Cash;
+        }
     }
 }

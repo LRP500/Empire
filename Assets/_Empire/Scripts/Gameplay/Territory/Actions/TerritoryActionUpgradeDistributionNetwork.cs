@@ -8,14 +8,12 @@ namespace Empire
         public override bool CanExecute(Territory territory)
         {
             Structure structure = _context.structureManager.GetInfo(territory).distributionNetwork;
-            return !structure.IsMaxLevel() && structure.Price <= _context.resourceManager.Bank;
+            return !structure.IsMaxLevel() && _context.resourceManager.CanSpend(structure.Price);
         }
 
         public override void Execute(Territory territory)
         {
-            int price = _context.structureManager.UpgradeDistributionNetwork(territory);
-            _context.resourceManager.Bank.Decrement(price);
+            _context.structureManager.UpgradeDistributionNetwork(territory);
         }
-
     }
 }

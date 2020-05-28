@@ -25,6 +25,10 @@ namespace Empire
         [SerializeField]
         private StructureSettings _launderingOperationSettings = null;
 
+        [Space]
+        [SerializeField]
+        private GameplayContext _context = null;
+
         public void Initialize()
         {
             Structures = new Dictionary<Territory, TerritoryStructureInfo>();
@@ -49,26 +53,27 @@ namespace Empire
         
         #region Upgrade
 
-        private int UpgradeStructure(Structure structure)
+        private void UpgradeStructure(Structure structure)
         {
-            int price = structure.Price;
-            structure.Upgrade();
-            return price;
+            if (_context.resourceManager.Spend(structure.Price))
+            {
+                structure.Upgrade();
+            }
         }
 
-        public int UpgradeLaboratories(Territory territory)
+        public void UpgradeLaboratories(Territory territory)
         {
-            return UpgradeStructure(GetInfo(territory).laboratory);
+            UpgradeStructure(GetInfo(territory).laboratory);
         }
 
-        public int UpgradeLaunderingOperation(Territory territory)
+        public void UpgradeLaunderingOperation(Territory territory)
         {
-            return UpgradeStructure(GetInfo(territory).launderingOperation);
+            UpgradeStructure(GetInfo(territory).launderingOperation);
         }
 
-        public int UpgradeDistributionNetwork(Territory territory)
+        public void UpgradeDistributionNetwork(Territory territory)
         {
-            return UpgradeStructure(GetInfo(territory).distributionNetwork);
+            UpgradeStructure(GetInfo(territory).distributionNetwork);
         }
 
         #endregion Upgrade

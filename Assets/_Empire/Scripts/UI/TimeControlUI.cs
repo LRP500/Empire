@@ -54,8 +54,8 @@ namespace Empire
             {
                 { _pauseToggle, new SpeedMultiplierInfo(0, KeyCode.Q) },
                 { _resumeToggle, new SpeedMultiplierInfo(1, KeyCode.W) },
-                { _forwardToggle, new SpeedMultiplierInfo(5, KeyCode.E) },
-                { _fastForwawrdToggle, new SpeedMultiplierInfo(10, KeyCode.R) }
+                { _forwardToggle, new SpeedMultiplierInfo(_forwardSpeed, KeyCode.E) },
+                { _fastForwawrdToggle, new SpeedMultiplierInfo(_fastForwardSpeed, KeyCode.R) }
             };
 
             _pauseToggle.onValueChanged.AddListener(delegate { ToggleValueChanged(_pauseToggle); });

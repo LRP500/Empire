@@ -15,3 +15,4 @@ MonoBehaviour:
   _laboratorySettings: {fileID: 11400000, guid: a6a5495c972753c4f9e99270d36aa962, type: 2}
   _distributionNetworkSettings: {fileID: 11400000, guid: e03e6ee5bfdcf87419752dfff1600404, type: 2}
   _launderingOperationSettings: {fileID: 11400000, guid: 535cc896d7c7fad43b74ae2852453cf3, type: 2}
+  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
