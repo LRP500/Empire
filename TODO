@@ -1,0 +1,31 @@
+[Project Title] Empire
+[Tools] Unity-C#-Illustrator-Photoshop
+[Platforms] Windows/OSX
+
+DESIGN :
+    [ ] Retaliation system @critical
+    [ ] Prevent player from abusing the in-deal-territories-are-easier-to-take-over feature
+        Deals have to be respected during a certain period of time ?
+        New deals can't be made with that territory ?
+        Retaliation ?
+    [ ] Cops system
+        Gauge slowly filling over time
+        Bribe cops to slow down or decrease gauge
+        Spending cash increases cops gauge (bank spendings are safe)
+
+    [ ] Dept system on deals that can't be honored
+        Retaliation ?
+    
+FEATURES:
+    [ ] Deal cancel action @critical
+    [ ] Cancelled deal trigger retaliation
+        In deal territory might attack player-controlled neighbors
+        All neighbor territories ? Multiple random territories ?
+        Same odds or Advantage on success ?
+    [ ] Deal negociation @low
+
+BUGFIX:
+
+TOOLS:
+
+OPTIMISATION:

@@ -19,7 +19,7 @@ namespace Empire
 
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, _hitLayers))
             {
-                transform.position = Vector3.Lerp(transform.position, hit.point, _sensitivity * Time.deltaTime);
+                transform.position = Vector3.Lerp(transform.position, hit.point, _sensitivity * Time.unscaledDeltaTime);
             }
         }
     }

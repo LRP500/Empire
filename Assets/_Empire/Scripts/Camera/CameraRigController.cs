@@ -23,13 +23,10 @@ namespace Empire
 
         private void Update()
         {
-            if (Input.mouseScrollDelta.y > 0)
+            if (Input.mouseScrollDelta.y != 0)
             {
-                _vcamTransposer.m_CameraDistance -= _zoomSensitivity * 10 * Time.deltaTime ;
-            }
-            else if (Input.mouseScrollDelta.y < 0)
-            {
-                _vcamTransposer.m_CameraDistance += _zoomSensitivity * 10 * Time.deltaTime;
+                float delta = Input.mouseScrollDelta.y > 0 ? -_zoomSensitivity : _zoomSensitivity;
+                _vcamTransposer.m_CameraDistance += delta * 10 * Time.unscaledDeltaTime;
             }
         }
 
