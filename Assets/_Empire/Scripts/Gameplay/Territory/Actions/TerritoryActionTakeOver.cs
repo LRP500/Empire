@@ -28,9 +28,12 @@ namespace Empire
 
         public override void Execute(Territory territory)
         {
+            // Taking over a territory will break active deal.
             _context.dealManager.CancelActiveDeal(territory);
 
-            if ((Random.value * 100) <= _takeOverSettings.SuccessChance)
+            Odds odds = CalculateOdds(territory);
+
+            if ((Random.value * 100) <= odds.success)
             {
                 HandleVictory(territory);
             }
