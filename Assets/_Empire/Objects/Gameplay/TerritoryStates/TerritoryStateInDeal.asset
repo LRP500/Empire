@@ -17,4 +17,5 @@ MonoBehaviour:
   _takeOverNeighborModifier: 5
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
   _actions:
+  - {fileID: 11400000, guid: a54fa9692011f04449609a3458fa9cc6, type: 2}
   - {fileID: 11400000, guid: 456f05c4c22f94443b933f2b7bf4a1d6, type: 2}

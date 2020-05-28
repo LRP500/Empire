@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: Upgrade Laundering Operation
   _description: 
-  _infoPanelPrefab: {fileID: 352526226266191265, guid: 00ca34fc6c50b36459b52e3179d461d4, type: 3}
+  _infoPanelPrefab: {fileID: 3982050571719215717, guid: eabba81042abda54b9602aa79586d96a, type: 3}
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}

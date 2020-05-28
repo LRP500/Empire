@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: Upgrade Laboratories
   _description: 
-  _infoPanelPrefab: {fileID: 7131123968038087694, guid: b8a9066701f64b844bc9ea9f7b711299, type: 3}
+  _infoPanelPrefab: {fileID: 3802964225195900465, guid: 7f968346e4d80d544b4e55117abc5c17, type: 3}
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}

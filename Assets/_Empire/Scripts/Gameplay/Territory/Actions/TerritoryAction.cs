@@ -5,7 +5,6 @@ namespace Empire
 {
     public abstract class TerritoryAction : ScriptableObject
     {
-
         [SerializeField]
         [BoxGroup("Basic Info")]
         private string _title = string.Empty;

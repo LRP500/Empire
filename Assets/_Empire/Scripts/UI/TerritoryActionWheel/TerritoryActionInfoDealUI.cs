@@ -7,6 +7,9 @@ namespace Empire
     public class TerritoryActionInfoDealUI : TerritoryActionInfoUI
     {
         [SerializeField]
+        private TextMeshProUGUI _title = null;
+
+        [SerializeField]
         private KeyValueItemUI _quantityKeyValue = null;
 
         [SerializeField]
@@ -20,24 +23,33 @@ namespace Empire
 
         private Territory _territory = null;
 
+        private DealManager.TerritoryDealInfo _dealInfo = null;
+
         public override void Initialize(TerritoryAction action, Territory territory)
         {
             base.Initialize(action, territory);
 
+            _dealInfo = _dealManager.GetInfo(territory); 
+
             _territory = territory;
+            _title.text = _dealInfo.activeDeal == null ? "Current Offer" : "Current Deal";
         }
 
         private void Update()
         {
-            DealManager.TerritoryDealInfo info = _dealManager.GetInfo(_territory);
-
-            if (info.currentOffer != null)
+            if (_dealInfo.currentOffer != null)
             {
-                _quantityKeyValue.SetValue(info.currentOffer.Quantity.ToString());
-                _sellingPriceKeyValue.SetValue(info.currentOffer.SellingPrice.ToString());
+                _quantityKeyValue.SetValue(_dealInfo.currentOffer.Quantity.ToString());
+                _sellingPriceKeyValue.SetValue(_dealInfo.currentOffer.SellingPrice.ToString());
 
-                string time = TimeUtility.Format(info.currentOffer.RemainingTime);
-                _timer.text = info.currentOffer.RemainingTime <= 31 ? $"<color=red>{time}" : time;
+                string time = TimeUtility.Format(_dealInfo.currentOffer.RemainingTime);
+                _timer.text = _dealInfo.currentOffer.RemainingTime <= 31 ? $"<color=red>{time}" : time;
+            }
+            else if (_dealInfo.activeDeal != null)
+            {
+                _quantityKeyValue.SetValue(_dealInfo.activeDeal.Quantity.ToString());
+                _sellingPriceKeyValue.SetValue(_dealInfo.activeDeal.SellingPrice.ToString());
+                _timer.gameObject.SetActive(false);
             }
         }
     }

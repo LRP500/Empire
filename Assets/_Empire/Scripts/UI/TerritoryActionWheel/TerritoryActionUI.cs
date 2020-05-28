@@ -14,17 +14,17 @@ namespace Empire
         private Button _actionButton = null;
 
         private Territory _territory = null;
-        private TerritoryAction _action = null;
 
         private System.Action OnActionExecuted = null;
 
+        public TerritoryAction Action { get; private set; } = null;
         public TerritoryActionInfoUI InfoPanel { get; private set; } = null;
 
         public void Initialize(Territory territory, TerritoryAction action)
         {
-            _action = action;
+            Action = action;
             _territory = territory;
-            _titleText.text = _action.Title;
+            _titleText.text = Action.Title;
 
             _actionButton.onClick.AddListener(() =>
             {
@@ -35,7 +35,7 @@ namespace Empire
 
         private void Update()
         {
-            _actionButton.interactable = _action.CanExecute(_territory);
+            _actionButton.interactable = Action.CanExecute(_territory);
         }
 
         public void SetInfoPanel(TerritoryActionInfoUI infoPanel)

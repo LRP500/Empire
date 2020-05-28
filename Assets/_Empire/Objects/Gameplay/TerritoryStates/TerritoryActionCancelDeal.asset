@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71350ca9e1351f8498fba95d0d174787, type: 3}
-  m_Name: TerritoryActionUpgradeDistribution
+  m_Script: {fileID: 11500000, guid: 0b4bf8c16f8863f4285ecaa1f1d87d8e, type: 3}
+  m_Name: TerritoryActionCancelDeal
   m_EditorClassIdentifier: 
-  _title: Upgrade Distribution Network
+  _title: Cance Active Deal
   _description: 
-  _infoPanelPrefab: {fileID: 5770321061358875166, guid: d9ac10717f35acf4981e0dfe739d25ed, type: 3}
+  _infoPanelPrefab: {fileID: -11009660578388650, guid: 0a59c1630e55b9841b0fdad49578ed73, type: 3}
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}

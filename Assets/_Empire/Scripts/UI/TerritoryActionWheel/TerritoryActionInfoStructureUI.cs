@@ -21,13 +21,16 @@ namespace Empire
         private TextMeshProUGUI _level = null;
 
         [SerializeField]
-        private KeyValueItemUI _efficiency = null;
+        private KeyValueItemUI _rate = null;
 
         [SerializeField]
         private KeyValueItemUI _price = null;
 
         [SerializeField]
         private StructureManager _structureManager = null;
+
+        [SerializeField]
+        private ResourceManager _resourceManager = null;
 
         private Structure _structure = null;
 
@@ -52,19 +55,31 @@ namespace Empire
             {
                 _level.text = "<color=red>MAX";
                 _price.gameObject.SetActive(false);
-                _efficiency.SetValue(AbbreviationUtility.Format(_structure.Rate));
+                _rate.SetValue(AbbreviationUtility.Format(_structure.Rate));
             }
             else
             {
                 _level.text = string.Format("{0}/{1}", _structure.Level, _structure.MaxLevel);
 
-                _efficiency.SetValue(
+                _rate.SetValue(
                     string.Format("{0} > <color=green>{1}",
                     AbbreviationUtility.Format(_structure.Rate),
                     AbbreviationUtility.Format(_structure.GetNextLevelRate())));
 
                 _price.gameObject.SetActive(true);
-                _price.SetValue(AbbreviationUtility.Format(_structure.Price));
+
+                if (!_resourceManager.CanSpend(_structure.Price))
+                {
+                    _price.SetValue($"<color=red>{AbbreviationUtility.Format(_structure.Price)}");
+                }
+                else if (_resourceManager.Bank < _structure.Price)
+                {
+                    _price.SetValue($"<color=orange>RISKY {AbbreviationUtility.Format(_structure.Price)}");
+                }
+                else
+                {
+                    _price.SetValue(AbbreviationUtility.Format(_structure.Price));
+                }
             }
         }
 
