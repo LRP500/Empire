@@ -1,10 +1,9 @@
-﻿using Tools;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Empire
 {
     [CreateAssetMenu(menuName = "Empire/Managers/Resource Manager")]
-    public class ResourceManager : SingletonScriptableObject<ResourceManager>
+    public class ResourceManager : ScriptableManager<ResourceManager>
     {
         [SerializeField]
         private Resource _bank = null;
@@ -18,7 +17,7 @@ namespace Empire
         private Resource _meth = null;
         public Resource Meth => _meth;
 
-        public void Initialize()
+        public override void Initialize()
         {
             _bank.Initialize();
             _cash.Initialize();

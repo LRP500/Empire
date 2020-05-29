@@ -25,7 +25,6 @@ namespace Empire
         [Space]
         [SerializeField]
         protected GameplayContext _context = null;
-        public GameplayContext Context => _context;
 
         public abstract void Execute(Territory territory);
         public abstract bool CanExecute(Territory territory);

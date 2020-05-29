@@ -28,7 +28,7 @@ namespace Empire
 
         public void RefreshOnTick(float elapsed)
         {
-            productionManager.RefreshOnTick();
+            productionManager.RefreshOnTick(elapsed);
         }
 
         #region MAYBE!?

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a41c5560e8a79846bb997e1a4b155e5, type: 3}
   m_Name: WorldMapManager
   m_EditorClassIdentifier: 
+  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
   _territories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _territoryStateUnreachable: {fileID: 11400000, guid: 7444a1ed26799dd4f84519b9dceea48b, type: 2}
   _territoryStateUndisputed: {fileID: 11400000, guid: 441314835aec9ed41a8da913dbad0146, type: 2}

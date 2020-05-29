@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Empire
 {
     [CreateAssetMenu(menuName = "Empire/Managers/Production Manager")]
-    public class ProductionManager : ScriptableObject
+    public class ProductionManager : ScriptableManager<ProductionManager>
     {
         [SerializeField]
         [SuffixLabel("($k/lbs)", Overlay = true)]
@@ -15,15 +15,12 @@ namespace Empire
         [SerializeField]
         private IntVariable _methSellingPrice = null;
 
-        [SerializeField]
-        private GameplayContext _context = null;
-
-        public void Initialize()
+        public override void Initialize()
         {
             _methSellingPrice.SetValue(_initialMethSellingPrice);
         }
 
-        public void RefreshOnTick()
+        public override void RefreshOnTick(float elapsed)
         {
             // Distribution is processed first
             ProcessProduction();

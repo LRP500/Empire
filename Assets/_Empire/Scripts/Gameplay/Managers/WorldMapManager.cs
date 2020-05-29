@@ -1,33 +1,39 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Empire
 {
     [CreateAssetMenu(menuName = "Empire/Managers/World Map Manager")]
-    public class WorldMapManager : ScriptableObject
+    public class WorldMapManager : ScriptableManager<WorldMapManager>
     {
         [SerializeField]
         private TerritoryListVariable _territories = null;
         public List<Territory> Territories => _territories.Items;
 
-        [Header("States")]
+        [Header("Territory States")]
 
         [SerializeField]
+        [LabelText("Unreachable")]
         private TerritoryState _territoryStateUnreachable = null;
 
         [SerializeField]
+        [LabelText("Undiscputed")]
         private TerritoryState _territoryStateUndisputed = null;
 
         [SerializeField]
+        [LabelText("Controlled")]
         private TerritoryState _territoryStateControlled = null;
 
         [SerializeField]
+        [LabelText("In Deal")]
         private TerritoryState _territoryStateInDeal = null;
 
         [SerializeField]
+        [LabelText("Rival")]
         private TerritoryState _territoryStateRival = null;
 
-        public void Initialize()
+        public override void Initialize()
         {
             foreach (Territory territory in _territories.Items)
             {

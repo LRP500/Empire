@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00aa853c41d4b634aafb439fe3dc6882, type: 3}
-  m_Name: DealManager
+  m_Script: {fileID: 11500000, guid: 7dacbfd807050f446bee13038b945c6e, type: 3}
+  m_Name: ThreatManager
   m_EditorClassIdentifier: 
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
-  _dealSettings: {fileID: 11400000, guid: ab450f1cfe1c2d141a57ab9e658df0d8, type: 2}
+  _threat: {fileID: 11400000, guid: a5ecc6e65941357478b343f4c7693e6c, type: 2}

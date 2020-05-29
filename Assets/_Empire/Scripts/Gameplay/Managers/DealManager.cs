@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using Tools;
 using UnityEngine;
 
 namespace Empire
 {
     [CreateAssetMenu(menuName = "Empire/Managers/Deal Manager")]
-    public class DealManager : SingletonScriptableObject<DealManager>
+    public class DealManager : ScriptableManager<DealManager>
     {
         public class TerritoryDealInfo
         {
@@ -18,12 +17,12 @@ namespace Empire
 
         public Dictionary<Territory, TerritoryDealInfo> Deals { get; private set; } = null;
 
-        public void Initialize()
+        public override void Initialize()
         {
             Deals = new Dictionary<Territory, TerritoryDealInfo>();
         }
 
-        public void Refresh()
+        public override void Refresh()
         {
             foreach (KeyValuePair<Territory, TerritoryDealInfo> info in Deals)
             {

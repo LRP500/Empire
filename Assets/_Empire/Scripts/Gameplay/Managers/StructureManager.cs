@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using Tools;
 using UnityEngine;
 
 namespace Empire
 {
     [CreateAssetMenu(menuName = "Empire/Managers/Structure Manager")]
-    public class StructureManager : SingletonScriptableObject<StructureManager>
+    public class StructureManager : ScriptableManager<StructureManager>
     {
         public class TerritoryStructureInfo
         {
@@ -25,11 +24,7 @@ namespace Empire
         [SerializeField]
         private StructureSettings _launderingOperationSettings = null;
 
-        [Space]
-        [SerializeField]
-        private GameplayContext _context = null;
-
-        public void Initialize()
+        public override void Initialize()
         {
             Structures = new Dictionary<Territory, TerritoryStructureInfo>();
         }

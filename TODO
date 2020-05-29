@@ -23,6 +23,7 @@ FEATURES:
         All neighbor territories ? Multiple random territories ?
         Same odds or Advantage on success ?
     [ ] Deal negociation @low
+    [ ] Large numbers
 
 BUGFIX:
     [ ] Resources from int to long
