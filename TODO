@@ -8,22 +8,34 @@ DESIGN :
         Deals have to be respected during a certain period of time ?
         New deals can't be made with that territory ?
         Retaliation ?
-    [ ] Cops system
+    [ ] Threat system
         Gauge slowly filling over time
-        Bribe cops to slow down or decrease gauge
-        Spending cash increases cops gauge (bank spendings are safe)
+        Bribe authorities to slow down or decrease gauge
+        Spending cash increases threat gauge (bank spendings are safe)
 
     [ ] Dept system on deals that can't be honored
         Retaliation ?
     
 FEATURES:
-    [ ] Deal cancel action @critical
+    [x] Deal cancel action @critical @done(20-05-29 18:07)
     [ ] Cancelled deal trigger retaliation
         In deal territory might attack player-controlled neighbors
-        All neighbor territories ? Multiple random territories ?
-        Same odds or Advantage on success ?
+        All neighbor territories ? Random (multiple) territories ?
+        Same odds or Advantage on success for rival ?
     [ ] Deal negociation @low
-    [ ] Large numbers
+    [ ] Large numbers @high
+    [ ] Resource increment UI feedback @high
+    [ ] Tutorials
+    [ ] Pop up events @low
+        Random events + threat events
+        Resource modifiers + temporary buff/debuffs
+    [ ] Threat gauge feedback on punctual threat modifiers
+        e.g : white flicker on cash spendings
+    [ ] Threat mutlipliers steps on controlled territory count
+        e.g : 10 controlled > +10%, 20 controlled > +20% ...
+        Threat become more of a problem as player progresses
+    [ ] Threat modifier on take over
+        Successful or failed ? Both ?
 
 BUGFIX:
     [ ] Resources from int to long
