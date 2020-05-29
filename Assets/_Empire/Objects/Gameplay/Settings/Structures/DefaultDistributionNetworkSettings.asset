@@ -17,6 +17,6 @@ MonoBehaviour:
   _initialRate: 10
   _rateIncrement: 100
   _isRateIncrementPercentage: 1
-  _initialPrice: 1000
+  _initialPrice: 3000
   _priceIncrement: 1000
   _isPriceIncrementPercentage: 1

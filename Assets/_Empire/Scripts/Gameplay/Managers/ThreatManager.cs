@@ -5,6 +5,13 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Managers/Threat Manager")]
     public class ThreatManager : ScriptableManager<ThreatManager>
     {
+        [System.Serializable]
+        public struct ThreatModifier
+        {
+            public bool isPercentage;
+            public bool value;
+        }
+
         [SerializeField]
         private Resource _threat = null;
         public Resource Threat => _threat;
@@ -12,7 +19,7 @@ namespace Empire
         [SerializeField]
         private int _tickIncrement = 1;
 
-        public System.Action<float> OnThreatChanged = null;
+        private System.Action<float> OnThreatChanged = null;
 
         public override void Initialize()
         {

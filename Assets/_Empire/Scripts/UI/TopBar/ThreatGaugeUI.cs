@@ -16,6 +16,11 @@ namespace Empire
             _threatManager.Threat.RegisterOnCurrentValueChanged(Refresh);
         }
 
+        private void OnDestroy()
+        {
+            _threatManager.Threat.UnregisterOnCurrentValueChanged(Refresh);
+        }
+
         private void Refresh(int value)
         {
             SetCurrent(value, true);
