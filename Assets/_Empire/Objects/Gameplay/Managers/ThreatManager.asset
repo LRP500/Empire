@@ -14,4 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
   _threat: {fileID: 11400000, guid: a5ecc6e65941357478b343f4c7693e6c, type: 2}
-  _tickIncrement: 1
+  _initialIncrement: 2
+  _modifiers:
+  - value: 100
+    active: 0
+    onTick: 1
+    gameEvent: 

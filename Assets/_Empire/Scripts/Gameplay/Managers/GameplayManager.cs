@@ -1,4 +1,5 @@
 ﻿using Tools.Time;
+using Tools.Variables;
 using UnityEngine;
 
 namespace Empire
@@ -11,8 +12,12 @@ namespace Empire
         [SerializeField]
         private GameplayContext _context = null;
 
+        [SerializeField]
+        private IntVariable _turnCount = null;
+
         private void Awake()
         {
+            _turnCount.SetValue(0);
             _timeController.RegisterOnTick(RefreshOnTick);
         }
 
@@ -34,6 +39,7 @@ namespace Empire
 
         private void RefreshOnTick(float elapsed)
         {
+            _turnCount.Increment();
             _context.RefreshOnTick(elapsed);
         }
     }

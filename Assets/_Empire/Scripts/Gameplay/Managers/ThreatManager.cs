@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace Empire
 {
@@ -6,10 +8,16 @@ namespace Empire
     public class ThreatManager : ScriptableManager<ThreatManager>
     {
         [System.Serializable]
-        public struct ThreatModifier
+        public class ThreatModifier
         {
-            public bool isPercentage;
-            public bool value;
+            public int value = 0;
+            public bool active = false;
+            public bool onTick = true;
+
+            [HideIf(nameof(onTick))]
+            public string gameEvent = string.Empty;
+
+            public int Calculate() => value;
         }
 
         [SerializeField]
@@ -17,7 +25,10 @@ namespace Empire
         public Resource Threat => _threat;
 
         [SerializeField]
-        private int _tickIncrement = 1;
+        private int _initialIncrement = 1;
+
+        [SerializeField]
+        private List<ThreatModifier> _modifiers = null;
 
         private System.Action<float> OnThreatChanged = null;
 
@@ -32,7 +43,17 @@ namespace Empire
 
         public override void RefreshOnTick(float elapsed)
         {
-            _threat.Increment(_tickIncrement);
+            int increment = _initialIncrement;
+
+            foreach (ThreatModifier mod in _modifiers)
+            {
+                if (mod.active && mod.onTick)
+                {
+                    increment += mod.Calculate();
+                }
+            }
+
+            _threat.Increment(increment);
         }
     }
 }

@@ -120,7 +120,6 @@ MonoBehaviour:
   _resumeToggle: {fileID: 4994141372563002372}
   _forwardToggle: {fileID: 4994141373538280048}
   _fastForwawrdToggle: {fileID: 4994141372690981968}
-  _toggleGroup: {fileID: 358486814}
   _forwardSpeed: 5
   _fastForwardSpeed: 10
   _timeController: {fileID: 0}
