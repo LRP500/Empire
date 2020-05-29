@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9618f683df3d7154aa130a93a0ee8b51, type: 3}
   m_Name: GameplayContext
   m_EditorClassIdentifier: 
-  resourceManager: {fileID: 11400000, guid: 54f6d9cf492cfcb41ad2cdbcf68ad493, type: 2}
-  structureManager: {fileID: 11400000, guid: 0d47ef222a2224e4aa58b5c084218762, type: 2}
   dealManager: {fileID: 11400000, guid: 3c7a1f03679881c4097cb35d3823cd65, type: 2}
-  productionManager: {fileID: 11400000, guid: 8abf2c177e1bf264db89c40701b71648, type: 2}
+  threatManager: {fileID: 11400000, guid: 852e9bd75555e9e408fd0cd15c1281c4, type: 2}
+  resourceManager: {fileID: 11400000, guid: 54f6d9cf492cfcb41ad2cdbcf68ad493, type: 2}
   worldMapManager: {fileID: 11400000, guid: 29efe158c8079b3438e35cdc71848778, type: 2}
+  structureManager: {fileID: 11400000, guid: 0d47ef222a2224e4aa58b5c084218762, type: 2}
+  productionManager: {fileID: 11400000, guid: 8abf2c177e1bf264db89c40701b71648, type: 2}

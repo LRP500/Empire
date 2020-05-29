@@ -27,6 +27,7 @@ namespace Empire
         [SerializeField]
         [ShowIf(nameof(_clamped))]
         private int _max = 0;
+        public int Max => _max;
 
         private System.Action<int> OnCurrentValueChanged = null;
 
@@ -38,7 +39,7 @@ namespace Empire
         public int SetCurrent(int value)
         {
             int previousAmount = _current;
-            _current = _clamped ? Mathf.Clamp(value, _min, _max) : value;
+            _current = _clamped ? Mathf.Clamp(value, _min, _max) : Mathf.Clamp(value, 0, value);
             OnCurrentValueChanged?.Invoke(_current);
             return _current - previousAmount;
         }

@@ -9,6 +9,9 @@ namespace Empire
         private Resource _threat = null;
         public Resource Threat => _threat;
 
+        [SerializeField]
+        private int _tickIncrement = 1;
+
         public System.Action<float> OnThreatChanged = null;
 
         public override void Initialize()
@@ -22,6 +25,7 @@ namespace Empire
 
         public override void RefreshOnTick(float elapsed)
         {
+            _threat.Increment(_tickIncrement);
         }
     }
 }

@@ -6,15 +6,17 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/FSM/Gameplay/Context")]
     public class GameplayContext : AContext
     {
-        public ResourceManager resourceManager = null;
-        public StructureManager structureManager = null;
         public DealManager dealManager = null;
-        public ProductionManager productionManager = null;
+        public ThreatManager threatManager = null;
+        public ResourceManager resourceManager = null;
         public WorldMapManager worldMapManager = null;
+        public StructureManager structureManager = null;
+        public ProductionManager productionManager = null;
 
         public void Initialize()
         {
             dealManager.Initialize();
+            threatManager.Initialize();
             worldMapManager.Initialize();
             resourceManager.Initialize();
             structureManager.Initialize();
@@ -29,6 +31,7 @@ namespace Empire
         public void RefreshOnTick(float elapsed)
         {
             productionManager.RefreshOnTick(elapsed);
+            threatManager.RefreshOnTick(elapsed);
         }
 
         #region MAYBE!?
