@@ -17,7 +17,6 @@ DESIGN :
         Retaliation ?
     
 FEATURES:
-    [x] Deal cancel action @critical @done(20-05-29 18:07)
     [ ] Cancelled deal trigger retaliation
         In deal territory might attack player-controlled neighbors
         All neighbor territories ? Random (multiple) territories ?
@@ -31,15 +30,15 @@ FEATURES:
         Resource modifiers + temporary buff/debuffs
     [ ] Threat gauge feedback on punctual threat modifiers
         e.g : white flicker on cash spendings
-    [ ] Threat mutlipliers steps on controlled territory count
-        e.g : 10 controlled > +10%, 20 controlled > +20% ...
-        Threat become more of a problem as player progresses
     [ ] Threat modifier on take over
         Successful or failed ? Both ?
 
 BUGFIX:
     [ ] Resources from int to long
 
-TOOLS:
 
-OPTIMISATION:
+Archive:
+  [x] Deal cancel action @critical @done(20-05-29 18:07) @project(FEATURES)
+  [x] Threat mutlipliers steps on controlled territory count @started(20-05-31 13:34) @done(20-05-31 15:49) @lasted(2h15m43s) @project(FEATURES)
+    e.g : 10 controlled > +10%, 20 controlled > +20% ...
+    Threat become more of a problem as player progresses

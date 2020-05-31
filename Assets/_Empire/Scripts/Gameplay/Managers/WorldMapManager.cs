@@ -11,6 +11,10 @@ namespace Empire
         private TerritoryListVariable _territories = null;
         public List<Territory> Territories => _territories.Items;
 
+        [SerializeField]
+        private TerritoryListVariable _controlledTerritories = null;
+        public List<Territory> ControlledTerritories => _controlledTerritories.Items;
+
         [Header("Territory States")]
 
         [SerializeField]
@@ -35,6 +39,8 @@ namespace Empire
 
         public override void Initialize()
         {
+            _controlledTerritories.Clear();
+
             foreach (Territory territory in _territories.Items)
             {
                 SetUnreachable(territory);
@@ -51,6 +57,7 @@ namespace Empire
         public void SetControlled(Territory territory)
         {
             TransitionTo(territory, _territoryStateControlled);
+            _controlledTerritories.Add(territory);
         }
 
         public void SetUndisputed(Territory territory)
@@ -65,6 +72,7 @@ namespace Empire
 
         public void SetRival(Territory territory)
         {
+            _controlledTerritories.Remove(territory);
             TransitionTo(territory, _territoryStateRival);
         }
 

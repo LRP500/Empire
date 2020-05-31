@@ -10,5 +10,6 @@ namespace Empire
         public StructureManager structureManager = null;
         public DealManager dealManager = null;
         public ProductionManager productionManager = null;
+        public WorldMapManager worldMapManager = null;
     }
 }

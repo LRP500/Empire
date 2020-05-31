@@ -1,4 +1,5 @@
 ﻿using Tools.FSM;
+using Tools.Variables;
 using UnityEngine;
 
 namespace Empire
@@ -12,6 +13,8 @@ namespace Empire
         public WorldMapManager worldMapManager = null;
         public StructureManager structureManager = null;
         public ProductionManager productionManager = null;
+
+        public IntVariable turnCount = null;
 
         public void Initialize()
         {

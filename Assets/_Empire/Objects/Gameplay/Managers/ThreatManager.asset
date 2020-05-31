@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
   _threat: {fileID: 11400000, guid: a5ecc6e65941357478b343f4c7693e6c, type: 2}
-  _initialIncrement: 2
-  _modifiers:
-  - value: 100
-    active: 0
-    onTick: 1
-    gameEvent: 
+  _initialIncrement: 1
+  _threatModifiers:
+  - {fileID: 11400000, guid: 0933cb0dc7a69604b83c4a05d45db645, type: 2}
+  - {fileID: 11400000, guid: 243dca89bf95bc44581343973bcc566b, type: 2}
+  - {fileID: 11400000, guid: 8e68834512b8d0b41939c2a8fd2503e6, type: 2}

@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8d350c947e86143b80626d7f005ce1, type: 3}
-  m_Name: RuntimeTerritories
+  m_Script: {fileID: 11500000, guid: d974a34cc25517c40bc310adda0b5f46, type: 3}
+  m_Name: MoreThan20ControlledStates
   m_EditorClassIdentifier: 
-  _items: []
+  _incrementModifier: 1
+  _type: 0
+  _evaluation: 1
+  _compareTo: 20

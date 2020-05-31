@@ -1,5 +1,4 @@
-﻿using Sirenix.OdinInspector;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Empire
@@ -7,19 +6,6 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Managers/Threat Manager")]
     public class ThreatManager : ScriptableManager<ThreatManager>
     {
-        [System.Serializable]
-        public class ThreatModifier
-        {
-            public int value = 0;
-            public bool active = false;
-            public bool onTick = true;
-
-            [HideIf(nameof(onTick))]
-            public string gameEvent = string.Empty;
-
-            public int Calculate() => value;
-        }
-
         [SerializeField]
         private Resource _threat = null;
         public Resource Threat => _threat;
@@ -28,7 +14,7 @@ namespace Empire
         private int _initialIncrement = 1;
 
         [SerializeField]
-        private List<ThreatModifier> _modifiers = null;
+        private List<ThreatModifier> _threatModifiers = null;
 
         private System.Action<float> OnThreatChanged = null;
 
@@ -45,13 +31,15 @@ namespace Empire
         {
             int increment = _initialIncrement;
 
-            foreach (ThreatModifier mod in _modifiers)
+            foreach (ThreatModifier mod in _threatModifiers)
             {
-                if (mod.active && mod.onTick)
+                if (mod.Evaluate(_context))
                 {
-                    increment += mod.Calculate();
+                    increment += mod.IncrementModifier;
                 }
             }
+
+            Debug.Log(increment);
 
             _threat.Increment(increment);
         }
