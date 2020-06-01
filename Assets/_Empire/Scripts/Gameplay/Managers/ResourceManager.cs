@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Tools;
+using UnityEngine;
 
 namespace Empire
 {
@@ -7,15 +8,15 @@ namespace Empire
     {
         [SerializeField]
         private Resource _bank = null;
-        public Resource Bank => _bank;
+        public int Bank => _bank.Current;
 
         [SerializeField]
         private Resource _cash = null;
-        public Resource Cash => _cash;
+        public int Cash => _cash.Current;
 
         [SerializeField]
         private Resource _meth = null;
-        public Resource Meth => _meth;
+        public int Meth => _meth.Current;
 
         public override void Initialize()
         {
@@ -29,7 +30,12 @@ namespace Empire
             if (CanSpend(amount))
             {
                 // Spend what is available in the bank, then cash
-                Cash.Decrement(amount - Bank.Decrement(amount));
+                int spentAmoutBank = _bank.Decrement(amount);
+                int spentAmountCash = _cash.Decrement(amount - spentAmoutBank);
+
+                // Notifty threat system of cash spendings
+                EventManager.Instance.Trigger(GameplayEvent.CashSpent, spentAmountCash);
+
                 return true;
             }
 
@@ -38,7 +44,36 @@ namespace Empire
 
         public bool CanSpend(int amount)
         {
-            return amount <= Bank + Cash;
+            return amount <= _bank + _cash;
+        }
+
+        /// <summary>
+        /// Convert cash into bank.
+        /// </summary>
+        /// <param name="amount"></param>
+        public void Launder(int amount)
+        {
+            _bank.Increment(_cash.Decrement(amount));
+        }
+
+        public void AddCash(int amount)
+        {
+            _cash.Increment(amount);
+        }
+
+        public int RemoveCash(int amount)
+        {
+            return _cash.Decrement(amount);
+        }
+
+        public int RemoveMeth(int amount)
+        {
+            return _meth.Decrement(amount);
+        }
+
+        public void AddMeth(int amount)
+        {
+            _meth.Increment(amount);
         }
     }
 }

@@ -12,5 +12,6 @@ namespace Empire
 
         public virtual void RefreshOnTick(float elapsed) { }
         public virtual void Refresh() { }
+        public virtual void Clear() { }
     }
 }

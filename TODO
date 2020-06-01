@@ -36,8 +36,9 @@ FEATURES:
 BUGFIX:
     [ ] Resources from int to long
 
-
 Archive:
+  [x] Ponctual threat modifier on spending cash @started(20-06-01 22:17) @done(20-06-01 23:07) @lasted(50m2s) @project(FEATURES)
+    Cash amount steps (e.g : 1ut/1k$) 
   [x] Deal cancel action @critical @done(20-05-29 18:07) @project(FEATURES)
   [x] Threat mutlipliers steps on controlled territory count @started(20-05-31 13:34) @done(20-05-31 15:49) @lasted(2h15m43s) @project(FEATURES)
     e.g : 10 controlled > +10%, 20 controlled > +20% ...

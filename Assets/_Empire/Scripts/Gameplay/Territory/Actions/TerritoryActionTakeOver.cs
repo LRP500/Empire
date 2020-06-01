@@ -47,13 +47,13 @@ namespace Empire
         {
             if ((Random.value * 100) <= _takeOverSettings.ResourceGainChance)
             {
-                _context.resourceManager.Cash.Increment(_takeOverSettings.RandomCashAmount());
-                _context.resourceManager.Meth.Increment(_takeOverSettings.RandomMethAmount());
+                _context.resourceManager.AddCash(_takeOverSettings.RandomCashAmount());
+                _context.resourceManager.AddMeth(_takeOverSettings.RandomMethAmount());
             }
             else
             {
-                _context.resourceManager.Cash.Decrement(_takeOverSettings.RandomCashAmount());
-                _context.resourceManager.Meth.Decrement(_takeOverSettings.RandomMethAmount());
+                _context.resourceManager.RemoveCash(_takeOverSettings.RandomCashAmount());
+                _context.resourceManager.RemoveMeth(_takeOverSettings.RandomMethAmount());
             }
 
             _context.worldMapManager.SetControlled(territory);
@@ -61,8 +61,8 @@ namespace Empire
 
         private void HandleDefeat(Territory territory)
         {
-            _context.resourceManager.Cash.Decrement(_takeOverSettings.RandomCashAmount());
-            _context.resourceManager.Meth.Decrement(_takeOverSettings.RandomMethAmount());
+            _context.resourceManager.RemoveCash(_takeOverSettings.RandomCashAmount());
+            _context.resourceManager.RemoveMeth(_takeOverSettings.RandomMethAmount());
             _context.worldMapManager.SetRival(territory);
         }
 

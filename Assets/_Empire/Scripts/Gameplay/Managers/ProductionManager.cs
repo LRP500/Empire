@@ -37,22 +37,20 @@ namespace Empire
 
         private void ProcessLaundering()
         {
-            int totalLaundering = _context.structureManager.GetTotalLaundering();
-            int laundered = _context.resourceManager.Cash.Decrement(totalLaundering);
-            _context.resourceManager.Bank.Increment(laundered);
+            _context.resourceManager.Launder(_context.structureManager.GetTotalLaundering());
         }
 
         private void ProcessDistribution()
         {
             int totalDistribution = _context.structureManager.GetTotalDistribution();
-            int sold = _context.resourceManager.Meth.Decrement(totalDistribution);
-            _context.resourceManager.Cash.Increment(sold * _methSellingPrice);
+            int sold = _context.resourceManager.RemoveMeth(totalDistribution);
+            _context.resourceManager.AddCash(sold * _methSellingPrice);
         }
 
         private void ProcessProduction()
         {
             int totalProduction = _context.structureManager.GetTotalProduction();
-            _context.resourceManager.Meth.Increment(totalProduction);
+            _context.resourceManager.AddMeth(totalProduction);
         }
 
         private void ProcessDeals()
@@ -65,11 +63,11 @@ namespace Empire
 
                 if (deal == null) continue;
 
-                int quantitySold = _context.resourceManager.Meth.Decrement(deal.Quantity);
+                int quantitySold = _context.resourceManager.RemoveMeth(deal.Quantity);
 
                 if (quantitySold == deal.Quantity)
                 {
-                    _context.resourceManager.Cash.Increment(quantitySold * deal.SellingPrice);
+                    _context.resourceManager.AddCash(quantitySold * deal.SellingPrice);
                 }
                 else
                 {

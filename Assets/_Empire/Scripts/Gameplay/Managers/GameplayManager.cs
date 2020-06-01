@@ -17,8 +17,7 @@ namespace Empire
 
         private void Awake()
         {
-            _turnCount.SetValue(0);
-            _timeController.RegisterOnTick(RefreshOnTick);
+            _context.Clear();
         }
 
         private void Start()
@@ -33,8 +32,15 @@ namespace Empire
 
         private void StartNewGame()
         {
+            // Context
             _context.Initialize();
             _context.worldMapManager.SetStartingTerritory();
+
+            // Turn
+            _turnCount.SetValue(0);
+            
+            // Time tick
+            _timeController.RegisterOnTick(RefreshOnTick);
         }
 
         private void RefreshOnTick(float elapsed)

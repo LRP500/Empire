@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
+using Tools;
 using UnityEngine;
 
 namespace Empire
@@ -14,6 +16,9 @@ namespace Empire
         private int _initialIncrement = 1;
 
         [SerializeField]
+        private int _cashSliceIncrement = 100000;
+
+        [SerializeField]
         private List<ThreatModifier> _threatModifiers = null;
 
         private System.Action<float> OnThreatChanged = null;
@@ -21,10 +26,13 @@ namespace Empire
         public override void Initialize()
         {
             _threat.Initialize();
+
+            EventManager.Instance.Subscribe(GameplayEvent.CashSpent, ProcessCashSpendings);
         }
 
-        public override void Refresh()
+        public override void Clear()
         {
+            EventManager.Instance.Unsubscribe(GameplayEvent.CashSpent, ProcessCashSpendings);
         }
 
         public override void RefreshOnTick(float elapsed)
@@ -39,9 +47,40 @@ namespace Empire
                 }
             }
 
-            Debug.Log(increment);
-
-            _threat.Increment(increment);
+            IncrementThreat(increment);
         }
+
+        public void IncrementThreat(int amount)
+        {
+            _threat.Increment(amount);
+
+            OnThreatChanged?.Invoke(_threat);
+        }
+
+        private void ProcessCashSpendings(object arg)
+        {
+            int cashSpent = (int)arg;
+
+            // The result of an int division will always floored (decimals are truncated basically)
+            int threatGenerated = cashSpent / _cashSliceIncrement;
+
+            Debug.Log("Threat generated " + threatGenerated);
+
+            IncrementThreat(threatGenerated);
+        }
+
+        #region Callbacks
+
+        public void RegisterOnThreatChanged(System.Action<float> callback)
+        {
+            OnThreatChanged += callback;
+        }
+
+        public void UnregisterOnThreatChanged(System.Action<float> callback)
+        {
+            OnThreatChanged -= callback;
+        }
+
+        #endregion Callbacks
     }
 }

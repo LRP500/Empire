@@ -37,6 +37,11 @@ namespace Empire
             threatManager.RefreshOnTick(elapsed);
         }
 
+        public void Clear()
+        {
+            threatManager.Clear();
+        }
+
         #region MAYBE!?
 
         public class TerritoryInfo
