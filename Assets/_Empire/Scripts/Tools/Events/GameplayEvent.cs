@@ -8,5 +8,7 @@
 
         // Threat
         public static readonly string CashSpent = "GameplayEvent_CashSpent";
+        public static readonly string TakeOverFailed = "GameplayEvent_TakeOverFailed";
+        public static readonly string TakeOverSuccess = "GameplayEvent_TakeOverSuccess";
     }
 }

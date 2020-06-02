@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Tools;
+using UnityEngine;
 
 namespace Empire
 {
@@ -57,6 +58,8 @@ namespace Empire
             }
 
             _context.worldMapManager.SetControlled(territory);
+
+            EventManager.Instance.Trigger(GameplayEvent.TakeOverSuccess);
         }
 
         private void HandleDefeat(Territory territory)
@@ -64,6 +67,8 @@ namespace Empire
             _context.resourceManager.RemoveCash(_takeOverSettings.RandomCashAmount());
             _context.resourceManager.RemoveMeth(_takeOverSettings.RandomMethAmount());
             _context.worldMapManager.SetRival(territory);
+
+            EventManager.Instance.Trigger(GameplayEvent.TakeOverFailed);
         }
 
         public Odds CalculateOdds(Territory target)

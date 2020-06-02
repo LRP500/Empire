@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ResourceBank
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: 456dfff250179834f9b194e9011d4c0e, type: 2}
-  _initial: 10000
-  _current: 2366500
+  _initial: 15000
+  _current: 9800
   _clamped: 0
   _min: 0
   _max: 0

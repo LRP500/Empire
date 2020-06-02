@@ -16,23 +16,31 @@ namespace Empire
         private int _initialIncrement = 1;
 
         [SerializeField]
-        private int _cashSliceIncrement = 100000;
+        private int _cashSpentSliceIncrement = 100000;
+
+        [SerializeField]
+        [MinMaxSlider(0, 100, ShowFields = true)]
+        private Vector2Int _failedTakeOverIncrement = default;
 
         [SerializeField]
         private List<ThreatModifier> _threatModifiers = null;
 
         private System.Action<float> OnThreatChanged = null;
 
+        #region Life Cycle
+
         public override void Initialize()
         {
             _threat.Initialize();
 
             EventManager.Instance.Subscribe(GameplayEvent.CashSpent, ProcessCashSpendings);
+            EventManager.Instance.Subscribe(GameplayEvent.TakeOverFailed, ProcessFailedTakeOver);
         }
 
         public override void Clear()
         {
             EventManager.Instance.Unsubscribe(GameplayEvent.CashSpent, ProcessCashSpendings);
+            EventManager.Instance.Unsubscribe(GameplayEvent.TakeOverFailed, ProcessFailedTakeOver);
         }
 
         public override void RefreshOnTick(float elapsed)
@@ -47,10 +55,12 @@ namespace Empire
                 }
             }
 
-            IncrementThreat(increment);
+            IncreaseThreat(increment);
         }
 
-        public void IncrementThreat(int amount)
+        #endregion Life Cycle
+
+        public void IncreaseThreat(int amount)
         {
             _threat.Increment(amount);
 
@@ -62,11 +72,16 @@ namespace Empire
             int cashSpent = (int)arg;
 
             // The result of an int division will always floored (decimals are truncated basically)
-            int threatGenerated = cashSpent / _cashSliceIncrement;
+            int threatGenerated = cashSpent / _cashSpentSliceIncrement;
 
             Debug.Log("Threat generated " + threatGenerated);
 
-            IncrementThreat(threatGenerated);
+            IncreaseThreat(threatGenerated);
+        }
+
+        private void ProcessFailedTakeOver(object arg)
+        {
+            IncreaseThreat(Random.Range(_failedTakeOverIncrement.x, _failedTakeOverIncrement.y + 1));
         }
 
         #region Callbacks
