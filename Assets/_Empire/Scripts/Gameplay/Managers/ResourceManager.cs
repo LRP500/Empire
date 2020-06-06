@@ -20,9 +20,16 @@ namespace Empire
 
         public override void Initialize()
         {
-            _bank.Initialize();
-            _cash.Initialize();
             _meth.Initialize();
+            _cash.Initialize();
+            _bank.Initialize();
+        }
+
+        public override void RefreshOnTick(float elapsed)
+        {
+            _meth.Increment(_context.productionManager.MethProduction);
+            _cash.Increment(_context.productionManager.CashProduction);
+            _bank.Increment(_context.productionManager.BankProduction);
         }
 
         public bool Spend(int amount)

@@ -23,9 +23,10 @@ FEATURES:
         Same odds or Advantage on success for rival ?
     [ ] Deal negociation @low
     [ ] Large numbers @high
-    [ ] Resource increment UI feedback @high @started(20-06-06 14:47)
+    [x] Resource increment UI feedback @high @started(20-06-06 14:47) @done(20-06-06 17:11) @lasted(2h24m22s)
     [ ] Tutorials
     [ ] Pop up events @low
+    [ ] Formula for threat increment by cash spent @high
         Random events + threat events
         Resource modifiers + temporary buff/debuffs
     [ ] Threat gauge feedback on punctual threat modifiers

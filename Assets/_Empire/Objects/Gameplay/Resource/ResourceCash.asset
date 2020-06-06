@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: ResourceCash
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: 48b87fa897af11a44b0d6eb78219cd35, type: 2}
-  _initial: 10000
-  _current: 19997200
+  _initial: 20000000
+  _current: 19391500
   _clamped: 0
   _min: 0
   _max: 0
+  _production: {fileID: 11400000, guid: 50a3c56baa43f8240bebaa8af421678a, type: 2}

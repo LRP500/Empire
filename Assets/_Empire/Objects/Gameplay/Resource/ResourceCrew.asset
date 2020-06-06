@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: ResourceCrew
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: db7023f8f15a43041980d3d3aeaea6c3, type: 2}
+  _initial: 0
   _current: 0
+  _clamped: 0
+  _min: 0
+  _max: 0
+  _production: {fileID: 11400000, guid: 1128ad64bf57dd94eb54761c5589a997, type: 2}

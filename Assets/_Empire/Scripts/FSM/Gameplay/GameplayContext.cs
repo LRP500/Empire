@@ -34,6 +34,7 @@ namespace Empire
         public void RefreshOnTick(float elapsed)
         {
             productionManager.RefreshOnTick(elapsed);
+            resourceManager.RefreshOnTick(elapsed);
             threatManager.RefreshOnTick(elapsed);
         }
 

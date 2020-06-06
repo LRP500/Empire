@@ -1,4 +1,5 @@
 ﻿using Sirenix.OdinInspector;
+using Tools.Variables;
 using UnityEngine;
 
 namespace Empire
@@ -28,6 +29,10 @@ namespace Empire
         [ShowIf(nameof(_clamped))]
         private int _max = 0;
         public int Max => _max;
+
+        [SerializeField]
+        private IntVariable _production = null;
+        public int Production => _production.Value;
 
         private System.Action<int> OnCurrentValueChanged = null;
 

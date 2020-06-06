@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a758ac5e0ae0df49942810c8a309f37, type: 3}
   m_Name: ProductionManager
   m_EditorClassIdentifier: 
+  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
+  _methProduction: {fileID: 11400000, guid: 7e346d2b7918c164181858ae22fa12a5, type: 2}
+  _cashProduction: {fileID: 11400000, guid: 50a3c56baa43f8240bebaa8af421678a, type: 2}
+  _bankProduction: {fileID: 11400000, guid: a2fd497310407274398c27d4726813ff, type: 2}
   _initialMethSellingPrice: 25
   _methSellingPrice: {fileID: 11400000, guid: 96d52dad70dbfeb4c8744d0e4081e3e1, type: 2}
-  _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: 456dfff250179834f9b194e9011d4c0e, type: 2}
   _initial: 15000
-  _current: 9800
+  _current: 15000
   _clamped: 0
   _min: 0
   _max: 0
+  _production: {fileID: 11400000, guid: a2fd497310407274398c27d4726813ff, type: 2}

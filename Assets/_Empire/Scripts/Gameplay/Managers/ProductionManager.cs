@@ -8,6 +8,20 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Managers/Production Manager")]
     public class ProductionManager : ScriptableManager<ProductionManager>
     {
+        [Space]
+        [SerializeField]
+        private IntVariable _methProduction = null;
+        public int MethProduction => _methProduction;
+
+        [SerializeField]
+        private IntVariable _cashProduction = null;
+        public int CashProduction => _cashProduction;
+
+        [SerializeField]
+        private IntVariable _bankProduction = null;
+        public int BankProduction => _bankProduction;
+
+        [Space]
         [SerializeField]
         [SuffixLabel("($k/lbs)", Overlay = true)]
         private int _initialMethSellingPrice = 25;
@@ -35,22 +49,21 @@ namespace Empire
             ProcessLaundering();
         }
 
-        private void ProcessLaundering()
+        private void ProcessProduction()
         {
-            _context.resourceManager.Launder(_context.structureManager.GetTotalLaundering());
+            _methProduction.SetValue(_context.structureManager.GetTotalProduction());
         }
 
         private void ProcessDistribution()
         {
             int totalDistribution = _context.structureManager.GetTotalDistribution();
             int sold = _context.resourceManager.RemoveMeth(totalDistribution);
-            _context.resourceManager.AddCash(sold * _methSellingPrice);
+            _cashProduction.SetValue(sold * _methSellingPrice);
         }
 
-        private void ProcessProduction()
+        private void ProcessLaundering()
         {
-            int totalProduction = _context.structureManager.GetTotalProduction();
-            _context.resourceManager.AddMeth(totalProduction);
+            _bankProduction.SetValue(_context.structureManager.GetTotalLaundering());
         }
 
         private void ProcessDeals()
