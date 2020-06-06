@@ -16,7 +16,7 @@ namespace Empire
         private int _initialIncrement = 1;
 
         [SerializeField]
-        private int _cashSpentSliceIncrement = 100000;
+        private int _cashSpentSliceIncrement = 10000;
 
         [SerializeField]
         [MinMaxSlider(0, 100, ShowFields = true)]

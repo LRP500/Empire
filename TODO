@@ -23,7 +23,7 @@ FEATURES:
         Same odds or Advantage on success for rival ?
     [ ] Deal negociation @low
     [ ] Large numbers @high
-    [ ] Resource increment UI feedback @high
+    [ ] Resource increment UI feedback @high @started(20-06-06 14:47)
     [ ] Tutorials
     [ ] Pop up events @low
         Random events + threat events
