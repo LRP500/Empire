@@ -76,11 +76,10 @@ namespace Empire
 
                 if (deal == null) continue;
 
-                int quantitySold = _context.resourceManager.RemoveMeth(deal.Quantity);
-
-                if (quantitySold == deal.Quantity)
+                if (_methProduction.Value >= deal.Quantity)
                 {
-                    _context.resourceManager.AddCash(quantitySold * deal.SellingPrice);
+                    _methProduction.Substract(deal.Quantity);
+                    _cashProduction.Add(deal.Quantity * deal.SellingPrice);
                 }
                 else
                 {

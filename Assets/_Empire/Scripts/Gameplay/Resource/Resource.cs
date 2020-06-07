@@ -59,6 +59,8 @@ namespace Empire
             return SetCurrent(_current - value) * -1;
         }
 
+        #region Callbacks
+
         public void RegisterOnCurrentValueChanged(System.Action<int> callback)
         {
             OnCurrentValueChanged += callback;
@@ -68,6 +70,18 @@ namespace Empire
         {
             OnCurrentValueChanged -= callback;
         }
+
+        public void RegisterOnProductionValueChanged(System.Action callback)
+        {
+            _production.Subscribe(callback);
+        }
+
+        public void UnregisterOnProductionValueChanged(System.Action callback)
+        {
+            _production.Unsubscribe(callback);
+        }
+
+        #endregion Callbacks
 
         public static implicit operator int(Resource lhs)
         {

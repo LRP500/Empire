@@ -8865,6 +8865,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4085489232202288517, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
+      propertyPath: _timeController
+      value: 
+      objectReference: {fileID: 523805128}
     - target: {fileID: 5483620996179733347, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -9153,6 +9157,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7894303719372616283, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
+      propertyPath: _timeController
+      value: 
+      objectReference: {fileID: 523805128}
+    - target: {fileID: 7894303719583114823, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
+      propertyPath: _timeController
+      value: 
+      objectReference: {fileID: 523805128}
+    - target: {fileID: 7894303720073725450, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
+      propertyPath: _timeController
+      value: 
+      objectReference: {fileID: 523805128}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
 --- !u!1001 &2767975463682932336

@@ -1,4 +1,6 @@
-﻿using TMPro;
+﻿using System.Collections;
+using TMPro;
+using Tools.Time;
 using Tools.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +19,12 @@ namespace Empire
         private TextMeshProUGUI _increment = null;
 
         [SerializeField]
+        private CanvasGroup _incrementGroup = null;
+
+        [SerializeField]
+        private TimeController _timeController = null;
+
+        [SerializeField]
         private Resource _resource = null;
 
         [SerializeField]
@@ -25,39 +33,44 @@ namespace Empire
         private void Awake()
         {
             _logo.sprite = _resource.Type.Icon;
+            _resource.RegisterOnCurrentValueChanged(Refresh);
+            _resource.RegisterOnProductionValueChanged(RefreshIncrement);
         }
 
-        private void Update()
+        private void OnDestroy()
         {
-            Refresh();   
+            _resource.UnregisterOnCurrentValueChanged(Refresh);
+            _resource.UnregisterOnProductionValueChanged(RefreshIncrement);
         }
 
-        private void Refresh()
+        private void Refresh(int currentValue)
         {
-            _amount.text = AbbreviationUtility.Format(_resource.Current, "0.0");
+            _amount.text = AbbreviationUtility.Format(currentValue, "0.0");
+        }
 
+        private void RefreshIncrement()
+        {
             string increment = AbbreviationUtility.Format(_resource.Production, "0.0");
             _increment.text = increment.Insert(0, _resource.Production < 0 ? "-" : "+");
+
+            //StopAllCoroutines();
+            //StartCoroutine(FadeOutIncrementText());
         }
 
-        //private IEnumerator FadeOutIncrementText()
-        //{
-        //    SetIncrementTextAlpha(1);
+        private IEnumerator FadeOutIncrementText()
+        {
+            _incrementGroup.alpha = 1;
 
-        //    float timer = _incrementTextFadeOutTime;
+            float timer = _incrementTextFadeOutTime;
 
-        //    while (timer >= 0)
-        //    {
-        //        timer += Time.unscaledDeltaTime;
-        //        yield return null;
-        //    }
+            while (timer >= 0)
+            {
+                timer += Time.unscaledDeltaTime;
+                _incrementGroup.alpha -= 1 / _incrementTextFadeOutTime * Time.deltaTime;
+                yield return null;
+            }
 
-        //    SetIncrementTextAlpha(0);
-        //}
-
-        //private void SetIncrementTextAlpha(int alpha)
-        //{
-        //    _increment.color = new Color(_increment.color.r, _increment.color.g, _increment.color.b, alpha);
-        //}
+            _incrementGroup.alpha = 0;
+        }
     }
 }

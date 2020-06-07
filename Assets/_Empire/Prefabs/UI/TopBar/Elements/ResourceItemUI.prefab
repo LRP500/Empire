@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5489070792240059818}
   - component: {fileID: 8003426770062882047}
   - component: {fileID: 7727234322418754532}
+  - component: {fileID: 3777652303314747043}
   m_Layer: 5
   m_Name: Increment
   m_TagString: Untagged
@@ -154,6 +155,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!225 &3777652303314747043
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744276377726568890}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6141961733892791788
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +231,8 @@ MonoBehaviour:
   _logo: {fileID: 6141961734062808884}
   _amount: {fileID: 6141961734237081063}
   _increment: {fileID: 7727234322418754532}
+  _incrementGroup: {fileID: 3777652303314747043}
+  _timeController: {fileID: 0}
   _resource: {fileID: 0}
   _incrementTextFadeOutTime: 1
 --- !u!114 &5419075903686632369
