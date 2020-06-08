@@ -1,4 +1,5 @@
-﻿using Tools.Time;
+﻿using Tools;
+using Tools.Time;
 using Tools.Variables;
 using UnityEngine;
 
@@ -11,6 +12,9 @@ namespace Empire
 
         [SerializeField]
         private GameplayContext _context = null;
+
+        [SerializeField]
+        private CameraRigController _cameraRig = null;
 
         [SerializeField]
         private IntVariable _turnCount = null;
@@ -27,7 +31,27 @@ namespace Empire
 
         private void Update()
         {
-            _context.Refresh();
+            if (!CheckGameOverConditions())
+            {
+                _context.Refresh();
+            }
+        }
+
+        private bool CheckGameOverConditions()
+        {
+            // Check victories before defeats
+            if (_context.worldMapManager.AllTerritoriesControlled())
+            {
+                PlayerVictory();
+                return true;
+            }
+            else if (_context.threatManager.MaxThreatReached)
+            {
+                PlayerDefeat();
+                return true;
+            }
+
+            return false;
         }
 
         private void StartNewGame()
@@ -47,6 +71,26 @@ namespace Empire
         {
             _turnCount.Increment();
             _context.RefreshOnTick(elapsed);
+        }
+
+        private void GameOver()
+        {
+            _cameraRig.SetLocked(true);
+            _timeController.Pause();
+            _timeController.SetSpeedMultiplier(0);
+            EventManager.Instance.Trigger(GameplayEvent.GameOver);
+        }
+
+        private void PlayerDefeat()
+        {
+            GameOver();
+            EventManager.Instance.Trigger(GameplayEvent.PlayerDefeat);
+        }
+
+        private void PlayerVictory()
+        {
+            GameOver();
+            EventManager.Instance.Trigger(GameplayEvent.PlayerVictory);
         }
     }
 }

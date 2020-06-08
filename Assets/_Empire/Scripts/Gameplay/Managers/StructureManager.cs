@@ -29,7 +29,7 @@ namespace Empire
             Structures = new Dictionary<Territory, TerritoryStructureInfo>();
         }
 
-        public void SetupStructures(Territory territory)
+        public void InitializeTerritoryStructures(Territory territory)
         {
             TerritoryStructureInfo info = new TerritoryStructureInfo()
             {

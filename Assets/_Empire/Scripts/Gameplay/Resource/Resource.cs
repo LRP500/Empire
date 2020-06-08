@@ -13,6 +13,7 @@ namespace Empire
 
         [SerializeField]
         private int _initial = 0;
+        public int Initial => _initial;
 
         [SerializeField]
         private int _current = 0;

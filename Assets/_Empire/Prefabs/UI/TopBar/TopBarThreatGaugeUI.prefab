@@ -241,7 +241,7 @@ MonoBehaviour:
   _valueText: {fileID: 1646167154}
   _mainSliderColor:
     useConstant: 1
-    constant: {r: 0, g: 0, b: 0, a: 0.6}
+    constant: {r: 0, g: 0, b: 0, a: 0.69803923}
     variable: {fileID: 0}
   _animate: 1
   _lerpTime: 10
@@ -255,8 +255,8 @@ MonoBehaviour:
     useConstant: 1
     constant: {r: 0, g: 0, b: 0, a: 0}
     variable: {fileID: 0}
-  _criticalTreshold: 80
-  _criticalSliderColor: {r: 0, g: 0, b: 0, a: 0.6}
+  _criticalTreshold: 85
+  _criticalSliderColor: {r: 0, g: 0, b: 0, a: 0.69803923}
   _threatManager: {fileID: 11400000, guid: 852e9bd75555e9e408fd0cd15c1281c4, type: 2}
 --- !u!1 &3670080697161886287
 GameObject:
@@ -290,7 +290,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.125, y: 1}
+  m_AnchorMax: {x: 0.1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -402,10 +402,10 @@ RectTransform:
   m_Father: {fileID: 3999584418064266994}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.14, y: 0}
+  m_AnchorMin: {x: 0.12, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -20}
+  m_SizeDelta: {x: 0, y: -12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7683825255535472235
 MonoBehaviour:
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.69803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_OnCullStateChanged:

@@ -27,6 +27,8 @@ namespace Empire
 
         private System.Action<float> OnThreatChanged = null;
 
+        public bool MaxThreatReached => _threat.Current >= _threat.Max;
+
         #region Life Cycle
 
         public override void Initialize()
@@ -41,6 +43,10 @@ namespace Empire
         {
             EventManager.Instance.Unsubscribe(GameplayEvent.CashSpent, ProcessCashSpendings);
             EventManager.Instance.Unsubscribe(GameplayEvent.TakeOverFailed, ProcessFailedTakeOver);
+        }
+
+        public override void Refresh()
+        {
         }
 
         public override void RefreshOnTick(float elapsed)

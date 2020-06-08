@@ -14,6 +14,9 @@ namespace Empire
         [SerializeField]
         private float _zoomSensitivity = 1f;
 
+        [SerializeField]
+        private MousePointer _mousePointer = null;
+
         private CinemachineFramingTransposer _vcamTransposer = null;
 
         private void Awake()
@@ -34,6 +37,11 @@ namespace Empire
         {
             _vcamTransposer = _virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
             _vcamTransposer.m_CameraDistance = _initialCameraDistance;
+        }
+
+        public void SetLocked(bool state)
+        {
+            _mousePointer.enabled = !state;
         }
     }
 }

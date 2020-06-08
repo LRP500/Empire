@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using TMPro;
-using Tools.Time;
 using Tools.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,9 +19,6 @@ namespace Empire
 
         [SerializeField]
         private CanvasGroup _incrementGroup = null;
-
-        [SerializeField]
-        private TimeController _timeController = null;
 
         [SerializeField]
         private Resource _resource = null;

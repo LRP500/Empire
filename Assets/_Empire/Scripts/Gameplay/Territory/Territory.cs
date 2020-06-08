@@ -21,6 +21,11 @@ namespace Empire
         private List<Territory> _neighbors = null;
         public List<Territory> Neighbors => _neighbors;
 
+        /// <summary>
+        /// Allows checking if controlled without having to cast State.
+        /// </summary>
+        public bool Controlled { get; set; } = false;
+
         #endregion Serialized Fields
 
         #region Properties

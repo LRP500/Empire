@@ -52,6 +52,19 @@ namespace Empire
             SetControlled(_territories.Random());
         }
 
+        public bool AllTerritoriesControlled()
+        {
+            foreach (Territory territory in _territories.Items)
+            {
+                if (!territory.Controlled)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         #region Territory State
 
         public void SetControlled(Territory territory)

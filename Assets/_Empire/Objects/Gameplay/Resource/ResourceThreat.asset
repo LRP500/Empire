@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: ResourceThreat
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: b42bd93bb1ac88b4fa6dcbfc0034c74c, type: 2}
-  _initial: 0
-  _current: 0
+  _initial: 500
+  _current: 853
   _clamped: 1
   _min: 0
   _max: 1000
+  _production: {fileID: 0}

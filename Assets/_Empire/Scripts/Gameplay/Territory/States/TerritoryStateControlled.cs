@@ -14,12 +14,15 @@ namespace Empire
 
         public override void OnExitState()
         {
+            _territory.Controlled = false;
             _context.structureManager.ClearStructures(_territory);
         }
 
         public override void OnEnterState()
         {
             base.OnEnterState();
+
+            _territory.Controlled = true;
 
             foreach (Territory neighbor in _territory.Neighbors)
             {
@@ -29,7 +32,7 @@ namespace Empire
                 }
             }
 
-            _context.structureManager.SetupStructures(_territory);
+            _context.structureManager.InitializeTerritoryStructures(_territory);
         }
     }
 }

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using Tools;
 using Tools.Time;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Empire
 {
-    public class TimeControlUI : MonoBehaviour
+    public class TimeControlUI : PanelUI
     {
         public struct SpeedMultiplierInfo
         {

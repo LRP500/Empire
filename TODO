@@ -32,12 +32,15 @@ FEATURES:
         e.g : white flicker on cash spendings
     [ ] Map movement
         Mouse drag 
-    [ ] Game end conditions
+    [x] Game over @started(20-06-08 22:17) @done(20-06-09 01:01) @lasted(2h44m37s)
+    [ ] Main menu
+    [ ] Scene navigation
 
 BUGFIX:
     [ ] Resources from int to long
         Or non-realistic resource values ? e.g Civilization
     [ ] Upgrade panel info panel refresh
+    [ ] Time control toggles deselecting
 
 Archive:
   [x] Resource increment UI feedback @high @started(20-06-06 14:47) @done(20-06-06 17:11) @lasted(2h24m22s) @project(FEATURES)

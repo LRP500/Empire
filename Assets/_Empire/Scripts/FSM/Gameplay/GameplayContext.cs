@@ -28,6 +28,7 @@ namespace Empire
 
         public void Refresh()
         {
+            threatManager.Refresh();
             dealManager.Refresh();
         }
 
