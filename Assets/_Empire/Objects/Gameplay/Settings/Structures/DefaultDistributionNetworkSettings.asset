@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxLevel: 4
   _startingLevel: 0
-  _initialRate: 10
-  _rateIncrement: 100
+  _initialRate: 20
+  _rateIncrement: 200
   _isRateIncrementPercentage: 1
   _initialPrice: 3000
   _priceIncrement: 1000

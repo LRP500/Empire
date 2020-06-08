@@ -436,7 +436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90495319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -25.5427}
+  m_LocalPosition: {x: 0, y: 0.0000009536743, z: -28.9037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275779295}
@@ -1435,7 +1435,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 25.5427
+  m_CameraDistance: 28.9037
   m_DeadZoneWidth: 0.7
   m_DeadZoneHeight: 0.7
   m_DeadZoneDepth: 0
@@ -3425,7 +3425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -25.5427}
+  m_LocalPosition: {x: 0, y: 0.0000009536743, z: -28.9037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1048308274}
@@ -8768,6 +8768,14 @@ PrefabInstance:
     - target: {fileID: 1811886970377657474, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811886970925336602, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811886970925336602, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1811886972327686375, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
       propertyPath: m_AnchorMin.y

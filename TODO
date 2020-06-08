@@ -23,7 +23,6 @@ FEATURES:
         Same odds or Advantage on success for rival ?
     [ ] Deal negociation @low
     [ ] Large numbers @high
-    [x] Resource increment UI feedback @high @started(20-06-06 14:47) @done(20-06-06 17:11) @lasted(2h24m22s)
     [ ] Tutorials
     [ ] Pop up events @low
     [ ] Formula for threat increment by cash spent @high
@@ -31,16 +30,25 @@ FEATURES:
         Resource modifiers + temporary buff/debuffs
     [ ] Threat gauge feedback on punctual threat modifiers
         e.g : white flicker on cash spendings
-    [x] Threat modifier on take over @started(20-06-02 22:53) @done(20-06-02 23:14) @lasted(21m22s)
-        Successful or failed ? Both ?
+    [ ] Map movement
+        Mouse drag 
+    [ ] Game end conditions
 
 BUGFIX:
     [ ] Resources from int to long
+        Or non-realistic resource values ? e.g Civilization
+    [ ] Upgrade panel info panel refresh
 
 Archive:
+  [x] Resource increment UI feedback @high @started(20-06-06 14:47) @done(20-06-06 17:11) @lasted(2h24m22s) @project(FEATURES)
+  [x] Threat modifier on take over @started(20-06-02 22:53) @done(20-06-02 23:14) @lasted(21m22s) @project(FEATURES)
+    Successful or failed ? Both ?
   [x] Threat generated on spending cash @started(20-06-01 22:17) @done(20-06-01 23:07) @lasted(50m2s) @project(FEATURES)
     Cash amount steps (e.g : 1ut/1k$) 
   [x] Deal cancel action @critical @done(20-05-29 18:07) @project(FEATURES)
   [x] Threat mutlipliers steps on controlled territory count @started(20-05-31 13:34) @done(20-05-31 15:49) @lasted(2h15m43s) @project(FEATURES)
     e.g : 10 controlled > +10%, 20 controlled > +20% ...
     Threat become more of a problem as player progresses
+
+To-Small-To-Be-A-Task Tasks:
+    [ ] Higher distribution rate 
