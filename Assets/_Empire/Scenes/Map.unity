@@ -8950,6 +8950,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 187825184}
     m_Modifications:
+    - target: {fileID: 2678430959983043297, guid: 68162ff3a0b5c854280ed22d672248f9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2678430959983043297, guid: 68162ff3a0b5c854280ed22d672248f9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2767975464277736326, guid: 68162ff3a0b5c854280ed22d672248f9, type: 3}
       propertyPath: m_Name
       value: TopBarThreatGaugeUI

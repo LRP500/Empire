@@ -34,6 +34,8 @@ namespace Empire
 
         private Structure _structure = null;
 
+        private string _abbreviatedPrice = string.Empty;
+
         public override void Initialize(TerritoryAction action, Territory territory)
         {
             base.Initialize(action, territory);
@@ -49,7 +51,31 @@ namespace Empire
             }
         }
 
-        private void Refresh()
+        private void Update()
+        {
+            RefreshPriceText();
+        }
+
+        private void RefreshPriceText()
+        {
+            if (!_structure.IsMaxLevel() && !_abbreviatedPrice.Equals(string.Empty))
+            {
+                if (!_resourceManager.CanSpend(_structure.Price))
+                {
+                    _price.SetValue($"<color=red>{_abbreviatedPrice}");
+                }
+                else if (_resourceManager.Bank < _structure.Price)
+                {
+                    _price.SetValue($"<color=orange>RISKY {_abbreviatedPrice}");
+                }
+                else
+                {
+                    _price.SetValue(_abbreviatedPrice);
+                }
+            }
+        }
+
+        private void Initialize()
         {
             if (_structure.IsMaxLevel())
             {
@@ -68,24 +94,13 @@ namespace Empire
 
                 _price.gameObject.SetActive(true);
 
-                if (!_resourceManager.CanSpend(_structure.Price))
-                {
-                    _price.SetValue($"<color=red>{AbbreviationUtility.Format(_structure.Price)}");
-                }
-                else if (_resourceManager.Bank < _structure.Price)
-                {
-                    _price.SetValue($"<color=orange>RISKY {AbbreviationUtility.Format(_structure.Price)}");
-                }
-                else
-                {
-                    _price.SetValue(AbbreviationUtility.Format(_structure.Price));
-                }
+                _abbreviatedPrice = AbbreviationUtility.Format(_structure.Price);
             }
         }
 
         public override void Open()
         {
-            Refresh();
+            Initialize();
 
             base.Open();
         }
