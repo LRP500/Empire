@@ -39,7 +39,7 @@ FEATURES:
 BUGFIX:
     [ ] Resources from int to long
         Or non-realistic resource values ? e.g Civilization
-    [ ] Upgrade info panel refresh
+    [x] Upgrade info panel refresh @started(20-06-09 23:16) @done(20-06-09 23:36) @lasted(20m24s)
     [ ] Time control toggles deselecting
 
 Archive:

@@ -161,6 +161,14 @@ PrefabInstance:
       propertyPath: m_Group
       value: 
       objectReference: {fileID: 358486814}
+    - target: {fileID: -4229230665117348759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 7308380248607162546}
+    - target: {fileID: -4229230665117348759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
+      propertyPath: m_Navigation.m_SelectOnRight
+      value: 
+      objectReference: {fileID: 4994141373538280048}
     - target: {fileID: 5218066019278477759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -294,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Group
       value: 
       objectReference: {fileID: 358486814}
+    - target: {fileID: -4229230665117348759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 4994141373538280048}
     - target: {fileID: 5218066019278477759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -427,6 +439,14 @@ PrefabInstance:
       propertyPath: m_Group
       value: 
       objectReference: {fileID: 358486814}
+    - target: {fileID: -4229230665117348759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 4994141372563002372}
+    - target: {fileID: -4229230665117348759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
+      propertyPath: m_Navigation.m_SelectOnRight
+      value: 
+      objectReference: {fileID: 4994141372690981968}
     - target: {fileID: 5218066019278477759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -560,6 +580,10 @@ PrefabInstance:
       propertyPath: m_Group
       value: 
       objectReference: {fileID: 358486814}
+    - target: {fileID: -4229230665117348759, guid: 798878afb90a0cc46903719590a846b1, type: 3}
+      propertyPath: m_Navigation.m_SelectOnRight
+      value: 
+      objectReference: {fileID: 4994141372563002372}
     - target: {fileID: 9105568840182055166, guid: 798878afb90a0cc46903719590a846b1, type: 3}
       propertyPath: m_Name
       value: Pause
