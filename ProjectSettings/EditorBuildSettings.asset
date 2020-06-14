@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Empire/Scenes/Master.unity
+    guid: b123da7ef51d98046846f8a57952d071
+  - enabled: 1
+    path: Assets/_Empire/Scenes/LoadingScreen.unity
+    guid: 33a829699f01b5345a605e84c5f0d16e
+  - enabled: 1
+    path: Assets/_Empire/Scenes/MainMenu.unity
+    guid: 3230374f157edae47bf4f71bb8dbadc0
+  - enabled: 1
+    path: Assets/_Empire/Scenes/Gameplay.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

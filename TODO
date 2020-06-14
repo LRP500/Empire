@@ -33,7 +33,7 @@ FEATURES:
     [ ] Map movement
         Mouse drag 
     [x] Game over @started(20-06-08 22:17) @done(20-06-09 01:01) @lasted(2h44m37s)
-    [ ] Main menu
+    [ ] Main menu @started(20-06-14 21:08)
     [ ] Scene navigation
 
 BUGFIX:
@@ -54,4 +54,4 @@ Archive:
     Threat become more of a problem as player progresses
 
 To-Small-To-Be-A-Task Tasks:
-    [ ] Higher distribution rate 
+    [ ] Higher distribution rate

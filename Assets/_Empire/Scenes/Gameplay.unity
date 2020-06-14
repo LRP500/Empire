@@ -2543,6 +2543,7 @@ MonoBehaviour:
   _gamePaused: {fileID: 11400000, guid: 427108fb5f8b0ca4e988e2cf6bb31efa, type: 2}
   _tickInterval: 2
   _unscaledTick: 0
+  _runtimeReference: {fileID: 11400000, guid: bdea95d6603c021499b615b4ff1223cd, type: 2}
 --- !u!1 &526243533
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,13 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b44babad069b8ee44adae821dfd017fa, type: 3}
-  m_Name: ResourceThreat
+  m_Script: {fileID: 11500000, guid: 8cfdaf2ffd69c154487bb1b33ed4a6fa, type: 3}
+  m_Name: TimeControllerReference
   m_EditorClassIdentifier: 
-  _type: {fileID: 11400000, guid: b42bd93bb1ac88b4fa6dcbfc0034c74c, type: 2}
-  _initial: 0
-  _current: 0
-  _clamped: 1
-  _min: 0
-  _max: 1000
-  _production: {fileID: 0}
+  _value: {fileID: 0}
