@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 namespace Empire
 {
-    public class Territory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
+    public class Territory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         #region Serialized Fields
 
@@ -66,13 +66,13 @@ namespace Empire
         {
         }
 
-        public void OnPointerDown(PointerEventData eventData)
+        public void OnPointerClick(PointerEventData eventData)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 EventManager.Instance.Trigger(GameplayEvent.TerritoryPrimarySelect, this);
             }
-            else if (Input.GetKeyDown(KeyCode.Mouse1))
+            else if (Input.GetKeyUp(KeyCode.Mouse1))
             {
                 EventManager.Instance.Trigger(GameplayEvent.TerritorySecondarySelect, this);
             }

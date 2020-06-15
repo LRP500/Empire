@@ -30,19 +30,19 @@ FEATURES:
         Resource modifiers + temporary buff/debuffs
     [ ] Threat gauge feedback on punctual threat modifiers
         e.g : white flicker on cash spendings
-    [ ] Map movement
-        Mouse drag 
-    [x] Game over @started(20-06-08 22:17) @done(20-06-09 01:01) @lasted(2h44m37s)
-    [ ] Main menu @started(20-06-14 21:08)
-    [ ] Scene navigation
 
 BUGFIX:
     [ ] Resources from int to long
         Or non-realistic resource values ? e.g Civilization
-    [x] Upgrade info panel refresh @started(20-06-09 23:16) @done(20-06-09 23:36) @lasted(20m24s)
     [ ] Time control toggles deselecting
 
 Archive:
+  [x] Map movement @started(20-06-15 20:36) @done(20-06-15 21:33) @lasted(57m9s) @project(FEATURES)
+  [x] Map zoom limits @started(20-06-15 20:36) @done(20-06-15 21:33) @lasted(57m10s) @project(FEATURES)
+  [x] Scene navigation @done(20-06-15 18:21) @project(FEATURES)
+  [x] Game over @started(20-06-08 22:17) @done(20-06-09 01:01) @lasted(2h44m37s) @project(FEATURES)
+  [x] Main menu @started(20-06-14 21:08) @done(20-06-14 23:14) @lasted(2h6m19s) @project(FEATURES)
+  [x] Upgrade info panel refresh @started(20-06-09 23:16) @done(20-06-09 23:36) @lasted(20m24s) @project(BUGFIX)
   [x] Resource increment UI feedback @high @started(20-06-06 14:47) @done(20-06-06 17:11) @lasted(2h24m22s) @project(FEATURES)
   [x] Threat modifier on take over @started(20-06-02 22:53) @done(20-06-02 23:14) @lasted(21m22s) @project(FEATURES)
     Successful or failed ? Both ?

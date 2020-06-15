@@ -436,7 +436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90495319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0000019073486, z: -42}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275779295}
@@ -1457,16 +1457,16 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
+  m_XDamping: 0.5
+  m_YDamping: 0.5
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 42
-  m_DeadZoneWidth: 0.95
-  m_DeadZoneHeight: 0.95
+  m_CameraDistance: 15
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
-  m_UnlimitedSoftZone: 0
+  m_UnlimitedSoftZone: 1
   m_SoftZoneWidth: 1
   m_SoftZoneHeight: 1
   m_BiasX: 0
@@ -3453,7 +3453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0000019073486, z: -42}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1048308274}
@@ -3758,9 +3758,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _virtualCamera: {fileID: 90495320}
+  _target: {fileID: 1590316292}
   _initialCameraDistance: 42
-  _zoomSensitivity: 50
-  _mousePointer: {fileID: 1590316292}
+  _zoomSensitivity: 65
+  _cameraDistanceMin: 15
+  _cameraDistanceMax: 50
 --- !u!1 &1059755499 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5703529543554757452, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4938,7 +4940,7 @@ GameObject:
   - component: {fileID: 1373142745}
   - component: {fileID: 1373142744}
   m_Layer: 16
-  m_Name: CollisionPlane
+  m_Name: Collision Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5973,7 +5975,7 @@ GameObject:
   - component: {fileID: 1590316292}
   - component: {fileID: 1590316293}
   m_Layer: 0
-  m_Name: Pointer
+  m_Name: Camera Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6009,7 +6011,7 @@ MonoBehaviour:
   _hitLayers:
     serializedVersion: 2
     m_Bits: 65536
-  _sensitivity: 30
+  _dragSpeed: 15
 --- !u!212 &1590316293
 SpriteRenderer:
   m_ObjectHideFlags: 0

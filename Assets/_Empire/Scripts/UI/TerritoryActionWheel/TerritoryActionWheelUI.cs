@@ -26,11 +26,13 @@ namespace Empire
         private void Awake()
         {
             EventManager.Instance.Subscribe(GameplayEvent.TerritorySecondarySelect, OnTerritorySelected);
+            EventManager.Instance.Subscribe(GameplayEvent.CancelSecondaryMouseSelect, OnSelectionCanceled);
         }
 
         private void OnDestroy()
         {
             EventManager.Instance.Unsubscribe(GameplayEvent.TerritorySecondarySelect, OnTerritorySelected);
+            EventManager.Instance.Unsubscribe(GameplayEvent.CancelSecondaryMouseSelect, OnSelectionCanceled);
         }
 
         private void Update()
@@ -99,6 +101,11 @@ namespace Empire
             {
                 Open(arg as Territory);
             }
+        }
+
+        private void OnSelectionCanceled(object arg)
+        {
+            Close();
         }
 
         private void Clear()

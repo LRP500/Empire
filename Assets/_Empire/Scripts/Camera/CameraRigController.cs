@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Empire
@@ -9,13 +10,23 @@ namespace Empire
         private CinemachineVirtualCamera _virtualCamera = null;
 
         [SerializeField]
+        private CameraTarget _target = null;
+
+        [SerializeField]
+        [BoxGroup("Zoom")]
         private float _initialCameraDistance = 10f;
 
         [SerializeField]
+        [BoxGroup("Zoom")]
         private float _zoomSensitivity = 1f;
 
         [SerializeField]
-        private MousePointer _mousePointer = null;
+        [BoxGroup("Zoom")]
+        private float _cameraDistanceMin = 10f;
+
+        [SerializeField]
+        [BoxGroup("Zoom")]
+        private float _cameraDistanceMax = 100f;
 
         private CinemachineFramingTransposer _vcamTransposer = null;
 
@@ -29,7 +40,8 @@ namespace Empire
             if (Input.mouseScrollDelta.y != 0)
             {
                 float delta = Input.mouseScrollDelta.y > 0 ? -_zoomSensitivity : _zoomSensitivity;
-                _vcamTransposer.m_CameraDistance += delta * 10 * Time.unscaledDeltaTime;
+                float distance = _vcamTransposer.m_CameraDistance + delta * 10 * Time.unscaledDeltaTime;
+                _vcamTransposer.m_CameraDistance = Mathf.Clamp(distance, _cameraDistanceMin, _cameraDistanceMax);
             }
         }
 
@@ -41,7 +53,7 @@ namespace Empire
 
         public void SetLocked(bool state)
         {
-            _mousePointer.enabled = !state;
+            _target.enabled = !state;
         }
     }
 }
