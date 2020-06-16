@@ -66,17 +66,21 @@ namespace Empire
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                //SelectToggle(_pauseToggle.isOn ? (_lastActiveToggle ?? _resumeToggle) : _pauseToggle);
+                SelectToggle(_pauseToggle.IsSelected ? (_lastActiveToggle ?? _resumeToggle) : _pauseToggle);
             }
 
             foreach (var info in _speedMultipliers)
             {
                 if (Input.GetKeyDown(info.Value.input))
                 {
-                    OnToggleSelected(info.Key);
-                    info.Key.SetSelected(true);
+                    SelectToggle(info.Key);
                 }
             }
+        }
+
+        private void SelectToggle(Toggle toggle)
+        {
+            toggle.SetSelected(true);
         }
 
         private void OnToggleSelected(Toggle toggle)
