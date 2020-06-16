@@ -198,6 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2767975464277736327}
   - component: {fileID: 613680632}
+  - component: {fileID: 1916831584628829440}
   m_Layer: 5
   m_Name: TopBarThreatGaugeUI
   m_TagString: Untagged
@@ -244,7 +245,7 @@ MonoBehaviour:
     constant: {r: 0, g: 0, b: 0, a: 0.69803923}
     variable: {fileID: 0}
   _animate: 1
-  _lerpTime: 10
+  _lerpTime: 2
   _lerpDelay: 0
   _subSlider: {fileID: 0}
   _subSliderIncrementColor:
@@ -255,9 +256,26 @@ MonoBehaviour:
     useConstant: 1
     constant: {r: 0, g: 0, b: 0, a: 0}
     variable: {fileID: 0}
-  _criticalTreshold: 85
+  _criticalTreshold: 80
   _criticalSliderColor: {r: 0, g: 0, b: 0, a: 0.69803923}
   _threatManager: {fileID: 11400000, guid: 852e9bd75555e9e408fd0cd15c1281c4, type: 2}
+  _feedbackAnimation: {fileID: 1916831584628829440}
+--- !u!111 &1916831584628829440
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767975464277736326}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 465ee03765ad4274fb42047706903e68, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 465ee03765ad4274fb42047706903e68, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 1
+  m_CullingType: 0
 --- !u!1 &3670080697161886287
 GameObject:
   m_ObjectHideFlags: 0

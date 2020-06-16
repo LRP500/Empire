@@ -25,8 +25,6 @@ namespace Empire
         [SerializeField]
         private List<ThreatModifier> _threatModifiers = null;
 
-        private System.Action<float> OnThreatChanged = null;
-
         public bool MaxThreatReached => _threat.Current >= _threat.Max;
 
         #region Life Cycle
@@ -66,11 +64,14 @@ namespace Empire
 
         #endregion Life Cycle
 
-        public void IncreaseThreat(int amount)
+        public void IncreaseThreat(int amount, bool onPlayerAction = false)
         {
             _threat.Increment(amount);
 
-            OnThreatChanged?.Invoke(_threat);
+            if (onPlayerAction)
+            {
+                EventManager.Instance.Trigger(GameplayEvent.ThreatUpOnPlayerAction);
+            }
         }
 
         private void ProcessCashSpendings(object arg)
@@ -80,28 +81,12 @@ namespace Empire
             // The result of an int division will always floored (decimals are truncated basically)
             int threatGenerated = cashSpent / _cashSpentSliceIncrement;
 
-            Debug.Log("Threat generated " + threatGenerated);
-
-            IncreaseThreat(threatGenerated);
+            IncreaseThreat(threatGenerated, true);
         }
 
         private void ProcessFailedTakeOver(object arg)
         {
-            IncreaseThreat(Random.Range(_failedTakeOverIncrement.x, _failedTakeOverIncrement.y + 1));
+            IncreaseThreat(Random.Range(_failedTakeOverIncrement.x, _failedTakeOverIncrement.y + 1), true);
         }
-
-        #region Callbacks
-
-        public void RegisterOnThreatChanged(System.Action<float> callback)
-        {
-            OnThreatChanged += callback;
-        }
-
-        public void UnregisterOnThreatChanged(System.Action<float> callback)
-        {
-            OnThreatChanged -= callback;
-        }
-
-        #endregion Callbacks
     }
 }

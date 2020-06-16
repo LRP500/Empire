@@ -1,4 +1,5 @@
-﻿using Tools.UI;
+﻿using Tools;
+using Tools.UI;
 using UnityEngine;
 
 namespace Empire
@@ -8,6 +9,14 @@ namespace Empire
         [Space]
         [SerializeField]
         private ThreatManager _threatManager = null;
+
+        [SerializeField]
+        private Animation _feedbackAnimation = null;
+
+        private void Awake()
+        {
+            EventManager.Instance.Subscribe(GameplayEvent.ThreatUpOnPlayerAction, TriggerVisualFeedback);
+        }
 
         private void OnDestroy()
         {
@@ -35,6 +44,11 @@ namespace Empire
         {
             float ratio = 1f / (MaximumValue / CurrentValue);
             return ratio >= (_criticalTreshold / 100);
+        }
+
+        private void TriggerVisualFeedback(object arg)
+        {
+            _feedbackAnimation.Play();
         }
     }
 }

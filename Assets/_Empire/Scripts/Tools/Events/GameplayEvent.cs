@@ -11,10 +11,13 @@
 
         public static readonly string TerritorySecondarySelect = "GameplayEvent_TerritorySecondarySelect";
         public static readonly string TerritoryPrimarySelect = "GameplayEvent_TerritoryPrimarySelect";
+        public static readonly string CancelSecondaryMouseSelect = "GameplayEvent_CancelSecondaryMouseSelect";
 
         public static readonly string CashSpent = "GameplayEvent_CashSpent";
         public static readonly string TakeOverFailed = "GameplayEvent_TakeOverFailed";
         public static readonly string TakeOverSuccess = "GameplayEvent_TakeOverSuccess";
-        public static readonly string CancelSecondaryMouseSelect = "GameplayEvent_CancelSecondaryMouseSelect";
+
+        // UI
+        public static readonly string ThreatUpOnPlayerAction = "GameplayEvent_ThreatUpOnPlayerAction";
     }
 }

@@ -28,8 +28,6 @@ FEATURES:
     [ ] Formula for threat increment by cash spent @high
         Random events + threat events
         Resource modifiers + temporary buff/debuffs
-    [ ] Threat gauge feedback on punctual threat modifiers
-        e.g : white flicker on cash spendings
 
 BUGFIX:
     [ ] Resources from int to long
@@ -37,6 +35,8 @@ BUGFIX:
     [ ] Time control toggles deselecting
 
 Archive:
+  [x] Threat gauge feedback on punctual threat modifiers @done(20-06-15 23:14) @project(FEATURES)
+    e.g : white flicker on cash spendings
   [x] Map movement @started(20-06-15 20:36) @done(20-06-15 21:33) @lasted(57m9s) @project(FEATURES)
   [x] Map zoom limits @started(20-06-15 20:36) @done(20-06-15 21:33) @lasted(57m10s) @project(FEATURES)
   [x] Scene navigation @done(20-06-15 18:21) @project(FEATURES)
