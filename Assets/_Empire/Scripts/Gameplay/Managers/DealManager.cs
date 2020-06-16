@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Tools.Variables;
 using UnityEngine;
 
 namespace Empire
@@ -14,6 +15,10 @@ namespace Empire
 
         [SerializeField]
         private DealOfferSettings _dealSettings = null;
+
+        [SerializeField]
+        private BoolVariable _turnBased = null;
+        public bool IsTurnBased => _turnBased.Value;
 
         public Dictionary<Territory, TerritoryDealInfo> Deals { get; private set; } = null;
 
@@ -40,7 +45,7 @@ namespace Empire
 
         public void RenewDealOffer(Territory territory)
         {
-            GetInfo(territory).currentOffer = new DealOffer(territory, _dealSettings);
+            GetInfo(territory).currentOffer = new DealOffer(territory, _dealSettings, IsTurnBased);
         }
 
         public void AcceptDealOffer(Territory territory)

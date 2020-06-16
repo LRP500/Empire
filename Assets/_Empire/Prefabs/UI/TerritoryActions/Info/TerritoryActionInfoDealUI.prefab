@@ -170,6 +170,7 @@ MonoBehaviour:
   _sellingPriceKeyValue: {fileID: 5130513034026546119}
   _timer: {fileID: 4267007385114926966}
   _dealManager: {fileID: 11400000, guid: 3c7a1f03679881c4097cb35d3823cd65, type: 2}
+  _turnBased: {fileID: 0}
 --- !u!1001 &541372543274650561
 PrefabInstance:
   m_ObjectHideFlags: 0

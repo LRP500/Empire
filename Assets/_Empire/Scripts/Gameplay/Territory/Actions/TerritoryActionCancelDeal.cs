@@ -12,6 +12,8 @@ namespace Empire
 
         public override void Execute(Territory territory)
         {
+            base.Execute(territory);
+
             _context.dealManager.CancelActiveDeal(territory);
             _context.worldMapManager.SetRival(territory);
         }

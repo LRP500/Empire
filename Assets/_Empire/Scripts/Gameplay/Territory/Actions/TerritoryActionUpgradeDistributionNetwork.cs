@@ -13,6 +13,8 @@ namespace Empire
 
         public override void Execute(Territory territory)
         {
+            base.Execute(territory);
+
             _context.structureManager.UpgradeDistributionNetwork(territory);
         }
     }

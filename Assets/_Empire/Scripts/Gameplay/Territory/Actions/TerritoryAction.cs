@@ -1,4 +1,5 @@
 ﻿using Sirenix.OdinInspector;
+using Tools;
 using UnityEngine;
 
 namespace Empire
@@ -26,7 +27,11 @@ namespace Empire
         [SerializeField]
         protected GameplayContext _context = null;
 
-        public abstract void Execute(Territory territory);
+        public virtual void Execute(Territory territory)
+        {
+            EventManager.Instance.Trigger(GameplayEvent.PlayerAction);
+        }
+
         public abstract bool CanExecute(Territory territory);
     }
 }

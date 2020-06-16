@@ -29,6 +29,8 @@ namespace Empire
 
         public override void Execute(Territory territory)
         {
+            base.Execute(territory);
+
             // Taking over a territory will break active deal.
             _context.dealManager.CancelActiveDeal(territory);
 

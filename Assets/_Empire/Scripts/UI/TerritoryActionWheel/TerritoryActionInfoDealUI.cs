@@ -39,11 +39,22 @@ namespace Empire
         {
             if (_dealInfo.currentOffer != null)
             {
+                // Attributes
                 _quantityKeyValue.SetValue(_dealInfo.currentOffer.Quantity.ToString());
                 _sellingPriceKeyValue.SetValue(_dealInfo.currentOffer.SellingPrice.ToString());
 
-                string time = TimeUtility.Format(_dealInfo.currentOffer.RemainingTime);
-                _timer.text = _dealInfo.currentOffer.RemainingTime <= 31 ? $"<color=red>{time}" : time;
+                // Time
+                float remainingTime = _dealInfo.currentOffer.RemainingTime;
+                if (_dealManager.IsTurnBased)
+                {
+                    string time = remainingTime.ToString();
+                    _timer.text = remainingTime <= 3 ? $"<color=red>{time} Turns" : $"{time} Turns";
+                }
+                else
+                {
+                    string time = TimeUtility.Format(remainingTime);
+                    _timer.text = _dealInfo.currentOffer.RemainingTime <= 31 ? $"<color=red>{time}" : time;
+                }
             }
             else if (_dealInfo.activeDeal != null)
             {

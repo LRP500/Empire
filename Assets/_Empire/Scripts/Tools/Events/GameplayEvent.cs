@@ -2,6 +2,8 @@
 {
     public static class GameplayEvent
     {
+        public static readonly string PlayerAction = "GameplayEvent_PlayerAction";
+
         //public static readonly string MaxThreatReached = "GameplayEvent_MaxThreatReached";
         //public static readonly string AllTerritoriesControlled = "GameplayEvent_AllTerritoriesControlled";
 
