@@ -3,6 +3,7 @@
 [Platforms] Windows/OSX
 
 DESIGN :
+    [ ] Real time or turn based ? @critical 
     [ ] Retaliation system @critical
     [ ] Prevent player from abusing the in-deal-territories-are-easier-to-take-over feature
         Deals have to be respected during a certain period of time ?
@@ -17,11 +18,15 @@ DESIGN :
         Retaliation ?
     
 FEATURES:
+    [ ] Regroup all gameplay settings in single objects for easy swap @started(20-06-16 16:45)
+        Mainly to allow alternate settings when testing turn based system 
     [ ] Cancelled deal trigger retaliation
         In deal territory might attack player-controlled neighbors
         All neighbor territories ? Random (multiple) territories ?
         Same odds or Advantage on success for rival ?
     [ ] Deal negociation @low
+        Risk system : negociation creates risks overtime with those territories
+        An deal without negociation is a deal without risks ?
     [ ] Large numbers @high
     [ ] Tutorials
     [ ] Pop up events @low
@@ -32,7 +37,7 @@ FEATURES:
 BUGFIX:
     [ ] Resources from int to long
         Or non-realistic resource values ? e.g Civilization
-    [ ] Time control toggles deselecting
+    [ ] Time control toggles deselecting @started(20-06-16 21:24)
 
 Archive:
   [x] Threat gauge feedback on punctual threat modifiers @done(20-06-15 23:14) @project(FEATURES)

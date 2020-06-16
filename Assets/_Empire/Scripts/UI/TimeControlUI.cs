@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Tools;
+﻿using System.Collections.Generic;
 using Tools.Time;
+using Tools.UI;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Empire
 {
@@ -58,12 +56,10 @@ namespace Empire
                 { _fastForwawrdToggle, new SpeedMultiplierInfo(_fastForwardSpeed, KeyCode.R) }
             };
 
-            _pauseToggle.onValueChanged.AddListener(delegate { ToggleValueChanged(_pauseToggle); });
-            _resumeToggle.onValueChanged.AddListener(delegate { ToggleValueChanged(_resumeToggle); });
-            _forwardToggle.onValueChanged.AddListener(delegate { ToggleValueChanged(_forwardToggle); });
-            _fastForwawrdToggle.onValueChanged.AddListener(delegate { ToggleValueChanged(_fastForwawrdToggle); });
-
-            SelectToggle(_resumeToggle);
+            _pauseToggle.OnSelect.AddListener(delegate { OnToggleSelected(_pauseToggle); });
+            _resumeToggle.OnSelect.AddListener(delegate { OnToggleSelected(_resumeToggle); });
+            _forwardToggle.OnSelect.AddListener(delegate { OnToggleSelected(_forwardToggle); });
+            _fastForwawrdToggle.OnSelect.AddListener(delegate { OnToggleSelected(_fastForwawrdToggle); });
         }
 
         private void Update()
@@ -77,29 +73,20 @@ namespace Empire
             {
                 if (Input.GetKeyDown(info.Value.input))
                 {
-                    SelectToggle(info.Key);
+                    OnToggleSelected(info.Key);
+                    info.Key.SetSelected(true);
                 }
             }
         }
 
-        private void ToggleValueChanged(Toggle toggle)
+        private void OnToggleSelected(Toggle toggle)
         {
-            if (toggle.isOn)
+            _timeController.SetSpeedMultiplier(_speedMultipliers[toggle].speed);
+
+            if (toggle != _pauseToggle)
             {
-                toggle.Select();
-
-                _timeController.SetSpeedMultiplier(_speedMultipliers[toggle].speed);
-
-                if (toggle != _pauseToggle)
-                {
-                    _lastActiveToggle = toggle;
-                }
+                _lastActiveToggle = toggle;
             }
-        }
-
-        private void SelectToggle(Toggle toggle)
-        {
-            toggle.isOn = true;
         }
     }
 }
