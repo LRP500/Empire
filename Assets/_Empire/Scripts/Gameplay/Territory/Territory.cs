@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 namespace Empire
 {
-    public class Territory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+    public class Territory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
         #region Serialized Fields
 
@@ -27,6 +27,8 @@ namespace Empire
         public bool Controlled { get; set; } = false;
 
         #endregion Serialized Fields
+
+        private bool _dragging = false;
 
         #region Properties
 
@@ -68,6 +70,11 @@ namespace Empire
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            if (_dragging)
+            {
+                return;
+            }
+
             if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 EventManager.Instance.Trigger(GameplayEvent.TerritoryPrimarySelect, this);
@@ -76,6 +83,24 @@ namespace Empire
             {
                 EventManager.Instance.Trigger(GameplayEvent.TerritorySecondarySelect, this);
             }
+        }
+
+        public void OnBeginDrag(PointerEventData eventData)
+        {
+            _dragging = true;
+        }
+
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            _dragging = false;
+        }
+
+        /// <summary>
+        /// OnDrag has to be implemented to allow OnEndDrag and OnBeginDrag to work.
+        /// </summary>
+        /// <param name="eventData"></param>
+        public void OnDrag(PointerEventData eventData)
+        {
         }
 
         #endregion UI Events

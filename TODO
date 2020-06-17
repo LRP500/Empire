@@ -37,9 +37,9 @@ FEATURES:
 BUGFIX:
     [ ] Resources from int to long
         Or non-realistic resource values ? e.g Civilization
-    [ ] Time control toggles deselecting @started(20-06-16 21:24)
 
 Archive:
+  [x] Time control toggles deselecting @started(20-06-16 21:24) @done(20-06-16 23:17) @lasted(1h53m53s) @project(BUGFIX)
   [x] Threat gauge feedback on punctual threat modifiers @done(20-06-15 23:14) @project(FEATURES)
     e.g : white flicker on cash spendings
   [x] Map movement @started(20-06-15 20:36) @done(20-06-15 21:33) @lasted(57m9s) @project(FEATURES)
