@@ -1,5 +1,6 @@
 ﻿using Tools;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Empire
 {
@@ -33,7 +34,7 @@ namespace Empire
             if (!Input.GetMouseButton(1)) return;
 
             EventManager.Instance.Trigger(GameplayEvent.CancelSecondaryMouseSelect);
-
+            
             float speed = _dragSpeed * Time.unscaledDeltaTime * 1000;
             Vector3 pos = _mainCamera.ScreenToViewportPoint(Input.mousePosition - _dragOrigin);
             Vector3 move = new Vector3(pos.x * speed, pos.y * speed, transform.position.z);

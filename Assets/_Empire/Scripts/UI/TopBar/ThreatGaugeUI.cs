@@ -15,11 +15,12 @@ namespace Empire
 
         private void Awake()
         {
-            EventManager.Instance.Subscribe(GameplayEvent.ThreatUpOnPlayerAction, TriggerVisualFeedback);
+            EventManager.Instance.Subscribe(GameplayEvent.CashSpent, TriggerVisualFeedback);
         }
 
         private void OnDestroy()
         {
+            EventManager.Instance.Unsubscribe(GameplayEvent.CashSpent, TriggerVisualFeedback);
             _threatManager.Threat.UnregisterOnCurrentValueChanged(Refresh);
         }
 

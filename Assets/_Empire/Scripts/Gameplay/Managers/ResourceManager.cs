@@ -41,7 +41,10 @@ namespace Empire
                 int spentAmountCash = _cash.Decrement(amount - spentAmoutBank);
 
                 // Notifty threat system of cash spendings
-                EventManager.Instance.Trigger(GameplayEvent.CashSpent, spentAmountCash);
+                if (spentAmountCash > 0)
+                {
+                    EventManager.Instance.Trigger(GameplayEvent.CashSpent, spentAmountCash);
+                }
 
                 return true;
             }

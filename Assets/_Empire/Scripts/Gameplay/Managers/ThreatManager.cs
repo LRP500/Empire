@@ -64,14 +64,9 @@ namespace Empire
 
         #endregion Life Cycle
 
-        public void IncreaseThreat(int amount, bool onPlayerAction = false)
+        public void IncreaseThreat(int amount)
         {
             _threat.Increment(amount);
-
-            if (onPlayerAction)
-            {
-                EventManager.Instance.Trigger(GameplayEvent.ThreatUpOnPlayerAction);
-            }
         }
 
         private void ProcessCashSpendings(object arg)
@@ -81,12 +76,12 @@ namespace Empire
             // The result of an int division will always floored (decimals are truncated basically)
             int threatGenerated = cashSpent / _cashSpentSliceIncrement;
 
-            IncreaseThreat(threatGenerated, true);
+            IncreaseThreat(threatGenerated);
         }
 
         private void ProcessFailedTakeOver(object arg)
         {
-            IncreaseThreat(Random.Range(_failedTakeOverIncrement.x, _failedTakeOverIncrement.y + 1), true);
+            IncreaseThreat(Random.Range(_failedTakeOverIncrement.x, _failedTakeOverIncrement.y + 1));
         }
     }
 }
