@@ -43,7 +43,7 @@ namespace Empire
             EventManager.Instance.Unsubscribe(GameplayEvent.TakeOverFailed, ProcessFailedTakeOver);
         }
 
-        public override void Refresh()
+        public override void Refresh(float elapsed)
         {
         }
 

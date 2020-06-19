@@ -1,4 +1,5 @@
 ﻿using Tools.FSM;
+using Tools.Time;
 using Tools.Variables;
 using UnityEngine;
 
@@ -13,8 +14,10 @@ namespace Empire
         public WorldMapManager worldMapManager = null;
         public StructureManager structureManager = null;
         public ProductionManager productionManager = null;
-
+        public TimeControllerVariable timeController = null;
         public IntVariable turnCount = null;
+
+        public float SpeedMultiplier => timeController.Value.CurrentSpeedMultiplier;
 
         public void Initialize()
         {
@@ -28,8 +31,9 @@ namespace Empire
 
         public void Refresh()
         {
-            threatManager.Refresh();
-            dealManager.Refresh();
+            float elapsed = Time.deltaTime * SpeedMultiplier; 
+            threatManager.Refresh(elapsed);
+            dealManager.Refresh(elapsed);
         }
 
         public void RefreshOnTick(float elapsed)

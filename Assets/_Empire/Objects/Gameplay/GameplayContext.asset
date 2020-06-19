@@ -18,3 +18,5 @@ MonoBehaviour:
   worldMapManager: {fileID: 11400000, guid: 29efe158c8079b3438e35cdc71848778, type: 2}
   structureManager: {fileID: 11400000, guid: 0d47ef222a2224e4aa58b5c084218762, type: 2}
   productionManager: {fileID: 11400000, guid: 8abf2c177e1bf264db89c40701b71648, type: 2}
+  timeController: {fileID: 11400000, guid: bdea95d6603c021499b615b4ff1223cd, type: 2}
+  turnCount: {fileID: 11400000, guid: e5855d991e2d8c8439e0ddd68693ddb1, type: 2}

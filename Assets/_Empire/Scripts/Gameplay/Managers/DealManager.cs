@@ -22,13 +22,13 @@ namespace Empire
             Deals = new Dictionary<Territory, TerritoryDealInfo>();
         }
 
-        public override void Refresh()
+        public override void Refresh(float elapsed)
         {
             foreach (KeyValuePair<Territory, TerritoryDealInfo> info in Deals)
             {
                 if (info.Value.currentOffer != null)
                 {
-                    info.Value.currentOffer.Refresh();
+                    info.Value.currentOffer.Refresh(elapsed);
 
                     if (info.Value.currentOffer.HasTimedOut())
                     {

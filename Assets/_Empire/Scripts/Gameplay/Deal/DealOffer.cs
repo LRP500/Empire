@@ -27,9 +27,9 @@ namespace Empire
             _remainingTime = Random.Range(_settings.OfferDurationMin, _settings.OfferDurationMax + 1);
         }
 
-        public void Refresh()
+        public void Refresh(float elapsed)
         {
-            _remainingTime -= Time.deltaTime;
+            _remainingTime -= elapsed;
         }
 
         public bool HasTimedOut()
