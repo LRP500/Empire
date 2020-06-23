@@ -31,7 +31,7 @@ namespace Empire
         private TextMeshProUGUI _launderingLevel = null;
 
         [SerializeField]
-        private CanvasGroup _upgradeGroup = null;
+        private GameObject _upgradeContainer = null;
 
         private void Awake()
         {
@@ -70,11 +70,11 @@ namespace Empire
                 _distributionLevel.color = info.distributionNetwork.IsMaxLevel() ? Color.green : Color.white;
                 _launderingLevel.color = info.launderingOperation.IsMaxLevel() ? Color.green : Color.white;
 
-                _upgradeGroup.alpha = 1;
+                _upgradeContainer.SetActive(true);
             }
             else
             {
-                _upgradeGroup.alpha = 0;
+                _upgradeContainer.SetActive(false);
             }
 
             Open();
