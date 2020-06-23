@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1b4b7d185f81a40bdbca591637452c, type: 3}
   m_Name: TerritoryStateUnreachable
   m_EditorClassIdentifier: 
+  _name: Unreachable
   _color: {fileID: 11400000, guid: bb3e972442e14434fa95f0c805d86d7f, type: 2}
   _takeOverSuccessChance: 0
   _takeOverNeighborModifier: 0

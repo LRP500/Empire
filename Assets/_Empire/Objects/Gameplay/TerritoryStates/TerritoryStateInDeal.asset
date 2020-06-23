@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8700da9541e47234780c7baf4890c736, type: 3}
   m_Name: TerritoryStateInDeal
   m_EditorClassIdentifier: 
+  _name: In Deal
   _color: {fileID: 11400000, guid: f528d371e2f878a44b07a30b793fb6a0, type: 2}
   _takeOverSuccessChance: 60
   _takeOverNeighborModifier: 5

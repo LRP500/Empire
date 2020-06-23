@@ -55,6 +55,15 @@ namespace Empire
             Open();
         }
 
+        public override void Close()
+        {
+            base.Close();
+
+            _currentTerritory = null;
+
+            Clear();
+        }
+
         private void Initialize(Territory territory)
         {
             _currentTerritory = territory;
@@ -119,15 +128,6 @@ namespace Empire
             }
 
             _currentActions.Clear();
-        }
-
-        public override void Close()
-        {
-            base.Close();
-
-            _currentTerritory = null;
-
-            Clear();
         }
     }
 }

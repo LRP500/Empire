@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c25d4f933dbac349a5c84b4cd2b4e98, type: 3}
   m_Name: TerritoryStateUndisputed
   m_EditorClassIdentifier: 
+  _name: Undisputed
   _color: {fileID: 11400000, guid: 8897dc38f1bc0b94e9818158c4e7141e, type: 2}
   _takeOverSuccessChance: 70
   _takeOverNeighborModifier: 0

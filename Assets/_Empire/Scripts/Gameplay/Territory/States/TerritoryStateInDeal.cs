@@ -12,5 +12,10 @@ namespace Empire
 
         public override void Refresh() { }
         public override void OnEnterState() { }
+
+        public override string ToString()
+        {
+            return "<color=orange>In Deal</>";
+        }
     }
 }

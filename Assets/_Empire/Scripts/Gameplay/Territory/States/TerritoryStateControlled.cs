@@ -34,5 +34,10 @@ namespace Empire
 
             _context.structureManager.InitializeTerritoryStructures(_territory);
         }
+
+        public override string ToString()
+        {
+            return "<color=green>Controlled</>";
+        }
     }
 }

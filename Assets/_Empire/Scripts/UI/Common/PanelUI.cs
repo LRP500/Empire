@@ -6,10 +6,10 @@ namespace Empire
     public abstract class PanelUI : MonoBehaviour
     {
         [SerializeField]
-        private CanvasGroup _group = null;
+        protected CanvasGroup _group = null;
 
         [Button]
-        private void Display()
+        protected virtual void Display()
         {
             _group.alpha = 1;
             _group.blocksRaycasts = true;
@@ -17,7 +17,7 @@ namespace Empire
         }
 
         [Button]
-        private void Hide()
+        protected virtual void Hide()
         {
             _group.alpha = 0;
             _group.blocksRaycasts = false;

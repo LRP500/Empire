@@ -18,6 +18,9 @@ namespace Empire
         private TerritoryListVariable _runtimeTerritories = null;
 
         [SerializeField]
+        private TerritoryVariable _hoveredTerritory = null;
+
+        [SerializeField]
         private List<Territory> _neighbors = null;
         public List<Territory> Neighbors => _neighbors;
 
@@ -62,10 +65,12 @@ namespace Empire
 
         public void OnPointerEnter(PointerEventData eventData)
         {
+            //_hoveredTerritory.SetValue(this);
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
+            //_hoveredTerritory.Clear();
         }
 
         public void OnPointerClick(PointerEventData eventData)

@@ -7,8 +7,12 @@ namespace Empire
     public abstract class TerritoryState : ScriptableObject
     {
         [SerializeField]
+        private string _name = string.Empty;
+        public string Name => _name;
+
+        [SerializeField]
         private ColorVariable _color = null;
-        protected Color Color => _color.Value;
+        public Color Color => _color.Value;
 
         [SerializeField]
         private int _takeOverSuccessChance = 50;

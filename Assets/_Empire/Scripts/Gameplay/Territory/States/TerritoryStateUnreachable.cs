@@ -12,5 +12,10 @@ namespace Empire
 
         public override void OnEnterState() { }
         public override void Refresh() { }
+
+        public override string ToString()
+        {
+            return "<color=white>Undiscovered</>";
+        }
     }
 }
