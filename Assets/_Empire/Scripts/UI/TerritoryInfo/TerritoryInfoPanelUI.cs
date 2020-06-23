@@ -33,6 +33,8 @@ namespace Empire
         [SerializeField]
         private GameObject _upgradeContainer = null;
 
+        private Territory _territory = null;
+
         private void Awake()
         {
             Close();
@@ -45,6 +47,14 @@ namespace Empire
             _hoveredTerritory.Unsubscribe(Refresh);
         }
 
+        private void Update()
+        {
+            if (IsOpen)
+            {
+                Refresh();
+            }
+        }
+
         private void Refresh()
         {
             if (!_hoveredTerritory?.Value || _hoveredTerritory.Value.State is TerritoryStateUnreachable)
@@ -53,14 +63,15 @@ namespace Empire
                 return;
             }
 
-            _territoryName.text = _hoveredTerritory.Value.gameObject.name;
+            _territory = _hoveredTerritory.Value;
 
-            _territoryState.text = _hoveredTerritory.Value.State.Name;
-            _territoryState.color = _hoveredTerritory.Value.State.Color;
+            _territoryName.text = _territory.gameObject.name;
+            _territoryState.text = _territory.State.Name;
+            _territoryState.color = _territory.State.Color;
 
             if (_hoveredTerritory.Value.State is TerritoryStateControlled)
             {
-                TerritoryStructureInfo info = _structureManager.GetInfo(_hoveredTerritory.Value);
+                TerritoryStructureInfo info = _structureManager.GetInfo(_territory);
 
                 _laboratoryLevel.text = $"{info.laboratory.Level}/{info.laboratory.MaxLevel}";
                 _distributionLevel.text = $"{info.distributionNetwork.Level}/{info.distributionNetwork.MaxLevel}";

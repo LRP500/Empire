@@ -8,6 +8,8 @@ namespace Empire
         [SerializeField]
         protected CanvasGroup _group = null;
 
+        public bool IsOpen { get; protected set; } = false;
+
         [Button]
         protected virtual void Display()
         {
@@ -26,11 +28,13 @@ namespace Empire
 
         public virtual void Open()
         {
+            IsOpen = true;
             Display();
         }
 
         public virtual void Close()
         {
+            IsOpen = false;
             Hide();
         }
     }

@@ -20,8 +20,8 @@ namespace Empire
 
         private void GetHoveredTerritory()
         {
-            Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -_mainCamera.transform.position.z);
-            Vector2 origin = _mainCamera.ScreenToWorldPoint(mousePosition);
+            Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -_mainCamera.transform.position.z);
+            Vector2 origin = _mainCamera.ScreenToWorldPoint(mousePos);
 
             RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.zero, 0f, _layerMask);
 
