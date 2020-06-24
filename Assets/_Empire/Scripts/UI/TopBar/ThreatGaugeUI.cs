@@ -16,6 +16,7 @@ namespace Empire
         private void Awake()
         {
             EventManager.Instance.Subscribe(GameplayEvent.CashSpent, TriggerVisualFeedback);
+            EventManager.Instance.Subscribe(GameplayEvent.TakeOverFailed, TriggerVisualFeedback);
         }
 
         private void OnDestroy()

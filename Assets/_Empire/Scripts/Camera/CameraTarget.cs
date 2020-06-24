@@ -9,9 +9,6 @@ namespace Empire
         private Camera _mainCamera = null;
 
         [SerializeField]
-        private LayerMask _hitLayers = default;
-
-        [SerializeField]
         private float _dragSpeed = 2f;
 
         private Vector3 _dragOrigin;

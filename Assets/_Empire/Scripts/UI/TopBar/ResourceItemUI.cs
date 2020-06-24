@@ -46,7 +46,7 @@ namespace Empire
 
         private void RefreshIncrement()
         {
-            string increment = AbbreviationUtility.Format(_resource.Production, "0.0");
+            string increment = AbbreviationUtility.Format(Mathf.Abs(_resource.Production), "0.0");
             _increment.text = increment.Insert(0, _resource.Production < 0 ? "-" : "+");
 
             //StopAllCoroutines();

@@ -76,7 +76,7 @@ namespace Empire
 
                 if (deal == null) continue;
 
-                if (_methProduction.Value >= deal.Quantity)
+                if ((_methProduction.Value + _context.resourceManager.Meth) >= deal.Quantity)
                 {
                     _methProduction.Substract(deal.Quantity);
                     _cashProduction.Add(deal.Quantity * deal.SellingPrice);
