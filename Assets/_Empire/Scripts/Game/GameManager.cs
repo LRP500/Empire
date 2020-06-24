@@ -2,6 +2,7 @@
 using System.Collections;
 using Tools;
 using Tools.Navigation;
+using Tools.Time;
 using UnityEngine;
 
 namespace Empire
@@ -15,6 +16,9 @@ namespace Empire
         [SerializeField]
         [BoxGroup("Scenes")]
         private SceneReference _gameplayScene = null;
+
+        [SerializeField]
+        private TimeController _timeController = null;
 
         [SerializeField]
         private SceneFader _sceneFader = null;
@@ -52,19 +56,18 @@ namespace Empire
 
         private IEnumerator StartNewGame()
         {
-            Debug.Log("[GameManager] Before Fade Out");
+            _timeController.Pause();
             yield return StartCoroutine(_sceneFader.FadeOut());
-            Debug.Log("[GameManager] After Fade Out / Before Load");
             yield return StartCoroutine(NavigationManager.Instance.DeepLoad(_gameplayScene, null));
-            Debug.Log("[GameManager] After Load / Before Fade In");
             yield return StartCoroutine(_sceneFader.FadeIn());
-            Debug.Log("[GameManager] After Fade In");
+            _timeController.Resume();
         }
 
         private IEnumerator ReturnToTitle()
         {
             yield return StartCoroutine(_sceneFader.FadeOut());
             yield return StartCoroutine(NavigationManager.Instance.FastLoad(_mainMenuScene));
+            _timeController.Resume();
             yield return StartCoroutine(_sceneFader.FadeIn());
         }
 

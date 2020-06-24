@@ -62,8 +62,9 @@ namespace Empire
 
             // Turn
             _turnCount.SetValue(0);
-            
+
             // Time tick
+            _timeController.Resume();
             _timeController.RegisterOnTick(RefreshOnTick);
         }
 

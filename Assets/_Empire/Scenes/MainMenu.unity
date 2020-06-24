@@ -815,8 +815,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _newGameButton: {fileID: 884859893}
-  _fadeCanvas: {fileID: 0}
-  _fadeTime: 0.5
 --- !u!1001 &1566977358
 PrefabInstance:
   m_ObjectHideFlags: 0

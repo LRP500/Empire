@@ -213,7 +213,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainMenuScene: {fileID: 11400000, guid: b15ec1b1636ab49478aa3b153f6adc0d, type: 2}
   _gameplayScene: {fileID: 11400000, guid: ddb221d7c8c695b4cb2f13a24bc68e3c, type: 2}
+  _timeController: {fileID: 1091467975}
   _sceneFader: {fileID: 1803393977}
+--- !u!1 &1091467974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091467976}
+  - component: {fileID: 1091467975}
+  m_Layer: 0
+  m_Name: TimeController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1091467975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091467974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f3733fff298674a9e54741bdb5946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gamePaused: {fileID: 11400000, guid: 427108fb5f8b0ca4e988e2cf6bb31efa, type: 2}
+  _live: 0
+  _tickInterval: 1
+  _unscaledTick: 0
+  _runtimeReference: {fileID: 0}
+  _timeScale: 
+  _speedMultiplier: 
+--- !u!4 &1091467976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091467974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1274830060
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +433,7 @@ RectTransform:
   m_Children:
   - {fileID: 1274830061}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

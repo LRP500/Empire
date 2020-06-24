@@ -3247,6 +3247,7 @@ MonoBehaviour:
   _tickInterval: 2
   _unscaledTick: 0
   _runtimeReference: {fileID: 11400000, guid: bdea95d6603c021499b615b4ff1223cd, type: 2}
+  _timeScale: 
 --- !u!1 &526243533
 GameObject:
   m_ObjectHideFlags: 0
