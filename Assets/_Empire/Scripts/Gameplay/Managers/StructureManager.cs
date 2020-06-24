@@ -38,7 +38,8 @@ namespace Empire
                 distributionNetwork = new DistributionNetwork(_distributionNetworkSettings)
             };
 
-            Structures.Add(territory, info);
+            //Structures.Add(territory, info);
+            Structures[territory] = info;
         }
 
         public void ClearStructures(Territory territory)

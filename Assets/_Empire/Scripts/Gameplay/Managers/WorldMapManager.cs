@@ -70,7 +70,11 @@ namespace Empire
         public void SetControlled(Territory territory)
         {
             TransitionTo(territory, _territoryStateControlled);
-            _controlledTerritories.Add(territory);
+
+            if (!_controlledTerritories.Contains(territory))
+            {
+                _controlledTerritories.Add(territory);
+            }
         }
 
         public void SetUndisputed(Territory territory)
