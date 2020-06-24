@@ -436,7 +436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90495319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -43.74759}
+  m_LocalPosition: {x: 0, y: 0, z: -42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275779295}
@@ -1962,7 +1962,7 @@ MonoBehaviour:
   m_ZDamping: 0.8
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 43.74759
+  m_CameraDistance: 42
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -3555,6 +3555,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2767975464277736327, guid: 68162ff3a0b5c854280ed22d672248f9, type: 3}
   m_PrefabInstance: {fileID: 2767975463682932336}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &619507597 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2693644419100504047, guid: 8d377131bb478d5409f43580fb318790, type: 3}
+  m_PrefabInstance: {fileID: 4874444597463867376}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &670012544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2338225172919554768, guid: 8d377131bb478d5409f43580fb318790, type: 3}
+  m_PrefabInstance: {fileID: 4874444597463867376}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &692462515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -728224764380392688, guid: bea1884f18251044b8874219bae53960, type: 3}
@@ -4156,7 +4178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -43.74759}
+  m_LocalPosition: {x: 0, y: 0, z: -42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1048308274}
@@ -10655,6 +10677,14 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4874444599230263132, guid: 8d377131bb478d5409f43580fb318790, type: 3}
+      propertyPath: _restartButton
+      value: 
+      objectReference: {fileID: 670012544}
+    - target: {fileID: 4874444599230263132, guid: 8d377131bb478d5409f43580fb318790, type: 3}
+      propertyPath: _exitButton
+      value: 
+      objectReference: {fileID: 619507597}
     - target: {fileID: 5009977778598374308, guid: 8d377131bb478d5409f43580fb318790, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -10678,6 +10708,14 @@ PrefabInstance:
     - target: {fileID: 5009977778598374308, guid: 8d377131bb478d5409f43580fb318790, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611410993468979086, guid: 8d377131bb478d5409f43580fb318790, type: 3}
+      propertyPath: m_Name
+      value: GameOverButtonUI-Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832777639419267761, guid: 8d377131bb478d5409f43580fb318790, type: 3}
+      propertyPath: m_Name
+      value: GameOverButtonUI-Restart
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d377131bb478d5409f43580fb318790, type: 3}

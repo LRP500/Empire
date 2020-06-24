@@ -31,13 +31,13 @@ namespace Empire
         private void Initialize()
         {
             EventManager.Instance.Subscribe(SystemEvent.StartNewGame, OnStartNewGameEvent);
-            EventManager.Instance.Subscribe(SystemEvent.ReturnToTitleMenu, ReturnToTitleMenu);
+            EventManager.Instance.Subscribe(SystemEvent.ReturnToTitleMenu, OnReturnToTitleEvent);
         }
 
         private void OnDestroy()
         {
             EventManager.Instance.Unsubscribe(SystemEvent.StartNewGame, OnStartNewGameEvent);
-            EventManager.Instance.Unsubscribe(SystemEvent.ReturnToTitleMenu, ReturnToTitleMenu);
+            EventManager.Instance.Unsubscribe(SystemEvent.ReturnToTitleMenu, OnReturnToTitleEvent);
         }
 
         private void OnStartNewGameEvent(object arg = null)
@@ -45,16 +45,27 @@ namespace Empire
             StartCoroutine(StartNewGame());
         }
 
-        private IEnumerator StartNewGame()
+        private void OnReturnToTitleEvent(object arg)
         {
-            yield return StartCoroutine(_sceneFader.FadeOut());
-            yield return StartCoroutine(NavigationManager.Instance.DeepLoad(_gameplayScene, null));
-            yield return StartCoroutine(_sceneFader.FadeIn());
+            StartCoroutine(ReturnToTitle());
         }
 
-        private void ReturnToTitleMenu(object arg)
+        private IEnumerator StartNewGame()
         {
-            StartCoroutine(NavigationManager.Instance.FastLoad(_mainMenuScene));
+            Debug.Log("[GameManager] Before Fade Out");
+            yield return StartCoroutine(_sceneFader.FadeOut());
+            Debug.Log("[GameManager] After Fade Out / Before Load");
+            yield return StartCoroutine(NavigationManager.Instance.DeepLoad(_gameplayScene, null));
+            Debug.Log("[GameManager] After Load / Before Fade In");
+            yield return StartCoroutine(_sceneFader.FadeIn());
+            Debug.Log("[GameManager] After Fade In");
+        }
+
+        private IEnumerator ReturnToTitle()
+        {
+            yield return StartCoroutine(_sceneFader.FadeOut());
+            yield return StartCoroutine(NavigationManager.Instance.FastLoad(_mainMenuScene));
+            yield return StartCoroutine(_sceneFader.FadeIn());
         }
 
         private void LoadStartingScene()

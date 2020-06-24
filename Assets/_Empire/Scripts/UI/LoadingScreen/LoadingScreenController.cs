@@ -8,8 +8,9 @@ namespace Empire
         [SerializeField]
         private SceneReference _gameplayScene = null;
 
-        private void Awake()
+        private void Start()
         {
+            StartCoroutine(NavigationManager.Instance.UnloadAll());
             StartCoroutine(NavigationManager.Instance.FastLoad(_gameplayScene));
         }
     }
