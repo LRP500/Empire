@@ -436,7 +436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90495319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -42}
+  m_LocalPosition: {x: 0, y: 0, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275779295}
@@ -1962,7 +1962,7 @@ MonoBehaviour:
   m_ZDamping: 0.8
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 42
+  m_CameraDistance: 20
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -3244,10 +3244,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gamePaused: {fileID: 11400000, guid: 427108fb5f8b0ca4e988e2cf6bb31efa, type: 2}
+  _live: 1
   _tickInterval: 2
   _unscaledTick: 0
   _runtimeReference: {fileID: 11400000, guid: bdea95d6603c021499b615b4ff1223cd, type: 2}
   _timeScale: 
+  _speedMultiplier: 
 --- !u!1 &526243533
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,7 +4181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -42}
+  m_LocalPosition: {x: 0, y: 0, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1048308274}
@@ -4487,7 +4489,7 @@ MonoBehaviour:
   _target: {fileID: 1590316292}
   _initialCameraDistance: 42
   _zoomSensitivity: 65
-  _cameraDistanceMin: 15
+  _cameraDistanceMin: 20
   _cameraDistanceMax: 50
 --- !u!1 &1059755499 stripped
 GameObject:
@@ -10283,10 +10285,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5483620996576442802, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 32.293335
-      objectReference: {fileID: 0}
     - target: {fileID: 5483620996674763624, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -10335,10 +10333,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5483620997067053567, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 32.293335
-      objectReference: {fileID: 0}
     - target: {fileID: 5483620997241101093, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -10362,10 +10356,6 @@ PrefabInstance:
     - target: {fileID: 5483620997241101093, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483620997283843555, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 32.293335
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4214c4e41cd0e1a47a565d6cde389d6d, type: 3}

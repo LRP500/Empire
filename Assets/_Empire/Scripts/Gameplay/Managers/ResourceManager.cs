@@ -27,9 +27,9 @@ namespace Empire
 
         public override void RefreshOnTick(float elapsed)
         {
-            _meth.Increment(_context.productionManager.MethProduction);
-            _cash.Increment(_context.productionManager.CashProduction);
-            _bank.Increment(_context.productionManager.BankProduction);
+            //_meth.Increment(_context.productionManager.MethProduction);
+            //_cash.Increment(_context.productionManager.CashProduction);
+            //_bank.Increment(_context.productionManager.BankProduction);
         }
 
         public bool Spend(int amount)
@@ -84,6 +84,16 @@ namespace Empire
         public void AddMeth(int amount)
         {
             _meth.Increment(amount);
+        }
+
+        public void AddBank(int amount)
+        {
+            _bank.Increment(amount);
+        }
+
+        public int RemoveBank(int amount)
+        {
+            return _bank.Decrement(amount);
         }
     }
 }

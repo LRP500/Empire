@@ -29,6 +29,10 @@ namespace Empire
         [SerializeField]
         private IntVariable _methSellingPrice = null;
 
+        private int _methProductionCache = 0;
+        private int _cashProductionCache = 0;
+        private int _bankProductionCache = 0;
+
         public override void Initialize()
         {
             _methSellingPrice.SetValue(_initialMethSellingPrice);
@@ -36,6 +40,11 @@ namespace Empire
 
         public override void RefreshOnTick(float elapsed)
         {
+            // Store resource amount before production is processed
+            _methProductionCache = _context.resourceManager.Meth;
+            _cashProductionCache = _context.resourceManager.Cash;
+            _bankProductionCache = _context.resourceManager.Bank;
+
             // Distribution is processed first
             ProcessProduction();
 
@@ -47,23 +56,24 @@ namespace Empire
 
             // Laundering money comes last
             ProcessLaundering();
+
+            // Save resource amount increment to variables
+            _methProduction.SetValue(_context.resourceManager.Meth - _methProductionCache);
+            _cashProduction.SetValue(_context.resourceManager.Cash - _cashProductionCache);
+            _bankProduction.SetValue(_context.resourceManager.Bank - _bankProductionCache);
         }
 
         private void ProcessProduction()
         {
-            _methProduction.SetValue(_context.structureManager.GetTotalProduction());
+            int production = _context.structureManager.GetTotalProduction();
+            _context.resourceManager.AddMeth(production);
         }
 
         private void ProcessDistribution()
         {
             int totalDistribution = _context.structureManager.GetTotalDistribution();
             int sold = _context.resourceManager.RemoveMeth(totalDistribution);
-            _cashProduction.SetValue(sold * _methSellingPrice);
-        }
-
-        private void ProcessLaundering()
-        {
-            _bankProduction.SetValue(_context.structureManager.GetTotalLaundering());
+            _context.resourceManager.AddCash(sold * _methSellingPrice);
         }
 
         private void ProcessDeals()
@@ -78,8 +88,8 @@ namespace Empire
 
                 if ((_methProduction.Value + _context.resourceManager.Meth) >= deal.Quantity)
                 {
-                    _methProduction.Substract(deal.Quantity);
-                    _cashProduction.Add(deal.Quantity * deal.SellingPrice);
+                    _context.resourceManager.RemoveMeth(deal.Quantity);
+                    _context.resourceManager.AddCash(deal.Quantity * deal.SellingPrice);
                 }
                 else
                 {
@@ -92,6 +102,12 @@ namespace Empire
                 _context.dealManager.CancelActiveDeal(unfulfilled.Territory);
                 _context.worldMapManager.SetRival(unfulfilled.Territory);
             }
+        }
+
+        private void ProcessLaundering()
+        {
+            int laundering = _context.structureManager.GetTotalLaundering();
+            _context.resourceManager.Launder(laundering);
         }
     }
 }
