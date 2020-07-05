@@ -38,7 +38,7 @@ FEATURES:
 BUGFIX:
     [ ] Resources from int to long
         Or non-realistic resource values ? e.g Civilization
-    [ ] Distribution should impact meth production increment in top bar ?
+    [x] Distribution should impact meth production increment in top bar ? @done(20-06-25 12:17)
 
 Archive:
   [x] Exit and/or restart buttons on game over screen @started(20-06-24 12:24) @done(20-06-24 14:37) @lasted(2h13m) @project(FEATURES)
