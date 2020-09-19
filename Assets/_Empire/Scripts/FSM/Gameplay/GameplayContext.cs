@@ -1,4 +1,4 @@
-﻿using Tools.FSM;
+﻿using Tools;
 using Tools.Time;
 using Tools.Variables;
 using UnityEngine;
@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Empire
 {
     [CreateAssetMenu(menuName = "Empire/FSM/Gameplay/Context")]
-    public class GameplayContext : AContext
+    public class GameplayContext : SingletonScriptableObject<GameplayContext>
     {
         public DealManager dealManager = null;
         public ThreatManager threatManager = null;

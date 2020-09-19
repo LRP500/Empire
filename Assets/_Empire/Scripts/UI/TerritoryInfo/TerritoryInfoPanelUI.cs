@@ -36,7 +36,10 @@ namespace Empire
         private GameObject _upgradeContainer = null;
 
         [SerializeField]
-        private TerritoryTakeOverOddDisplay _oddsContainer = null;
+        private TerritoryTakeOverOddDisplay _takeOverOdds = null;
+
+        [SerializeField]
+        private TerritoryDealDisplay _currentDeal = null;
 
         private Territory _territory = null;
 
@@ -68,12 +71,14 @@ namespace Empire
                 return;
             }
 
-            _territory = _hoveredTerritory.Value;
+            ResetToDefault();
 
+            _territory = _hoveredTerritory.Value;
             _territoryName.text = _territory.gameObject.name;
             _territoryState.text = _territory.State.Name;
             _territoryState.color = _territory.State.Color;
 
+            // Controlled
             if (_hoveredTerritory.Value.State is TerritoryStateControlled)
             {
                 TerritoryStructureInfo info = _structureManager.GetInfo(_territory);
@@ -87,21 +92,30 @@ namespace Empire
                 _launderingLevel.color = info.launderingOperation.IsMaxLevel() ? Color.green : Color.white;
 
                 _upgradeContainer.SetActive(true);
-                _oddsContainer.gameObject.SetActive(false);
             }
+            // Rival
             else if (_hoveredTerritory.Value.State is TerritoryStateRival)
             {
-                _upgradeContainer.SetActive(false);
-                _oddsContainer.gameObject.SetActive(true);
-                _oddsContainer.Initialize(new TerritoryTakeOverOdds(_territory));
+                _takeOverOdds.gameObject.SetActive(true);
+                _takeOverOdds.Initialize(new TerritoryTakeOverOdds(_territory));
+                _currentDeal.gameObject.SetActive(true);
+                _currentDeal.Initialize(GameplayContext.Instance.dealManager.GetInfo(_territory));
             }
-            else
+            // In Deal    
+            else if (_hoveredTerritory.Value.State is TerritoryStateInDeal)
             {
-                _upgradeContainer.SetActive(false);
-                _oddsContainer.gameObject.SetActive(false);
+                _currentDeal.gameObject.SetActive(true);
+                _currentDeal.Initialize(GameplayContext.Instance.dealManager.GetInfo(_territory));
             }
 
             Open();
+        }
+
+        private void ResetToDefault()
+        {
+            _upgradeContainer.SetActive(false);
+            _currentDeal.gameObject.SetActive(false);
+            _takeOverOdds.gameObject.SetActive(false);
         }
 
         #region Overrides
