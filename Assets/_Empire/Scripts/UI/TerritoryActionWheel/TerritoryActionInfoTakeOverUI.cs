@@ -1,12 +1,11 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Empire
 {
     public class TerritoryActionInfoTakeOverUI : TerritoryActionInfoUI
     {
         [SerializeField]
-        private KeyValueItemUI _successFailure = null;
+        private TerritoryTakeOverOddDisplay _oddsDisplay = null;
 
         public override void Initialize(TerritoryAction action, Territory territory)
         {
@@ -14,7 +13,7 @@ namespace Empire
 
             TerritoryActionTakeOver takeOver = action as TerritoryActionTakeOver;
 
-            _successFailure.SetValue(takeOver.CalculateOdds(territory).ToString());
+            _oddsDisplay.Initialize(new TerritoryTakeOverOdds(territory));
         }
     }
 }

@@ -30,8 +30,13 @@ namespace Empire
         [SerializeField]
         private TextMeshProUGUI _launderingLevel = null;
 
+        [Space]
+
         [SerializeField]
         private GameObject _upgradeContainer = null;
+
+        [SerializeField]
+        private TerritoryTakeOverOddDisplay _oddsContainer = null;
 
         private Territory _territory = null;
 
@@ -82,10 +87,18 @@ namespace Empire
                 _launderingLevel.color = info.launderingOperation.IsMaxLevel() ? Color.green : Color.white;
 
                 _upgradeContainer.SetActive(true);
+                _oddsContainer.gameObject.SetActive(false);
+            }
+            else if (_hoveredTerritory.Value.State is TerritoryStateRival)
+            {
+                _upgradeContainer.SetActive(false);
+                _oddsContainer.gameObject.SetActive(true);
+                _oddsContainer.Initialize(new TerritoryTakeOverOdds(_territory));
             }
             else
             {
                 _upgradeContainer.SetActive(false);
+                _oddsContainer.gameObject.SetActive(false);
             }
 
             Open();

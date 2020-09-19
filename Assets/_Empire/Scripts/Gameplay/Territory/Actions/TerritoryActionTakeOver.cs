@@ -6,24 +6,6 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Map/Territory Actions/Take Over")]
     public class TerritoryActionTakeOver : TerritoryAction
     {
-        public class Odds
-        {
-            public int success = 50;
-            public int failure = 50;
-
-            public Odds(int success)
-            {
-                this.success = Mathf.Clamp(success, 0, 100);
-                failure = 100 - this.success;
-            }
-
-            public override string ToString()
-            {
-                string format = (success >= failure) ? "<color=green>{0}/{1}" : "<color=red>{0}/{1}";
-                return string.Format(format, success, failure);
-            }
-        }
-
         [SerializeField]
         private TakeOverSettings _takeOverSettings = null;
 
@@ -32,7 +14,7 @@ namespace Empire
             // Taking over a territory will break active deal.
             _context.dealManager.CancelActiveDeal(territory);
 
-            Odds odds = CalculateOdds(territory);
+            TerritoryTakeOverOdds odds = new TerritoryTakeOverOdds(territory);
 
             if ((Random.value * 100) <= odds.success)
             {
@@ -69,20 +51,6 @@ namespace Empire
             _context.worldMapManager.SetRival(territory);
 
             EventManager.Instance.Trigger(GameplayEvent.TakeOverFailed);
-        }
-
-        public Odds CalculateOdds(Territory target)
-        {
-            int successChance = target.State.TakeOverSuccessChance;
-
-            foreach (Territory neighbor in target.Neighbors)
-            {
-                successChance += neighbor.State.TakeOverNeighborModifier;
-            }
-
-            Odds odds = new Odds(successChance);
-
-            return odds;
         }
 
         public override bool CanExecute(Territory territory)
