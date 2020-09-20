@@ -2,17 +2,17 @@
 
 namespace Empire
 {
-    public class TerritoryTakeOverOdds
+    public class TakeOverOdds
     {
         public int success = 50;
         public int failure = 50;
 
-        public TerritoryTakeOverOdds(int success)
+        public TakeOverOdds(int success)
         {
             Initialize(success);
         }
 
-        public TerritoryTakeOverOdds(Territory attacked)
+        public TakeOverOdds(Territory attacked)
         {
             int successChance = attacked.State.TakeOverSuccessChance;
 

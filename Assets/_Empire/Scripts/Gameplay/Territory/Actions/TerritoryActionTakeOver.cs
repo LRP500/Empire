@@ -14,7 +14,7 @@ namespace Empire
             // Taking over a territory will break active deal.
             _context.dealManager.CancelActiveDeal(territory);
 
-            TerritoryTakeOverOdds odds = new TerritoryTakeOverOdds(territory);
+            TakeOverOdds odds = new TakeOverOdds(territory);
 
             if ((Random.value * 100) <= odds.success)
             {

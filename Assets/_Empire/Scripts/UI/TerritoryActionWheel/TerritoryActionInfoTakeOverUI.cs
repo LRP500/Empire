@@ -13,7 +13,7 @@ namespace Empire
 
             TerritoryActionTakeOver takeOver = action as TerritoryActionTakeOver;
 
-            _oddsDisplay.Initialize(new TerritoryTakeOverOdds(territory));
+            _oddsDisplay.Initialize(new TakeOverOdds(territory));
         }
     }
 }

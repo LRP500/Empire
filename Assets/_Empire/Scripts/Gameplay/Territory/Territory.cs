@@ -6,7 +6,10 @@ using UnityEngine.EventSystems;
 
 namespace Empire
 {
-    public class Territory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+    public class Territory : MonoBehaviour,
+        IPointerEnterHandler, IPointerExitHandler,
+        IPointerClickHandler, IPointerDownHandler,
+        IBeginDragHandler, IEndDragHandler, IDragHandler
     {
         #region Serialized Fields
 
@@ -58,6 +61,11 @@ namespace Empire
 
         #endregion MonoBehaviour
 
+        public void SetState(TerritoryState state)
+        {
+            _state = state;
+        }
+
         #region UI Events
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -85,6 +93,14 @@ namespace Empire
             }
         }
 
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            if (eventData.button == PointerEventData.InputButton.Left)
+            {
+                EventManager.Instance.Trigger(GameplayEvent.TakeOverDragStart, this);
+            }
+        }
+
         public void OnBeginDrag(PointerEventData eventData)
         {
             _dragging = true;
@@ -104,10 +120,5 @@ namespace Empire
         }
 
         #endregion UI Events
-
-        public void SetState(TerritoryState state)
-        {
-            _state = state;
-        }
     }
 }

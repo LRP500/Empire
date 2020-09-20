@@ -12,7 +12,7 @@ namespace Empire
         [SerializeField]
         private Image _icon = null;
 
-        public void Initialize(TerritoryTakeOverOdds odds)
+        public void Initialize(TakeOverOdds odds)
         {
             Color color = odds.failure >= odds.success ? Color.red : Color.green;
             _text.text = odds.ToString();

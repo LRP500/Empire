@@ -97,7 +97,7 @@ namespace Empire
             else if (_hoveredTerritory.Value.State is TerritoryStateRival)
             {
                 _takeOverOdds.gameObject.SetActive(true);
-                _takeOverOdds.Initialize(new TerritoryTakeOverOdds(_territory));
+                _takeOverOdds.Initialize(new TakeOverOdds(_territory));
                 _currentDeal.gameObject.SetActive(true);
                 _currentDeal.Initialize(GameplayContext.Instance.dealManager.GetInfo(_territory));
             }

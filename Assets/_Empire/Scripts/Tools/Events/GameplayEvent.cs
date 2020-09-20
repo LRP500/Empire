@@ -16,5 +16,8 @@
         public static readonly string CashSpent = "GameplayEvent_CashSpent";
         public static readonly string TakeOverFailed = "GameplayEvent_TakeOverFailed";
         public static readonly string TakeOverSuccess = "GameplayEvent_TakeOverSuccess";
+
+        public static readonly string TakeOverDragStart = "GameplayEvent_TakeOverDragStart";
+        public static readonly string TakeOverDragEnd = "GameplayEvent_TakeOverDragEnd";
     }
 }

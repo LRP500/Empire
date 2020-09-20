@@ -34,6 +34,12 @@ FEATURES:
     [ ] Formula for threat increment by cash spent @high
         Random events + threat events
         Resource modifiers + temporary buff/debuffs
+    [ ] Second territory info panel for target on take over drag
+        Similar to current territory panel on hover but above/next
+        Icon attack with odds display in between panels (e.g [attacking] x [attacked])
+    
+    UI :
+        [x] Current deal and odds in territory hover panel @done(20-09-19 16:50)
 
 BUGFIX:
     [ ] Resources from int to long

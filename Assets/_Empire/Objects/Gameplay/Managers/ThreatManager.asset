@@ -16,7 +16,7 @@ MonoBehaviour:
   _threat: {fileID: 11400000, guid: a5ecc6e65941357478b343f4c7693e6c, type: 2}
   _initialIncrement: 1
   _cashSpentSliceIncrement: 100000
-  _failedTakeOverIncrement: {x: 10, y: 50}
+  _failedTakeOverIncrement: {x: 0, y: 50}
   _threatModifiers:
   - {fileID: 11400000, guid: 0933cb0dc7a69604b83c4a05d45db645, type: 2}
   - {fileID: 11400000, guid: 243dca89bf95bc44581343973bcc566b, type: 2}
