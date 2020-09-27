@@ -1,4 +1,5 @@
 ﻿using Tools;
+using Tools.References;
 using Tools.Variables;
 using UnityEngine;
 
@@ -10,20 +11,25 @@ namespace Empire
         private CameraVariable _camera = null;
 
         [SerializeField]
-        private LineRenderer _lineRenderer = null;
-
-        [SerializeField]
         private TerritoryVariable _hoveredTerritory = null;
 
         [SerializeField]
-        private TerritoryActionTakeOver _takeOverAction = null;
+        private LineRenderer _lineRenderer = null;
+
+        [SerializeField]
+        private ColorReference _validColor = null;
+
+        [SerializeField]
+        private ColorReference _invalidColor = null;
 
         private bool _dragging = false;
 
-        private Vector3? _origin = default;
+        private Vector3? _originPosition = default;
+        private Territory _originTerritory = null;
 
         private void Awake()
         {
+            // Receive drag start event from Territory's event handlers
             EventManager.Instance.Subscribe(GameplayEvent.TakeOverDragStart, OnDragStart);
         }
 
@@ -34,13 +40,16 @@ namespace Empire
 
         private void Update()
         {
-            HandleInput();
-            RefreshLineRenderer();
+            if (_dragging)
+            {
+                HandleInput();
+                RefreshLineRenderer();
+            }
         }
 
         private void HandleInput()
         {
-            if (_dragging && Input.GetKeyUp(KeyCode.Mouse0))
+            if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 EndDrag();
             }
@@ -48,18 +57,25 @@ namespace Empire
 
         private void RefreshLineRenderer()
         {
-            if (_dragging && _origin.HasValue)
+            if (_dragging && _originPosition.HasValue)
             {
+                // Vertices
                 _lineRenderer.positionCount = 2;
-                _lineRenderer.SetPosition(0, _origin.Value);
+                _lineRenderer.SetPosition(0, _originPosition.Value);
                 _lineRenderer.SetPosition(1, GetCurrentMousePosition().GetValueOrDefault());
+
+                // Color
+                bool isValid = TakeOverManager.IsValid(_originTerritory, _hoveredTerritory.Value);
+                _lineRenderer.startColor = isValid ? _validColor : _invalidColor;
+                _lineRenderer.endColor = isValid ? _validColor : _invalidColor;
             }
         }
 
         private void OnDragStart(object arg)
         {
             _dragging = true;
-            _origin = GetCurrentMousePosition();
+            _originTerritory = arg as Territory;
+            _originPosition = GetCurrentMousePosition();
             _lineRenderer.enabled = true;
         }
 
@@ -67,6 +83,12 @@ namespace Empire
         {
             _dragging = false;
             _lineRenderer.enabled = false;
+
+            EventManager.Instance.Trigger(GameplayEvent.TakeOver, new TakeOverManager.TakeOverInfo
+            {
+                attacking = _originTerritory,
+                attacked = _hoveredTerritory.Value
+            });
         }
 
         private Vector3? GetCurrentMousePosition()

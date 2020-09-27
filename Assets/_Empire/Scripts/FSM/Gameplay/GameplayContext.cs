@@ -10,11 +10,13 @@ namespace Empire
     {
         public DealManager dealManager = null;
         public ThreatManager threatManager = null;
+        public TakeOverManager takeOverManager = null;
         public ResourceManager resourceManager = null;
         public WorldMapManager worldMapManager = null;
         public StructureManager structureManager = null;
         public ProductionManager productionManager = null;
         public TimeControllerVariable timeController = null;
+
         public IntVariable turnCount = null;
 
         public float SpeedMultiplier => timeController.Value.CurrentSpeedMultiplier;
@@ -23,6 +25,7 @@ namespace Empire
         {
             dealManager.Initialize();
             threatManager.Initialize();
+            takeOverManager.Initialize();
             worldMapManager.Initialize();
             resourceManager.Initialize();
             structureManager.Initialize();
@@ -46,6 +49,7 @@ namespace Empire
         public void Clear()
         {
             threatManager.Clear();
+            takeOverManager.Clear();
         }
 
         #region MAYBE!?

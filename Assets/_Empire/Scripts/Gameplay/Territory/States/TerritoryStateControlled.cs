@@ -14,7 +14,7 @@ namespace Empire
 
         public override void OnExitState()
         {
-            _territory.Controlled = false;
+            _territory.IsControlled = false;
             _context.structureManager.ClearStructures(_territory);
         }
 
@@ -22,7 +22,7 @@ namespace Empire
         {
             base.OnEnterState();
 
-            _territory.Controlled = true;
+            _territory.IsControlled = true;
 
             foreach (Territory neighbor in _territory.Neighbors)
             {

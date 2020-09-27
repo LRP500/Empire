@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dealManager: {fileID: 11400000, guid: 3c7a1f03679881c4097cb35d3823cd65, type: 2}
   threatManager: {fileID: 11400000, guid: 852e9bd75555e9e408fd0cd15c1281c4, type: 2}
+  takeOverManager: {fileID: 11400000, guid: 28dd95f74dec8ba4881502f814a3b95c, type: 2}
   resourceManager: {fileID: 11400000, guid: 54f6d9cf492cfcb41ad2cdbcf68ad493, type: 2}
   worldMapManager: {fileID: 11400000, guid: 29efe158c8079b3438e35cdc71848778, type: 2}
   structureManager: {fileID: 11400000, guid: 0d47ef222a2224e4aa58b5c084218762, type: 2}

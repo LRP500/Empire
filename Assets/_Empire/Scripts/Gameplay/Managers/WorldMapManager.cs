@@ -22,7 +22,7 @@ namespace Empire
         private TerritoryState _territoryStateUnreachable = null;
 
         [SerializeField]
-        [LabelText("Undiscputed")]
+        [LabelText("Undisputed")]
         private TerritoryState _territoryStateUndisputed = null;
 
         [SerializeField]
@@ -56,7 +56,7 @@ namespace Empire
         {
             foreach (Territory territory in _territories.Items)
             {
-                if (!territory.Controlled)
+                if (!territory.IsControlled)
                 {
                     return false;
                 }
@@ -101,9 +101,7 @@ namespace Empire
         public void TransitionTo(Territory territory, TerritoryState state)
         {
             TerritoryState instance = Instantiate(state);
-            instance.SetTerritory(territory);
             territory.SetState(instance);
-            instance.OnEnterState();
 
             Debug.Log($"[{name}] Transition to {territory.State.GetType().Name}");
         }

@@ -74,7 +74,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.5
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -172,7 +172,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 11400000, guid: 7ce8791cbdd1fb04c9e6656bcfd8af74, type: 2}
-  _collisionPlane: {fileID: 0}
-  _lineRenderer: {fileID: 894231147045983544}
   _hoveredTerritory: {fileID: 11400000, guid: 3c125ea8d75d9f54a894f62c2939df45, type: 2}
-  _takeOverAction: {fileID: 11400000, guid: 456f05c4c22f94443b933f2b7bf4a1d6, type: 2}
+  _lineRenderer: {fileID: 894231147045983544}
+  _validColor:
+    useConstant: 1
+    constant: {r: 0, g: 0.75, b: 0, a: 1}
+    variable: {fileID: 0}
+  _invalidColor:
+    useConstant: 1
+    constant: {r: 0.75, g: 0, b: 0, a: 1}
+    variable: {fileID: 0}

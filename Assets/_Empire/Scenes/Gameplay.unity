@@ -9030,66 +9030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthMultiplier
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
-      value: 0.5389252
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].inSlope
-      value: 0.5389252
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].outSlope
-      value: Infinity
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].tangentMode
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].value
-      value: 0.5389252
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].inSlope
-      value: -0.5278429
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].outSlope
-      value: Infinity
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].tangentMode
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 894231147662306817, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
       propertyPath: m_Name
       value: TakeOverArrow
       objectReference: {fileID: 0}
-    - target: {fileID: 894231147662306819, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: _collisionPlane
-      value: 
-      objectReference: {fileID: 1373142744}
     - target: {fileID: 6781619473443678022, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

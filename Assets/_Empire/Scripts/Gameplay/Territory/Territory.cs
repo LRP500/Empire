@@ -7,9 +7,9 @@ using UnityEngine.EventSystems;
 namespace Empire
 {
     public class Territory : MonoBehaviour,
+        IBeginDragHandler, IEndDragHandler, IDragHandler,
         IPointerEnterHandler, IPointerExitHandler,
-        IPointerClickHandler, IPointerDownHandler,
-        IBeginDragHandler, IEndDragHandler, IDragHandler
+        IPointerClickHandler
     {
         #region Serialized Fields
 
@@ -27,7 +27,12 @@ namespace Empire
         /// <summary>
         /// Allows checking if controlled without having to cast State.
         /// </summary>
-        public bool Controlled { get; set; } = false;
+        public bool IsControlled { get; set; } = false;
+
+        /// <summary>
+        /// Allows checking if discovered without having to cast State.
+        /// </summary>
+        public bool IsDiscovered { get; set; } = false;
 
         #endregion Serialized Fields
 
@@ -63,7 +68,10 @@ namespace Empire
 
         public void SetState(TerritoryState state)
         {
+            _state?.OnExitState();
             _state = state;
+            _state.SetTerritory(this);
+            _state.OnEnterState();
         }
 
         #region UI Events
@@ -93,17 +101,19 @@ namespace Empire
             }
         }
 
-        public void OnPointerDown(PointerEventData eventData)
-        {
-            if (eventData.button == PointerEventData.InputButton.Left)
-            {
-                EventManager.Instance.Trigger(GameplayEvent.TakeOverDragStart, this);
-            }
-        }
-
         public void OnBeginDrag(PointerEventData eventData)
         {
             _dragging = true;
+
+            if (eventData.button == PointerEventData.InputButton.Left)
+            {
+                if (IsControlled)
+                {
+                    // Initiate take over
+                    EventManager.Instance.Trigger(GameplayEvent.TakeOverDragStart, this);
+                }
+            }
+
         }
 
         public void OnEndDrag(PointerEventData eventData)

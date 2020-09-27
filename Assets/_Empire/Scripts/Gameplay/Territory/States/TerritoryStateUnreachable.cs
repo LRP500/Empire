@@ -10,8 +10,17 @@ namespace Empire
             _territory.Renderer.color = Color;
         }
 
-        public override void OnEnterState() { }
         public override void Refresh() { }
+
+        public override void OnEnterState()
+        {
+            _territory.IsDiscovered = false;
+        }
+
+        public override void OnExitState()
+        {
+            _territory.IsDiscovered = true;
+        }
 
         public override string ToString()
         {
