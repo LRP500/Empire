@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: In Deal
   _color: {fileID: 11400000, guid: f528d371e2f878a44b07a30b793fb6a0, type: 2}
-  _takeOverSuccessChance: 60
-  _takeOverNeighborModifier: 5
+  _takeOverSuccessChanceModifier: 0
+  _takeOverNeighborModifier: 0
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
   _actions:
   - {fileID: 11400000, guid: a54fa9692011f04449609a3458fa9cc6, type: 2}

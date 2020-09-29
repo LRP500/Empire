@@ -2,6 +2,9 @@
 
 namespace Empire
 {
+    /// <summary>
+    /// OBSOLETE
+    /// </summary>
     public class TerritoryActionInfoTakeOverUI : TerritoryActionInfoUI
     {
         [SerializeField]
@@ -11,9 +14,8 @@ namespace Empire
         {
             base.Initialize(action, territory);
 
-            TerritoryActionTakeOver takeOver = action as TerritoryActionTakeOver;
-
-            _oddsDisplay.Initialize(new TakeOverOdds(territory));
+            //TerritoryActionTakeOver takeOver = action as TerritoryActionTakeOver;
+            //_oddsDisplay.Initialize(territory);
         }
     }
 }

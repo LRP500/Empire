@@ -2,6 +2,7 @@
 using TMPro;
 using UnityEngine;
 using static Empire.StructureManager;
+using static Empire.TakeOverManager;
 
 namespace Empire
 {
@@ -96,8 +97,11 @@ namespace Empire
             // Rival
             else if (_hoveredTerritory.Value.State is TerritoryStateRival)
             {
+                // Odds display
                 _takeOverOdds.gameObject.SetActive(true);
-                _takeOverOdds.Initialize(new TakeOverOdds(_territory));
+                _takeOverOdds.Initialize(new TakeOverInfo(_territory, _hoveredTerritory.Value));
+
+                // Deal offer display
                 _currentDeal.gameObject.SetActive(true);
                 _currentDeal.Initialize(GameplayContext.Instance.dealManager.GetInfo(_territory));
             }

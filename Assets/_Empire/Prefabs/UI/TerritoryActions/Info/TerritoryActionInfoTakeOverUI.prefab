@@ -28,6 +28,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 3561510733633540633}
   _icon: {fileID: 0}
+  _takeOverManager: {fileID: 11400000, guid: 28dd95f74dec8ba4881502f814a3b95c, type: 2}
 --- !u!1001 &7252742372080189243
 PrefabInstance:
   m_ObjectHideFlags: 0

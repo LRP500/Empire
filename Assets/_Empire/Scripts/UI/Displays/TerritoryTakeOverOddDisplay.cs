@@ -1,6 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static Empire.TakeOverManager;
 
 namespace Empire
 {
@@ -12,8 +13,13 @@ namespace Empire
         [SerializeField]
         private Image _icon = null;
 
-        public void Initialize(TakeOverOdds odds)
+        [SerializeField]
+        private TakeOverManager _takeOverManager = null;
+
+        public void Initialize(TakeOverInfo info)
         {
+            TakeOverOdds odds = _takeOverManager.GetOdds(info);
+
             Color color = odds.failure >= odds.success ? Color.red : Color.green;
             _text.text = odds.ToString();
             _text.color = color;

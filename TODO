@@ -40,6 +40,24 @@ BUGFIX:
     [ ] Resources from int to long
         Or non-realistic resource values ? e.g Civilization
 
+BECAUSE IT SOUNDS COOL:
+    [ ] Activate/Desactivate features in differents environments through preprocessor directives and config files
+        In gameplay code
+        #if FEATUREA
+            enabled feature
+        #elif
+            disable feature
+        
+        In development config file (DevelopmentConfig.cs)
+        #if DEVELOPMENT_BUILD || UNITY_EDITOR
+            #define FEATUREA
+        #endif
+
+        In production config file (ProductionConfig.cs)
+        #if !DEVELOPMENT_BUILD && !UNITY_EDITOR
+            #define FEATUREB
+        #endif
+
 Archive:
   [x] Real time or turn based ? @critical @done(20-09-27 16:03) @project(DESIGN )
   [x] Retaliation system @critical @done(20-09-27 16:03) @project(DESIGN )

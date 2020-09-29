@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Undisputed
   _color: {fileID: 11400000, guid: 8897dc38f1bc0b94e9818158c4e7141e, type: 2}
-  _takeOverSuccessChance: 70
+  _takeOverSuccessChanceModifier: 0
   _takeOverNeighborModifier: 0
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
   _actions:

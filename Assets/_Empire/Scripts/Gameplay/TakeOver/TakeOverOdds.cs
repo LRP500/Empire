@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static Empire.TakeOverManager;
 
 namespace Empire
 {
@@ -12,11 +13,13 @@ namespace Empire
             Initialize(success);
         }
 
-        public TakeOverOdds(Territory attacked)
+        public TakeOverOdds(TakeOverInfo info, TakeOverSettings settings)
         {
-            int successChance = attacked.State.TakeOverSuccessChance;
+            // Initial success chance + attacked territory state modifier
+            int successChance = settings.InitialTakeOverSuccessChance;
+            successChance += info.attacked.State.TakeOverSuccessChanceModifier;
 
-            foreach (Territory neighbor in attacked.Neighbors)
+            foreach (Territory neighbor in info.attacked.Neighbors)
             {
                 successChance += neighbor.State.TakeOverNeighborModifier;
             }

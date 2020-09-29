@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using Tools.Variables;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ namespace Empire
 {
     public abstract class TerritoryState : ScriptableObject
     {
+        [Header("General")]
+
         [SerializeField]
         private string _name = string.Empty;
         public string Name => _name;
@@ -14,13 +17,19 @@ namespace Empire
         private ColorVariable _color = null;
         public Color Color => _color.Value;
 
-        [SerializeField]
-        private int _takeOverSuccessChance = 50;
-        public int TakeOverSuccessChance => _takeOverSuccessChance;
+        [Header("Take Over")]
 
         [SerializeField]
+        [LabelText("Success Chance Modifier (%)")]
+        private int _takeOverSuccessChanceModifier = 10;
+        public int TakeOverSuccessChanceModifier => _takeOverSuccessChanceModifier;
+
+        [SerializeField]
+        [LabelText("Neighboard Modifier (%)")]
         private int _takeOverNeighborModifier = 0;
         public int TakeOverNeighborModifier => _takeOverNeighborModifier;
+
+        [Space]
 
         [SerializeField]
         protected GameplayContext _context = null;

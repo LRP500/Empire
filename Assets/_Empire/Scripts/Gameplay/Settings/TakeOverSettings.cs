@@ -6,11 +6,19 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Gameplay/Settings/Take Over")]
     public class TakeOverSettings : ScriptableObject
     {
+        [Range(0, 100)]
         [SerializeField]
         [SuffixLabel("(%)", Overlay = true)]
-        private int _successChance = 50;
-        public int SuccessChance => _successChance;
+        private int _initialTakeOverSuccessChance = 50;
+        public int InitialTakeOverSuccessChance => _initialTakeOverSuccessChance;
 
+        [Range(0, 100)]
+        [SerializeField]
+        [SuffixLabel("(%)", Overlay = true)]
+        private int _initialRetaliationSuccessChance = 20;
+        public int InitialRetaliationSuccessChance => _initialRetaliationSuccessChance;
+
+        [Range(0, 100)]
         [SerializeField]
         [SuffixLabel("(%)", Overlay = true)]
         private int _resourceGainChance = 50;

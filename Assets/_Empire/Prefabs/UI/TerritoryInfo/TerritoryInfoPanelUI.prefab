@@ -1142,6 +1142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 4414949447612862172}
   _icon: {fileID: 1468808859322482599}
+  _takeOverManager: {fileID: 11400000, guid: 28dd95f74dec8ba4881502f814a3b95c, type: 2}
 --- !u!1 &6163164148719253091
 GameObject:
   m_ObjectHideFlags: 0

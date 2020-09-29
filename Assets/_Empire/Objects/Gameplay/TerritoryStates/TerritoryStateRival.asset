@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Rival
   _color: {fileID: 11400000, guid: afdae0f75f765a54e9529845a2cdbe7f, type: 2}
-  _takeOverSuccessChance: 40
+  _takeOverSuccessChanceModifier: -10
   _takeOverNeighborModifier: -5
   _context: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}
   _actions:

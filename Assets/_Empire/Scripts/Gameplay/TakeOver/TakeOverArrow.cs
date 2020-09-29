@@ -2,6 +2,7 @@
 using Tools.References;
 using Tools.Variables;
 using UnityEngine;
+using static Empire.TakeOverManager;
 
 namespace Empire
 {
@@ -25,7 +26,8 @@ namespace Empire
         private bool _dragging = false;
 
         private Vector3? _originPosition = default;
-        private Territory _originTerritory = null;
+
+        private TakeOverInfo _currentTakeOver;
 
         private void Awake()
         {
@@ -42,6 +44,8 @@ namespace Empire
         {
             if (_dragging)
             {
+                _currentTakeOver.attacked = _hoveredTerritory;
+
                 HandleInput();
                 RefreshLineRenderer();
             }
@@ -54,7 +58,7 @@ namespace Empire
                 EndDrag();
             }
         }
-
+  
         private void RefreshLineRenderer()
         {
             if (_dragging && _originPosition.HasValue)
@@ -65,7 +69,7 @@ namespace Empire
                 _lineRenderer.SetPosition(1, GetCurrentMousePosition().GetValueOrDefault());
 
                 // Color
-                bool isValid = TakeOverManager.IsValid(_originTerritory, _hoveredTerritory.Value);
+                bool isValid = TakeOverManager.IsValid(_currentTakeOver);
                 _lineRenderer.startColor = isValid ? _validColor : _invalidColor;
                 _lineRenderer.endColor = isValid ? _validColor : _invalidColor;
             }
@@ -74,8 +78,9 @@ namespace Empire
         private void OnDragStart(object arg)
         {
             _dragging = true;
-            _originTerritory = arg as Territory;
             _originPosition = GetCurrentMousePosition();
+            _currentTakeOver = _currentTakeOver ?? new TakeOverInfo();
+            _currentTakeOver.attacking = arg as Territory;
             _lineRenderer.enabled = true;
         }
 
@@ -83,12 +88,8 @@ namespace Empire
         {
             _dragging = false;
             _lineRenderer.enabled = false;
-
-            EventManager.Instance.Trigger(GameplayEvent.TakeOver, new TakeOverManager.TakeOverInfo
-            {
-                attacking = _originTerritory,
-                attacked = _hoveredTerritory.Value
-            });
+            _currentTakeOver.attacked = _hoveredTerritory;
+            EventManager.Instance.Trigger(GameplayEvent.TakeOver, _currentTakeOver);
         }
 
         private Vector3? GetCurrentMousePosition()
