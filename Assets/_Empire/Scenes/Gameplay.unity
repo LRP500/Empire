@@ -5168,104 +5168,6 @@ MonoBehaviour:
   - {fileID: 340386094}
   - {fileID: 1382317407}
   - {fileID: 268935626}
---- !u!1 &1368174670
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1368174671}
-  - component: {fileID: 1368174673}
-  - component: {fileID: 1368174672}
-  - component: {fileID: 1368174674}
-  m_Layer: 5
-  m_Name: TakeOverArrowUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1368174671
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368174670}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1944904508}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.6, y: -16.49}
-  m_SizeDelta: {x: 585.1, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1368174672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368174670}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.85, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae6bc35b3bb75fa4ba03498cac999afb, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 16
---- !u!222 &1368174673
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368174670}
-  m_CullTransparentMesh: 0
---- !u!114 &1368174674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368174670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5cb2d066706264ea2bc61d777b396b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _camera: {fileID: 11400000, guid: 7ce8791cbdd1fb04c9e6656bcfd8af74, type: 2}
-  _hoveredTerritory: {fileID: 11400000, guid: 3c125ea8d75d9f54a894f62c2939df45, type: 2}
-  _renderer: {fileID: 1368174672}
-  _validColor:
-    useConstant: 1
-    constant: {r: 0, g: 0, b: 0, a: 0}
-    variable: {fileID: 0}
-  _invalidColor:
-    useConstant: 1
-    constant: {r: 0, g: 0, b: 0, a: 0}
-    variable: {fileID: 0}
 --- !u!1 &1373142743
 GameObject:
   m_ObjectHideFlags: 0
@@ -8307,7 +8209,6 @@ RectTransform:
   - {fileID: 122032063}
   - {fileID: 1800876203}
   - {fileID: 1614876213}
-  - {fileID: 1368174671}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9129,9 +9030,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 894231147045983526, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 894231147662306817, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
       propertyPath: m_Name
       value: TakeOverArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 894231147662306817, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6781619473443678022, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9186,6 +9095,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944904508}
     m_Modifications:
+    - target: {fileID: 1247398774472063922, guid: 0faec48893e75074fb9682f9c1981d94, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1247398774472063925, guid: 0faec48893e75074fb9682f9c1981d94, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
