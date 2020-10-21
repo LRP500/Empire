@@ -29,6 +29,8 @@ namespace Empire
 
         private TakeOverInfo _currentTakeOver;
 
+        private Gradient _gradient;
+
         private void Awake()
         {
             // Receive drag start event from Territory's event handlers
@@ -63,15 +65,49 @@ namespace Empire
         {
             if (_dragging && _originPosition.HasValue)
             {
-                // Vertices
-                _lineRenderer.positionCount = 2;
-                _lineRenderer.SetPosition(0, _originPosition.Value);
-                _lineRenderer.SetPosition(1, GetCurrentMousePosition().GetValueOrDefault());
+                Vector3 target = GetCurrentMousePosition().GetValueOrDefault();
+                CreateSegments(_originPosition.Value, target, 8);
+                RefreshColor();
+            }
+        }
 
-                // Color
-                bool isValid = TakeOverManager.IsValid(_currentTakeOver);
-                _lineRenderer.startColor = isValid ? _validColor : _invalidColor;
-                _lineRenderer.endColor = isValid ? _validColor : _invalidColor;
+        private void RefreshColor()
+        {
+            _gradient = _gradient ?? new Gradient();
+
+            // Get line renderer color
+            Color color = IsValid(_currentTakeOver) ? _validColor : _invalidColor;
+            
+            // Set gradient keys
+            GradientAlphaKey[] alphaKeys = _lineRenderer.colorGradient.alphaKeys;
+            GradientColorKey[] colorKeys = new GradientColorKey[]
+            {
+                new GradientColorKey(color, 0.0f),
+                new GradientColorKey(color, 1.0f)
+            };
+
+            // Set LineRenderer gradient
+            _gradient.SetKeys(colorKeys, alphaKeys);
+            _lineRenderer.colorGradient = _gradient;
+        }
+
+        /// <summary>
+        /// Create multiple segments so gradient alpha can work properly.
+        /// </summary>
+        /// <param name="origin">Origin position.</param>
+        /// <param name="target">Target position.</param>
+        /// <param name="segmentCount">Segment count.</param>
+        private void CreateSegments(Vector3 origin, Vector3 target, int segmentCount)
+        {
+            Vector3 direction = (target - origin).normalized;
+            float distance = Vector3.Distance(target, origin);
+            Vector3 position = origin;
+
+            _lineRenderer.positionCount = segmentCount;
+            for (int i = 0; i < segmentCount; i++)
+            {
+                _lineRenderer.SetPosition(i, position);
+                position += direction * (distance / segmentCount);
             }
         }
 
