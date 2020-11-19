@@ -1,4 +1,4 @@
 [submodule "Tools"]
-	path = Assets\\Tools
+	path = Assets/Tools
 	url = git@github.com:LRP500/Unity-Tools.git
 	branch = Empire
