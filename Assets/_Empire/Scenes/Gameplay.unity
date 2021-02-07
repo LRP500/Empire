@@ -8997,42 +8997,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.widthMultiplier
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.colorGradient.atime1
-      value: 16384
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.colorGradient.atime2
-      value: 49151
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.colorGradient.key3.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.colorGradient.atime3
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.colorGradient.atime4
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 894231147045983544, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
-      propertyPath: m_Parameters.colorGradient.m_NumAlphaKeys
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 894231147662306817, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
       propertyPath: m_Name
       value: TakeOverArrow
@@ -9051,7 +9015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6781619473443678022, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6781619473443678022, guid: 5dc66727ecd61e54f9c22f06cdd11c2c, type: 3}
       propertyPath: m_LocalRotation.x
