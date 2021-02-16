@@ -8,34 +8,34 @@ namespace Empire
     public class WorldMapManager : ScriptableManager<WorldMapManager>
     {
         [SerializeField]
-        private TerritoryListVariable _territories = null;
-        public List<Territory> Territories => _territories.Items;
+        private TerritoryListVariable _territories;
+        public IEnumerable<Territory> Territories => _territories.Items;
 
         [SerializeField]
-        private TerritoryListVariable _controlledTerritories = null;
+        private TerritoryListVariable _controlledTerritories;
         public List<Territory> ControlledTerritories => _controlledTerritories.Items;
 
         [Header("Territory States")]
 
         [SerializeField]
         [LabelText("Unreachable")]
-        private TerritoryState _territoryStateUnreachable = null;
+        private TerritoryState _territoryStateUnreachable;
 
         [SerializeField]
         [LabelText("Undisputed")]
-        private TerritoryState _territoryStateUndisputed = null;
+        private TerritoryState _territoryStateUndisputed;
 
         [SerializeField]
         [LabelText("Controlled")]
-        private TerritoryState _territoryStateControlled = null;
+        private TerritoryState _territoryStateControlled;
 
         [SerializeField]
         [LabelText("In Deal")]
-        private TerritoryState _territoryStateInDeal = null;
+        private TerritoryState _territoryStateInDeal;
 
         [SerializeField]
         [LabelText("Rival")]
-        private TerritoryState _territoryStateRival = null;
+        private TerritoryState _territoryStateRival;
 
         public override void Initialize()
         {
@@ -93,12 +93,12 @@ namespace Empire
             TransitionTo(territory, _territoryStateRival);
         }
 
-        public void SetUnreachable(Territory territory)
+        private void SetUnreachable(Territory territory)
         {
             TransitionTo(territory, _territoryStateUnreachable);
         }
 
-        public void TransitionTo(Territory territory, TerritoryState state)
+        private void TransitionTo(Territory territory, TerritoryState state)
         {
             TerritoryState instance = Instantiate(state);
             territory.SetState(instance);

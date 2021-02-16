@@ -9,23 +9,23 @@ namespace Empire
     public class TakeOverArrow : MonoBehaviour
     {
         [SerializeField]
-        private CameraVariable _camera = null;
+        private CameraVariable _camera;
 
         [SerializeField]
-        private TerritoryVariable _hoveredTerritory = null;
+        private TerritoryVariable _hoveredTerritory;
 
         [SerializeField]
-        private LineRenderer _lineRenderer = null;
+        private LineRenderer _lineRenderer;
 
         [SerializeField]
-        private ColorReference _validColor = null;
+        private ColorReference _validColor;
 
         [SerializeField]
-        private ColorReference _invalidColor = null;
+        private ColorReference _invalidColor;
 
-        private bool _dragging = false;
+        private bool _dragging;
 
-        private Vector3? _originPosition = default;
+        private Vector3? _originPosition;
 
         private TakeOverInfo _currentTakeOver;
 
@@ -80,7 +80,7 @@ namespace Empire
             
             // Set gradient keys
             GradientAlphaKey[] alphaKeys = _lineRenderer.colorGradient.alphaKeys;
-            GradientColorKey[] colorKeys = new GradientColorKey[]
+            GradientColorKey[] colorKeys =
             {
                 new GradientColorKey(color, 0.0f),
                 new GradientColorKey(color, 1.0f)
@@ -88,7 +88,7 @@ namespace Empire
 
             // Set LineRenderer gradient
             _gradient.SetKeys(colorKeys, alphaKeys);
-            _lineRenderer.colorGradient = _gradient;
+            //_lineRenderer.colorGradient = _gradient;
         }
 
         /// <summary>
@@ -107,7 +107,7 @@ namespace Empire
             for (int i = 0; i < segmentCount; i++)
             {
                 _lineRenderer.SetPosition(i, position);
-                position += direction * (distance / segmentCount);
+                position += direction * (distance / (segmentCount - 1));
             }
         }
 
@@ -115,7 +115,7 @@ namespace Empire
         {
             _dragging = true;
             _originPosition = GetCurrentMousePosition();
-            _currentTakeOver = _currentTakeOver ?? new TakeOverInfo();
+            _currentTakeOver ??= new TakeOverInfo();
             _currentTakeOver.attacking = arg as Territory;
             _lineRenderer.enabled = true;
         }
