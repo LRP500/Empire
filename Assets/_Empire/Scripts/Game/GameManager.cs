@@ -11,24 +11,24 @@ namespace Empire
     {
         [SerializeField]
         [BoxGroup("Scenes")]
-        private SceneReference _mainMenuScene = null;
+        private SceneReference _mainMenuScene;
 
         [SerializeField]
         [BoxGroup("Scenes")]
-        private SceneReference _gameplayScene = null;
+        private SceneReference _gameplayScene;
 
         [SerializeField]
-        private TimeController _timeController = null;
+        private TimeController _timeController;
 
         [SerializeField]
-        private SceneFader _sceneFader = null;
+        private SceneFader _sceneFader;
 
         private void Awake()
         {
             Initialize();
 
 #if !UNITY_EDITOR
-        LoadStartingScene();
+            LoadStartingScene();
 #endif
         }
 

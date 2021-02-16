@@ -8,7 +8,7 @@ namespace Empire
     public class TerritoryActionInfoTakeOverUI : TerritoryActionInfoUI
     {
         [SerializeField]
-        private TerritoryTakeOverOddDisplay _oddsDisplay = null;
+        private TerritoryTakeOverOddDisplay _oddsDisplay;
 
         public override void Initialize(TerritoryAction action, Territory territory)
         {
