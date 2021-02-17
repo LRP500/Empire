@@ -8,10 +8,10 @@ namespace Empire
     public class TerritoryDealDisplay : MonoBehaviour
     {
         [SerializeField]
-        private TextMeshProUGUI _text = null;
+        private TextMeshProUGUI _text;
 
         [SerializeField]
-        private Image _image = null;
+        private Image _image;
 
         public void Initialize(TerritoryDealInfo info)
         {
@@ -21,7 +21,7 @@ namespace Empire
 
         private void SetText(Deal deal)
         {
-            _text.text = string.Format("{0} ({1}k$)", deal.Quantity, deal.SellingPrice);
+            _text.text = $"{deal.Quantity}lbs ({deal.SellingPrice}k$)";
         }
     }
 }

@@ -9,40 +9,40 @@ namespace Empire
     public class TerritoryInfoPanelUI : PanelUI
     {
         [SerializeField]
-        private TerritoryVariable _hoveredTerritory = null;
+        private TerritoryVariable _hoveredTerritory;
 
         [SerializeField]
-        private StructureManager _structureManager = null;
+        private StructureManager _structureManager;
 
         [Space]
         [SerializeField]
-        private TextMeshProUGUI _territoryName = null;
+        private TextMeshProUGUI _territoryName;
 
         [SerializeField]
-        private TextMeshProUGUI _territoryState = null;
+        private TextMeshProUGUI _territoryState;
 
 
         [SerializeField]
-        private TextMeshProUGUI _laboratoryLevel = null;
+        private TextMeshProUGUI _laboratoryLevel;
 
         [SerializeField]
-        private TextMeshProUGUI _distributionLevel = null;
+        private TextMeshProUGUI _distributionLevel;
 
         [SerializeField]
-        private TextMeshProUGUI _launderingLevel = null;
+        private TextMeshProUGUI _launderingLevel;
 
         [Space]
 
         [SerializeField]
-        private GameObject _upgradeContainer = null;
+        private GameObject _upgradeContainer;
 
         [SerializeField]
-        private TerritoryTakeOverOddDisplay _takeOverOdds = null;
+        private TerritoryTakeOverOddDisplay _takeOverOdds;
 
         [SerializeField]
-        private TerritoryDealDisplay _currentDeal = null;
+        private TerritoryDealDisplay _currentDeal;
 
-        private Territory _territory = null;
+        private Territory _territory;
 
         private void Awake()
         {
@@ -66,7 +66,9 @@ namespace Empire
 
         private void Refresh()
         {
-            if (!_hoveredTerritory?.Value || _hoveredTerritory.Value.State is TerritoryStateUnreachable)
+            if (_hoveredTerritory ||
+                !_hoveredTerritory.Value ||
+                _hoveredTerritory.Value.State is TerritoryStateUnreachable)
             {
                 Close();
                 return;
