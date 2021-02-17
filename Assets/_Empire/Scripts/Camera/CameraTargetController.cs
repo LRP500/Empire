@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Empire
 {
-    public class CameraTarget : MonoBehaviour
+    public class CameraTargetController : MonoBehaviour
     {
         [SerializeField]
-        private Camera _mainCamera = null;
+        private Camera _mainCamera;
 
         [SerializeField]
         private float _dragSpeed = 2f;
@@ -31,9 +31,9 @@ namespace Empire
 
             EventManager.Instance.Trigger(GameplayEvent.CancelSecondaryMouseSelect);
             
-            float speed = _dragSpeed * Time.unscaledDeltaTime * 1000;
+            //float speed = _dragSpeed;
             Vector3 pos = _mainCamera.ScreenToViewportPoint(Input.mousePosition - _dragOrigin);
-            Vector3 move = new Vector3(pos.x * speed, pos.y * speed, transform.position.z);
+            Vector3 move = new Vector3(pos.x * _dragSpeed, pos.y * _dragSpeed, transform.position.z);
 
             // Move camera target
             transform.Translate(-move, Space.World);

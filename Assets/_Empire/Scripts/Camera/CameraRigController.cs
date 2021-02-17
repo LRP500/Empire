@@ -7,10 +7,10 @@ namespace Empire
     public class CameraRigController : MonoBehaviour
     {
         [SerializeField]
-        private CinemachineVirtualCamera _virtualCamera = null;
+        private CinemachineVirtualCamera _virtualCamera;
 
         [SerializeField]
-        private CameraTarget _target = null;
+        private CameraTargetController _targetController;
 
         [SerializeField]
         [BoxGroup("Zoom")]
@@ -28,7 +28,7 @@ namespace Empire
         [BoxGroup("Zoom")]
         private float _cameraDistanceMax = 100f;
 
-        private CinemachineFramingTransposer _vcamTransposer = null;
+        private CinemachineFramingTransposer _vcamTransposer;
 
         private void Awake()
         {
@@ -53,7 +53,7 @@ namespace Empire
 
         public void SetLocked(bool state)
         {
-            _target.enabled = !state;
+            _targetController.enabled = !state;
         }
     }
 }

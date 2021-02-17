@@ -14,33 +14,38 @@ namespace Empire
         #region Serialized Fields
 
         [SerializeField, ReadOnly]
-        private TerritoryState _state = null; 
+        private TerritoryState _state; 
+
+        [SerializeField]
+        private TerritoryListVariable _runtimeTerritories;
+
+        [SerializeField]
+        private List<Territory> _neighbors;
+        
+        #endregion Serialized Fields
+
+        #region Private Fields
+
+        private bool _dragging;
+
+        #endregion Private Fields
+
+        #region Properties
+
         public TerritoryState State => _state;
-
-        [SerializeField]
-        private TerritoryListVariable _runtimeTerritories = null;
-
-        [SerializeField]
-        private List<Territory> _neighbors = null;
         public List<Territory> Neighbors => _neighbors;
+
+        public SpriteRenderer Renderer { get; private set; }
 
         /// <summary>
         /// Allows checking if controlled without having to cast State.
         /// </summary>
-        public bool IsControlled { get; set; } = false;
+        public bool IsControlled { get; set; }
 
         /// <summary>
         /// Allows checking if discovered without having to cast State.
         /// </summary>
-        public bool IsDiscovered { get; set; } = false;
-
-        #endregion Serialized Fields
-
-        private bool _dragging = false;
-
-        #region Properties
-
-        public SpriteRenderer Renderer { get; private set; } = null;
+        public bool IsDiscovered { get; set; }
 
         #endregion Properties
 
@@ -68,7 +73,11 @@ namespace Empire
 
         public void SetState(TerritoryState state)
         {
-            _state?.OnExitState();
+            if (_state)
+            {
+                _state.OnExitState();
+            }
+
             _state = state;
             _state.SetTerritory(this);
             _state.OnEnterState();
@@ -91,11 +100,11 @@ namespace Empire
                 return;
             }
 
-            if (Input.GetKeyUp(KeyCode.Mouse0))
-            {
-                EventManager.Instance.Trigger(GameplayEvent.TerritoryPrimarySelect, this);
-            }
-            else if (Input.GetKeyUp(KeyCode.Mouse1))
+            //if (Input.GetKeyUp(KeyCode.Mouse0))
+            //{
+            //    EventManager.Instance.Trigger(GameplayEvent.TerritoryPrimarySelect, this);
+            //}
+            if (Input.GetKeyUp(KeyCode.Mouse1))
             {
                 EventManager.Instance.Trigger(GameplayEvent.TerritorySecondarySelect, this);
             }

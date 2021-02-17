@@ -5,28 +5,28 @@
         /// -------------------------------------
         /// Game Over
         /// -------------------------------------
-        public static readonly string GameOver = "GameplayEvent_GameOver";
-        public static readonly string PlayerVictory = "GameplayEvent_PlayerVictory";
-        public static readonly string PlayerDefeat = "GameplayEvent_PlayerDefeat";
+        public const string GameOver = "GameplayEvent_GameOver";
+        public const string PlayerVictory = "GameplayEvent_PlayerVictory";
+        public const string PlayerDefeat = "GameplayEvent_PlayerDefeat";
 
         /// -------------------------------------
         /// Map Interactions
         /// -------------------------------------
-        public static readonly string TerritorySecondarySelect = "GameplayEvent_TerritorySecondarySelect";
-        public static readonly string TerritoryPrimarySelect = "GameplayEvent_TerritoryPrimarySelect";
-        public static readonly string CancelSecondaryMouseSelect = "GameplayEvent_CancelSecondaryMouseSelect";
+        public const string TerritorySecondarySelect = "GameplayEvent_TerritorySecondarySelect";
+        public const string TerritoryPrimarySelect = "GameplayEvent_TerritoryPrimarySelect";
+        public const string CancelSecondaryMouseSelect = "GameplayEvent_CancelSecondaryMouseSelect";
 
         /// -------------------------------------
         /// Resources
         /// -------------------------------------
-        public static readonly string CashSpent = "GameplayEvent_CashSpent";
+        public const string CashSpent = "GameplayEvent_CashSpent";
 
         /// -------------------------------------
         /// Take Over
         /// -------------------------------------
-        public static readonly string TakeOverDragStart = "GameplayEvent_TakeOverDragStart";
-        public static readonly string TakeOverFailed = "GameplayEvent_TakeOverFailed";
-        public static readonly string TakeOverSuccess = "GameplayEvent_TakeOverSuccess";
-        public static readonly string TakeOver = "GameplayEvent_TakeOver";
+        public const string TakeOverDragStart = "GameplayEvent_TakeOverDragStart";
+        public const string TakeOverFailed = "GameplayEvent_TakeOverFailed";
+        public const string TakeOverSuccess = "GameplayEvent_TakeOverSuccess";
+        public const string TakeOver = "GameplayEvent_TakeOver";
     }
 }
