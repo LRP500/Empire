@@ -11,16 +11,16 @@ namespace Empire
 
         [ReadOnly]
         [SerializeField]
-        protected Territory _territory = null;
+        protected Territory _territory;
         public Territory Territory => _territory;
 
         [ReadOnly]
         [SerializeField]
-        protected int _quantity = 0;
+        protected int _quantity;
 
         [ReadOnly]
         [SerializeField]
-        protected int _sellingPrice = 0; 
+        protected int _sellingPrice; 
 
         public int Quantity => _quantity;
         public int SellingPrice => _sellingPrice;

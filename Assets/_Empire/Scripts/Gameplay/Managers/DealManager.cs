@@ -8,14 +8,14 @@ namespace Empire
     {
         public class TerritoryDealInfo
         {
-            public DealOffer currentOffer = null;
-            public Deal activeDeal = null;
+            public DealOffer currentOffer;
+            public Deal activeDeal;
         }
 
         [SerializeField]
-        private DealOfferSettings _dealSettings = null;
+        private DealOfferSettings _dealSettings;
 
-        public Dictionary<Territory, TerritoryDealInfo> Deals { get; private set; } = null;
+        public Dictionary<Territory, TerritoryDealInfo> Deals { get; private set; }
 
         public override void Initialize()
         {

@@ -1901,6 +1901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TerritoryInfoPanelUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1247398774644529438, guid: 0faec48893e75074fb9682f9c1981d94, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1247398774966970399, guid: 0faec48893e75074fb9682f9c1981d94, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

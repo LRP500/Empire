@@ -66,7 +66,7 @@ namespace Empire
 
         private void Refresh()
         {
-            if (_hoveredTerritory ||
+            if (!_hoveredTerritory ||
                 !_hoveredTerritory.Value ||
                 _hoveredTerritory.Value.State is TerritoryStateUnreachable)
             {
@@ -75,46 +75,62 @@ namespace Empire
             }
 
             ResetToDefault();
-
-            _territory = _hoveredTerritory.Value;
-            _territoryName.text = _territory.gameObject.name;
-            _territoryState.text = _territory.State.Name;
-            _territoryState.color = _territory.State.Color;
+            RefreshTerritoryInfo();
 
             // Controlled
             if (_hoveredTerritory.Value.State is TerritoryStateControlled)
             {
-                TerritoryStructureInfo info = _structureManager.GetInfo(_territory);
-
-                _laboratoryLevel.text = $"{info.laboratory.Level}/{info.laboratory.MaxLevel}";
-                _distributionLevel.text = $"{info.distributionNetwork.Level}/{info.distributionNetwork.MaxLevel}";
-                _launderingLevel.text = $"{info.launderingOperation.Level}/{info.launderingOperation.MaxLevel}";
-
-                _laboratoryLevel.color = info.laboratory.IsMaxLevel() ? Color.green : Color.white;
-                _distributionLevel.color = info.distributionNetwork.IsMaxLevel() ? Color.green : Color.white;
-                _launderingLevel.color = info.launderingOperation.IsMaxLevel() ? Color.green : Color.white;
-
-                _upgradeContainer.SetActive(true);
+                RefreshUpgrades();
             }
             // Rival
             else if (_hoveredTerritory.Value.State is TerritoryStateRival)
             {
-                // Odds display
-                _takeOverOdds.gameObject.SetActive(true);
-                _takeOverOdds.Initialize(new TakeOverInfo(_territory, _hoveredTerritory.Value));
-
-                // Deal offer display
-                _currentDeal.gameObject.SetActive(true);
-                _currentDeal.Initialize(GameplayContext.Instance.dealManager.GetInfo(_territory));
+                RefreshTakeOverOdds();
+                RefreshDeal();
             }
             // In Deal    
             else if (_hoveredTerritory.Value.State is TerritoryStateInDeal)
             {
-                _currentDeal.gameObject.SetActive(true);
-                _currentDeal.Initialize(GameplayContext.Instance.dealManager.GetInfo(_territory));
+                RefreshDeal();
             }
 
             Open();
+        }
+
+        private void RefreshTerritoryInfo()
+        {
+            _territory = _hoveredTerritory.Value;
+            _territoryName.text = _territory.gameObject.name;
+            _territoryState.text = _territory.State.Name;
+            _territoryState.color = _territory.State.Color;
+        }
+
+        private void RefreshUpgrades()
+        {
+            TerritoryStructureInfo info = _structureManager.GetInfo(_territory);
+
+            _laboratoryLevel.text = $"{info.laboratory.Level}/{info.laboratory.MaxLevel}";
+            _laboratoryLevel.color = info.laboratory.IsMaxLevel() ? Color.green : Color.white;
+            
+            _distributionLevel.text = $"{info.distributionNetwork.Level}/{info.distributionNetwork.MaxLevel}";
+            _distributionLevel.color = info.distributionNetwork.IsMaxLevel() ? Color.green : Color.white;
+            
+            _launderingLevel.text = $"{info.launderingOperation.Level}/{info.launderingOperation.MaxLevel}";
+            _launderingLevel.color = info.launderingOperation.IsMaxLevel() ? Color.green : Color.white;
+
+            _upgradeContainer.SetActive(true);
+        }
+
+        private void RefreshTakeOverOdds()
+        {
+            _takeOverOdds.gameObject.SetActive(true);
+            _takeOverOdds.Initialize(new TakeOverInfo(_territory, _hoveredTerritory.Value));
+        }
+
+        private void RefreshDeal()
+        {
+            _currentDeal.gameObject.SetActive(true);
+            _currentDeal.Initialize(GameplayContext.Instance.dealManager.GetInfo(_territory));
         }
 
         private void ResetToDefault()
