@@ -91,6 +91,7 @@ namespace Empire
             // In Deal    
             else if (_hoveredTerritory.Value.State is TerritoryStateInDeal)
             {
+                RefreshTakeOverOdds();
                 RefreshDeal();
             }
 
