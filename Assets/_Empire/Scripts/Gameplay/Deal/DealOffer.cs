@@ -8,7 +8,7 @@ namespace Empire
     {
         [ReadOnly]
         [SerializeField]
-        private float _remainingTime = 0;
+        private float _remainingTime;
 
         public float RemainingTime => _remainingTime;
 

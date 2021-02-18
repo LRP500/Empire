@@ -7,21 +7,21 @@ namespace Empire
     public class TerritoryActionInfoDealUI : TerritoryActionInfoUI
     {
         [SerializeField]
-        private TextMeshProUGUI _title = null;
+        private TextMeshProUGUI _title;
 
         [SerializeField]
-        private KeyValueItemUI _quantityKeyValue = null;
+        private KeyValueItemUI _quantityKeyValue;
 
         [SerializeField]
-        private KeyValueItemUI _sellingPriceKeyValue = null;
+        private KeyValueItemUI _sellingPriceKeyValue;
 
         [SerializeField]
-        private TextMeshProUGUI _timer = null;
+        private TextMeshProUGUI _timer;
 
         [SerializeField]
-        private DealManager _dealManager = null;
+        private DealManager _dealManager;
 
-        private Territory _territory = null;
+        private Territory _territory;
 
         private DealManager.TerritoryDealInfo _dealInfo = null;
 
