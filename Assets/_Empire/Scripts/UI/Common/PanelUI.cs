@@ -6,9 +6,9 @@ namespace Empire
     public abstract class PanelUI : MonoBehaviour
     {
         [SerializeField]
-        protected CanvasGroup _group = null;
+        protected CanvasGroup _group;
 
-        public bool IsOpen { get; protected set; } = false;
+        public bool IsOpen { get; private set; }
 
         [Button]
         protected virtual void Display()
@@ -36,6 +36,18 @@ namespace Empire
         {
             IsOpen = false;
             Hide();
+        }
+
+        public virtual void Toggle()
+        {
+            if (IsOpen)
+            {
+                Close();
+            }
+            else
+            {
+                Open();
+            }
         }
     }
 }

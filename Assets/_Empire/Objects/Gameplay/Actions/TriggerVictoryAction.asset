@@ -9,13 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b44babad069b8ee44adae821dfd017fa, type: 3}
-  m_Name: ResourceThreat
+  m_Script: {fileID: 11500000, guid: e78580fbf9aa5ad45b3d3e2890fd4a17, type: 3}
+  m_Name: TriggerVictoryAction
   m_EditorClassIdentifier: 
-  _type: {fileID: 11400000, guid: b42bd93bb1ac88b4fa6dcbfc0034c74c, type: 2}
-  _initial: 1000
-  _current: 1070
-  _clamped: 1
-  _min: 0
-  _max: 10000
-  _production: {fileID: 0}
+  _gameplayContext: {fileID: 11400000, guid: 534c0ee1f6f18b1439ff4baf29f7720d, type: 2}

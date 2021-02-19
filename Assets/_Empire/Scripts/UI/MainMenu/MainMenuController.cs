@@ -7,7 +7,7 @@ namespace Empire
     public class MainMenuController : MonoBehaviour
     {
         [SerializeField]
-        private Button _newGameButton = null;
+        private Button _newGameButton;
 
         private void Awake()
         {

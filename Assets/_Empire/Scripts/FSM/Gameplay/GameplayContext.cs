@@ -8,16 +8,16 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/FSM/Gameplay/Context")]
     public class GameplayContext : SingletonScriptableObject<GameplayContext>
     {
-        public DealManager dealManager = null;
-        public ThreatManager threatManager = null;
-        public TakeOverManager takeOverManager = null;
-        public ResourceManager resourceManager = null;
-        public WorldMapManager worldMapManager = null;
-        public StructureManager structureManager = null;
-        public ProductionManager productionManager = null;
-        public TimeControllerVariable timeController = null;
+        public DealManager dealManager;
+        public ThreatManager threatManager;
+        public TakeOverManager takeOverManager;
+        public ResourceManager resourceManager;
+        public WorldMapManager worldMapManager;
+        public StructureManager structureManager;
+        public ProductionManager productionManager;
+        public TimeControllerVariable timeController;
 
-        public IntVariable turnCount = null;
+        public IntVariable turnCount;
 
         public float SpeedMultiplier => timeController.Value.CurrentSpeedMultiplier;
 
@@ -56,13 +56,13 @@ namespace Empire
 
         public class TerritoryInfo
         {
-            public DealManager.TerritoryDealInfo deals = null;
-            public StructureManager.TerritoryStructureInfo structures = null;
+            public DealManager.TerritoryDealInfo deals;
+            public StructureManager.TerritoryStructureInfo structures;
         }
 
         public TerritoryInfo GetTerritoryInfo(Territory territory)
         {
-            TerritoryInfo info = new TerritoryInfo
+            var info = new TerritoryInfo
             {
                 deals = dealManager.GetInfo(territory),
                 structures = structureManager.GetInfo(territory)

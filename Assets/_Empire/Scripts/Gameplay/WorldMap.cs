@@ -1,17 +1,18 @@
-﻿using UnityEngine;
+﻿using Tools.Variables;
+using UnityEngine;
 
 namespace Empire
 {
     public class WorldMap : MonoBehaviour
     {
         [SerializeField]
-        private Camera _mainCamera = null;
+        private CameraVariable _mainCamera;
 
         [SerializeField]
-        private TerritoryVariable _hoveredTerritory = null;
+        private TerritoryVariable _hoveredTerritory;
 
         [SerializeField]
-        private LayerMask _layerMask = default;
+        private LayerMask _layerMask;
 
         private void Update()
         {
@@ -20,8 +21,9 @@ namespace Empire
 
         private void GetHoveredTerritory()
         {
-            Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -_mainCamera.transform.position.z);
-            Vector2 origin = _mainCamera.ScreenToWorldPoint(mousePos);
+            Transform cameraTransform = _mainCamera.Value.transform;
+            Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -cameraTransform.position.z);
+            Vector2 origin = _mainCamera.Value.ScreenToWorldPoint(mousePos);
 
             RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.zero, 0f, _layerMask);
 

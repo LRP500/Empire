@@ -8,16 +8,16 @@ namespace Empire
     public class GameplayManager : MonoBehaviour
     {
         [SerializeField]
-        private TimeController _timeController = null;
+        private TimeController _timeController;
 
         [SerializeField]
-        private GameplayContext _context = null;
+        private GameplayContext _context;
 
         [SerializeField]
-        private CameraRigController _cameraRig = null;
+        private CameraRigController _cameraRig;
 
         [SerializeField]
-        private IntVariable _turnCount = null;
+        private IntVariable _turnCount;
 
         private void Awake()
         {
