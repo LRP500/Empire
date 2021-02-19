@@ -230,7 +230,7 @@ RectTransform:
   - {fileID: 76939149}
   - {fileID: 526243534}
   m_Father: {fileID: 1944904508}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.95}
@@ -536,7 +536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809212421561631196, guid: 0b04191ad90d1bb49a90bc5e5c06c133, type: 3}
       propertyPath: m_Name
-      value: TimeControls
+      value: TimeControlsUI
       objectReference: {fileID: 0}
     - target: {fileID: 6809212421561631199, guid: 0b04191ad90d1bb49a90bc5e5c06c133, type: 3}
       propertyPath: m_Pivot.x
@@ -548,7 +548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6809212421561631199, guid: 0b04191ad90d1bb49a90bc5e5c06c133, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6809212421561631199, guid: 0b04191ad90d1bb49a90bc5e5c06c133, type: 3}
       propertyPath: m_AnchorMax.x
@@ -760,7 +760,7 @@ RectTransform:
   m_Children:
   - {fileID: 1688054231}
   m_Father: {fileID: 1944904508}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.83, y: 0}
   m_AnchorMax: {x: 1, y: 0.95}
@@ -1154,7 +1154,7 @@ RectTransform:
   - {fileID: 1883368086}
   - {fileID: 1579307479}
   m_Father: {fileID: 1944904508}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_BlockingObjects: 3
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 69687
@@ -1497,7 +1497,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 50
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1944904508
 RectTransform:
@@ -1512,10 +1512,10 @@ RectTransform:
   m_Children:
   - {fileID: 1959755886}
   - {fileID: 187825184}
-  - {fileID: 749028514}
   - {fileID: 1684481123}
   - {fileID: 1413555801}
   - {fileID: 122032063}
+  - {fileID: 749028514}
   - {fileID: 1800876203}
   - {fileID: 1614876213}
   - {fileID: 3326320877221556634}
@@ -1799,7 +1799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1247398774644529436, guid: 0faec48893e75074fb9682f9c1981d94, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1247398774644529436, guid: 0faec48893e75074fb9682f9c1981d94, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2533,7 +2533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5233761493524693274, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_Name
-      value: PauseMenu
+      value: PauseMenuUI
       objectReference: {fileID: 0}
     - target: {fileID: 5309372982107337582, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2585,7 +2585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7019265841608979629, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7019265841608979629, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2791,7 +2791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874444599230263131, guid: 8d377131bb478d5409f43580fb318790, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4874444599230263131, guid: 8d377131bb478d5409f43580fb318790, type: 3}
       propertyPath: m_AnchorMax.x
