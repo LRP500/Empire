@@ -26,6 +26,8 @@ namespace Empire
 
         public override void Close()
         {
+            base.Close();
+
             foreach (PanelUI panel in _interfacePanels)
             {
                 panel.Close();
@@ -38,6 +40,8 @@ namespace Empire
             {
                 panel.Open();
             }
+
+            base.Open();
         }
     }
 }
