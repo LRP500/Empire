@@ -100,10 +100,10 @@ namespace Empire
                 return;
             }
 
-            //if (Input.GetKeyUp(KeyCode.Mouse0))
-            //{
-            //    EventManager.Instance.Trigger(GameplayEvent.TerritoryPrimarySelect, this);
-            //}
+            if (Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                EventManager.Instance.Trigger(GameplayEvent.TerritoryPrimarySelect, this);
+            }
             if (Input.GetKeyUp(KeyCode.Mouse1))
             {
                 EventManager.Instance.Trigger(GameplayEvent.TerritorySecondarySelect, this);

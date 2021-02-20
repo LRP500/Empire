@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Tools;
+using Tools.Variables;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,23 +9,24 @@ namespace Empire
     public class TerritoryActionWheelUI : PanelUI
     {
         [SerializeField]
-        private Camera _mainCamera = null;
+        private CameraVariable _mainCamera;
 
         [SerializeField]
-        private TerritoryActionUI _actionItemPrefab = null;
+        private TerritoryActionUI _actionItemPrefab;
 
         [SerializeField]
-        private Transform _actionContainer = null;
+        private Transform _actionContainer;
 
         [SerializeField]
-        private Transform _infoContainer = null;
+        private Transform _infoContainer;
 
-        private Territory _currentTerritory = null;
+        private Territory _currentTerritory;
 
-        private List<TerritoryActionUI> _currentActions = null;
+        private List<TerritoryActionUI> _currentActions;
 
         private void Awake()
         {
+            EventManager.Instance.Subscribe(GameplayEvent.TerritoryPrimarySelect, OnSelectionCanceled);
             EventManager.Instance.Subscribe(GameplayEvent.TerritorySecondarySelect, OnTerritorySelected);
             EventManager.Instance.Subscribe(GameplayEvent.CancelSecondaryMouseSelect, OnSelectionCanceled);
         }
@@ -48,7 +50,7 @@ namespace Empire
             }
         }
 
-        public void Open(Territory target)
+        private void Open(Territory target)
         {
             Initialize(target);
 
@@ -68,11 +70,11 @@ namespace Empire
         {
             _currentTerritory = territory;
 
-            SetActions();
+            CreateActions();
             SetPosition();
         }
 
-        private void SetActions()
+        private void CreateActions()
         {
             Clear();
 
@@ -99,16 +101,16 @@ namespace Empire
 
         private void SetPosition()
         {
-            transform.position = _mainCamera.WorldToScreenPoint(_currentTerritory.transform.position);
+            transform.position = _mainCamera.Value.WorldToScreenPoint(_currentTerritory.transform.position);
         }
 
         private void OnTerritorySelected(object arg)
         {
-            Territory target = arg as Territory;
+            var target = arg as Territory;
 
-            if (target.State.Actions.Count > 0)
+            if (target && target.State.Actions.Count > 0)
             {
-                Open(arg as Territory);
+                Open(target);
             }
         }
 
@@ -119,11 +121,15 @@ namespace Empire
 
         private void Clear()
         {
-            _currentActions = _currentActions ?? new List<TerritoryActionUI>();
+            _currentActions ??= new List<TerritoryActionUI>();
 
             foreach (TerritoryActionUI item in _currentActions)
             {
-                Destroy(item.InfoPanel?.gameObject);
+                if (item.InfoPanel)
+                {
+                    Destroy(item.InfoPanel.gameObject);
+                }
+
                 Destroy(item.gameObject);
             }
 

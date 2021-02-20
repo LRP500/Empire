@@ -7,10 +7,12 @@ namespace Empire
 {
     public class TimeControlUI : PanelUI
     {
-        public struct SpeedMultiplierInfo
+        #region Nested Types
+
+        private readonly struct SpeedMultiplierInfo
         {
-            public float speed;
-            public KeyCode input;
+            public readonly float speed;
+            public readonly KeyCode input;
 
             public SpeedMultiplierInfo(float speed, KeyCode input)
             {
@@ -19,17 +21,19 @@ namespace Empire
             }
         }
 
-        [SerializeField]
-        private Toggle _pauseToggle = null;
+        #endregion Nested Types
 
         [SerializeField]
-        private Toggle _resumeToggle = null;
+        private Toggle _pauseToggle;
 
         [SerializeField]
-        private Toggle _forwardToggle = null;
+        private Toggle _resumeToggle;
 
         [SerializeField]
-        private Toggle _fastForwawrdToggle = null;
+        private Toggle _forwardToggle;
+
+        [SerializeField]
+        private Toggle _fastForwawrdToggle;
 
         [Space]
         [SerializeField]
@@ -40,11 +44,11 @@ namespace Empire
 
         [Space]
         [SerializeField]
-        private TimeController _timeController = null;
+        private TimeController _timeController;
 
-        private Toggle _lastActiveToggle = null;
+        private Toggle _lastActiveToggle;
 
-        private Dictionary<Toggle, SpeedMultiplierInfo> _speedMultipliers = null;
+        private Dictionary<Toggle, SpeedMultiplierInfo> _speedMultipliers;
 
         private void Awake()
         {
@@ -69,7 +73,7 @@ namespace Empire
                 SelectToggle(_pauseToggle.IsSelected ? (_lastActiveToggle ?? _resumeToggle) : _pauseToggle);
             }
 
-            foreach (var info in _speedMultipliers)
+            foreach (KeyValuePair<Toggle, SpeedMultiplierInfo> info in _speedMultipliers)
             {
                 if (Input.GetKeyDown(info.Value.input))
                 {
@@ -78,7 +82,7 @@ namespace Empire
             }
         }
 
-        private void SelectToggle(Toggle toggle)
+        private static void SelectToggle(Toggle toggle)
         {
             toggle.SetSelected(true);
         }

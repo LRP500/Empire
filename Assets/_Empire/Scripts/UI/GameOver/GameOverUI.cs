@@ -1,5 +1,4 @@
-﻿using System;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using Tools;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,16 +8,16 @@ namespace Empire
     public class GameOverUI : PanelUI
     {
         [SerializeField]
-        private GameObject _victoryText = null;
+        private GameObject _victoryText;
 
         [SerializeField]
-        private GameObject _defeatText = null;
+        private GameObject _defeatText;
 
         [SerializeField]
-        private Button _restartButton = null;
+        private Button _restartButton;
 
         [SerializeField]
-        private Button _exitButton = null;
+        private Button _exitButton;
 
         private void Awake()
         {
@@ -63,12 +62,12 @@ namespace Empire
             _defeatText.SetActive(true);
         }
 
-        private void OnRestartButtonClick()
+        private static void OnRestartButtonClick()
         {
             EventManager.Instance.Trigger(SystemEvent.StartNewGame);
         }
 
-        private void OnExitButtonClick()
+        private static void OnExitButtonClick()
         {
             EventManager.Instance.Trigger(SystemEvent.ReturnToTitleMenu);
         }

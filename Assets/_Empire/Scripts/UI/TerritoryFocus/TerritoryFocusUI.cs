@@ -1,5 +1,4 @@
-﻿using Tools;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace Empire
@@ -7,13 +6,13 @@ namespace Empire
     public class TerritoryFocusUI : PanelUI
     {
         [SerializeField]
-        private Image _territoryRenderer = null;
+        private Image _territoryRenderer;
 
-        private Territory _territory = null;
+        private Territory _territory;
 
         private void Awake()
         {
-            EventManager.Instance.Subscribe(GameplayEvent.TerritoryPrimarySelect, FocusTerritory);
+            //EventManager.Instance.Subscribe(GameplayEvent.TerritoryPrimarySelect, FocusTerritory);
         }
 
         private void Update()

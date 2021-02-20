@@ -7,7 +7,7 @@ namespace Empire
     public class GameplayInterfaceUI : PanelUI
     {
         [SerializeField]
-        private List<PanelUI> _interfacePanels = null;
+        private List<PanelUI> _interfacePanels;
 
         private void Awake()
         {

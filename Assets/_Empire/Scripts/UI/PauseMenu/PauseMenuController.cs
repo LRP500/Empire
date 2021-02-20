@@ -1,11 +1,15 @@
 using Tools;
+using Tools.Time;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Empire.UI
 {
-    public class PauseMenuController : PanelUI
+    public class PauseMenuController : MenuUI
     {
+        [SerializeField]
+        private TimeControllerVariable _timeController;
+
         [SerializeField]
         private Button _abandonButton;
 
@@ -41,6 +45,18 @@ namespace Empire.UI
             {
                 EventManager.Instance.Trigger(SystemEvent.ReturnToTitleMenu);
             });
+        }
+
+        public override void Open()
+        {
+            _timeController.Value.Freeze();
+            base.Open();
+        }
+
+        public override void Close()
+        {
+            base.Close();
+            _timeController.Value.Unfreeze();
         }
     }
 }

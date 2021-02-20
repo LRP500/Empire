@@ -65,7 +65,7 @@ namespace Empire
 
             // Time tick
             _timeController.Resume();
-            _timeController.RegisterOnTick(RefreshOnTick);
+            TimeController.RegisterOnTick(RefreshOnTick);
         }
 
         private void RefreshOnTick(float elapsed)

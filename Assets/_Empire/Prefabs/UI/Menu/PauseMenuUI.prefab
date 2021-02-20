@@ -327,6 +327,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _group: {fileID: 6559958299286277897}
+  _openEvent: {fileID: 11400000, guid: 22a337e3260ddb0409a38cda51549819, type: 2}
+  _closeEvent: {fileID: 11400000, guid: ca5863bb3cde0ec43af0953869f0b101, type: 2}
+  _timeController: {fileID: 11400000, guid: bdea95d6603c021499b615b4ff1223cd, type: 2}
   _abandonButton: {fileID: 2848068828591567450}
   _exitButton: {fileID: 9015893485904937503}
   _triggerDefeat: {fileID: 11400000, guid: c8ff784c9c3af0b478d75fdd6bb15d96, type: 2}
