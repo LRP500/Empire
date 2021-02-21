@@ -1,15 +1,12 @@
 using Tools;
-using Tools.Time;
+using Tools.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Empire.UI
 {
-    public class PauseMenuController : MenuUI
+    public class PauseMenu : MenuUI<PauseMenu, PauseMenuVariable>
     {
-        [SerializeField]
-        private TimeControllerVariable _timeController;
-
         [SerializeField]
         private Button _abandonButton;
 
@@ -19,9 +16,15 @@ namespace Empire.UI
         [SerializeField]
         private TriggerDefeatAction _triggerDefeat;
 
-        private void Awake()
+        [SerializeField]
+        private CanvasGroup _mainPanel;
+
+        [SerializeField]
+        private HelpPanel _helpPanel;
+
+        protected override void Awake()
         {
-            Hide();
+            base.Awake();
             Initialize();
         }
 
@@ -29,6 +32,13 @@ namespace Empire.UI
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                // Return to main panel if not already there.
+                if (IsOpen && !_mainPanel.IsVisible())
+                {
+                    NavigateToMain();
+                    return;
+                }
+
                 Toggle();
             }
         }
@@ -49,14 +59,20 @@ namespace Empire.UI
 
         public override void Open()
         {
-            _timeController.Value.Freeze();
+            NavigateToMain();
             base.Open();
         }
 
-        public override void Close()
+        public void NavigateToHelp()
         {
-            base.Close();
-            _timeController.Value.Unfreeze();
+            _mainPanel.SetVisible(false);
+            _helpPanel.Open();
+        }
+
+        private void NavigateToMain()
+        {
+            _helpPanel.Close();
+            _mainPanel.SetVisible(true);
         }
     }
 }

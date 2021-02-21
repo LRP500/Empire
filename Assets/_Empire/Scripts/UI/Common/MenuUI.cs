@@ -23,4 +23,24 @@ namespace Empire
             _closeEvent.Raise();
         }
     }
+
+    public abstract class MenuUI<T1, T2> : MenuUI where T1 : MenuUI where T2 : MenuVariable<T1>
+    {
+        [SerializeField]
+        private T2 _runtimeReference;
+
+        protected override void Awake()
+        {
+            base.Awake();
+            Register();
+        }
+
+        private void Register()
+        {
+            if (_runtimeReference)
+            {
+                _runtimeReference.SetValue(this as T1);
+            }
+        }
+    }
 }

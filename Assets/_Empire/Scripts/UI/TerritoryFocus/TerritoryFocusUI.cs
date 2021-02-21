@@ -10,8 +10,10 @@ namespace Empire
 
         private Territory _territory;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+
             //EventManager.Instance.Subscribe(GameplayEvent.TerritoryPrimarySelect, FocusTerritory);
         }
 

@@ -9,6 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d74d4f46941761049b6fc7993f67fab2, type: 3}
-  m_Name: PauseMenuOpened
+  m_Script: {fileID: 11500000, guid: 43227c8f8a8f5264f94f977faef3c442, type: 3}
+  m_Name: NavigateToHelpAction
   m_EditorClassIdentifier: 
+  _pauseMenu: {fileID: 11400000, guid: 9c70a75b1f5d7d342b8bfcb34a92e0a4, type: 2}

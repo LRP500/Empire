@@ -50,8 +50,10 @@ namespace Empire
 
         private Dictionary<Toggle, SpeedMultiplierInfo> _speedMultipliers;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+
             _speedMultipliers = new Dictionary<Toggle, SpeedMultiplierInfo>
             {
                 { _pauseToggle, new SpeedMultiplierInfo(0, KeyCode.Q) },

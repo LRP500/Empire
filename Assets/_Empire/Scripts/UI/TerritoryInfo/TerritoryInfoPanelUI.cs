@@ -44,9 +44,9 @@ namespace Empire
 
         private Territory _territory;
 
-        private void Awake()
+        protected override void Awake()
         {
-            Close();
+            base.Awake();
 
             _hoveredTerritory.Subscribe(Refresh);
         }

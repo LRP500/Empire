@@ -9,8 +9,9 @@ namespace Empire
         [SerializeField]
         private List<PanelUI> _interfacePanels;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             EventManager.Instance.Subscribe(GameplayEvent.GameOver, OnGamerOverEvent);
         }
 

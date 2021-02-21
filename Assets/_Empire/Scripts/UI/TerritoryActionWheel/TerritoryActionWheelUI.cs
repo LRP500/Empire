@@ -24,8 +24,9 @@ namespace Empire
 
         private List<TerritoryActionUI> _currentActions;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             EventManager.Instance.Subscribe(GameplayEvent.TerritoryPrimarySelect, OnSelectionCanceled);
             EventManager.Instance.Subscribe(GameplayEvent.TerritorySecondarySelect, OnTerritorySelected);
             EventManager.Instance.Subscribe(GameplayEvent.CancelSecondaryMouseSelect, OnSelectionCanceled);

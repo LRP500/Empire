@@ -19,9 +19,9 @@ namespace Empire
         [SerializeField]
         private Button _exitButton;
 
-        private void Awake()
+        protected override void Awake()
         {
-            Close();
+            base.Awake();
 
             EventManager.Instance.Subscribe(GameplayEvent.PlayerVictory, OnPlayerVictory);
             EventManager.Instance.Subscribe(GameplayEvent.PlayerDefeat, OnPlayerDefeat);
