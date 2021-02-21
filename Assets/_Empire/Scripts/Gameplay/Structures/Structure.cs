@@ -40,6 +40,14 @@ namespace Empire
             }
         }
 
+        public void SetLevel(int level)
+        {
+            while (!IsMaxLevel() && Level != level)
+            {
+                Upgrade();
+            }
+        }
+
         public bool IsMaxLevel()
         {
             return Level == _settings.MaxLevel;

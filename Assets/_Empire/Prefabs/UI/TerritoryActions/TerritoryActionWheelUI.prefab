@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _group: {fileID: 4912858892852788112}
+  _showOnAwake: 1
   _mainCamera: {fileID: 11400000, guid: 7ce8791cbdd1fb04c9e6656bcfd8af74, type: 2}
   _actionItemPrefab: {fileID: 442410333783690286, guid: a1d457b477621d4458a938bb985588cb, type: 3}
   _actionContainer: {fileID: 4912858892519421283}

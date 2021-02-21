@@ -7,7 +7,7 @@ namespace Empire
 {
     public class TerritoryActionInfoStructureUI : TerritoryActionInfoUI
     {
-        public enum Type
+        private enum Type
         {
             Laboratory,
             Laundering,
@@ -15,24 +15,24 @@ namespace Empire
         }
 
         [SerializeField]
-        private Type _type = default;
+        private Type _type;
 
         [SerializeField]
-        private TextMeshProUGUI _level = null;
+        private TextMeshProUGUI _level;
 
         [SerializeField]
-        private KeyValueItemUI _rate = null;
+        private KeyValueItemUI _rate;
 
         [SerializeField]
-        private KeyValueItemUI _price = null;
+        private KeyValueItemUI _price;
 
         [SerializeField]
-        private StructureManager _structureManager = null;
+        private StructureManager _structureManager;
 
         [SerializeField]
-        private ResourceManager _resourceManager = null;
+        private ResourceManager _resourceManager;
 
-        private Structure _structure = null;
+        private Structure _structure;
 
         private string _abbreviatedPrice = string.Empty;
 
@@ -75,7 +75,7 @@ namespace Empire
             }
         }
 
-        private void Initialize()
+        private void Refresh()
         {
             if (_structure.IsMaxLevel())
             {
@@ -85,12 +85,10 @@ namespace Empire
             }
             else
             {
-                _level.text = string.Format("{0}/{1}", _structure.Level, _structure.MaxLevel);
-
-                _rate.SetValue(
-                    string.Format("{0} > <color=green>{1}",
-                    AbbreviationUtility.Format(_structure.Rate),
-                    AbbreviationUtility.Format(_structure.GetNextLevelRate())));
+                _level.text = $"{_structure.Level}/{_structure.MaxLevel}";
+                
+                _rate.SetValue($"{AbbreviationUtility.Format(_structure.Rate)} > <color=green>" +
+                               $"{AbbreviationUtility.Format(_structure.GetNextLevelRate())}");
 
                 _price.gameObject.SetActive(true);
 
@@ -100,7 +98,7 @@ namespace Empire
 
         public override void Open()
         {
-            Initialize();
+            Refresh();
 
             base.Open();
         }

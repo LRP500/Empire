@@ -19,8 +19,6 @@ namespace Empire
 
         public IntVariable turnCount;
 
-        public float SpeedMultiplier => timeController.Value.CurrentSpeedMultiplier;
-
         public void Initialize()
         {
             dealManager.Initialize();
@@ -34,7 +32,8 @@ namespace Empire
 
         public void Refresh()
         {
-            float elapsed = Time.deltaTime * SpeedMultiplier; 
+            float speed = timeController.Value.CurrentSpeedMultiplier;
+            float elapsed = Time.deltaTime * speed;
             threatManager.Refresh(elapsed);
             dealManager.Refresh(elapsed);
         }
@@ -57,7 +56,7 @@ namespace Empire
         public class TerritoryInfo
         {
             public DealManager.TerritoryDealInfo deals;
-            public StructureManager.TerritoryStructureInfo structures;
+            public TerritoryStructureInfo structures;
         }
 
         public TerritoryInfo GetTerritoryInfo(Territory territory)

@@ -23,7 +23,7 @@ namespace Empire
 
         private Territory _territory;
 
-        private DealManager.TerritoryDealInfo _dealInfo = null;
+        private DealManager.TerritoryDealInfo _dealInfo;
 
         public override void Initialize(TerritoryAction action, Territory territory)
         {

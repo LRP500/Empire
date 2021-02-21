@@ -37,6 +37,17 @@ namespace Empire
         [LabelText("Rival")]
         private TerritoryState _territoryStateRival;
 
+        [Header("Initial Territory")]
+
+        [SerializeField]
+        private int _startingLaboratoryLevel;
+
+        [SerializeField]
+        private int _startingDistributionLevel;
+
+        [SerializeField]
+        private int _startingLaunderingLevel;
+
         public override void Initialize()
         {
             _controlledTerritories.Clear();
@@ -49,7 +60,14 @@ namespace Empire
 
         public void SetStartingTerritory()
         {
-            SetControlled(_territories.Random());
+            Territory startingTerritory = _territories.Random();
+            
+            SetControlled(startingTerritory);
+
+            TerritoryStructureInfo info = _context.structureManager.GetInfo(startingTerritory);
+            info.laboratory.SetLevel(_startingLaboratoryLevel);
+            info.distributionNetwork.SetLevel(_startingDistributionLevel);
+            info.launderingOperation.SetLevel(_startingLaunderingLevel);
         }
 
         public bool AllTerritoriesControlled()

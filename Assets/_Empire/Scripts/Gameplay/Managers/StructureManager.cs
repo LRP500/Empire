@@ -6,23 +6,16 @@ namespace Empire
     [CreateAssetMenu(menuName = "Empire/Managers/Structure Manager")]
     public class StructureManager : ScriptableManager<StructureManager>
     {
-        public class TerritoryStructureInfo
-        {
-            public Laboratory laboratory = null;
-            public LaunderingOperation launderingOperation = null;
-            public DistributionNetwork distributionNetwork = null;
-        }
-
-        public Dictionary<Territory, TerritoryStructureInfo> Structures { get; private set; } = null;
+        private Dictionary<Territory, TerritoryStructureInfo> Structures { get; set; }
 
         [SerializeField]
-        private StructureSettings _laboratorySettings = null;
+        private StructureSettings _laboratorySettings;
 
         [SerializeField]
-        private StructureSettings _distributionNetworkSettings = null;
+        private StructureSettings _distributionNetworkSettings;
 
         [SerializeField]
-        private StructureSettings _launderingOperationSettings = null;
+        private StructureSettings _launderingOperationSettings;
 
         public override void Initialize()
         {
@@ -31,14 +24,13 @@ namespace Empire
 
         public void InitializeTerritoryStructures(Territory territory)
         {
-            TerritoryStructureInfo info = new TerritoryStructureInfo()
+            var info = new TerritoryStructureInfo
             {
                 laboratory = new Laboratory(_laboratorySettings),
                 launderingOperation = new LaunderingOperation(_launderingOperationSettings),
                 distributionNetwork = new DistributionNetwork(_distributionNetworkSettings)
             };
 
-            //Structures.Add(territory, info);
             Structures[territory] = info;
         }
 

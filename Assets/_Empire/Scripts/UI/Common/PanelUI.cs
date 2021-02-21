@@ -24,7 +24,9 @@ namespace Empire
 
         #region MonoBehaviour
 
-        protected virtual void Awake()
+        protected virtual void Awake() { }
+
+        private void Start()
         {
             if (_showOnAwake)
             {

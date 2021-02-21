@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6038f2182f6e54a82abba85f166aec, type: 3}
   m_Name: DefaultTakeOverSettings
   m_EditorClassIdentifier: 
-  _initialTakeOverSuccessChance: 30
-  _initialRetaliationSuccessChance: 30
+  _initialTakeOverSuccessChance: 50
+  _initialRetaliationSuccessChance: 50
   _resourceGainChance: 100
   _cashQuantityMin: 10000
   _cashQuantityMax: 1000000

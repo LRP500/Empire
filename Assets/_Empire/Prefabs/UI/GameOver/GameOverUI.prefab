@@ -747,6 +747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _group: {fileID: 1800876204}
+  _showOnAwake: 0
   _victoryText: {fileID: 4874444598040860902}
   _defeatText: {fileID: 4874444599136420688}
   _restartButton: {fileID: 2338225172919554768}
