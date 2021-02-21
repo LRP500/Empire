@@ -1191,7 +1191,6 @@ MonoBehaviour:
   _state: {fileID: 0}
   _runtimeTerritories: {fileID: 11400000, guid: eedd0c096a39f3c4289da51b46eb1f5a, type: 2}
   _neighbors:
-  - {fileID: 2743692695230933643}
   - {fileID: 2743692695070203091}
   - {fileID: 2743692695949816775}
   - {fileID: 2743692695484710258}

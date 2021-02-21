@@ -9,7 +9,7 @@ Upgrade laundering operations to increase the rate at which cash is laundered.
 Spendings will use laundered money primarily, then cash.
 Spending cash will increase threat : the larger the amount, the higher the risk.
 
-The more territories you control, the faster authorities will catch you.
+The more territories you control, the faster the threat will rise.
 
 Attack odds are based on relationships with neighbouring territories.
 The higher the number of controlled neighbours, the better the odds.

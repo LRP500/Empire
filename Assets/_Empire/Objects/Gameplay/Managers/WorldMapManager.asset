@@ -20,6 +20,6 @@ MonoBehaviour:
   _territoryStateControlled: {fileID: 11400000, guid: 7ea2e893adf6e524bb39468d2a0ae097, type: 2}
   _territoryStateInDeal: {fileID: 11400000, guid: b89501bad6feb56498b9af738b2a6139, type: 2}
   _territoryStateRival: {fileID: 11400000, guid: d0f93415cd13bea4d9375adbc75366fa, type: 2}
-  _startingLaboratoryLevel: 2
+  _startingLaboratoryLevel: 3
   _startingDistributionLevel: 1
   _startingLaunderingLevel: 1
