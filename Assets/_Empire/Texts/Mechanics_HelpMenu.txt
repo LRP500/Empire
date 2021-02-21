@@ -1,3 +1,16 @@
-Game Mechanics :
+<size=28><b>Game Mechanics</b></size>
 
-...
+Control all territories by expanding your methamphetamine empire before the authorities catch you.
+
+Upgrade laboratories to increase meth production.
+Upgrade distribution networks to increase sells on controlled territories.
+Upgrade laundering operations to increase the rate at which cash is laundered.
+
+Spendings will use laundered money primarily, then cash.
+Spending cash will increase threat : the larger the amount, the higher the risk.
+
+The more territories you control, the faster authorities will take to catch you.
+
+Attack odds are based on relationships with neighbours territories.
+The higher the number of controlled neighbours, the better the odds.
+In the events of a defeat, all controlled neighbours are at risk of being lost.

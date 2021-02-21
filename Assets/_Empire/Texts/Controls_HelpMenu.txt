@@ -1,3 +1,5 @@
-Controls :
+<size=28><b>Controls</b></size>
 
-...
+RIGHT MOUSE to navigate map.
+LEFT MOUSE on territory to show actions.
+Drag with RIGHT MOUSE from a controlled state to a rival/allied state to attack.
