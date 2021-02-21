@@ -1110,9 +1110,33 @@ PrefabInstance:
       value: Help
       objectReference: {fileID: 0}
     - target: {fileID: 2417569698396178520, guid: 11b381fc4b6794348a58e078690d5c5a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417569698396178520, guid: 11b381fc4b6794348a58e078690d5c5a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417569698396178520, guid: 11b381fc4b6794348a58e078690d5c5a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3326320877221556636}
+    - target: {fileID: 2417569698396178520, guid: 11b381fc4b6794348a58e078690d5c5a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417569698396178520, guid: 11b381fc4b6794348a58e078690d5c5a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NavigateToHelp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417569698396178520, guid: 11b381fc4b6794348a58e078690d5c5a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Empire.UI.PauseMenu, Empire
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417569698396178520, guid: 11b381fc4b6794348a58e078690d5c5a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11b381fc4b6794348a58e078690d5c5a, type: 3}
 --- !u!224 &1190425829864519323 stripped
