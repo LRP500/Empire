@@ -679,7 +679,7 @@ PrefabInstance:
     - target: {fileID: 7754467956242322053, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: a2aed8596ed3f8e459918c8ab03f09e1, type: 2}
+      objectReference: {fileID: 11400000, guid: 4d98614b99e38bd4089a57d8137b0f8e, type: 2}
     - target: {fileID: 7754467956242322053, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_fontSizeBase
       value: 26
@@ -687,7 +687,7 @@ PrefabInstance:
     - target: {fileID: 7754467956242322053, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -4136284466932281496, guid: a2aed8596ed3f8e459918c8ab03f09e1, type: 2}
+      objectReference: {fileID: 816092709524546228, guid: 4d98614b99e38bd4089a57d8137b0f8e, type: 2}
     - target: {fileID: 7965367723425805800, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -699,7 +699,7 @@ PrefabInstance:
     - target: {fileID: 8836536434636238463, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: a2aed8596ed3f8e459918c8ab03f09e1, type: 2}
+      objectReference: {fileID: 11400000, guid: 4d98614b99e38bd4089a57d8137b0f8e, type: 2}
     - target: {fileID: 8836536434636238463, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_fontSizeBase
       value: 26
@@ -707,7 +707,7 @@ PrefabInstance:
     - target: {fileID: 8836536434636238463, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -4136284466932281496, guid: a2aed8596ed3f8e459918c8ab03f09e1, type: 2}
+      objectReference: {fileID: 816092709524546228, guid: 4d98614b99e38bd4089a57d8137b0f8e, type: 2}
     - target: {fileID: 9015893484847508068, guid: a43ca56c9c937fc49a247a53f36d2707, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
