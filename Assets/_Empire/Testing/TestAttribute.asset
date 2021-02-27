@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7dc9c67a4fbe5c46938954b8ccb457d, type: 3}
-  m_Name: AttributeTest
+  m_Name: TestAttribute
   m_EditorClassIdentifier: 
-  _name: Attribute Test
-  _description: For testing purposes
+  _name: Test Attribute
+  _description: Used by Test Runner
   _baseValue: 50
+  _clamp: 0
   _minValue: 0
   _maxValue: 100

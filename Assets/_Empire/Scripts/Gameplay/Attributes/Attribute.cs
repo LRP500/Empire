@@ -24,9 +24,14 @@ namespace Empire.Attributes
         private float _baseValue;
 
         [SerializeField]
+        private bool _clamp;
+
+        [SerializeField]
+        [ShowIf(nameof(_clamp))]
         private float _minValue;
 
         [SerializeField]
+        [ShowIf(nameof(_clamp))]
         private float _maxValue;
 
         #endregion Serialized Fields
@@ -64,20 +69,48 @@ namespace Empire.Attributes
 
         private List<AttributeModifier> Modifiers => _modifiers ??= new List<AttributeModifier>();
 
+        public void Initialize()
+        {
+            _modifierStackValue = 0;
+            _modifiers = new List<AttributeModifier>();
+        }
+
+        public void Initialize(float baseValue)
+        {
+            Initialize();
+            
+            _baseValue = baseValue;
+        }
+
+        public void SetClamp(bool clamp)
+        {
+            _clamp = clamp;
+        }
+
+        public void SetMin(float min)
+        {
+            _minValue = min;
+        }
+
+        public void SetMax(float max)
+        {
+            _maxValue = max;
+        }
+
         public void SetBaseValue(float value)
         {
-            _baseValue = Mathf.Clamp(value, _minValue, _maxValue);
+            _baseValue = _clamp ? Mathf.Clamp(value, _minValue, _maxValue) : value;
         }
 
         private void UpdateModifiers()
         {
             _modifierStackValue = 0;
             
-            var groups = Modifiers.OrderBy(x => x.Priority).GroupBy(y => y.Priority);
-            foreach (var group in groups)
+            var priorityGroups = Modifiers.GroupBy(y => y.Priority);
+            foreach (var group in priorityGroups)
             {
                 float sum = 0;
-                float max = 0;
+                float max = float.MinValue;
 
                 foreach (AttributeModifier modifier in group)
                 {
@@ -91,7 +124,7 @@ namespace Empire.Attributes
                     }
                 }
 
-                _modifierStackValue += group.First().Apply(_baseValue + _modifierStackValue, Mathf.Max(sum, max));
+                _modifierStackValue += group.First().Apply(_baseValue + _modifierStackValue, sum > max ? sum : max);
             }
 
             _dirty = false;

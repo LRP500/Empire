@@ -29,7 +29,7 @@ namespace Empire.Attributes
         /// Sets modifier's value.
         /// </summary>
         /// <param name="value"></param>
-        public void SetValue(float value)
+        private void SetValue(float value)
         {
             Value = value;
         }
