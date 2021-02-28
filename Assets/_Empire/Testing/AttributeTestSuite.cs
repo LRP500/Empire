@@ -64,18 +64,8 @@ public class AttributeTestSuite
     }
 
     [Test]
-    [TestCase(0, 50, ExpectedResult = 50, TestName = "TestPositiveValue")]
-    [TestCase(0, -50, ExpectedResult = -50, TestName = "TestNegativeValue")]
-    public float TestTotalAddModifier(float baseValue, float modifierValue)
-    {
-        _attribute.Initialize(baseValue);
-        _attribute.AddModifier(new TotalAddAttributeModifier(modifierValue));
-        return _attribute.ModifiedValue;
-    }
-
-    [Test]
-    [TestCase(50, 0.5f, ExpectedResult = 75, TestName = "TestPositiveValue")]
-    [TestCase(50, -0.5f, ExpectedResult = 25, TestName = "TestNegativeValue")]
+    [TestCase(50, 50f, ExpectedResult = 75, TestName = "TestPositiveValue")]
+    [TestCase(50, -50f, ExpectedResult = 25, TestName = "TestNegativeValue")]
     public float BasePercentAddModifier(float baseValue, float modifierValue)
     {
         _attribute.Initialize(baseValue);
@@ -83,13 +73,24 @@ public class AttributeTestSuite
         return _attribute.ModifiedValue;
     }
 
-    [Test]
-    [TestCase(50, 0.5f, ExpectedResult = 75, TestName = "TestPositiveValue")]
-    [TestCase(50, -0.5f, ExpectedResult = 25, TestName = "TestNegativeValue")]
-    public float TotalPercentAddModifier(float baseValue, float modifierValue)
-    {
-        _attribute.Initialize(baseValue);
-        _attribute.AddModifier(new TotalPercentAttributeModifier(modifierValue));
-        return _attribute.ModifiedValue;
-    }
+    //[Test]
+    //[TestCase(0, 50, ExpectedResult = 50, TestName = "TestPositiveValue")]
+    //[TestCase(0, -50, ExpectedResult = -50, TestName = "TestNegativeValue")]
+    //public float TestTotalAddModifier(float baseValue, float modifierValue)
+    //{
+    //    _attribute.Initialize(baseValue);
+    //    _attribute.AddModifier(new TotalAddAttributeModifier(modifierValue));
+    //    return _attribute.ModifiedValue;
+    //}
+
+
+    //[Test]
+    //[TestCase(50, 50f, ExpectedResult = 75, TestName = "TestPositiveValue")]
+    //[TestCase(50, -50f, ExpectedResult = 25, TestName = "TestNegativeValue")]
+    //public float TotalPercentAddModifier(float baseValue, float modifierValue)
+    //{
+    //    _attribute.Initialize(baseValue);
+    //    _attribute.AddModifier(new TotalPercentAttributeModifier(modifierValue));
+    //    return _attribute.ModifiedValue;
+    //}
 }
