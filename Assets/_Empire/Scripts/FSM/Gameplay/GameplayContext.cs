@@ -14,6 +14,7 @@ namespace Empire
         public ResourceManager resourceManager;
         public WorldMapManager worldMapManager;
         public StructureManager structureManager;
+        public AssociateManager associateManager;
         public ProductionManager productionManager;
         public TimeControllerVariable timeController;
 
@@ -27,6 +28,7 @@ namespace Empire
             worldMapManager.Initialize();
             resourceManager.Initialize();
             structureManager.Initialize();
+            associateManager.Initialize();
             productionManager.Initialize();
         }
 
