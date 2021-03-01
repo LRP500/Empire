@@ -6,7 +6,7 @@ namespace Empire.Attributes
 
         public override float Apply(float attributeValue, float modifierValue)
         {
-            return attributeValue * modifierValue;
+            return attributeValue * modifierValue / 100;
         }
 
         public TotalPercentAttributeModifier(float value) : base(value) {}

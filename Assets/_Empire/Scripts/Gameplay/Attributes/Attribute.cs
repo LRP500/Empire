@@ -106,7 +106,7 @@ namespace Empire.Attributes
         {
             _modifierStackValue = 0;
             
-            var priorityGroups = Modifiers.GroupBy(y => y.Priority);
+            var priorityGroups = Modifiers.OrderBy(y => y.Priority).GroupBy(y => y.Priority);
             foreach (var group in priorityGroups)
             {
                 float sum = 0;
@@ -153,9 +153,7 @@ namespace Empire.Attributes
 
         public void Log()
         {
-            Debug.Log($"[Name: {Name}] " +
-                      $"[Base: {BaseValue}] " +
-                      $"[Modified: {ModifiedValue}]");
+            Debug.Log($"[Name: {Name}] [Base: {BaseValue}] [Modified: {ModifiedValue}]");
         }
 
         #endregion Editor

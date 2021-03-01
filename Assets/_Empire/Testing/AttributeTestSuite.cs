@@ -66,31 +66,97 @@ public class AttributeTestSuite
     [Test]
     [TestCase(50, 50f, ExpectedResult = 75, TestName = "TestPositiveValue")]
     [TestCase(50, -50f, ExpectedResult = 25, TestName = "TestNegativeValue")]
-    public float BasePercentAddModifier(float baseValue, float modifierValue)
+    public float TestBasePercentAddModifier(float baseValue, float modifierValue)
     {
         _attribute.Initialize(baseValue);
         _attribute.AddModifier(new BasePercentAttributeModifier(modifierValue));
         return _attribute.ModifiedValue;
     }
 
-    //[Test]
-    //[TestCase(0, 50, ExpectedResult = 50, TestName = "TestPositiveValue")]
-    //[TestCase(0, -50, ExpectedResult = -50, TestName = "TestNegativeValue")]
-    //public float TestTotalAddModifier(float baseValue, float modifierValue)
-    //{
-    //    _attribute.Initialize(baseValue);
-    //    _attribute.AddModifier(new TotalAddAttributeModifier(modifierValue));
-    //    return _attribute.ModifiedValue;
-    //}
+    [Test]
+    public void TestBaseAddBeforeBasePercentModifier()
+    {
+        _attribute.Initialize(50);
+        _attribute.AddModifier(new BaseAddAttributeModifier(100));
+        _attribute.AddModifier(new BasePercentAttributeModifier(100));
+        Assert.AreEqual(_attribute.ModifiedValue, 200);
+    }
 
+    [Test]
+    public void TestBasePercentBeforeBaseAddModifier()
+    {
+        _attribute.Initialize(50);
+        _attribute.AddModifier(new BasePercentAttributeModifier(100));
+        _attribute.AddModifier(new BaseAddAttributeModifier(100));
+        Assert.AreEqual(_attribute.ModifiedValue, 200);
+    }
 
-    //[Test]
-    //[TestCase(50, 50f, ExpectedResult = 75, TestName = "TestPositiveValue")]
-    //[TestCase(50, -50f, ExpectedResult = 25, TestName = "TestNegativeValue")]
-    //public float TotalPercentAddModifier(float baseValue, float modifierValue)
-    //{
-    //    _attribute.Initialize(baseValue);
-    //    _attribute.AddModifier(new TotalPercentAttributeModifier(modifierValue));
-    //    return _attribute.ModifiedValue;
-    //}
+    [Test]
+    [TestCase(50, 100, ExpectedResult = 150, TestName = "TestPositiveValue")]
+    [TestCase(50, -100, ExpectedResult = -50, TestName = "TestNegativeValue")]
+    public float TestTotalAddModifier(float baseValue, float modifierValue)
+    {
+        _attribute.Initialize(baseValue);
+        _attribute.AddModifier(new TotalAddAttributeModifier(modifierValue));
+        return _attribute.ModifiedValue;
+    }
+
+    [Test]
+    [TestCase(50, 100f, ExpectedResult = 100, TestName = "TestPositiveValue")]
+    [TestCase(50, -100f, ExpectedResult = 0, TestName = "TestNegativeValue")]
+    public float TotalPercentAddModifier(float baseValue, float modifierValue)
+    {
+        _attribute.Initialize(baseValue);
+        _attribute.AddModifier(new TotalPercentAttributeModifier(modifierValue));
+        return _attribute.ModifiedValue;
+    }
+
+    [Test]
+    public void TestTotalAddBeforeTotalPercentModifier()
+    {
+        _attribute.Initialize(50);
+        _attribute.AddModifier(new TotalAddAttributeModifier(100));
+        _attribute.AddModifier(new TotalPercentAttributeModifier(100));
+        Assert.AreEqual(_attribute.ModifiedValue, 200);
+    }
+
+    [Test]
+    public void TestTotalPercentBeforeTotalAddModifier()
+    {
+        _attribute.Initialize(50);
+        _attribute.AddModifier(new TotalPercentAttributeModifier(100));
+        _attribute.AddModifier(new TotalAddAttributeModifier(100));
+        Assert.AreEqual(_attribute.ModifiedValue, 200);
+    }
+
+    [Test]
+    public void TestBasePercentBeforeTotalPercentModifier()
+    {
+        _attribute.Initialize(50);
+        _attribute.AddModifier(new BasePercentAttributeModifier(100));
+        _attribute.AddModifier(new BaseAddAttributeModifier(100));
+        _attribute.AddModifier(new TotalPercentAttributeModifier(100));
+        Assert.AreEqual(_attribute.ModifiedValue, 400);
+    }
+
+    [Test]
+    public void TestTotalPercentBeforeBasePercentModifier()
+    {
+        _attribute.Initialize(50);
+        _attribute.AddModifier(new TotalPercentAttributeModifier(100));
+        _attribute.AddModifier(new BaseAddAttributeModifier(100));
+        _attribute.AddModifier(new BasePercentAttributeModifier(100));
+        Assert.AreEqual(_attribute.ModifiedValue, 400);
+    }
+
+    [Test]
+    public void TestAllModifiersTogether()
+    {
+        _attribute.Initialize(50);
+        _attribute.AddModifier(new BasePercentAttributeModifier(100));
+        _attribute.AddModifier(new BaseAddAttributeModifier(100));
+        _attribute.AddModifier(new TotalPercentAttributeModifier(100));
+        _attribute.AddModifier(new TotalAddAttributeModifier(100));
+        Assert.AreEqual(_attribute.ModifiedValue, 500);
+    }
 }
