@@ -1,10 +1,14 @@
-using Empire.Attributes;
+using Empire.Stats;
 using NUnit.Framework;
 using UnityEditor;
 
-public class AttributeTestSuite
+// Missing Tests :
+// - Modifier removing
+// - Base stat clamp
+// - Update modifiers method
+internal class AttributeTestSuite
 {
-    private Attribute _attribute;
+    private IAttribute _attribute;
 
     #region Setup
 
@@ -20,7 +24,9 @@ public class AttributeTestSuite
     public void Setup()
     {
         _attribute = LoadTestAttribute();
-        _attribute.SetClamp(false);
+        _attribute.SetBaseValue(0);
+        _attribute.ClearModifiers();
+        _attribute.Clamped = false;
     }
 
     #endregion Setup
@@ -35,21 +41,20 @@ public class AttributeTestSuite
     [Test]
     public void TestModifiedValueWhenInitialized()
     {
-        _attribute.Initialize();
         Assert.AreEqual(_attribute.ModifiedValue, _attribute.BaseValue);
     }
 
     [Test]
     public void TestBaseValueWhenInitializedWithParameter()
     {
-        _attribute.Initialize(25);
+        _attribute.SetBaseValue(25);
         Assert.AreEqual(_attribute.BaseValue, 25);
     }
 
     [Test]
     public void TestModifiedValueWhenInitializedWithParameter()
     {
-        _attribute.Initialize(25);
+        _attribute.SetBaseValue(25);
         Assert.AreEqual(_attribute.ModifiedValue, 25);
     }
 
@@ -58,7 +63,7 @@ public class AttributeTestSuite
     [TestCase(0, -50, ExpectedResult = -50, TestName = "TestNegativeValue")]
     public float TestBaseAddModifier(float baseValue, float modifierValue)
     {
-        _attribute.Initialize(baseValue);
+        _attribute.SetBaseValue(baseValue);
         _attribute.AddModifier(new BaseAddAttributeModifier(modifierValue));
         return _attribute.ModifiedValue;
     }
@@ -68,7 +73,7 @@ public class AttributeTestSuite
     [TestCase(50, -50f, ExpectedResult = 25, TestName = "TestNegativeValue")]
     public float TestBasePercentAddModifier(float baseValue, float modifierValue)
     {
-        _attribute.Initialize(baseValue);
+        _attribute.SetBaseValue(baseValue);
         _attribute.AddModifier(new BasePercentAttributeModifier(modifierValue));
         return _attribute.ModifiedValue;
     }
@@ -76,7 +81,7 @@ public class AttributeTestSuite
     [Test]
     public void TestBaseAddBeforeBasePercentModifier()
     {
-        _attribute.Initialize(50);
+        _attribute.SetBaseValue(50);
         _attribute.AddModifier(new BaseAddAttributeModifier(100));
         _attribute.AddModifier(new BasePercentAttributeModifier(100));
         Assert.AreEqual(_attribute.ModifiedValue, 200);
@@ -85,7 +90,7 @@ public class AttributeTestSuite
     [Test]
     public void TestBasePercentBeforeBaseAddModifier()
     {
-        _attribute.Initialize(50);
+        _attribute.SetBaseValue(50);
         _attribute.AddModifier(new BasePercentAttributeModifier(100));
         _attribute.AddModifier(new BaseAddAttributeModifier(100));
         Assert.AreEqual(_attribute.ModifiedValue, 200);
@@ -96,7 +101,7 @@ public class AttributeTestSuite
     [TestCase(50, -100, ExpectedResult = -50, TestName = "TestNegativeValue")]
     public float TestTotalAddModifier(float baseValue, float modifierValue)
     {
-        _attribute.Initialize(baseValue);
+        _attribute.SetBaseValue(baseValue);
         _attribute.AddModifier(new TotalAddAttributeModifier(modifierValue));
         return _attribute.ModifiedValue;
     }
@@ -106,7 +111,7 @@ public class AttributeTestSuite
     [TestCase(50, -100f, ExpectedResult = 0, TestName = "TestNegativeValue")]
     public float TotalPercentAddModifier(float baseValue, float modifierValue)
     {
-        _attribute.Initialize(baseValue);
+        _attribute.SetBaseValue(baseValue);
         _attribute.AddModifier(new TotalPercentAttributeModifier(modifierValue));
         return _attribute.ModifiedValue;
     }
@@ -114,7 +119,7 @@ public class AttributeTestSuite
     [Test]
     public void TestTotalAddBeforeTotalPercentModifier()
     {
-        _attribute.Initialize(50);
+        _attribute.SetBaseValue(50);
         _attribute.AddModifier(new TotalAddAttributeModifier(100));
         _attribute.AddModifier(new TotalPercentAttributeModifier(100));
         Assert.AreEqual(_attribute.ModifiedValue, 200);
@@ -123,7 +128,7 @@ public class AttributeTestSuite
     [Test]
     public void TestTotalPercentBeforeTotalAddModifier()
     {
-        _attribute.Initialize(50);
+        _attribute.SetBaseValue(50);
         _attribute.AddModifier(new TotalPercentAttributeModifier(100));
         _attribute.AddModifier(new TotalAddAttributeModifier(100));
         Assert.AreEqual(_attribute.ModifiedValue, 200);
@@ -132,7 +137,7 @@ public class AttributeTestSuite
     [Test]
     public void TestBasePercentBeforeTotalPercentModifier()
     {
-        _attribute.Initialize(50);
+        _attribute.SetBaseValue(50);
         _attribute.AddModifier(new BasePercentAttributeModifier(100));
         _attribute.AddModifier(new BaseAddAttributeModifier(100));
         _attribute.AddModifier(new TotalPercentAttributeModifier(100));
@@ -142,7 +147,7 @@ public class AttributeTestSuite
     [Test]
     public void TestTotalPercentBeforeBasePercentModifier()
     {
-        _attribute.Initialize(50);
+        _attribute.SetBaseValue(50);
         _attribute.AddModifier(new TotalPercentAttributeModifier(100));
         _attribute.AddModifier(new BaseAddAttributeModifier(100));
         _attribute.AddModifier(new BasePercentAttributeModifier(100));
@@ -152,7 +157,7 @@ public class AttributeTestSuite
     [Test]
     public void TestAllModifiersTogether()
     {
-        _attribute.Initialize(50);
+        _attribute.SetBaseValue(50);
         _attribute.AddModifier(new BasePercentAttributeModifier(100));
         _attribute.AddModifier(new BaseAddAttributeModifier(100));
         _attribute.AddModifier(new TotalPercentAttributeModifier(100));

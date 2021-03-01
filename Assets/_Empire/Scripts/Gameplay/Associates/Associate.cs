@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Empire.Attributes;
+using Empire.Stats;
 
 namespace Empire
 {

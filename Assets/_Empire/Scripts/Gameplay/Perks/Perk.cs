@@ -1,4 +1,4 @@
-using Empire.Attributes;
+using Empire.Stats;
 
 namespace Empire
 {

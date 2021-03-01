@@ -1,4 +1,4 @@
-namespace Empire.Attributes
+namespace Empire.Stats
 {
     public class TotalPercentAttributeModifier : AttributeModifier
     {

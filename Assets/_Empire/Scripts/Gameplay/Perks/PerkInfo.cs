@@ -1,9 +1,9 @@
 using System.Collections;
-using Empire.Attributes;
+using Empire.Stats;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
-using Attribute = Empire.Attributes.Attribute;
+using Attribute = Empire.Stats.Attribute;
 
 namespace Empire
 {
