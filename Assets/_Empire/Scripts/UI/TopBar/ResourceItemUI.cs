@@ -1,30 +1,27 @@
-﻿using System.Collections;
-using TMPro;
+﻿using TMPro;
 using Tools.Utilities;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Empire
 {
-    public class ResourceItemUI : MonoBehaviour
+    public class ResourceItemUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField]
-        private Image _logo = null;
+        private Image _logo;
 
         [SerializeField]
-        private TextMeshProUGUI _amount = null;
+        private TextMeshProUGUI _amount;
 
         [SerializeField]
-        private TextMeshProUGUI _increment = null;
+        private TextMeshProUGUI _increment;
 
         [SerializeField]
-        private CanvasGroup _incrementGroup = null;
+        private Resource _resource;
 
         [SerializeField]
-        private Resource _resource = null;
-
-        [SerializeField]
-        private float _incrementTextFadeOutTime = 1;
+        private ResourceVariable _hoveredResource;
 
         private void Awake()
         {
@@ -48,25 +45,16 @@ namespace Empire
         {
             string increment = AbbreviationUtility.Format(Mathf.Abs(_resource.Production), "0.0");
             _increment.text = increment.Insert(0, _resource.Production < 0 ? "-" : "+");
-
-            //StopAllCoroutines();
-            //StartCoroutine(FadeOutIncrementText());
         }
 
-        private IEnumerator FadeOutIncrementText()
+        public void OnPointerEnter(PointerEventData eventData)
         {
-            _incrementGroup.alpha = 1;
+            _hoveredResource.SetValue(_resource);
+        }
 
-            float timer = _incrementTextFadeOutTime;
-
-            while (timer >= 0)
-            {
-                timer += Time.unscaledDeltaTime;
-                _incrementGroup.alpha -= 1 / _incrementTextFadeOutTime * Time.deltaTime;
-                yield return null;
-            }
-
-            _incrementGroup.alpha = 0;
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            _hoveredResource.Clear();
         }
     }
 }

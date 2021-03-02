@@ -1,17 +1,22 @@
 ﻿using Tools;
 using Tools.UI;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Empire
 {
-    public class ThreatGaugeUI : ResourceGauge
+    public class ThreatGaugeUI : ResourceGauge, IPointerEnterHandler, IPointerExitHandler
     {
         [Space]
         [SerializeField]
-        private ThreatManager _threatManager = null;
+        private ThreatManager _threatManager;
 
         [SerializeField]
-        private Animation _feedbackAnimation = null;
+        private Animation _feedbackAnimation;
+
+        [Space]
+        [SerializeField]
+        private ResourceVariable _hoveredResource;
 
         private void Awake()
         {
@@ -51,6 +56,16 @@ namespace Empire
         private void TriggerVisualFeedback(object arg)
         {
             _feedbackAnimation.Play();
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            _hoveredResource.SetValue(_threatManager.Threat);
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            _hoveredResource.Clear();
         }
     }
 }

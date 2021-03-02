@@ -18,7 +18,7 @@ namespace Empire
         [SerializeField]
         [PreviewField(75), HideLabel]
         [HorizontalGroup("Resource Data", 75)]
-        private Sprite _icon = null;
+        private Sprite _icon;
 
         //[SerializeField]
         //[LabelWidth(100)]
@@ -26,6 +26,7 @@ namespace Empire
         //private int _initial = 0;
 
         public string Name => _name;
+        public string Description => _description;
         public Sprite Icon => _icon;
     }
 }

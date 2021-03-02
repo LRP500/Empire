@@ -8,41 +8,41 @@ namespace Empire
     public class Resource : ScriptableObject
     {
         [SerializeField]
-        private ResourceType _type = null;
+        private ResourceType _type;
         public ResourceType Type => _type;
 
         [SerializeField]
-        private int _initial = 0;
+        private int _initial;
         public int Initial => _initial;
 
         [SerializeField]
-        private int _current = 0;
+        private int _current;
         public int Current => _current;
 
         [SerializeField]
-        private bool _clamped = false;
+        private bool _clamped;
 
         [SerializeField]
         [ShowIf(nameof(_clamped))]
-        private int _min = 0;
+        private int _min;
 
         [SerializeField]
         [ShowIf(nameof(_clamped))]
-        private int _max = 0;
+        private int _max;
         public int Max => _max;
 
         [SerializeField]
-        private IntVariable _production = null;
+        private IntVariable _production;
         public int Production => _production.Value;
 
-        private System.Action<int> OnCurrentValueChanged = null;
+        private System.Action<int> OnCurrentValueChanged;
 
         public void Initialize()
         {
             SetCurrent(_initial);
         }
 
-        public int SetCurrent(int value)
+        private int SetCurrent(int value)
         {
             int previousAmount = _current;
             _current = _clamped ? Mathf.Clamp(value, _min, _max) : Mathf.Clamp(value, 0, value);

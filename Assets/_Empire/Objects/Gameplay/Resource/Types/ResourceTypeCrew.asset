@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7790a1dda03f63041bff44a4f71002bd, type: 3}
-  m_Name: ResourceTypeThreat
+  m_Name: ResourceTypeCrew
   m_EditorClassIdentifier: 
-  _name: Threat
+  _name: Crew
   _description: 
-  _icon: {fileID: 21300000, guid: 3c2a43c38f598b840b0a78d8e7bfb957, type: 3}
+  _icon: {fileID: 21300000, guid: 0652e4b35df306c45806550c3271d10d, type: 3}

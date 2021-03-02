@@ -9,7 +9,7 @@ namespace Empire
     public class ThreatManager : ScriptableManager<ThreatManager>
     {
         [SerializeField]
-        private Resource _threat = null;
+        private Resource _threat;
         public Resource Threat => _threat;
 
         [SerializeField]
@@ -20,10 +20,10 @@ namespace Empire
 
         [SerializeField]
         [MinMaxSlider(0, 100, ShowFields = true)]
-        private Vector2Int _failedTakeOverIncrement = default;
+        private Vector2Int _failedTakeOverIncrement;
 
         [SerializeField]
-        private List<ThreatModifier> _threatModifiers = null;
+        private List<ThreatModifier> _threatModifiers;
 
         public bool MaxThreatReached => _threat.Current >= _threat.Max;
 

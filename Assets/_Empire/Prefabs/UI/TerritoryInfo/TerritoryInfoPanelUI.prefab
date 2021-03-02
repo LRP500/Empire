@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _group: {fileID: 1247398774644529438}
+  _showOnAwake: 1
   _hoveredTerritory: {fileID: 11400000, guid: 3c125ea8d75d9f54a894f62c2939df45, type: 2}
   _structureManager: {fileID: 11400000, guid: 0d47ef222a2224e4aa58b5c084218762, type: 2}
   _territoryName: {fileID: 1247398776155900413}
@@ -464,7 +465,7 @@ GameObject:
   - component: {fileID: 1247398776155900412}
   - component: {fileID: 1247398776155900413}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TerritoryName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -544,8 +545,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -598,7 +599,7 @@ GameObject:
   - component: {fileID: 1247398776335337814}
   - component: {fileID: 1247398776335337815}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TerritoryState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
