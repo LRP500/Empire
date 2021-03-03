@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Tools;
 using Tools.Variables;
 using UnityEngine;
@@ -8,6 +9,8 @@ namespace Empire
 {
     public class TerritoryActionWheelUI : PanelUI
     {
+        #region Serialized Fields
+
         [SerializeField]
         private CameraVariable _mainCamera;
 
@@ -15,14 +18,27 @@ namespace Empire
         private TerritoryActionUI _actionItemPrefab;
 
         [SerializeField]
-        private Transform _actionContainer;
+        private RectTransform _actionContainer;
 
         [SerializeField]
-        private Transform _infoContainer;
+        private RectTransform _leftInfoContainer;
+
+        [SerializeField]
+        private RectTransform _rightInfoContainer;
+
+        #endregion Serialized Fields
+
+        #region Private Fields
+
+        private readonly Vector2 _margin = default;
 
         private Territory _currentTerritory;
-
+        
         private List<TerritoryActionUI> _currentActions;
+        
+        #endregion Private Fields
+
+        #region MonoBehaviour
 
         protected override void Awake()
         {
@@ -50,6 +66,10 @@ namespace Empire
                 Close();
             }
         }
+        
+        #endregion MonoBehaviour
+
+        #region Private Methods
 
         private void Open(Territory target)
         {
@@ -58,21 +78,12 @@ namespace Empire
             Open();
         }
 
-        public override void Close()
-        {
-            base.Close();
-
-            _currentTerritory = null;
-
-            Clear();
-        }
-
         private void Initialize(Territory territory)
         {
             _currentTerritory = territory;
 
-            CreateActions();
             SetPosition();
+            CreateActions();
         }
 
         private void CreateActions()
@@ -91,7 +102,8 @@ namespace Empire
 
                 if (action.InfoPanelPrefab)
                 {
-                    TerritoryActionInfoUI infoPanel = Instantiate(action.InfoPanelPrefab, _infoContainer);
+                    Transform container = GetInfoContainer();
+                    TerritoryActionInfoUI infoPanel = Instantiate(action.InfoPanelPrefab, container);
                     infoPanel.Initialize(action, _currentTerritory);
                     actionItem.SetInfoPanel(infoPanel);
                 }
@@ -100,9 +112,19 @@ namespace Empire
             }
         }
 
+        private Vector3 GetPosition()
+        {
+            return _mainCamera.Value.WorldToScreenPoint(_currentTerritory.transform.position);
+        }
+
         private void SetPosition()
         {
-            transform.position = _mainCamera.Value.WorldToScreenPoint(_currentTerritory.transform.position);
+            Vector3 position = GetPosition();
+            Vector2 containerSize = _actionContainer.sizeDelta;
+            float min = containerSize.x / 2 + _margin.x; 
+            float max = Screen.width - containerSize.x / 2 - _margin.x;
+            position.x = Mathf.Clamp(position.x, min, max);
+            transform.position = position;
         }
 
         private void OnTerritorySelected(object arg)
@@ -136,5 +158,33 @@ namespace Empire
 
             _currentActions.Clear();
         }
+
+        private Transform GetInfoContainer()
+        {
+            return IsOverflowing(_rightInfoContainer) ? _leftInfoContainer : _rightInfoContainer;
+        }
+
+        private bool IsOverflowing(RectTransform rect)
+        {
+            var corners = new Vector3[4];
+            rect.GetWorldCorners(corners);
+            var screenRect = new Rect(0, 0, Screen.width - _margin.x / 2, Screen.height - _margin.y / 2);
+            return corners.Count(corner => !screenRect.Contains(corner)) > 0;
+        }
+
+        #endregion Private Methods
+
+        #region Public Methods
+
+        public override void Close()
+        {
+            base.Close();
+
+            _currentTerritory = null;
+
+            Clear();
+        }
+
+        #endregion Public Methods
     }
 }

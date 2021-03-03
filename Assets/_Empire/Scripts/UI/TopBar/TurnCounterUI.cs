@@ -7,10 +7,10 @@ namespace Empire
     public class TurnCounterUI : MonoBehaviour
     {
         [SerializeField]
-        private TextMeshProUGUI _turnText = null;
+        private TextMeshProUGUI _turnText;
 
         [SerializeField]
-        private IntVariable _turnCount = null;
+        private IntVariable _turnCount;
 
         private void Awake()
         {
@@ -24,7 +24,7 @@ namespace Empire
 
         private void Refresh()
         {
-            _turnText.text = $"Turn {_turnCount.ToString()}";
+            _turnText.text = $"Day {_turnCount.Value}";
         }
     }
 }
