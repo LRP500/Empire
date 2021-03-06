@@ -13,13 +13,11 @@ namespace Empire
         [SerializeField]
         private Attribute _attribute;
 
-#if UNITY_EDITOR
-
         [SerializeReference]
+#if UNITY_EDITOR
         [ValueDropdown(nameof(GetModifierTypes))]
-        private System.Type _modifierType;
-
 #endif
+        private System.Type _modifierType;
 
         [SerializeField]
         private float _minValue;
@@ -38,6 +36,7 @@ namespace Empire
         {
             return TypeCache.GetTypesDerivedFrom<AttributeModifier>();
         }
+
 #endif
     }
 }
