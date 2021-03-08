@@ -1,5 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using Tools.Variables;
 using UnityEngine;
 
 namespace Empire
@@ -9,15 +8,12 @@ namespace Empire
     {
         [SerializeField]
         private ResourceType _type;
-        public ResourceType Type => _type;
 
         [SerializeField]
         private int _initial;
-        public int Initial => _initial;
 
         [SerializeField]
         private int _current;
-        public int Current => _current;
 
         [SerializeField]
         private bool _clamped;
@@ -29,10 +25,14 @@ namespace Empire
         [SerializeField]
         [ShowIf(nameof(_clamped))]
         private int _max;
-        public int Max => _max;
 
         [SerializeField]
-        private IntVariable _production;
+        private ResourceProduction _production;
+
+        public ResourceType Type => _type;
+        public int Initial => _initial;
+        public int Current => _current;
+        public int Max => _max;
         public int Production => _production.Value;
 
         private System.Action<int> OnCurrentValueChanged;
@@ -70,16 +70,6 @@ namespace Empire
         public void UnregisterOnCurrentValueChanged(System.Action<int> callback)
         {
             OnCurrentValueChanged -= callback;
-        }
-
-        public void RegisterOnProductionValueChanged(System.Action callback)
-        {
-            _production.Subscribe(callback);
-        }
-
-        public void UnregisterOnProductionValueChanged(System.Action callback)
-        {
-            _production.Unsubscribe(callback);
         }
 
         #endregion Callbacks

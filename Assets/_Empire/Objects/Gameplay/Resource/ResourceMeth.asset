@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: 15b480cd0478c8e4b8c5b6136be0cca2, type: 2}
   _initial: 0
-  _current: 180
+  _current: 100
   _clamped: 0
   _min: 0
   _max: 0
-  _production: {fileID: 11400000, guid: 7e346d2b7918c164181858ae22fa12a5, type: 2}
+  _production: {fileID: 11400000, guid: e761d1ef3936e494f820bb177ce062f3, type: 2}

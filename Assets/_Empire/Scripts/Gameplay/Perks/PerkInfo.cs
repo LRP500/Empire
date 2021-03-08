@@ -7,7 +7,7 @@ using Attribute = Empire.Stats.Attribute;
 
 namespace Empire
 {
-    [CreateAssetMenu(menuName = "Empire/Gameplay/Perk")]
+    [CreateAssetMenu(menuName = "Empire/Gameplay/Perks/Perk")]
     public class PerkInfo : ScriptableObject
     {
         [SerializeField]

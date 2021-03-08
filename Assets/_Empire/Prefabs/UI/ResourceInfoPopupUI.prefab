@@ -544,6 +544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _group: {fileID: 4882118320031172878}
   _showOnAwake: 0
-  _resourceName: {fileID: 2115056793}
-  _resourceDescription: {fileID: 191863996}
+  _title: {fileID: 2115056793}
+  _description: {fileID: 191863996}
   _hoveredResource: {fileID: 11400000, guid: 14bf24f93e46b2a45bba8a7246cb4030, type: 2}
+  _hoveredProduction: {fileID: 11400000, guid: 439d8bf4ab352344393accc1a7e62a1c, type: 2}

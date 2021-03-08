@@ -1,20 +1,19 @@
 using System.Collections.Generic;
-using Empire.Stats;
 
 namespace Empire
 {
-    public sealed class Associate
+    public class Associate
     {
         private string Name { get; }
 
-        private List<AttributeModifier> PositiveTraits { get; }
-        private List<AttributeModifier> NegativeTraits { get; }
+        private List<Perk> PositivePerks { get; }
+        private List<Perk> NegativePerks { get; }
 
-        public Associate(string name, List<AttributeModifier> positiveTraits, List<AttributeModifier> negativeTraits)
+        public Associate(string name, List <Perk> positivePerks, List<Perk> negativePerks)
         {
             Name = name;
-            PositiveTraits = positiveTraits;
-            NegativeTraits = negativeTraits;
+            PositivePerks = positivePerks;
+            NegativePerks = negativePerks;
         }
     }
 }

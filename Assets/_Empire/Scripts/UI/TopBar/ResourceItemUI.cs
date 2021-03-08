@@ -15,9 +15,6 @@ namespace Empire
         private TextMeshProUGUI _amount;
 
         [SerializeField]
-        private TextMeshProUGUI _increment;
-
-        [SerializeField]
         private Resource _resource;
 
         [SerializeField]
@@ -27,24 +24,16 @@ namespace Empire
         {
             _logo.sprite = _resource.Type.Icon;
             _resource.RegisterOnCurrentValueChanged(Refresh);
-            _resource.RegisterOnProductionValueChanged(RefreshIncrement);
         }
 
         private void OnDestroy()
         {
             _resource.UnregisterOnCurrentValueChanged(Refresh);
-            _resource.UnregisterOnProductionValueChanged(RefreshIncrement);
         }
 
         private void Refresh(int currentValue)
         {
             _amount.text = AbbreviationUtility.Format(currentValue, "0.0");
-        }
-
-        private void RefreshIncrement()
-        {
-            string increment = AbbreviationUtility.Format(Mathf.Abs(_resource.Production), "0.0");
-            _increment.text = increment.Insert(0, _resource.Production < 0 ? "-" : "+");
         }
 
         public void OnPointerEnter(PointerEventData eventData)

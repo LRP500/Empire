@@ -26,7 +26,6 @@ internal class AttributeTestSuite
         _attribute = LoadTestAttribute();
         _attribute.SetBaseValue(0);
         _attribute.ClearModifiers();
-        _attribute.Clamped = false;
     }
 
     #endregion Setup

@@ -1,37 +1,60 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Empire.UI
 {
     public class ResourceInfoPopupUI : PanelUI
     {
         [SerializeField]
-        private TextMeshProUGUI _resourceName;
+        [FormerlySerializedAs("_resourceName")]
+        private TextMeshProUGUI _title;
 
         [SerializeField]
-        private TextMeshProUGUI _resourceDescription;
+        [FormerlySerializedAs("_resourceDescription")]
+        private TextMeshProUGUI _description;
 
         [SerializeField]
         private ResourceVariable _hoveredResource;
 
+        [SerializeField]
+        private ResourceProductionVariable _hoveredProduction;
+
         protected override void Awake()
         {
             _hoveredResource.Subscribe(Refresh);
+            _hoveredProduction.Subscribe(Refresh);
             Close();
         }
 
         private void Refresh()
         {
-            if (_hoveredResource.Value)
+            if (_hoveredProduction.Value)
             {
-                _resourceName.text = _hoveredResource.Value.Type.Name;
-                _resourceDescription.text = _hoveredResource.Value.Type.Description;
+                DisplayProductionInfo(_hoveredProduction);
+                Open();
+            }
+            else if (_hoveredResource.Value)
+            {
+                DisplayResourceInfo(_hoveredResource);
                 Open();
             }
             else
             {
                 Close();
             }
+        }
+
+        private void DisplayResourceInfo(Resource resource)
+        {
+            _title.text = resource.Type.Name;
+            _description.text = resource.Type.Description;
+        }
+
+        private void DisplayProductionInfo(ResourceProduction production)
+        {
+            _title.text = production.Name;
+            _description.text = production.Description;
         }
     }
 }

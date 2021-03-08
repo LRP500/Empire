@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d4b6d09a0975546a060d69795f610c, type: 3}
-  m_Name: ResourceProductionCrew
+  m_Script: {fileID: 11500000, guid: a696d05cc4a71e8428f95b319812060b, type: 3}
+  m_Name: UncleJoe
   m_EditorClassIdentifier: 
-  _value: 0
+  _name: Uncle Joe
+  _positivePerks:
+  - {fileID: 11400000, guid: 517da2ccc2d8d5044a1b06ffc1ac2b21, type: 2}
+  _negativePerks: []

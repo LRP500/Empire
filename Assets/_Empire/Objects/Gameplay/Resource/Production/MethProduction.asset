@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d4b6d09a0975546a060d69795f610c, type: 3}
-  m_Name: ResourceProductionCash
+  m_Script: {fileID: 11500000, guid: 4faf4bd3d9f1e724a8ef9fb9dc895066, type: 3}
+  m_Name: MethProduction
   m_EditorClassIdentifier: 
-  _value: 0
+  _value: 100
+  _name: Meth Production Rate
+  _description: The total amount of meth produced per day by laboratories

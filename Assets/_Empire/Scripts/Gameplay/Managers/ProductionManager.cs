@@ -10,16 +10,13 @@ namespace Empire
     {
         [Space]
         [SerializeField]
-        private IntVariable _methProduction = null;
-        public int MethProduction => _methProduction;
+        private ResourceProduction _methProduction;
 
         [SerializeField]
-        private IntVariable _cashProduction = null;
-        public int CashProduction => _cashProduction;
+        private ResourceProduction _cashProduction;
 
         [SerializeField]
-        private IntVariable _bankProduction = null;
-        public int BankProduction => _bankProduction;
+        private ResourceProduction _bankProduction;
 
         [Space]
         [SerializeField]
@@ -27,11 +24,15 @@ namespace Empire
         private int _initialMethSellingPrice = 25;
 
         [SerializeField]
-        private IntVariable _methSellingPrice = null;
+        private IntVariable _methSellingPrice;
 
-        private int _methProductionCache = 0;
-        private int _cashProductionCache = 0;
-        private int _bankProductionCache = 0;
+        private int _methProductionCache;
+        private int _cashProductionCache;
+        private int _bankProductionCache;
+
+        public int MethProduction => _methProduction;
+        public int CashProduction => _cashProduction;
+        public int BankProduction => _bankProduction;
 
         public override void Initialize()
         {
@@ -86,7 +87,7 @@ namespace Empire
 
                 if (deal == null) continue;
 
-                if ((_methProduction.Value + _context.resourceManager.Meth) >= deal.Quantity)
+                if (_methProduction.Value + _context.resourceManager.Meth >= deal.Quantity)
                 {
                     _context.resourceManager.RemoveMeth(deal.Quantity);
                     _context.resourceManager.AddCash(deal.Quantity * deal.SellingPrice);

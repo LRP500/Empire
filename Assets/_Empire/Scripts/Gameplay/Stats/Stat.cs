@@ -20,14 +20,17 @@ namespace Empire.Stats
         private float _baseValue;
 
         [SerializeField]
-        private bool _clamped;
+        private bool _hasLowerLimit;
 
         [SerializeField]
-        [ShowIf(nameof(_clamped))]
+        private bool _hasUpperLimit;
+
+        [SerializeField]
+        [ShowIf(nameof(_hasLowerLimit))]
         private float _minValue;
 
         [SerializeField]
-        [ShowIf(nameof(_clamped))]
+        [ShowIf(nameof(_hasUpperLimit))]
         private float _maxValue;
 
         #endregion Serialized Fields
@@ -38,11 +41,9 @@ namespace Empire.Stats
         
         public float BaseValue => _baseValue;
         
-        public float MinValue => _minValue;
-        
-        public float MaxValue => _maxValue;
+        public float MinValue => _hasLowerLimit ? _minValue : float.MinValue;
 
-        public bool Clamped { get; set; }
+        public float MaxValue => _hasUpperLimit ? _maxValue : float.MaxValue;
 
         #endregion Properties
 
@@ -50,7 +51,7 @@ namespace Empire.Stats
 
         public void SetBaseValue(float value)
         {
-            _baseValue = Clamped ? Mathf.Clamp(value, MinValue, MaxValue) : value;
+            _baseValue = Mathf.Clamp(value, MinValue, MaxValue);
         }
 
         #endregion Public Methods
